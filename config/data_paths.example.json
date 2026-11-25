@@ -1,0 +1,1 @@
+{"private_workspace":"/your/private/workspace","raw_inputs":"data/raw","processed_inputs":"data/processed","models":"models","note":"Metadata example only. Do not store credentials here. Original scientific scripts retain their documented paths; use clinical_workspace.py to inspect missing inputs."}

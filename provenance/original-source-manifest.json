@@ -1,0 +1,4352 @@
+{
+  "files": [
+    {
+      "path": "archive/original/code/ablation.py",
+      "original_relative_path": "code/ablation.py",
+      "sha256": "7da2cf4b47e0019043c96438ee1cb3ba00496947be556ed6f0f5d4c6aa424e2a",
+      "bytes": 1014,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/analysis.py",
+      "original_relative_path": "code/analysis.py",
+      "sha256": "9dffd12db6d2148c90f2497f3cc188ec17f6103b4085db05989a1d26e1a41ebd",
+      "bytes": 13170,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/attribution.py",
+      "original_relative_path": "code/attribution.py",
+      "sha256": "5e15d7c97485b1d592586e287566722d4cdb9ae380d39d558fba29c1f18352db",
+      "bytes": 4493,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/build_data.py",
+      "original_relative_path": "code/build_data.py",
+      "sha256": "aff00c3e492d7512b0d4ac3135c20fa585ee66a07ba84f2c9f6ef50f46682ee5",
+      "bytes": 5680,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/build_grid.py",
+      "original_relative_path": "code/build_grid.py",
+      "sha256": "b7563570740fc788a005db2fd33d36ecee6b0d3399f11a074efd5197d92bc24e",
+      "bytes": 559,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/c2012_build.py",
+      "original_relative_path": "code/c2012_build.py",
+      "sha256": "f5e4e48191df93b86b0769bd633419ac85cf2f9bda34abe0e870d0b8db998cf1",
+      "bytes": 5455,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/casemix.py",
+      "original_relative_path": "code/casemix.py",
+      "sha256": "31731b0de71e142771295995c87fde4394f1fe09fe6724796aa80038ff4a46a7",
+      "bytes": 3101,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/ci.py",
+      "original_relative_path": "code/ci.py",
+      "sha256": "7e8b0e369bd8bdb7c9b776abc7a102367697b1d5359503b60161e306c1ea6f60",
+      "bytes": 3119,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/common_vars.py",
+      "original_relative_path": "code/common_vars.py",
+      "sha256": "d1bbd21df502ee614512868d19aca028d5d34b5d1334231ebc597bd5e1c31b82",
+      "bytes": 5812,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/dca.py",
+      "original_relative_path": "code/dca.py",
+      "sha256": "5d7ee6223769a20a5a0b44087bf7a9765afcb011bc342713e5d9dac71b4ce7e1",
+      "bytes": 2865,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/density_perturb.py",
+      "original_relative_path": "code/density_perturb.py",
+      "sha256": "2a202fd077a2ae91e774e76f9854c49e1099103d3136dfd4bb2748158ed5853e",
+      "bytes": 3612,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/eicu_hospital.py",
+      "original_relative_path": "code/eicu_hospital.py",
+      "sha256": "ea0121e4594085fb630b06e4360548574fbb137a2e36da9a31297d0b7ca0bd1e",
+      "bytes": 980,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/extract.py",
+      "original_relative_path": "code/extract.py",
+      "sha256": "85ef7a559093dcf230c3b07472b9631c5c84e3d6c858452760d650bc516b6c2b",
+      "bytes": 25342,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/final_pipeline.py",
+      "original_relative_path": "code/final_pipeline.py",
+      "sha256": "a4259e7ffbc6d3ff5e8f69b3fe5c816a600f0ed97de6cfc74401b6294a4d0866",
+      "bytes": 3216,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/fix_ici.py",
+      "original_relative_path": "code/fix_ici.py",
+      "sha256": "992e37f4c419503a4fa65d97cafb990107ded1468e9ba6189bff136ee9ba2548",
+      "bytes": 1055,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/fm.py",
+      "original_relative_path": "code/fm.py",
+      "sha256": "9d33963a7d176f855103ac88c60f9faffebb4cb734a9de3401ba0c06bdaa39bc",
+      "bytes": 16135,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/head_response.py",
+      "original_relative_path": "code/head_response.py",
+      "sha256": "ae5c72603cdc3d4989437b39a0d482e5979411f82cb37147b5f347a2ed24dc14",
+      "bytes": 4761,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/head_response_within.py",
+      "original_relative_path": "code/head_response_within.py",
+      "sha256": "d66bfe0e87eab52cccddb3217984c8413405c522f91d329f9a1bd64dbadc1cae",
+      "bytes": 2865,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/make_mapping.py",
+      "original_relative_path": "code/make_mapping.py",
+      "sha256": "af8c80597e597a82f462e874c28fa650917e90f069463d5662f877ac22c521fb",
+      "bytes": 7930,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/missing_only.py",
+      "original_relative_path": "code/missing_only.py",
+      "sha256": "88d19cbec145b7520d38917e376e3e98dee0018e597291370132d7778b68b476",
+      "bytes": 2033,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_drop_diag.py",
+      "original_relative_path": "code/motor_drop_diag.py",
+      "sha256": "b2c7cffb91c1cb68c6ebf5bb26811a530adc3a98a41927d1a9576dbf1de2741b",
+      "bytes": 4150,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_etl_test.py",
+      "original_relative_path": "code/motor_etl_test.py",
+      "sha256": "7ec6b1308aab365758d6e767ab68683d8ce4e31254623df600097948ff4a388e",
+      "bytes": 3396,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_paired.py",
+      "original_relative_path": "code/motor_paired.py",
+      "sha256": "2b70d6275e5b8ff5cffa679467ca8e34b020911f920100bbbef9aa9190745c87",
+      "bytes": 799,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_repr_test.py",
+      "original_relative_path": "code/motor_repr_test.py",
+      "sha256": "352fb2debfb82a1bd45ad7e975b29a57f3531241257c90bed8c9abe6a9fabb5b",
+      "bytes": 1932,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_value_experiment.py",
+      "original_relative_path": "code/motor_value_experiment.py",
+      "sha256": "fbeb7a724470b1c56d10aea4de41ff5abdcfa0cc746a37e328d59ad9d8e651c2",
+      "bytes": 1158,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_value_experiment2.py",
+      "original_relative_path": "code/motor_value_experiment2.py",
+      "sha256": "45453881fda0336b3ff7141a938b8cea7c3e5dc37546bebb1888e457de5f86aa",
+      "bytes": 1146,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/motor_value_experiment3.py",
+      "original_relative_path": "code/motor_value_experiment3.py",
+      "sha256": "51352c57055dd5bb5a3cae65aad8241f528c804d8d80e14a001c6a61c18dda5d",
+      "bytes": 847,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/multiverse.py",
+      "original_relative_path": "code/multiverse.py",
+      "sha256": "fa2502622b1612b2bbc0c34b97d660248e0d86c0347dec286b4f80ed84b4cd3f",
+      "bytes": 1491,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/paired_ci.py",
+      "original_relative_path": "code/paired_ci.py",
+      "sha256": "db238bd987102c43c8942e5e3049ea11a5dc426bee05ca71c37fc0c337e40d37",
+      "bytes": 2465,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/probe_schemas.py",
+      "original_relative_path": "code/probe_schemas.py",
+      "sha256": "e7d50cd014daabde481ce30687d1f60dd12ab8f7e1d40eb86ec156a9a08d3faf",
+      "bytes": 4002,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/recal.py",
+      "original_relative_path": "code/recal.py",
+      "sha256": "4644deca03ac97acada36501993d2f38147f9882c7a9886d985d6b39b3f10d65",
+      "bytes": 3861,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/recal_budget.py",
+      "original_relative_path": "code/recal_budget.py",
+      "sha256": "634885f2663a2da8e92179a19f9f9a539b062d24574ada7ea9ecdb34b6156c05",
+      "bytes": 5356,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/recal_budget_risk.py",
+      "original_relative_path": "code/recal_budget_risk.py",
+      "sha256": "3b5a180dc9b4239ee79dfba0ab7bdb94df2994f65841e81ff10f2a366297c827",
+      "bytes": 323,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/reject_summary.py",
+      "original_relative_path": "code/reject_summary.py",
+      "sha256": "71253458347f350f19f6703268d3c6014991947169b16124ac5239728cbf6677",
+      "bytes": 1476,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/replicate.py",
+      "original_relative_path": "code/replicate.py",
+      "sha256": "ff0c92d649b1bc67f408c8bb786419b11326d3b108cf3f0f602b7aab5a6dcfb3",
+      "bytes": 1412,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/report.py",
+      "original_relative_path": "code/report.py",
+      "sha256": "0d2d4d25e1ab8a7428f17613d555cda8db384879f1e9ac2a33ef672f0ebbcf25",
+      "bytes": 6342,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/selective_tradeoff.py",
+      "original_relative_path": "code/selective_tradeoff.py",
+      "sha256": "c28b631613c5add2c25945177108f9966ee0c75bb382b0b91a0c3a3362461e15",
+      "bytes": 3792,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/sup.py",
+      "original_relative_path": "code/sup.py",
+      "sha256": "0210b0b07eafc5fa8cd92d9d4fb16ff4e5df6b4a2e2d5bf8e036fedbbb18fb6f",
+      "bytes": 4950,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/tab_preds.py",
+      "original_relative_path": "code/tab_preds.py",
+      "sha256": "d3089dab0309e39e7e6d6c6c107ca3706aa6730e366cdedc9578a8413bec854a",
+      "bytes": 2342,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/code/value_decoding.py",
+      "original_relative_path": "code/value_decoding.py",
+      "sha256": "208aff99d222d12500ab95e07e989c482d1de4f3a86b367d29fe38983f7f4a5b",
+      "bytes": 829,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_metrics/paired_availability_metrics.py",
+      "original_relative_path": "revision_v4_20261122/availability_metrics/paired_availability_metrics.py",
+      "sha256": "14226fb7a9a37545b5b74097dd64468143f925392807dab8a3cdea4c0f3bdf83",
+      "bytes": 21368,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/audit_addendum_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/audit_addendum_v4_1.py",
+      "sha256": "37ddf72cf2e80c77e2d159560aa0e75dd73237c63cf3d0e14b1ce9441438cdf7",
+      "bytes": 18705,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/build_available_by24_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/build_available_by24_v4_1.py",
+      "sha256": "958950a26ff2730f4d76250e8bd5270fd8c559e2eb5b4a20b5ffbd52722750b0",
+      "bytes": 46739,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/fixedselection_postprocess_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/fixedselection_postprocess_v4_1.py",
+      "sha256": "076ebf16d0b1761fce8cc88f450585f6a0ac0e4014d8eb9a0083d376e856246a",
+      "bytes": 22676,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/scoring_authorization/finalize_availability_testonly_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/scoring_authorization/finalize_availability_testonly_v4_1.py",
+      "sha256": "7c6eac188ad822acaeabeac0c00e6a1250a2b1f065494510bdf5a9426a802c58",
+      "bytes": 41476,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/scoring_authorization/test_finalize_availability_testonly_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/scoring_authorization/test_finalize_availability_testonly_v4_1.py",
+      "sha256": "95dd2cf0147fe0af380f4979f0ef8087f266be56f6d079b61cf652d8616980a9",
+      "bytes": 7187,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/test_available_by24_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/test_available_by24_v4_1.py",
+      "sha256": "1a5cf07f6e8877f6d569448792c1bf17d1a82303870876165289d0b6d30bfd46",
+      "bytes": 5490,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/availability_repair/test_fixedselection_postprocess_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/availability_repair/test_fixedselection_postprocess_v4_1.py",
+      "sha256": "8aa1d1a8e05d7ac7f11950f4e9510acdf0255aed0d142c34dc9a7cf65a2409e7",
+      "bytes": 3949,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/baseline_features.py",
+      "original_relative_path": "revision_v4_20261122/baselines/baseline_features.py",
+      "sha256": "284e732d6866e1a077345b7dc138988cdcc493162508256b538919ea258de3ea",
+      "bytes": 5113,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/conventional_baselines.py",
+      "original_relative_path": "revision_v4_20261122/baselines/conventional_baselines.py",
+      "sha256": "39c82bff74cc01eb56129f4e6523f2ec952fe1deefc34f14e71894ac4bfc4310",
+      "bytes": 44115,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/finalize_interrupted_primary.py",
+      "original_relative_path": "revision_v4_20261122/baselines/finalize_interrupted_primary.py",
+      "sha256": "96e8dd85ef56963bc4c24388fdfffb67aa54aa48c0484b2ae8ba415bddb5059e",
+      "bytes": 22988,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/paired_baselines.py",
+      "original_relative_path": "revision_v4_20261122/baselines/paired_baselines.py",
+      "sha256": "daaafc2a9b38f70c20bc4594597c962dfa046bb07c7baa8eeb661ceceb2f9422",
+      "bytes": 29702,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/test_conventional_baselines.py",
+      "original_relative_path": "revision_v4_20261122/baselines/test_conventional_baselines.py",
+      "sha256": "1f1c035d2a161c6910e1d9564db9e4591bab5e75666a06d0b2a59de483daf409",
+      "bytes": 20076,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/transport_v4_2/frozen_source_transport.py",
+      "original_relative_path": "revision_v4_20261122/baselines/transport_v4_2/frozen_source_transport.py",
+      "sha256": "b09eb6266892f79cb15f2417c7129494a28cecaadddb9bb3e32b4cffd4b73d7b",
+      "bytes": 56862,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/baselines/transport_v4_2/test_transport.py",
+      "original_relative_path": "revision_v4_20261122/baselines/transport_v4_2/test_transport.py",
+      "sha256": "570bac4be437dbae10fa59958294f97187c09fffc4639604328d323e39992b0e",
+      "bytes": 9508,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/big_metrics/aggregate_big_metrics.py",
+      "original_relative_path": "revision_v4_20261122/big_metrics/aggregate_big_metrics.py",
+      "sha256": "20eb3534330077860eb8c64a584b6826927a4ae2cdf03a23771dd7e1248e111b",
+      "bytes": 27521,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/big_readout/preview_big_readout.py",
+      "original_relative_path": "revision_v4_20261122/big_readout/preview_big_readout.py",
+      "sha256": "cc19c000f6dec72c2e1cf1b18c73c5459a9f84b0584bdb06f9f93907045e098e",
+      "bytes": 3318,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/big_readout/run_big_readout_frozen20.py",
+      "original_relative_path": "revision_v4_20261122/big_readout/run_big_readout_frozen20.py",
+      "sha256": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+      "bytes": 6006,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/big_readout/v4_engine_big_frozen20.py",
+      "original_relative_path": "revision_v4_20261122/big_readout/v4_engine_big_frozen20.py",
+      "sha256": "293ea8607351970699e908259fe630f116ffdbd8b2787145b55d9e58106a90db",
+      "bytes": 92808,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/c_big_metrics/aggregate_big9_external.py",
+      "original_relative_path": "revision_v4_20261122/c_big_metrics/aggregate_big9_external.py",
+      "sha256": "e703af94a3e94dee16ce2ac3e2b20f55ce9650dfcdd9abdc4f583d092e2d79cc",
+      "bytes": 26582,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/c_big_source_reuse/driver.py",
+      "original_relative_path": "revision_v4_20261122/c_big_source_reuse/driver.py",
+      "sha256": "d5154a57c868157991ede1e857a75e1c0b439075372baa967674b3caf7a8cb82",
+      "bytes": 20238,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/c_big_source_reuse/pinned_engine_snapshots/v4_engine_registry_maskfix_vocabadapter_merged69_49cad3bc44d2.py",
+      "original_relative_path": "revision_v4_20261122/c_big_source_reuse/pinned_engine_snapshots/v4_engine_registry_maskfix_vocabadapter_merged69_49cad3bc44d2.py",
+      "sha256": "49cad3bc44d229926afac1e72824a0535f3cb988b043accd202eef92f12c5f07",
+      "bytes": 95094,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/c_proxy_metrics/c_proxy_metrics.py",
+      "original_relative_path": "revision_v4_20261122/c_proxy_metrics/c_proxy_metrics.py",
+      "sha256": "bb5cb4475ca465fe83f2f886fa8335639cfdbba699e16dba8237d72281a0f0ac",
+      "bytes": 23212,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/calibrated_model_pairs/run_calibrated_pairs.py",
+      "original_relative_path": "revision_v4_20261122/calibrated_model_pairs/run_calibrated_pairs.py",
+      "sha256": "dec9419e00b647d72c97e333537803d0bffccc0d46f1928c937dca0637468059",
+      "bytes": 46525,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/calibrated_model_pairs/test_calibrated_pairs.py",
+      "original_relative_path": "revision_v4_20261122/calibrated_model_pairs/test_calibrated_pairs.py",
+      "sha256": "3152286c5764e0c5dcaa4a31a53335dfce159aad271af339319c747e114377f3",
+      "bytes": 4102,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/controls/controls_cpu.py",
+      "original_relative_path": "revision_v4_20261122/controls/controls_cpu.py",
+      "sha256": "e382e567a4581bcd2c76ffdba8cfb587c462aa85febbe88895559df1140317a3",
+      "bytes": 47828,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/controls/controls_gpu.py",
+      "original_relative_path": "revision_v4_20261122/controls/controls_gpu.py",
+      "sha256": "f38336cb58a7008167ece770fccf53fce6fd85817552eedba0d52c8ae68887f0",
+      "bytes": 25980,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/controls/no_mg/no_mg_sensitivity.py",
+      "original_relative_path": "revision_v4_20261122/controls/no_mg/no_mg_sensitivity.py",
+      "sha256": "7bba23b9bafe5add1ea8b7b8c59b5a1af7a19b6c3a243363cbf798281107d636",
+      "bytes": 51181,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/controls/no_mg/test_no_mg_sensitivity.py",
+      "original_relative_path": "revision_v4_20261122/controls/no_mg/test_no_mg_sensitivity.py",
+      "sha256": "e10d83d2ad3d0f8f96d59a538bd8a02a8743343df664ca094451720ecf63fb4f",
+      "bytes": 3597,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/controls/plot_fixed_controls_v4.py",
+      "original_relative_path": "revision_v4_20261122/controls/plot_fixed_controls_v4.py",
+      "sha256": "b5907d05008f45e787f1ebcdc78057c57b50495f8a61f933eef6ec517243f379",
+      "bytes": 8400,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/decoding/numeric_decoding_v4.py",
+      "original_relative_path": "revision_v4_20261122/decoding/numeric_decoding_v4.py",
+      "sha256": "8fba68f93ab0b71c4ce80c25568f945bd7152de8f48992e332e5438de14e0caa",
+      "bytes": 61374,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/decoding/test_numeric_decoding_v4.py",
+      "original_relative_path": "revision_v4_20261122/decoding/test_numeric_decoding_v4.py",
+      "sha256": "a1eab80a6a61fcfe29c60a976e50399ea013f8ed6c1bf748fd30e525c59020aa",
+      "bytes": 21766,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/decoding_repaired/numeric_decoding_repaired.py",
+      "original_relative_path": "revision_v4_20261122/decoding_repaired/numeric_decoding_repaired.py",
+      "sha256": "9b129514f1a470e5315ac8c9950fe161f404884ad0eae04a8fe4344f7e42a459",
+      "bytes": 72580,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py",
+      "original_relative_path": "revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py",
+      "sha256": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+      "bytes": 29395,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/decoding_repaired/release_audit/test_audit_numeric_decoding_release.py",
+      "original_relative_path": "revision_v4_20261122/decoding_repaired/release_audit/test_audit_numeric_decoding_release.py",
+      "sha256": "1120db04a35bd6c688f2c866efeef750b89ecd4e8f122107911a516c9af6cbea",
+      "bytes": 5322,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/decoding_repaired/test_numeric_decoding_repaired.py",
+      "original_relative_path": "revision_v4_20261122/decoding_repaired/test_numeric_decoding_repaired.py",
+      "sha256": "35b2e450c4552d125ade21eece4de56f5b1c5c1f47d4657ccacd69d61bcb08c1",
+      "bytes": 28990,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/density_repair.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/density_repair.py",
+      "sha256": "dd4211be30558b3d54bbc0ffc5d3f58bd77b305c3f4689b6c97ba04315332d32",
+      "bytes": 4636,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/dev_code_20261123/density_repair.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/dev_code_20261123/density_repair.py",
+      "sha256": "0f1ea11bea1046c36d84cc77388f6ed6fdef2147dba4b24f2e3dab5cfb1a01a8",
+      "bytes": 10269,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/dev_code_20261123/encode_views.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/dev_code_20261123/encode_views.py",
+      "sha256": "8b2226eaed1c1c68c281cf4c5aa478aaf8dac3039ecb115d3f1f35577d715d42",
+      "bytes": 9841,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/dev_code_20261123/fit_readout.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/dev_code_20261123/fit_readout.py",
+      "sha256": "0f46c63d87969b8a28577fb4c504824ed4da53f31b793fd359a969a04af9ac74",
+      "bytes": 32890,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/dev_code_20261123/test_density_repair.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/dev_code_20261123/test_density_repair.py",
+      "sha256": "9d2f36a8e2ef1528bef4d6e6403416574178e740b3e63efc88967fefc83f3182",
+      "bytes": 5675,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/dev_code_20261123/verify_saved_run.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/dev_code_20261123/verify_saved_run.py",
+      "sha256": "ebf782eb67bd9167d8d983bb75c3f5d1174f2786619e8a726a81b2d3acc89839",
+      "bytes": 22216,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/encode_views.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/encode_views.py",
+      "sha256": "2c9896077327e5f829863366b765fd17f0963d018a0ab7833728c0285066a8f2",
+      "bytes": 8252,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/fit_readout.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/fit_readout.py",
+      "sha256": "312067d8dfbe03d88ee819f232b369fe3d11fa38d71af55308b70323a0fb1fba",
+      "bytes": 32398,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/run_source_20261123_02/density_repair.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/run_source_20261123_02/density_repair.py",
+      "sha256": "833f1e06521e5ee05c36c0bdcf1f66cfa38b71986f7958a718d5f20624f7eb34",
+      "bytes": 5630,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/run_source_20261123_02/encode_views.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/run_source_20261123_02/encode_views.py",
+      "sha256": "2c9896077327e5f829863366b765fd17f0963d018a0ab7833728c0285066a8f2",
+      "bytes": 8252,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/run_source_20261123_02/fit_readout.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/run_source_20261123_02/fit_readout.py",
+      "sha256": "514412b01bdbbd58c049bf0de2d9cd962b2e0115386736dd21925499c3270f47",
+      "bytes": 32629,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/run_source_20261123_03/density_repair.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/run_source_20261123_03/density_repair.py",
+      "sha256": "833f1e06521e5ee05c36c0bdcf1f66cfa38b71986f7958a718d5f20624f7eb34",
+      "bytes": 5630,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/run_source_20261123_03/encode_views.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/run_source_20261123_03/encode_views.py",
+      "sha256": "2d213e157e551a3a298fbec24f235848b8800f3656790e045ce255f6fcd12d30",
+      "bytes": 8275,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/run_source_20261123_03/fit_readout.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/run_source_20261123_03/fit_readout.py",
+      "sha256": "24e239fa341805dc40916c1ea863502948a33293033d43c86c69cf8ee98a19b4",
+      "bytes": 32629,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/density_repair/verify_saved_run.py",
+      "original_relative_path": "revision_v4_20261122/density_repair/verify_saved_run.py",
+      "sha256": "ebf782eb67bd9167d8d983bb75c3f5d1174f2786619e8a726a81b2d3acc89839",
+      "bytes": 22216,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/cohort_registry_v4.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/cohort_registry_v4.py",
+      "sha256": "4cbd72dc66eb9b3cee53dac41e626c807ccb95620e4bc0c442032e0dbb287537",
+      "bytes": 5557,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/freeze_merge_embedding_manifest_recovered_v4_2_merged69.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/freeze_merge_embedding_manifest_recovered_v4_2_merged69.py",
+      "sha256": "62b2058e635f1ef5e7a03b602f3e3a096476781605aa11c1eaa9274f05635c64",
+      "bytes": 14509,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/merge_embedding_manifests_recovered_v4_2.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/merge_embedding_manifests_recovered_v4_2.py",
+      "sha256": "bb6d439d8ec25a79d7ba9dd2d318f7a4ef3427397b8072399319d3aea1d95c1b",
+      "bytes": 13736,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/paired_metrics_v4.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/paired_metrics_v4.py",
+      "sha256": "52333539bbe73367e75c0d001497b8872d2e43fbaef71f1e382d49c02c536841",
+      "bytes": 25309,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_core_source_heads_cpu.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_core_source_heads_cpu.py",
+      "sha256": "ca559d473b7a8c8fd528a8806afbe4b71f4e9164523d0b217d2bd336c30b822a",
+      "bytes": 5500,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_encode_availability_v4_1_gpu.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_encode_availability_v4_1_gpu.py",
+      "sha256": "50ce9379f503fb67b6c60272229f1937e4911704fef0c95bca3ba24ad29a44e6",
+      "bytes": 21095,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix1.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix1.py",
+      "sha256": "58e1faf76cf43c29e4c5c9d0fb0b5aa0deabd8f0259c323ee22c9a7a906f6a14",
+      "bytes": 14451,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix2.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix2.py",
+      "sha256": "ab133ca6f05d8fa3d73dfbc2fbde36f8da5e8de898e1ffe58a47cf537230aa13",
+      "bytes": 15610,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix3.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix3.py",
+      "sha256": "4573c4483b0d209917ff64920500010ada8d66d5372fd7c95e7a4c101f22b9d8",
+      "bytes": 18026,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_root_20261123.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_root_20261123.py",
+      "sha256": "60f2f58f79d630bd8710ee55c36cd33bdf56aa2b83c00f27ead7960ca7de2ea7",
+      "bytes": 10921,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_paired_metrics_status_consistent_core_fix2.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_paired_metrics_status_consistent_core_fix2.py",
+      "sha256": "6fbafbff24797b08cc7e0e59f7606f1e14637be3dbe0e18c42a5439f6bda3f9a",
+      "bytes": 2818,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu.py",
+      "sha256": "a321d5ebe922530cc4d28365e9eb594856054703f75b61160c04729aeac98ff6",
+      "bytes": 7906,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu_resume2.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu_resume2.py",
+      "sha256": "1d9c3c389b687e487c657b2fd6030cf31242b0b0fe543675895aaa93ed59447a",
+      "bytes": 7914,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu_resume3.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu_resume3.py",
+      "sha256": "5b9e7151848e866333abbb17a94ee0189eec618cd4853e94c671c88a04a5dc62",
+      "bytes": 8395,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/run_target_source_probe_reuse_merged69.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/run_target_source_probe_reuse_merged69.py",
+      "sha256": "0b9cf4b844519cd363066dc63ff2a8f59d7ddc64cae029fcb2dd3b2293baa013",
+      "bytes": 30156,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/test_cohort_registry_v4.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/test_cohort_registry_v4.py",
+      "sha256": "7b9b9e8f4bf13150bb557f63a55f09f3c3ec48d7e55e96d5007138a13a543b40",
+      "bytes": 3266,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/test_encode_availability_v4_1_gpu.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/test_encode_availability_v4_1_gpu.py",
+      "sha256": "da07bafecb4a671eb99063dcc20045d1208c243c39c3c0030fde62fbe622ed60",
+      "bytes": 3356,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/test_paired_metrics_v4.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/test_paired_metrics_v4.py",
+      "sha256": "1e74dfbd34986f09120b141664be30fb4f63121c6f6c30a65b7b3dfda10c4bd0",
+      "bytes": 6206,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/test_run_encode_inspire_v4_1_gpu.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/test_run_encode_inspire_v4_1_gpu.py",
+      "sha256": "7802eb525a9126dfd53bf9996509dd804b9ac75804752f1bbaaa09ff80d311ab",
+      "bytes": 3999,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/test_v4_engine.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/test_v4_engine.py",
+      "sha256": "1b87f0484f8df2c586c8dd779d82e61932090e27cc1f670c22285d08f2953f9a",
+      "bytes": 21214,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/test_v4_engine_registered_vocab_adapter.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/test_v4_engine_registered_vocab_adapter.py",
+      "sha256": "ddbee56b06c13558908f997e04a4c8c61eaa217b2bc6670b0bf465a7a4984bf8",
+      "bytes": 2366,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/v4_engine.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/v4_engine.py",
+      "sha256": "ef70b4e857ce4a02480b7453a514bdfbf4f2a5e7aa4dd033455851919e269768",
+      "bytes": 83611,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_ef70b4e857ce.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_ef70b4e857ce.py",
+      "sha256": "ef70b4e857ce4a02480b7453a514bdfbf4f2a5e7aa4dd033455851919e269768",
+      "bytes": 83611,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_18da7bee9da7.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_18da7bee9da7.py",
+      "sha256": "18da7bee9da76111f3ae538f2525b31c895854cf4c0bd885c7321e52c79de705",
+      "bytes": 92419,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_reusefix_a725994d9d5d.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_reusefix_a725994d9d5d.py",
+      "sha256": "a725994d9d5dd33d8a2b23ba42afb029c98c5f530658ddda20e76f259a4b9528",
+      "bytes": 92493,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_vocabadapter_21aae5dd.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_vocabadapter_21aae5dd.py",
+      "sha256": "21aae5dd6b013a6fc9a4943c50799607e30690c611e322cb5799bfa21a8e95da",
+      "bytes": 94803,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_vocabfix_4392d431eaa6.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_vocabfix_4392d431eaa6.py",
+      "sha256": "4392d431eaa6e0165743196f598f0e5c9a54f140a6ce91478f8c5345bdff41cd",
+      "bytes": 83614,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/verify_encoder_hash_recovered_v4_2.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/verify_encoder_hash_recovered_v4_2.py",
+      "sha256": "35134411af176bbc7e73036baa42cad5022a8baf7828305b76b6c8caadb52eab",
+      "bytes": 1415,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/verify_encoder_hash_vocabfix_v4_2.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/verify_encoder_hash_vocabfix_v4_2.py",
+      "sha256": "042ca9fb1052371b14ba901c9d731c2590c3344b0959d6f3d135c0156e8e5ce0",
+      "bytes": 1198,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/engine/code/verify_recovered_resume3_runner.py",
+      "original_relative_path": "revision_v4_20261122/engine/code/verify_recovered_resume3_runner.py",
+      "sha256": "cd108dced9c54a3c54822385f8adbc678a51267d260483579905cb2ed5c5fa21",
+      "bytes": 7500,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/inspire/code/_common.py",
+      "original_relative_path": "revision_v4_20261122/inspire/code/_common.py",
+      "sha256": "c57d924c5641143a2283cdd2a98d4fc5bd9c00159e94933e0c3d3831c45a0e63",
+      "bytes": 6258,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/inspire/code/detect_resources.py",
+      "original_relative_path": "revision_v4_20261122/inspire/code/detect_resources.py",
+      "sha256": "95cc3531aa29de37f4a817b70853c3d2ca264ac67f25f9ad5c30260c661c35e7",
+      "bytes": 61607,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/inspire/code/event_feasibility.py",
+      "original_relative_path": "revision_v4_20261122/inspire/code/event_feasibility.py",
+      "sha256": "e08ed8a0dad721628878fc503171fc22a3755d247152cbc258190fd36f9e8840",
+      "bytes": 21402,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/inspire/code/history_audit.py",
+      "original_relative_path": "revision_v4_20261122/inspire/code/history_audit.py",
+      "sha256": "c54b7eacf839e072152480cdf6335c94ee9ef8222dd8513d3b7deeb375b78b91",
+      "bytes": 3315,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/inspire/code/operations_feasibility.py",
+      "original_relative_path": "revision_v4_20261122/inspire/code/operations_feasibility.py",
+      "sha256": "77d94c1e732862e6431ba3a1eccdabe188b01957aab999db3e467c1ed4b08d9e",
+      "bytes": 13224,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/inspire/code/validate_sources.py",
+      "original_relative_path": "revision_v4_20261122/inspire/code/validate_sources.py",
+      "sha256": "1462a4e9fe91c116d90994d72dbd3f8a660b371c992e72c87d081f085c376263",
+      "bytes": 4699,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/recovered_metrics/run_recovered_metrics.py",
+      "original_relative_path": "revision_v4_20261122/recovered_metrics/run_recovered_metrics.py",
+      "sha256": "9f68d7aecf7723eb321d2b2b65842b0bb4fb89f7771a4197772874fed34a5cc4",
+      "bytes": 47425,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/recovered_metrics/test_recovered_metrics.py",
+      "original_relative_path": "revision_v4_20261122/recovered_metrics/test_recovered_metrics.py",
+      "sha256": "aaa851c249160c0aa8886359f44e78d39445495a58f55be36c748806608a586a",
+      "bytes": 9045,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/audit_case_mix_domains.py",
+      "original_relative_path": "revision_v4_20261122/robustness/audit_case_mix_domains.py",
+      "sha256": "fc69b8325f946a64592435fb9f8db35f27de89a5536b576ba6ef38d26d78a8e1",
+      "bytes": 4239,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/audit_inspire_fixed500_calibration.py",
+      "original_relative_path": "revision_v4_20261122/robustness/audit_inspire_fixed500_calibration.py",
+      "sha256": "637c9def9626f04e53b9747981952bffa50ebac1aeb9feccb92ecc1b811cf27c",
+      "bytes": 13605,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/case_mix_selective.py",
+      "original_relative_path": "revision_v4_20261122/robustness/case_mix_selective.py",
+      "sha256": "e61d4c94e4e251bfcd158d9ae4d7614b2b8e564e4322330f5382a704b3fc5f84",
+      "bytes": 19150,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/finalize_case_mix_from_saved_aggregates.py",
+      "original_relative_path": "revision_v4_20261122/robustness/finalize_case_mix_from_saved_aggregates.py",
+      "sha256": "5ec0b581d2d6eb93a4bf51addcc7b99fff7d2ff63091a501de87780758da5596",
+      "bytes": 13006,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/hospital_heterogeneity.py",
+      "original_relative_path": "revision_v4_20261122/robustness/hospital_heterogeneity.py",
+      "sha256": "a38ce00157aac559231c72f5f75a349a09d5752ae48150bb06d427b5cc43d215",
+      "bytes": 55797,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/inspire_fixed500_calibration.py",
+      "original_relative_path": "revision_v4_20261122/robustness/inspire_fixed500_calibration.py",
+      "sha256": "b1ab8d375ccd74b34ebab28f3a74f070854404ea14bb4c4e4c173c67343b7494",
+      "bytes": 44215,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/legacy_repeat_aggregate.py",
+      "original_relative_path": "revision_v4_20261122/robustness/legacy_repeat_aggregate.py",
+      "sha256": "08c6814e6835dfb03cf1cc1ae00077101490f8e5edf8916ac2fccf68a3cf4ce7",
+      "bytes": 5346,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/motor_repeated_splits.py",
+      "original_relative_path": "revision_v4_20261122/robustness/motor_repeated_splits.py",
+      "sha256": "cca4acb69e84c450d8bc1768ac8eb6b71b3e2d81a3b41a54eb9895bf51673471",
+      "bytes": 13841,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/plot_hospital_v4.py",
+      "original_relative_path": "revision_v4_20261122/robustness/plot_hospital_v4.py",
+      "sha256": "4e8c17efeb82b7e35941ad7ca927902ccca22893c4f8d5d33f28ee9fc088dabf",
+      "bytes": 9196,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/recalibration.py",
+      "original_relative_path": "revision_v4_20261122/robustness/recalibration.py",
+      "sha256": "91a2dd465aa7b9e711cebe685a453ce2f31186ed7c4bd7979937f68bbe1c0ea3",
+      "bytes": 38538,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/recompute_case_mix_standardization.py",
+      "original_relative_path": "revision_v4_20261122/robustness/recompute_case_mix_standardization.py",
+      "sha256": "3c55a0e6c88ab057a18dabc40afdee5d85ce41bee47f7814c32474ae4a5dd36a",
+      "bytes": 7935,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/robustness_common.py",
+      "original_relative_path": "revision_v4_20261122/robustness/robustness_common.py",
+      "sha256": "f6490a01e5677bf9e9b879891772fd1e012748da3c7fa5e54cd184256b3fcd19",
+      "bytes": 28860,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/test_robustness.py",
+      "original_relative_path": "revision_v4_20261122/robustness/test_robustness.py",
+      "sha256": "27bf9ed5ad7bdd291d2fa431d208190e4863070f32f1a1384e9205abb7e336d0",
+      "bytes": 42244,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/baseline_features.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/baseline_features.py",
+      "sha256": "284e732d6866e1a077345b7dc138988cdcc493162508256b538919ea258de3ea",
+      "bytes": 5113,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/conventional_baselines.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/conventional_baselines.py",
+      "sha256": "39c82bff74cc01eb56129f4e6523f2ec952fe1deefc34f14e71894ac4bfc4310",
+      "bytes": 44115,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/paired_baselines.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/paired_baselines.py",
+      "sha256": "daaafc2a9b38f70c20bc4594597c962dfa046bb07c7baa8eeb661ceceb2f9422",
+      "bytes": 29702,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/transport_v4_2/frozen_source_transport.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/transport_v4_2/frozen_source_transport.py",
+      "sha256": "c369be9eda04acf9538a3ff069a2691cb87d9c596915507ce7a5d48c4ff87899",
+      "bytes": 57035,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/entry.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/entry.py",
+      "sha256": "5cfee1bc7ff1f7e5982879a80dba222ccca7469655066d61f45c049f1d19df06",
+      "bytes": 1991,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/hospital_heterogeneity.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/hospital_heterogeneity.py",
+      "sha256": "a38ce00157aac559231c72f5f75a349a09d5752ae48150bb06d427b5cc43d215",
+      "bytes": 55797,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/paired_auc_ap_ci.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/paired_auc_ap_ci.py",
+      "sha256": "3a86584231e02529186c59954cc95b87444e5a355fe4bbc4df044e8f3be920fa",
+      "bytes": 17948,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/recalibration.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/recalibration.py",
+      "sha256": "91a2dd465aa7b9e711cebe685a453ce2f31186ed7c4bd7979937f68bbe1c0ea3",
+      "bytes": 38538,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/robustness_common.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/robustness_common.py",
+      "sha256": "f6490a01e5677bf9e9b879891772fd1e012748da3c7fa5e54cd184256b3fcd19",
+      "bytes": 28860,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/transport_analysis.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/transport_analysis.py",
+      "sha256": "69193231aeb1289951734f276991203b54a3b5a737fd0ba72a74ce9a10f96578",
+      "bytes": 47713,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/baseline_features.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/baseline_features.py",
+      "sha256": "284e732d6866e1a077345b7dc138988cdcc493162508256b538919ea258de3ea",
+      "bytes": 5113,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/conventional_baselines.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/conventional_baselines.py",
+      "sha256": "39c82bff74cc01eb56129f4e6523f2ec952fe1deefc34f14e71894ac4bfc4310",
+      "bytes": 44115,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/paired_baselines.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/paired_baselines.py",
+      "sha256": "daaafc2a9b38f70c20bc4594597c962dfa046bb07c7baa8eeb661ceceb2f9422",
+      "bytes": 29702,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/transport_v4_2/frozen_source_transport.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/transport_v4_2/frozen_source_transport.py",
+      "sha256": "8ea7a68b706d4a41e7290754e1dfcf3b912dfacb3af4a68860ca54ce7ec5b75c",
+      "bytes": 57072,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/entry.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/entry.py",
+      "sha256": "9e32dc50c840e644ac7711855f9bcedb9280bd1c0b96a1d575261eb65b3d19a5",
+      "bytes": 2684,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/attest_eicu_draw_hashes_r2.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/attest_eicu_draw_hashes_r2.py",
+      "sha256": "f2f11311148b98aedb3dd7ed8310bb6ffacbd9649127fe159563c6b79785e242",
+      "bytes": 10347,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/hospital_heterogeneity.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/hospital_heterogeneity.py",
+      "sha256": "a38ce00157aac559231c72f5f75a349a09d5752ae48150bb06d427b5cc43d215",
+      "bytes": 55797,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/paired_auc_ap_ci.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/paired_auc_ap_ci.py",
+      "sha256": "3a86584231e02529186c59954cc95b87444e5a355fe4bbc4df044e8f3be920fa",
+      "bytes": 17948,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/paired_auc_ap_preflight.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/paired_auc_ap_preflight.py",
+      "sha256": "27ba2e7ed9bbbd2040dd443605bdbc47cb245eb863c62aefb73301862cec25b0",
+      "bytes": 3302,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/recalibration.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/recalibration.py",
+      "sha256": "91a2dd465aa7b9e711cebe685a453ce2f31186ed7c4bd7979937f68bbe1c0ea3",
+      "bytes": 38538,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/robustness_common.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/robustness_common.py",
+      "sha256": "f6490a01e5677bf9e9b879891772fd1e012748da3c7fa5e54cd184256b3fcd19",
+      "bytes": 28860,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/transport_analysis.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/transport_analysis.py",
+      "sha256": "715a6ed3d0c56c8d35a3887f8c8557c87ec8ca9f0da22a674ed0a5037cebbcba",
+      "bytes": 47769,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/paired_auc_ap_ci.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/paired_auc_ap_ci.py",
+      "sha256": "3a86584231e02529186c59954cc95b87444e5a355fe4bbc4df044e8f3be920fa",
+      "bytes": 17948,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/test_transport_analysis.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/test_transport_analysis.py",
+      "sha256": "38914a11307de3ec4113d2f71da5f312422bfb124713094750af2d252ef1e6ee",
+      "bytes": 7275,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/transport_v4_2/transport_analysis.py",
+      "original_relative_path": "revision_v4_20261122/robustness/transport_v4_2/transport_analysis.py",
+      "sha256": "222ab1bfb64dcf77067ccd71621e414b1c3131f5942589b1a7028da391126396",
+      "bytes": 47559,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/update_motor_provenance.py",
+      "original_relative_path": "revision_v4_20261122/robustness/update_motor_provenance.py",
+      "sha256": "fcc218fe592707d556cee502f480e98bf080dff46ae36783f80909bf13a4ea7d",
+      "bytes": 5081,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/robustness/verify_robustness_continuation_outputs.py",
+      "original_relative_path": "revision_v4_20261122/robustness/verify_robustness_continuation_outputs.py",
+      "sha256": "6ec7abe720f631f97b3383278d20789a27346dae39d78c1c0f96112ca7ae56dd",
+      "bytes": 11293,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/semantic_contrast/semantic_contrast.py",
+      "original_relative_path": "revision_v4_20261122/semantic_contrast/semantic_contrast.py",
+      "sha256": "097339df709f5a046c671824015360496beec6877beee60dd4a86d4beb2a2c68",
+      "bytes": 27198,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/semantic_contrast/test_semantic_contrast.py",
+      "original_relative_path": "revision_v4_20261122/semantic_contrast/test_semantic_contrast.py",
+      "sha256": "bb7eeec1067773c70ae92e1f1e7c942b9043dee9be0d2d55563af4b63f2a0008",
+      "bytes": 2271,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/build_c2012_v4.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/build_c2012_v4.py",
+      "sha256": "b5b149d90199bbcf4aa54a48d10bfeb94dbac985bcbcf2c61f210c16ce51fe15",
+      "bytes": 42570,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/derive_variants.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/derive_variants.py",
+      "sha256": "a083c1bfe914dd4763f67ee78bc81ca1b9b67907ab05bf04dedc825f12e57485",
+      "bytes": 24441,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/finalize_core.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/finalize_core.py",
+      "sha256": "d52ed1c4ab9e48b06d9f65481b76b8d51e3a9086310b5f9b4dfb52605d1410e1",
+      "bytes": 17328,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/inspect_snapshot_schema.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/inspect_snapshot_schema.py",
+      "sha256": "780deb16269b0c8fb6e94d1899c260ef861d2e01c88767246dfb06c5dd7f0ccd",
+      "bytes": 733,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/qualify_c2012_a.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/qualify_c2012_a.py",
+      "sha256": "675a36088850d81b77c0010f3380a4ff9e6aa91c81b3be2bd9dbc225d5474b44",
+      "bytes": 12075,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/rebuild_metadata_cache.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/rebuild_metadata_cache.py",
+      "sha256": "8be9e297c1d89e4fa6f3d398c9bdb76fae1c151273370d6bb17eac3f8ef131a9",
+      "bytes": 11264,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/repair_landmark.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/repair_landmark.py",
+      "sha256": "a3852256bb22536fc192f9310b90aa0db79a57cee468c5c978f2fe76a24f9608",
+      "bytes": 54619,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/run_variants.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/run_variants.py",
+      "sha256": "8067fe3e5a21d40f9e986398ffc43d594f70d630d8c4358d983c1124bb02825e",
+      "bytes": 1881,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/status_consistent_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/status_consistent_v4_1.py",
+      "sha256": "278dbf2be1d5b9b5d971035fab8ac193dda9fda98ece84b16c08fc6878e46911",
+      "bytes": 35363,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/test_build_c2012_v4.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/test_build_c2012_v4.py",
+      "sha256": "a6b67140a2b5d8f1b6a64d1385958f2cfddd6a7a46d6c8ccdce8a80b2a680f4f",
+      "bytes": 5099,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/test_status_consistent_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/test_status_consistent_v4_1.py",
+      "sha256": "32eecbea7dfbf6a0d1312479a71bb6306460379d3c7983cacd021471d6cae376",
+      "bytes": 3741,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/verify_core.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/verify_core.py",
+      "sha256": "d8e01b84835c1097b91118a5f2a90bca7556df9bc541223ea61dd53314f4ace4",
+      "bytes": 15793,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/verify_status_consistent_v4_1.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/verify_status_consistent_v4_1.py",
+      "sha256": "2ead476302d1a565b040cfeceac46951552e0a1feaadfc01209d11d5dcafa014",
+      "bytes": 26453,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/verify_variants.py",
+      "original_relative_path": "revision_v4_20261122/temporal/code/verify_variants.py",
+      "sha256": "46cbae5240a0aafe8d080ea1e116c51dd77027aad0cebe90b7b0446c844c3217",
+      "bytes": 13757,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/add_raw_reference_table_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/add_raw_reference_table_v5.py",
+      "sha256": "868680d2fb5899fdbb41898e55575503c2ae7c75dc67b8c7f49b7a01d0e2a1b6",
+      "bytes": 2795,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/assemble_publication_figures_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/assemble_publication_figures_v5.py",
+      "sha256": "611f53c4fadb655c8b55b48640d09b39caa6b1924d113104b0b2034b2e5f2c7e",
+      "bytes": 8083,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/build_calibration_figure_specs_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/build_calibration_figure_specs_v5.py",
+      "sha256": "3d19c4127570cd808a69997104b74cc13bdc6434f6aa2f5a9fc10608461d9240",
+      "bytes": 39427,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/build_controls_figure_specs_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/build_controls_figure_specs_v5.py",
+      "sha256": "9aac944fad858e66c1174cd95c5b940dcc161a80cf5ac2ae04003263c10b72d6",
+      "bytes": 34022,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/build_sensitivity_figure_specs_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/build_sensitivity_figure_specs_v5.py",
+      "sha256": "e29deb8c616199f104184dfa31ec93701ff2ee7410c20f1fe31df692e48b3048",
+      "bytes": 6226,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/build_tables_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/build_tables_v5.py",
+      "sha256": "fb46bc4875560ad44bdbae7814a39b07e75d2e2a035801080031a367a1a24f35",
+      "bytes": 23753,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/finalize_aggregate_products_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/finalize_aggregate_products_v5.py",
+      "sha256": "9c46d8d642df36ef03824b48b1fb97511691dfb27d4a9af3b3b014e0158a123b",
+      "bytes": 2685,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/plot_v5_figures.py",
+      "original_relative_path": "revision_v5_20261123/scripts/plot_v5_figures.py",
+      "sha256": "51ad65cca6bc71fd9de9f114446c263480ab697b0a4ef99e28375f9ba9b7dd6e",
+      "bytes": 12512,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/prepare_calibration_publication_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/prepare_calibration_publication_v5.py",
+      "sha256": "b786bc86c46bcf926561ed67d5700cc5ad04b5b4b51a8e3ab99a1836b433c428",
+      "bytes": 1238,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/prepare_tables_and_calibration_preview_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/prepare_tables_and_calibration_preview_v5.py",
+      "sha256": "eaf1f21265ad9ab45b5958dfb9c5ad0d9bcccc12d3e639d232309a3b702d3a3c",
+      "bytes": 1689,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/stable_site_summary_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/stable_site_summary_v5.py",
+      "sha256": "1c28b0fe7fbf1c6d8d1f16c98ff641aa3894cc9173764fc41e26d68ebc28d0bc",
+      "bytes": 2063,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_availability_eligible_addendum.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_availability_eligible_addendum.py",
+      "sha256": "f3c7ae99660ccba1518c6120b6f584ea87f97a5fca33f7d4e11281ab9d553387",
+      "bytes": 26007,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_cache_validator.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_cache_validator.py",
+      "sha256": "d6e35716e4939099b4e2d36301e53b0c4bf347b4eca0dc27bbdb12030623b29e",
+      "bytes": 9851,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_calibration_sites.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_calibration_sites.py",
+      "sha256": "6eb68c44cf6091053f75b705fdafe9f1fce505905341c6be5c1bb6263d7bfaa6",
+      "bytes": 109058,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_clean_pretraining_evaluate.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_clean_pretraining_evaluate.py",
+      "sha256": "09de87ef2e920b3669babf10f83c8b179c5b8ac32611386f29fafa616321ea84",
+      "bytes": 30961,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_clean_pretraining_gpu.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_clean_pretraining_gpu.py",
+      "sha256": "b8aced927533ba18370e6e74c7385f2f9af7f042fa54f425a5067c5d3454aa0b",
+      "bytes": 30748,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_clean_pretraining_prepare.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_clean_pretraining_prepare.py",
+      "sha256": "73dde67c1d0b99e55889299b01cbc6fb2afef3b682a9f57c937b3491de4d9dc8",
+      "bytes": 45231,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_clean_pretraining_prepare_v2_unicode.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_clean_pretraining_prepare_v2_unicode.py",
+      "sha256": "766a106f6be3e765143054ce3b5395c88be503007a6bf1d94e6684a51335a1dd",
+      "bytes": 45240,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_curve_tools.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_curve_tools.py",
+      "sha256": "a4aff19600d8c288dc1048697ed21144762e16b5386651fa560fa2c64c39ed39",
+      "bytes": 8902,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_eligible_clinical_summary.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_eligible_clinical_summary.py",
+      "sha256": "138e434d7a3f620d9bafc75e077fd52e8f81c1d0b5617be20ae9811df9b18a54",
+      "bytes": 19781,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_numeric_token_decoder.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_numeric_token_decoder.py",
+      "sha256": "fcda9f8d77cdc346f84fe0b4e719313552df8811086fb1a643ba0285b379d6fd",
+      "bytes": 34518,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_numeric_token_decoder_recovery.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_numeric_token_decoder_recovery.py",
+      "sha256": "f7e678ec2179b108baca4dc1d40130d7ef7706f01abe6e539f6095c796bbfa78",
+      "bytes": 1076,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_representation_controls_gpu.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_representation_controls_gpu.py",
+      "sha256": "9f2bcb416c3f2a0fe36216bce73f7ec476efb18eed51ce154f3d8e8f271075cd",
+      "bytes": 32551,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_representation_controls_readout.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_representation_controls_readout.py",
+      "sha256": "fcf6e4904c81ebd23cc606bb68fe7a9b830cd7c37638249adcd37e36784bb7c4",
+      "bytes": 55050,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_representation_controls_readout_r4.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_representation_controls_readout_r4.py",
+      "sha256": "3ceecd5ddf6c78d1f926428c259848ea5bed425b932e870785909539066b4e09",
+      "bytes": 57371,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_representation_controls_score.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_representation_controls_score.py",
+      "sha256": "6d338e063c86d0b3e18444d094949c5b22241179f77afc43642f359553ee8d98",
+      "bytes": 28033,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_temporal_bridge.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_temporal_bridge.py",
+      "sha256": "5a67449ececc98a392451e067514a7575306bade7b5ed0a89e4d112b9845e3a0",
+      "bytes": 130409,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_temporal_bridge_io_v2.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_temporal_bridge_io_v2.py",
+      "sha256": "7f7a3a7e0eca39bcd0a5c91e137dbdb4f01f1ec4910fa1d7e76c9847f9078709",
+      "bytes": 132016,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_temporal_bridge_io_v3.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_temporal_bridge_io_v3.py",
+      "sha256": "27f88f1150b4bbe79e6df075f8c69ae0083d498e9449b4b2424a252b00584365",
+      "bytes": 149935,
+      "license": "MIT",
+      "role": "retained scientific temporal/ICU bridge IO variant"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_temporal_bridge_io_v4.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_temporal_bridge_io_v4.py",
+      "sha256": "9496e73611e834884c34a7ff4885029f64f6d134df07105bde41ed6e0f3cb4a1",
+      "bytes": 155910,
+      "license": "MIT",
+      "role": "retained scientific temporal/ICU bridge IO variant"
+    },
+    {
+      "path": "archive/original/revision_v5_20261123/scripts/v5_temporal_bridge_io_v5.py",
+      "original_relative_path": "revision_v5_20261123/scripts/v5_temporal_bridge_io_v5.py",
+      "sha256": "887d2c54767d336ba657d98dadc24c1bb797665d52fb9f99ac7ab6e56df707ec",
+      "bytes": 159739,
+      "license": "MIT",
+      "role": "retained scientific temporal/ICU bridge IO variant"
+    },
+    {
+      "path": "archive/original/revision_v7_20261124/scripts/clean_calibration_extension_v7.py",
+      "original_relative_path": "revision_v7_20261124/scripts/clean_calibration_extension_v7.py",
+      "sha256": "15432afbf4c427affb73af337e7eddc32b8e4c47b2900cee88695c2581627280",
+      "bytes": 13944,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v7_20261124/scripts/plot_temporal_v7.py",
+      "original_relative_path": "revision_v7_20261124/scripts/plot_temporal_v7.py",
+      "sha256": "2aadbd0679061dd885f0976e2e0192ca8d96935f164586b8a5c9f9e3f980c27b",
+      "bytes": 5178,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v7_20261124/scripts/reconstruct_historical_members_v7.py",
+      "original_relative_path": "revision_v7_20261124/scripts/reconstruct_historical_members_v7.py",
+      "sha256": "c3c68a4843be5960f70914fc19c1544bbdd8851d98b52e12ec1acdc4f6a7ca5e",
+      "bytes": 3951,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    },
+    {
+      "path": "archive/original/revision_v7_20261124/scripts/temporal_availability_v7.py",
+      "original_relative_path": "revision_v7_20261124/scripts/temporal_availability_v7.py",
+      "sha256": "966629123d4d5269f1e28061deb4e98826d2a806bbee9b69c149141e9b3cf662",
+      "bytes": 72039,
+      "license": "MIT",
+      "role": "original analysis source; historical experiment scripts, not all stages are used in the final manuscript"
+    }
+  ],
+  "imports": {
+    "revision_v7_20261124/scripts/reconstruct_historical_members_v7.py": [
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "pyarrow"
+    ],
+    "revision_v7_20261124/scripts/plot_temporal_v7.py": [
+      "hashlib",
+      "json",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "revision_v7_20261124/scripts/clean_calibration_extension_v7.py": [
+      "gc",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "warnings"
+    ],
+    "revision_v7_20261124/scripts/temporal_availability_v7.py": [
+      "__future__",
+      "argparse",
+      "ast",
+      "csv",
+      "hashlib",
+      "importlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "re",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "torch",
+      "warnings"
+    ],
+    "revision_v5_20261123/scripts/prepare_tables_and_calibration_preview_v5.py": [
+      "contextlib",
+      "io",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "runpy",
+      "scipy",
+      "sklearn",
+      "sys"
+    ],
+    "revision_v5_20261123/scripts/prepare_calibration_publication_v5.py": [
+      "json",
+      "pathlib",
+      "runpy",
+      "sys"
+    ],
+    "revision_v5_20261123/scripts/plot_v5_figures.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "matplotlib",
+      "numpy",
+      "pathlib"
+    ],
+    "revision_v5_20261123/scripts/assemble_publication_figures_v5.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "tempfile",
+      "typing"
+    ],
+    "revision_v5_20261123/scripts/build_sensitivity_figure_specs_v5.py": [
+      "csv",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "revision_v5_20261123/scripts/build_controls_figure_specs_v5.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "io",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "re",
+      "tempfile",
+      "typing"
+    ],
+    "revision_v5_20261123/scripts/build_calibration_figure_specs_v5.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "re",
+      "tempfile",
+      "typing"
+    ],
+    "revision_v5_20261123/scripts/add_raw_reference_table_v5.py": [
+      "csv",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib"
+    ],
+    "revision_v5_20261123/scripts/build_tables_v5.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v5_20261123/scripts/finalize_aggregate_products_v5.py": [
+      "argparse",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys"
+    ],
+    "revision_v5_20261123/scripts/stable_site_summary_v5.py": [
+      "csv",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib"
+    ],
+    "revision_v5_20261123/scripts/v5_clean_pretraining_evaluate.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "pyarrow",
+      "scipy",
+      "sklearn",
+      "time",
+      "torch",
+      "v5_clean_pretraining_gpu"
+    ],
+    "revision_v5_20261123/scripts/v5_clean_pretraining_gpu.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "time",
+      "torch"
+    ],
+    "revision_v5_20261123/scripts/v5_clean_pretraining_prepare_v2_unicode.py": [
+      "argparse",
+      "ast",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "resource",
+      "time"
+    ],
+    "revision_v5_20261123/scripts/v5_clean_pretraining_prepare.py": [
+      "argparse",
+      "ast",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "resource",
+      "time"
+    ],
+    "revision_v5_20261123/scripts/v5_numeric_token_decoder_recovery.py": [
+      "__future__",
+      "os",
+      "pathlib",
+      "re",
+      "runpy",
+      "sys"
+    ],
+    "revision_v5_20261123/scripts/v5_numeric_token_decoder.py": [
+      "__future__",
+      "baseline_features",
+      "hashlib",
+      "json",
+      "numeric_decoding_repaired",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "re",
+      "sklearn",
+      "sys",
+      "threadpoolctl",
+      "time",
+      "typing",
+      "v5_cache_validator"
+    ],
+    "revision_v5_20261123/scripts/v5_cache_validator.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/baselines/baseline_features.py": [
+      "__future__",
+      "numpy"
+    ],
+    "revision_v4_20261122/decoding_repaired/numeric_decoding_repaired.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "collections",
+      "dataclasses",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "sys",
+      "typing",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/engine/code/v4_engine.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/engine/code/cohort_registry_v4.py": [
+      "__future__",
+      "dataclasses",
+      "json",
+      "pathlib",
+      "re",
+      "typing"
+    ],
+    "revision_v5_20261123/scripts/v5_representation_controls_readout_r4.py": [
+      "__future__",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "numeric_decoding_repaired",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "re",
+      "recalibration",
+      "scipy",
+      "sklearn",
+      "sys",
+      "threadpoolctl",
+      "time",
+      "transport_analysis",
+      "typing",
+      "v5_cache_validator"
+    ],
+    "revision_v4_20261122/robustness/recalibration.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/robustness_common.py": [
+      "__future__",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v5_20261123/scripts/v5_representation_controls_readout.py": [
+      "__future__",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "numeric_decoding_repaired",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "recalibration",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "transport_analysis",
+      "typing",
+      "v5_cache_validator"
+    ],
+    "revision_v5_20261123/scripts/v5_representation_controls_score.py": [
+      "__future__",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "v5_representation_controls_gpu",
+      "v5_representation_controls_readout_r4"
+    ],
+    "revision_v5_20261123/scripts/v5_representation_controls_gpu.py": [
+      "__future__",
+      "fm",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "pickle",
+      "re",
+      "time",
+      "torch",
+      "v5_cache_validator"
+    ],
+    "code/fm.py": [
+      "argparse",
+      "copy",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "scipy",
+      "sklearn",
+      "statsmodels",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "revision_v5_20261123/scripts/v5_curve_tools.py": [
+      "__future__",
+      "numpy"
+    ],
+    "revision_v5_20261123/scripts/v5_calibration_sites.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "hospital_heterogeneity",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "re",
+      "recalibration",
+      "scipy",
+      "sys",
+      "time",
+      "transport_analysis",
+      "typing",
+      "v5_curve_tools"
+    ],
+    "revision_v4_20261122/baselines/paired_baselines.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/hospital_heterogeneity.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing",
+      "warnings"
+    ],
+    "revision_v5_20261123/scripts/v5_availability_eligible_addendum.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "re"
+    ],
+    "revision_v5_20261123/scripts/v5_eligible_clinical_summary.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "re"
+    ],
+    "revision_v5_20261123/scripts/v5_temporal_bridge_io_v2.py": [
+      "__future__",
+      "baseline_features",
+      "csv",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "prepare_nwicu_discharge_v4",
+      "re",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "stat",
+      "sys",
+      "time",
+      "traceback",
+      "transport_analysis",
+      "typing",
+      "v5_curve_tools"
+    ],
+    "revision_v5_20261123/scripts/v5_temporal_bridge.py": [
+      "__future__",
+      "baseline_features",
+      "csv",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "prepare_nwicu_discharge_v4",
+      "re",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "traceback",
+      "transport_analysis",
+      "typing",
+      "v5_curve_tools"
+    ],
+    "revision_v4_20261122/c_big_source_reuse/pinned_engine_snapshots/v4_engine_registry_maskfix_vocabadapter_merged69_49cad3bc44d2.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/c_big_source_reuse/driver.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "importlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys"
+    ],
+    "revision_v4_20261122/c_big_metrics/aggregate_big9_external.py": [
+      "__future__",
+      "aggregate_big_metrics",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "semantic_contrast",
+      "sklearn",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/big_metrics/aggregate_big_metrics.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "semantic_contrast",
+      "sklearn",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/semantic_contrast/semantic_contrast.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sys",
+      "tempfile",
+      "time"
+    ],
+    "revision_v4_20261122/engine/code/paired_metrics_v4.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "itertools",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn"
+    ],
+    "revision_v4_20261122/c_proxy_metrics/c_proxy_metrics.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "revision_v4_20261122/big_readout/run_big_readout_frozen20.py": [
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "runpy",
+      "sys"
+    ],
+    "revision_v4_20261122/big_readout/preview_big_readout.py": [
+      "csv",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "runpy"
+    ],
+    "revision_v4_20261122/big_readout/v4_engine_big_frozen20.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/recovered_metrics/test_recovered_metrics.py": [
+      "argparse",
+      "hashlib",
+      "itertools",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_recovered_metrics",
+      "runpy",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/recovered_metrics/run_recovered_metrics.py": [
+      "__future__",
+      "argparse",
+      "copy",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "runpy",
+      "sys",
+      "tempfile",
+      "time"
+    ],
+    "revision_v4_20261122/semantic_contrast/test_semantic_contrast.py": [
+      "math",
+      "numpy",
+      "pytest",
+      "semantic_contrast",
+      "sklearn"
+    ],
+    "revision_v4_20261122/availability_metrics/paired_availability_metrics.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "revision_v4_20261122/calibrated_model_pairs/test_calibrated_pairs.py": [
+      "__future__",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "run_calibrated_pairs",
+      "sys",
+      "unittest"
+    ],
+    "revision_v4_20261122/calibrated_model_pairs/run_calibrated_pairs.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "sys",
+      "time",
+      "transport_analysis",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/transport_v4_2/frozen_source_transport.py": [
+      "__future__",
+      "argparse",
+      "conventional_baselines",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "robustness_common",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/baselines/conventional_baselines.py": [
+      "__future__",
+      "argparse",
+      "baseline_features",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "v4_engine",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/recalibration.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/robustness_common.py": [
+      "__future__",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/paired_auc_ap_ci.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "transport_analysis",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/transport_analysis.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "frozen_source_transport",
+      "hashlib",
+      "hospital_heterogeneity",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/hospital_heterogeneity.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/attest_eicu_draw_hashes_r2.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "transport_analysis",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/robustness/paired_auc_ap_preflight.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "paired_baselines",
+      "pathlib",
+      "transport_analysis",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/conventional_baselines.py": [
+      "__future__",
+      "argparse",
+      "baseline_features",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "v4_engine",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/paired_baselines.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/baselines/baseline_features.py": [
+      "__future__",
+      "numpy"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/transport_v4_2/frozen_source_transport.py": [
+      "__future__",
+      "argparse",
+      "conventional_baselines",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "robustness_common",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/recalibration.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/robustness_common.py": [
+      "__future__",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/paired_auc_ap_ci.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "transport_analysis",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/transport_analysis.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "frozen_source_transport",
+      "hashlib",
+      "hospital_heterogeneity",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/robustness/hospital_heterogeneity.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/conventional_baselines.py": [
+      "__future__",
+      "argparse",
+      "baseline_features",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "v4_engine",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/paired_baselines.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/baselines/baseline_features.py": [
+      "__future__",
+      "numpy"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root3/entry.py": [
+      "__future__",
+      "hashlib",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/execution_snapshots/paired_auc_ap_ci_20261123_root2/entry.py": [
+      "__future__",
+      "hashlib",
+      "pathlib",
+      "runpy",
+      "sys"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/paired_auc_ap_ci.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "transport_analysis",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/transport_analysis.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "frozen_source_transport",
+      "hashlib",
+      "hospital_heterogeneity",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/transport_v4_2/test_transport_analysis.py": [
+      "__future__",
+      "numpy",
+      "paired_auc_ap_ci",
+      "pandas",
+      "sklearn",
+      "transport_analysis",
+      "unittest"
+    ],
+    "revision_v4_20261122/robustness/test_robustness.py": [
+      "__future__",
+      "case_mix_selective",
+      "hashlib",
+      "hospital_heterogeneity",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/robustness/case_mix_selective.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/update_motor_provenance.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "os",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/motor_repeated_splits.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "sklearn",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/audit_case_mix_domains.py": [
+      "__future__",
+      "argparse",
+      "case_mix_selective",
+      "json",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/finalize_case_mix_from_saved_aggregates.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "shutil",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/verify_robustness_continuation_outputs.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/legacy_repeat_aggregate.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "revision_v4_20261122/robustness/recompute_case_mix_standardization.py": [
+      "__future__",
+      "argparse",
+      "case_mix_selective",
+      "json",
+      "pandas",
+      "pathlib",
+      "recalibration",
+      "robustness_common",
+      "shutil",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/audit_inspire_fixed500_calibration.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/robustness/inspire_fixed500_calibration.py": [
+      "__future__",
+      "argparse",
+      "conventional_baselines",
+      "hashlib",
+      "json",
+      "numpy",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "scipy",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/robustness/plot_hospital_v4.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "math",
+      "matplotlib",
+      "numpy",
+      "pathlib"
+    ],
+    "revision_v4_20261122/inspire/code/history_audit.py": [
+      "__future__",
+      "concurrent",
+      "json",
+      "pathlib"
+    ],
+    "revision_v4_20261122/inspire/code/event_feasibility.py": [
+      "__future__",
+      "concurrent",
+      "csv",
+      "gzip",
+      "hashlib",
+      "json",
+      "pandas",
+      "pathlib"
+    ],
+    "revision_v4_20261122/inspire/code/validate_sources.py": [
+      "__future__",
+      "concurrent",
+      "csv",
+      "gzip",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "revision_v4_20261122/inspire/code/detect_resources.py": [
+      "__future__",
+      "_common",
+      "argparse",
+      "csv",
+      "datetime",
+      "importlib",
+      "io",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "platform",
+      "re",
+      "shutil",
+      "subprocess",
+      "threading",
+      "typing"
+    ],
+    "revision_v4_20261122/inspire/code/_common.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "stat",
+      "sys",
+      "typing"
+    ],
+    "revision_v4_20261122/inspire/code/operations_feasibility.py": [
+      "__future__",
+      "json",
+      "pandas",
+      "pathlib"
+    ],
+    "revision_v4_20261122/density_repair/run_source_20261123_03/density_repair.py": [
+      "__future__",
+      "hashlib",
+      "numpy",
+      "os",
+      "pathlib",
+      "sklearn"
+    ],
+    "revision_v4_20261122/density_repair/run_source_20261123_03/fit_readout.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "density_repair",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sklearn",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/density_repair/run_source_20261123_03/encode_views.py": [
+      "__future__",
+      "decoding_motor_v2",
+      "density_repair",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "revision_v4_20261122/density_repair/run_source_20261123_02/density_repair.py": [
+      "__future__",
+      "hashlib",
+      "numpy",
+      "os",
+      "pathlib",
+      "sklearn"
+    ],
+    "revision_v4_20261122/density_repair/run_source_20261123_02/fit_readout.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "density_repair",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sklearn",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/density_repair/run_source_20261123_02/encode_views.py": [
+      "__future__",
+      "decoding_motor_v2",
+      "density_repair",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "revision_v4_20261122/density_repair/dev_code_20261123/density_repair.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sklearn"
+    ],
+    "revision_v4_20261122/density_repair/dev_code_20261123/fit_readout.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "density_repair",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sklearn",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/density_repair/dev_code_20261123/encode_views.py": [
+      "__future__",
+      "argparse",
+      "decoding_motor_v2",
+      "density_repair",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "revision_v4_20261122/density_repair/dev_code_20261123/verify_saved_run.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sklearn",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/density_repair/dev_code_20261123/test_density_repair.py": [
+      "density_repair",
+      "encode_views",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/density_repair/density_repair.py": [
+      "__future__",
+      "hashlib",
+      "numpy",
+      "sklearn"
+    ],
+    "revision_v4_20261122/density_repair/fit_readout.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "density_repair",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sklearn",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/density_repair/encode_views.py": [
+      "__future__",
+      "decoding_motor_v2",
+      "density_repair",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "revision_v4_20261122/density_repair/verify_saved_run.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "sklearn",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/decoding_repaired/release_audit/test_audit_numeric_decoding_release.py": [
+      "__future__",
+      "audit_numeric_decoding_release",
+      "json",
+      "pandas",
+      "unittest"
+    ],
+    "revision_v4_20261122/decoding_repaired/test_numeric_decoding_repaired.py": [
+      "__future__",
+      "json",
+      "numeric_decoding_repaired",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "types",
+      "unittest"
+    ],
+    "revision_v4_20261122/decoding/test_numeric_decoding_v4.py": [
+      "__future__",
+      "json",
+      "numeric_decoding_v4",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "types",
+      "unittest"
+    ],
+    "revision_v4_20261122/decoding/numeric_decoding_v4.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "collections",
+      "dataclasses",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sklearn",
+      "sys",
+      "typing",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/controls/no_mg/test_no_mg_sensitivity.py": [
+      "json",
+      "no_mg_sensitivity",
+      "numpy",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/controls/no_mg/no_mg_sensitivity.py": [
+      "__future__",
+      "argparse",
+      "copy",
+      "fm",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "platform",
+      "sklearn",
+      "sys",
+      "time",
+      "torch",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/controls/controls_cpu.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "scipy",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "time",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/controls/controls_gpu.py": [
+      "__future__",
+      "fm",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "platform",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "revision_v4_20261122/controls/plot_fixed_controls_v4.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "hashlib",
+      "json",
+      "matplotlib",
+      "numpy",
+      "pathlib"
+    ],
+    "revision_v4_20261122/baselines/transport_v4_2/frozen_source_transport.py": [
+      "__future__",
+      "argparse",
+      "conventional_baselines",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "robustness_common",
+      "sklearn",
+      "sys",
+      "time",
+      "typing",
+      "warnings"
+    ],
+    "revision_v4_20261122/baselines/transport_v4_2/test_transport.py": [
+      "__future__",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/baselines/test_conventional_baselines.py": [
+      "__future__",
+      "baseline_features",
+      "conventional_baselines",
+      "json",
+      "numpy",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/baselines/finalize_interrupted_primary.py": [
+      "__future__",
+      "argparse",
+      "conventional_baselines",
+      "json",
+      "numpy",
+      "paired_baselines",
+      "pandas",
+      "pathlib",
+      "sys",
+      "typing",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/availability_repair/scoring_authorization/test_finalize_availability_testonly_v4_1.py": [
+      "__future__",
+      "finalize_availability_testonly_v4_1",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "unittest"
+    ],
+    "revision_v4_20261122/availability_repair/scoring_authorization/finalize_availability_testonly_v4_1.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "sys",
+      "time",
+      "typing",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/availability_repair/fixedselection_postprocess_v4_1.py": [
+      "__future__",
+      "build_available_by24_v4_1",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "time"
+    ],
+    "revision_v4_20261122/availability_repair/build_available_by24_v4_1.py": [
+      "__future__",
+      "ast",
+      "collections",
+      "gzip",
+      "hashlib",
+      "io",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "sys",
+      "time"
+    ],
+    "revision_v4_20261122/availability_repair/test_fixedselection_postprocess_v4_1.py": [
+      "fixedselection_postprocess_v4_1",
+      "numpy",
+      "pandas",
+      "unittest"
+    ],
+    "revision_v4_20261122/availability_repair/audit_addendum_v4_1.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "time"
+    ],
+    "revision_v4_20261122/availability_repair/test_available_by24_v4_1.py": [
+      "build_available_by24_v4_1",
+      "gzip",
+      "hashlib",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/temporal/code/test_build_c2012_v4.py": [
+      "build_c2012_v4",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "sys",
+      "unittest"
+    ],
+    "revision_v4_20261122/temporal/code/build_c2012_v4.py": [
+      "__future__",
+      "argparse",
+      "ast",
+      "cohort_registry_v4",
+      "collections",
+      "csv",
+      "dataclasses",
+      "hashlib",
+      "io",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "re",
+      "sys",
+      "tarfile",
+      "tempfile",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/derive_variants.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/status_consistent_v4_1.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "shutil",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/inspect_snapshot_schema.py": [
+      "json",
+      "pathlib",
+      "pyarrow"
+    ],
+    "revision_v4_20261122/temporal/code/verify_core.py": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "revision_v4_20261122/temporal/code/finalize_core.py": [
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ],
+    "revision_v4_20261122/temporal/code/rebuild_metadata_cache.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "os",
+      "pandas",
+      "pathlib",
+      "repair_landmark",
+      "shutil",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/repair_landmark.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/verify_status_consistent_v4_1.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/verify_variants.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/test_status_consistent_v4_1.py": [
+      "pandas",
+      "status_consistent_v4_1",
+      "unittest",
+      "verify_status_consistent_v4_1"
+    ],
+    "revision_v4_20261122/temporal/code/qualify_c2012_a.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "revision_v4_20261122/temporal/code/run_variants.py": [
+      "__future__",
+      "derive_variants",
+      "hashlib",
+      "json",
+      "pathlib",
+      "rebuild_metadata_cache",
+      "sys",
+      "time",
+      "verify_variants"
+    ],
+    "revision_v4_20261122/engine/code/test_v4_engine_registered_vocab_adapter.py": [
+      "__future__",
+      "unittest",
+      "v4_engine_registry_maskfix_recovered_v4_2_resume_vocabadapter_21aae5dd"
+    ],
+    "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_vocabadapter_21aae5dd.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/engine/code/test_cohort_registry_v4.py": [
+      "cohort_registry_v4",
+      "json",
+      "pathlib",
+      "tempfile",
+      "unittest"
+    ],
+    "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix3.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/run_encode_availability_v4_1_gpu.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_18da7bee9da7.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_resume_reusefix_a725994d9d5d.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/engine/code/run_core_source_heads_cpu.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "runpy",
+      "scipy",
+      "sklearn",
+      "sys"
+    ],
+    "revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu_resume2.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "runpy",
+      "scipy",
+      "sklearn",
+      "sys"
+    ],
+    "revision_v4_20261122/engine/code/run_target_source_probe_reuse_merged69.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "runpy",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/verify_encoder_hash_recovered_v4_2.py": [
+      "__future__",
+      "json",
+      "pathlib",
+      "runpy"
+    ],
+    "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix1.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu_resume3.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "re",
+      "runpy",
+      "scipy",
+      "sklearn",
+      "sys"
+    ],
+    "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_preflightfix2.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/verify_encoder_hash_vocabfix_v4_2.py": [
+      "__future__",
+      "json",
+      "pathlib",
+      "runpy"
+    ],
+    "revision_v4_20261122/engine/code/run_paired_metrics_status_consistent_core_fix2.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "runpy"
+    ],
+    "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_vocabfix_4392d431eaa6.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/engine/code/verify_recovered_resume3_runner.py": [
+      "__future__",
+      "ast",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re"
+    ],
+    "revision_v4_20261122/engine/code/test_paired_metrics_v4.py": [
+      "hashlib",
+      "numpy",
+      "paired_metrics_v4",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "unittest",
+      "v4_engine"
+    ],
+    "revision_v4_20261122/engine/code/run_recovered_external_primary_v4_2_cpu.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pyarrow",
+      "runpy",
+      "scipy",
+      "sklearn",
+      "sys"
+    ],
+    "revision_v4_20261122/engine/code/freeze_merge_embedding_manifest_recovered_v4_2_merged69.py": [
+      "__future__",
+      "collections",
+      "hashlib",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/test_run_encode_inspire_v4_1_gpu.py": [
+      "__future__",
+      "copy",
+      "run_encode_inspire_v4_1_gpu_preflightfix3",
+      "unittest"
+    ],
+    "revision_v4_20261122/engine/code/run_encode_inspire_v4_1_gpu_root_20261123.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "runpy",
+      "sys",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/v4_engine_registry_maskfix_recovered_v4_2_ef70b4e857ce.py": [
+      "__future__",
+      "argparse",
+      "cohort_registry_v4",
+      "decoding_motor_v2",
+      "hashlib",
+      "inspect",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "platform",
+      "re",
+      "sklearn",
+      "sys",
+      "tempfile",
+      "torch",
+      "typing"
+    ],
+    "revision_v4_20261122/engine/code/merge_embedding_manifests_recovered_v4_2.py": [
+      "__future__",
+      "hashlib",
+      "itertools",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "tempfile"
+    ],
+    "revision_v4_20261122/engine/code/test_encode_availability_v4_1_gpu.py": [
+      "__future__",
+      "run_encode_availability_v4_1_gpu",
+      "unittest"
+    ],
+    "revision_v4_20261122/engine/code/test_v4_engine.py": [
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "pickle",
+      "tempfile",
+      "unittest",
+      "v4_engine"
+    ],
+    "code/value_decoding.py": [
+      "argparse",
+      "decoding_motor_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/tab_preds.py": [
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn"
+    ],
+    "code/sup.py": [
+      "argparse",
+      "fm",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sys",
+      "torch"
+    ],
+    "code/selective_tradeoff.py": [
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn"
+    ],
+    "code/report.py": [
+      "glob",
+      "json",
+      "matplotlib",
+      "numpy",
+      "os",
+      "pandas"
+    ],
+    "code/replicate.py": [
+      "analysis",
+      "fm",
+      "numpy",
+      "os",
+      "pandas",
+      "sys"
+    ],
+    "code/analysis.py": [
+      "argparse",
+      "fm",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys",
+      "time",
+      "torch"
+    ],
+    "code/reject_summary.py": [
+      "glob",
+      "numpy",
+      "os",
+      "pandas"
+    ],
+    "code/recal_budget_risk.py": [
+      "calibration_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/recal_budget.py": [
+      "fm",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys",
+      "torch"
+    ],
+    "code/recal.py": [
+      "glob",
+      "numpy",
+      "os",
+      "pandas",
+      "scipy",
+      "sklearn",
+      "sys"
+    ],
+    "code/probe_schemas.py": [
+      "collections",
+      "gzip",
+      "json",
+      "os",
+      "pandas",
+      "sys"
+    ],
+    "code/paired_ci.py": [
+      "fm",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys"
+    ],
+    "code/multiverse.py": [
+      "glob",
+      "os",
+      "pandas"
+    ],
+    "code/motor_value_experiment3.py": [
+      "argparse",
+      "decoding_motor_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/motor_value_experiment2.py": [
+      "argparse",
+      "decoding_motor_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/motor_value_experiment.py": [
+      "argparse",
+      "decoding_motor_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/motor_repr_test.py": [
+      "os",
+      "subprocess",
+      "sys"
+    ],
+    "code/motor_paired.py": [
+      "argparse",
+      "decoding_motor_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/motor_etl_test.py": [
+      "os",
+      "pandas",
+      "subprocess",
+      "sys"
+    ],
+    "code/motor_drop_diag.py": [
+      "os",
+      "pandas",
+      "re",
+      "shutil",
+      "subprocess",
+      "sys"
+    ],
+    "code/missing_only.py": [
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn"
+    ],
+    "code/make_mapping.py": [
+      "extract",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sys"
+    ],
+    "code/extract.py": [
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "polars",
+      "re",
+      "sys"
+    ],
+    "code/head_response_within.py": [
+      "fm",
+      "head_response",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys",
+      "torch"
+    ],
+    "code/head_response.py": [
+      "fm",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys",
+      "torch"
+    ],
+    "code/fix_ici.py": [
+      "glob",
+      "numpy",
+      "os",
+      "pandas"
+    ],
+    "code/final_pipeline.py": [
+      "argparse",
+      "calibration_v2",
+      "decoding_motor_v2",
+      "fresh_baseline_v2",
+      "pathlib",
+      "sys"
+    ],
+    "code/eicu_hospital.py": [
+      "argparse",
+      "calibration_v2",
+      "numpy",
+      "pathlib",
+      "sys"
+    ],
+    "code/density_perturb.py": [
+      "fm",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys",
+      "torch"
+    ],
+    "code/dca.py": [
+      "glob",
+      "numpy",
+      "os",
+      "pandas",
+      "sys"
+    ],
+    "code/common_vars.py": [
+      "fm",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys",
+      "torch"
+    ],
+    "code/ci.py": [
+      "glob",
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn",
+      "sys"
+    ],
+    "code/casemix.py": [
+      "numpy",
+      "os",
+      "pandas",
+      "sklearn"
+    ],
+    "code/c2012_build.py": [
+      "glob",
+      "numpy",
+      "os",
+      "pandas",
+      "re"
+    ],
+    "code/build_grid.py": [
+      "pandas"
+    ],
+    "code/build_data.py": [
+      "extract",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "sys"
+    ],
+    "code/attribution.py": [
+      "numpy",
+      "os",
+      "pandas",
+      "scipy",
+      "sklearn"
+    ],
+    "code/ablation.py": [
+      "argparse",
+      "decoding_motor_v2",
+      "pathlib",
+      "sys"
+    ],
+    "revision_v5_20261123/scripts/v5_temporal_bridge_io_v3.py": [
+      "__future__",
+      "baseline_features",
+      "csv",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "prepare_nwicu_discharge_v4",
+      "re",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "stat",
+      "sys",
+      "time",
+      "traceback",
+      "transport_analysis",
+      "typing",
+      "v5_curve_tools"
+    ],
+    "revision_v5_20261123/scripts/v5_temporal_bridge_io_v4.py": [
+      "__future__",
+      "baseline_features",
+      "csv",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "prepare_nwicu_discharge_v4",
+      "re",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "stat",
+      "sys",
+      "time",
+      "traceback",
+      "transport_analysis",
+      "typing",
+      "v5_curve_tools"
+    ],
+    "revision_v5_20261123/scripts/v5_temporal_bridge_io_v5.py": [
+      "__future__",
+      "baseline_features",
+      "csv",
+      "frozen_source_transport",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib",
+      "prepare_nwicu_discharge_v4",
+      "re",
+      "recalibration",
+      "robustness_common",
+      "scipy",
+      "sklearn",
+      "stat",
+      "sys",
+      "time",
+      "traceback",
+      "transport_analysis",
+      "typing",
+      "v5_curve_tools",
+      "warnings"
+    ]
+  },
+  "limitations": "Static import closure is included. Dynamic file paths and restricted intermediates still require the original layout and authorized inputs; no clean clinical rerun is claimed.",
+  "excluded_source_files": [
+    {
+      "path": "archive/original/revision_v4_20261122/temporal/code/test_repair_landmark.py",
+      "original_sha256": "bc705a7cb05067f6499201901e822a307e870ce2ec3f86b5c38b8a287ff3b258",
+      "reason": "Optional legacy test fixture contains a credential-like literal. It is not a producer dependency; excluded from public release without printing its value. Original retained privately."
+    }
+  ]
+}

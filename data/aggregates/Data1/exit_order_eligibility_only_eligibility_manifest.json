@@ -1,0 +1,325 @@
+{
+  "cohorts": {
+    "eicu": {
+      "clinical_input_availability_verified": false,
+      "counts": {
+        "hospitalid_coverage": 192805,
+        "hospitalid_coverage_eligible": 129186,
+        "hospitalid_unique_all": 207,
+        "hospitalid_unique_eligible": 206,
+        "n_adult_eligible": 192805,
+        "n_alive_at_24h": 188445,
+        "n_alive_at_24h_eligible": 129186,
+        "n_eicu_unit_expired_hospital_alive": 161,
+        "n_eligible_24h": 129186,
+        "n_eligible_negative": 117841,
+        "n_eligible_positive": 11345,
+        "n_hospital_admit_after_24h": 251,
+        "n_hospital_admit_after_24h_eligible": 148,
+        "n_hospital_admit_after_icu_start": 1300,
+        "n_hospital_admit_after_icu_start_eligible": 700,
+        "n_hospital_death": 16818,
+        "n_icu_death": 10199,
+        "n_in_icu_at_24h": 131770,
+        "n_in_icu_at_24h_eligible": 129186,
+        "n_input_available_24h": 192805,
+        "n_mimic_dod_death_by_24h_proven": 0,
+        "n_mimic_dod_death_by_24h_proven_eligible": 0,
+        "n_mimic_dod_interval_known": 0,
+        "n_mimic_dod_interval_overlaps_24h_uncertain": 0,
+        "n_mimic_dod_interval_overlaps_24h_uncertain_eligible": 0,
+        "n_mimic_dod_preindex_proven": 0,
+        "n_negative_hour_input_eligible": 0,
+        "n_negative_hour_input_rows": 0,
+        "n_post24_exit_order_issues": 1418,
+        "n_post24_exit_order_issues_eligible": 0,
+        "n_rows": 192805,
+        "n_source_endpoint_unknown_eligible": 0,
+        "n_source_endpoint_unknown_rows": 1689,
+        "n_source_label_mismatch_eligible": 0,
+        "n_source_label_mismatch_rows": 0,
+        "n_source_landmark_contradictions": 20,
+        "n_source_landmark_contradictions_eligible": 0,
+        "n_source_landmark_issues": 4275,
+        "n_source_landmark_issues_eligible": 0,
+        "n_source_time_status_conflicts_eligible": 0,
+        "n_source_time_status_conflicts_total": 181,
+        "n_temporal_verified": 186778,
+        "n_unique_stay_subject": 192805,
+        "post24_exit_order_all": {
+          "duration_hr_quantiles": {
+            "median": 0.36666666666666714,
+            "p05": 0.03333333333333144,
+            "p95": 5.572499999999983
+          },
+          "rows": 1418,
+          "source_label_distribution": {
+            "hospital_death_1": 598,
+            "hospital_survival_0": 774,
+            "unknown_or_nonbinary": 46
+          }
+        },
+        "post24_exit_order_eligible": {
+          "duration_hr_quantiles": {
+            "median": null,
+            "p05": null,
+            "p95": null
+          },
+          "rows": 0,
+          "source_label_distribution": {
+            "hospital_death_1": 0,
+            "hospital_survival_0": 0,
+            "unknown_or_nonbinary": 0
+          }
+        },
+        "reason_counts": {
+          "eligible_24h": 129186,
+          "not_in_icu_at_24h": 56234,
+          "post24_exit_order_sensitivity_exclusion": 1358,
+          "source_endpoint_unknown": 1653,
+          "source_landmark_issue": 4193,
+          "source_time_status_conflict": 181
+        },
+        "source_label_distribution_eligible": {
+          "hospital_death_1": 11345,
+          "hospital_survival_0": 117841,
+          "unknown_or_nonbinary": 0
+        }
+      },
+      "db": "eicu",
+      "eligibility_table_sha256": "10adb529987aacf9c46aa38e4f39e68aa5e0dd67c7c9d6196d4d05870d5e5ce4",
+      "endpoint": "hospital",
+      "evidence": "operational_proxy",
+      "evidencelevel": "operational_proxy",
+      "input_time_definition": {
+        "event_table": "events_eicu.parquet",
+        "min_hour": 0.0,
+        "n_events": 49330916,
+        "n_events_hour_ge_24": 31188215,
+        "n_events_hour_lt_24": 18142701,
+        "n_negative_hour_events": 0,
+        "n_negative_hour_stays_in_sequence": 0,
+        "n_stays_with_negative_hour": 0,
+        "negative_hour_input_clipping_risk": false,
+        "status": "documented"
+      },
+      "input_scope": "retrospective_measurement_time",
+      "inputs_temporal_scope": "retrospective_measurement_time",
+      "output": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/status_consistent_v4_1/strict_v4_1/eicu.parquet",
+      "ready_for_future24h_clinical_claim": false,
+      "ready_for_future24h_landmark_analysis": true,
+      "ready_for_retrospective_24h_measurement_analysis": true,
+      "retrospective_landmark_prediction_allowed": true,
+      "selected_keys_labels_sha256": "935a9bde259889dc6428ed14c316bc5dda82887b75f7b67cc2ce94bedafceda1",
+      "source_issue_definitions": {
+        "eicu_status_conflict": "unitdischargestatus is expired while hospitaldischargestatus is alive",
+        "hospital_admit_order": "recorded as an administrative timing flag only; does not independently exclude rows",
+        "mimic_dod_interval": "date-only DOD is represented as [midnight, next midnight); exclude only when interval upper bound is at or before 24h or at/before index",
+        "source_postlandmark_ordering_issue": "finite ICU exit is after finite hospital exit, with hospital exit after 24h; retained in the primary variant and excluded only in post24_exit_order_sensitivity"
+      },
+      "source_join_coverage": 1.0,
+      "source_metadata_evidence": {
+        "hospital_admit_after_24h_rows": 251,
+        "hospital_admit_after_icu_start_rows": 1300,
+        "hospital_death_source": "patient.hospitaldischargestatus; offset is discharge proxy",
+        "hospital_id_coverage": 192805,
+        "hospitalid_coverage": 192805,
+        "hospitalid_source": "eICU patient.hospitalid raw column",
+        "hospitalid_unique": 207,
+        "icu_exit_after_hospital_exit_after_24": 1418,
+        "icu_exit_source": "patient.unitdischargeoffset",
+        "mimic_dod_24h_overlap_uncertain_rows": 0,
+        "mimic_dod_preindex_proven_rows": 0,
+        "mimic_dod_proven_death_by_24h_rows": 0,
+        "mimic_patients_dod_precision": "date_only; bounds are [dod midnight, next midnight) relative to ICU intime",
+        "readiness_basis": "exact ICU/hospital discharge offsets plus explicit discharge-status mortality; death time is a discharge proxy",
+        "source_endpoint_unknown_count": 1689,
+        "source_join_coverage": 1.0,
+        "source_label_mismatch_count": 0,
+        "source_landmark_contradictions": 20,
+        "source_time_status_conflicts": 181,
+        "unit_expired_hospital_alive_conflict_rows": 161
+      },
+      "sourcefiles": [
+        "patient.csv.gz"
+      ],
+      "sourcehashes": {
+        "cohort_parquet": "1ddf7cc7282912f838f0d51f4fc037a7d881df42eb4a666f43212cd2aa8fa0b4",
+        "patient.csv.gz": "2acf25f75144c5fc8a2a5b68c6741edac2dc7ca51021127f73e12f7428dc392b",
+        "sequence_npz": "5255d2c39b011126b473d51c5fbf3284d554e18b133281064d7655a4cbad786a"
+      },
+      "status": "exact_icu_offsets_death_times_are_discharge_proxies",
+      "subject_identity_basis": {
+        "basis": "source uniquepid",
+        "patient_disjoint_claim_allowed": true
+      },
+      "variant": "strict_v4_1",
+      "variant_role": "post24_exit_order_sensitivity"
+    },
+    "mimic": {
+      "clinical_input_availability_verified": false,
+      "counts": {
+        "hospitalid_coverage": 0,
+        "hospitalid_coverage_eligible": 0,
+        "hospitalid_unique_all": 0,
+        "hospitalid_unique_eligible": 0,
+        "n_adult_eligible": 94343,
+        "n_alive_at_24h": 92289,
+        "n_alive_at_24h_eligible": 61783,
+        "n_eicu_unit_expired_hospital_alive": 0,
+        "n_eligible_24h": 61783,
+        "n_eligible_negative": 58667,
+        "n_eligible_positive": 3116,
+        "n_hospital_admit_after_24h": 1,
+        "n_hospital_admit_after_24h_eligible": 1,
+        "n_hospital_admit_after_icu_start": 449,
+        "n_hospital_admit_after_icu_start_eligible": 407,
+        "n_hospital_death": 11323,
+        "n_icu_death": 7319,
+        "n_in_icu_at_24h": 74565,
+        "n_in_icu_at_24h_eligible": 61783,
+        "n_input_available_24h": 94343,
+        "n_mimic_dod_death_by_24h_proven": 991,
+        "n_mimic_dod_death_by_24h_proven_eligible": 0,
+        "n_mimic_dod_interval_known": 37905,
+        "n_mimic_dod_interval_overlaps_24h_uncertain": 1712,
+        "n_mimic_dod_interval_overlaps_24h_uncertain_eligible": 11,
+        "n_mimic_dod_preindex_proven": 6,
+        "n_negative_hour_input_eligible": 0,
+        "n_negative_hour_input_rows": 0,
+        "n_post24_exit_order_issues": 12467,
+        "n_post24_exit_order_issues_eligible": 0,
+        "n_rows": 94343,
+        "n_source_endpoint_unknown_eligible": 0,
+        "n_source_endpoint_unknown_rows": 0,
+        "n_source_label_mismatch_eligible": 0,
+        "n_source_label_mismatch_rows": 0,
+        "n_source_landmark_contradictions": 248,
+        "n_source_landmark_contradictions_eligible": 0,
+        "n_source_landmark_issues": 4902,
+        "n_source_landmark_issues_eligible": 0,
+        "n_source_time_status_conflicts_eligible": 0,
+        "n_source_time_status_conflicts_total": 0,
+        "n_temporal_verified": 89428,
+        "n_unique_stay_subject": 94343,
+        "post24_exit_order_all": {
+          "duration_hr_quantiles": {
+            "median": 0.9413888888889232,
+            "p05": 0.01166666666666778,
+            "p95": 7.924055555555495
+          },
+          "rows": 12467,
+          "source_label_distribution": {
+            "hospital_death_1": 5340,
+            "hospital_survival_0": 7127,
+            "unknown_or_nonbinary": 0
+          }
+        },
+        "post24_exit_order_eligible": {
+          "duration_hr_quantiles": {
+            "median": null,
+            "p05": null,
+            "p95": null
+          },
+          "rows": 0,
+          "source_label_distribution": {
+            "hospital_death_1": 0,
+            "hospital_survival_0": 0,
+            "unknown_or_nonbinary": 0
+          }
+        },
+        "reason_counts": {
+          "eligible_24h": 61783,
+          "not_in_icu_at_24h": 15505,
+          "post24_exit_order_sensitivity_exclusion": 12153,
+          "source_landmark_issue": 3911,
+          "source_mimic_dod_death_by_24h_proven": 991
+        },
+        "source_label_distribution_eligible": {
+          "hospital_death_1": 3116,
+          "hospital_survival_0": 58667,
+          "unknown_or_nonbinary": 0
+        }
+      },
+      "db": "mimic",
+      "eligibility_table_sha256": "7a34f79d970fa2b02ec015671b2ea3317fa9602e4a10c64d9ed17153db494f60",
+      "endpoint": "hospital",
+      "evidence": "exact",
+      "evidencelevel": "exact",
+      "input_time_definition": {
+        "event_table": "events_mimic.parquet",
+        "min_hour": 0.0,
+        "n_events": 64772630,
+        "n_events_hour_ge_24": 41390150,
+        "n_events_hour_lt_24": 23382480,
+        "n_negative_hour_events": 0,
+        "n_negative_hour_stays_in_sequence": 0,
+        "n_stays_with_negative_hour": 0,
+        "negative_hour_input_clipping_risk": false,
+        "status": "documented"
+      },
+      "input_scope": "retrospective_measurement_time",
+      "inputs_temporal_scope": "retrospective_measurement_time",
+      "output": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/status_consistent_v4_1/strict_v4_1/mimic.parquet",
+      "ready_for_future24h_clinical_claim": false,
+      "ready_for_future24h_landmark_analysis": true,
+      "ready_for_retrospective_24h_measurement_analysis": true,
+      "retrospective_landmark_prediction_allowed": true,
+      "selected_keys_labels_sha256": "b8e7767f57bf36bef4063161d4c02858d4a269279ab1081cfdee9b9ffb1113da",
+      "source_issue_definitions": {
+        "eicu_status_conflict": "unitdischargestatus is expired while hospitaldischargestatus is alive",
+        "hospital_admit_order": "recorded as an administrative timing flag only; does not independently exclude rows",
+        "mimic_dod_interval": "date-only DOD is represented as [midnight, next midnight); exclude only when interval upper bound is at or before 24h or at/before index",
+        "source_postlandmark_ordering_issue": "finite ICU exit is after finite hospital exit, with hospital exit after 24h; retained in the primary variant and excluded only in post24_exit_order_sensitivity"
+      },
+      "source_join_coverage": 1.0,
+      "source_metadata_evidence": {
+        "hospital_admit_after_24h_rows": 1,
+        "hospital_admit_after_icu_start_rows": 449,
+        "hospital_death_source": "admissions.deathtime; hospital_expire_flag",
+        "hospital_id_coverage": 0,
+        "hospitalid_coverage": 0,
+        "hospitalid_source": "not available in MIMIC admission rows",
+        "hospitalid_unique": 0,
+        "icu_exit_after_hospital_exit_after_24": 12467,
+        "icu_exit_source": "icustays.intime/outtime",
+        "mimic_dod_24h_overlap_uncertain_rows": 1712,
+        "mimic_dod_preindex_proven_rows": 6,
+        "mimic_dod_proven_death_by_24h_rows": 991,
+        "mimic_patients_dod_precision": "date_only; bounds are [dod midnight, next midnight) relative to ICU intime",
+        "readiness_basis": "exact ICU intime/outtime and hospital deathtime/dischtime source timestamps",
+        "source_endpoint_unknown_count": 0,
+        "source_join_coverage": 1.0,
+        "source_label_mismatch_count": 0,
+        "source_landmark_contradictions": 248,
+        "source_time_status_conflicts": 0,
+        "unit_expired_hospital_alive_conflict_rows": 0
+      },
+      "sourcefiles": [
+        "icustays.csv.gz",
+        "patients.csv.gz",
+        "admissions.csv.gz"
+      ],
+      "sourcehashes": {
+        "admissions.csv.gz": "a9584ed88e9ed664a2f66f86a5cf9fd175c8bb0af50e3b6115598b19e978384e",
+        "cohort_parquet": "dd1d06997e128a18475553b8e18cfd1c81b2cdd79f95e67ba1746afaea5cec2a",
+        "icustays.csv.gz": "3c590ed37f1fb7a77a128f2f6961f836001512ba81adcd0dfeced2702f96bc5f",
+        "patients.csv.gz": "4c7507de7ecad8c5ba7647ea4d26018e88ff6672c5fc22ab59c2a5697d687cdd",
+        "sequence_npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824"
+      },
+      "status": "exact_timestamp_metadata",
+      "subject_identity_basis": {
+        "basis": "source subject_id",
+        "patient_disjoint_claim_allowed": true
+      },
+      "variant": "strict_v4_1",
+      "variant_role": "post24_exit_order_sensitivity"
+    }
+  },
+  "derived_from": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/strict_v4_1",
+  "schema_version": "4.1",
+  "source_audit": "row-level retained source status plus date-bounded MIMIC patients.dod; no event rescan",
+  "status_consistency_version": "status_consistent_v4_1",
+  "variant": "strict_v4_1",
+  "variant_role": "post24_exit_order_sensitivity"
+}

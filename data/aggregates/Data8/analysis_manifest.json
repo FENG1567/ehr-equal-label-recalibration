@@ -1,0 +1,60 @@
+{
+  "base_seed": 20261123,
+  "bootstrap_replicates": 1000,
+  "clinical_input_availability_verified": false,
+  "clinical_promotion_allowed": false,
+  "cohorts": [
+    "c2012_a_v4_1",
+    "c2012_b_v4_1",
+    "c2012_c_v4_1"
+  ],
+  "contrast_type": "pipeline contrast; not a fixed-head input intervention",
+  "created_utc": "2026-11-23T00:32:21Z",
+  "estimand": "Paired metric difference full minus noMg on exact stay_id intersections; record_id_proxy clusters are resampled with all associated stays retained.",
+  "input_hashes": {
+    "full_eligibility_manifest_sha256": "165f8467a511fd6c6f4228d4c57a93aa3ec3fa6876776c482eea68cba9b2649b",
+    "full_eligibility_table_sha256": "366a2175172e841bd3077ff87378f3fc4e567d88bef76b06138be8c2ae05eb58",
+    "full_ordered_row_digest_sha256": "e435e1b6ce4cc2f5dda57edab2db44bcf079dab4a23505fcf1ee1fb03ceae981",
+    "full_prediction_file_sha256": "5e7c29b1f88e9fc3063c919e49bf08e72a0e99f5efc09c53bdcc2d7df72a5b30",
+    "full_source_npz_sha256": "0e7f1f81083f84658e5633048e6c4a3cb6f0439b747b15e542e13b0089cc7fdc",
+    "nomg_aggregate_sha256": "42b81883d2fc65ef922f50329514e2955ae3b21d10426b9a8aa9c07d1fa73d38",
+    "paired_metrics_helper_sha256": "52333539bbe73367e75c0d001497b8872d2e43fbaef71f1e382d49c02c536841",
+    "patient_predictions_sha256": "20332c11eaf12e2bb00306f25024f93978b60de4a3dd99caea57b7fbfbea4a12",
+    "prediction_manifest_sha256": "74897f72a3be38bf2ef5a71c244d5db1cd1bfe81e89d7e72198d9162867ad0e1",
+    "preflight_manifest_sha256": "a06103b08191821342f1379b7a992fec4bcc00fd5100c6aedff7ea5f9f682982",
+    "rank_recovery_audit_sha256": "71c25f4404eb543a4d5dc205cf629c7ebe5766014e588a2f9ce45d42fcce1080"
+  },
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "brier",
+    "logloss",
+    "calibration_slope",
+    "calibration_intercept",
+    "offset_intercept"
+  ],
+  "no_mg_aggregate_status": "complete_corrected_rank_metrics",
+  "no_mg_rank_audit_present": true,
+  "paired_flow_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_proxy_metrics/results/paired_c_proxy_full_vs_no_mg_v1/paired_c_proxy_sample_flow.csv",
+  "paired_flow_rows": 3,
+  "paired_flow_sha256": "992ec16a9994df81cab21042879c92648200e328cf3041752f8a2472a0b170b3",
+  "paired_metric_rows": 21,
+  "paired_metrics_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_proxy_metrics/results/paired_c_proxy_full_vs_no_mg_v1/paired_c_proxy_metrics.csv",
+  "paired_metrics_sha256": "fde25fef18cdde8488120a99b79d633271b0e4c8ea92c447850e72c8b638a1f0",
+  "patient_level_exported_to_local": false,
+  "refit_or_reencode_performed_in_this_analysis": false,
+  "resampling_unit": "record_id_proxy; not verified as independent patients",
+  "schema": "ehr_fm_c2012_full_vs_no_mg_paired_metrics_v1",
+  "scope_notes": [
+    "Scores are retrospective measurement-time predictions; clinical-time input availability is unverified.",
+    "Full and noMg conditions are compared as prediction pipelines, not as a fixed-head input intervention.",
+    "record_id_proxy is the resampling unit and is not verified as an independent-patient identifier.",
+    "Only aggregate metrics and sample-flow tables are exported; patient-level IDs and arrays remain server-only."
+  ],
+  "source_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/c21_source_reuse_merged99_20261123-88c3d7554db2ea17/prediction_manifest.json",
+  "source_prediction_manifest_sha256": "74897f72a3be38bf2ef5a71c244d5db1cd1bfe81e89d7e72198d9162867ad0e1",
+  "source_reuse_completion_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/c21_source_reuse_merged99_20261123-88c3d7554db2ea17/target_source_probe_reuse_completion.json",
+  "source_reuse_completion_sha256": "ec2951c407cfa6c1cd298c02de7cca5b204408c3fc8bf13312df179480f32088",
+  "source_reuse_run_id": "c21_source_reuse_merged99_20261123",
+  "status": "complete"
+}

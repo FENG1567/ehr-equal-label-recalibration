@@ -1,0 +1,583 @@
+{
+  "across_site_adaptation_summary.csv": {
+    "columns": [
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "object",
+        "name": "metric"
+      },
+      {
+        "dtype": "object",
+        "name": "aggregation"
+      },
+      {
+        "dtype": "object",
+        "name": "weighting"
+      },
+      {
+        "dtype": "object",
+        "name": "status"
+      },
+      {
+        "dtype": "int64",
+        "name": "selected_site_count"
+      },
+      {
+        "dtype": "int64",
+        "name": "feasible_site_count"
+      },
+      {
+        "dtype": "int64",
+        "name": "infeasible_site_count"
+      },
+      {
+        "dtype": "int64",
+        "name": "feasible_assessment_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "feasible_unique_assessment_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "feasible_site_patient_memberships"
+      },
+      {
+        "dtype": "int64",
+        "name": "global_cross_site_assessment_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "adaptation_repeats_averaged"
+      },
+      {
+        "dtype": "float64",
+        "name": "estimate"
+      },
+      {
+        "dtype": "float64",
+        "name": "bootstrap_ci_95_lower"
+      },
+      {
+        "dtype": "float64",
+        "name": "bootstrap_ci_95_upper"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_requested"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_valid"
+      },
+      {
+        "dtype": "object",
+        "name": "bootstrap_cluster_unit"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_attempts"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_successes"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failures"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failure_rate"
+      }
+    ],
+    "description": "Micro and macro stay- and patient-weighted losses over the same feasible site set at each budget, with explicit site/stay/patient denominators and 1000 shared global patient-cluster intervals.",
+    "rows": 240,
+    "sha256": "ee5e964b491617777f0a0111fe21901e8255797c21eebfbd4bf794bc08b8087e"
+  },
+  "original_v4_site_reference.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "status"
+      },
+      {
+        "dtype": "object",
+        "name": "source_metrics_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "source_manifest_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "source_status"
+      },
+      {
+        "dtype": "object",
+        "name": "source_scope"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "int64",
+        "name": "hospital_denominator"
+      },
+      {
+        "dtype": "int64",
+        "name": "finite_calibration_slope_points"
+      },
+      {
+        "dtype": "int64",
+        "name": "stable_sites_ge10_events_and_nonevents"
+      },
+      {
+        "dtype": "object",
+        "name": "stable_site_rule"
+      },
+      {
+        "dtype": "object",
+        "name": "counts_source"
+      }
+    ],
+    "description": "Historical eICU hospital denominator, finite calibration-slope points and stability-flag count from the verified original v4 metrics and manifest.",
+    "rows": 1,
+    "sha256": "8b98686233143e5e3b12efc1c4b515f91b3b55e435b564449ee33d41e2be27d2"
+  },
+  "site_adaptation_repeat_scores.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "hospitalid"
+      },
+      {
+        "dtype": "int64",
+        "name": "rank_by_eligible_patients"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "int64",
+        "name": "repeat"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "int64",
+        "name": "events"
+      },
+      {
+        "dtype": "int64",
+        "name": "nonevents"
+      },
+      {
+        "dtype": "bool",
+        "name": "fit_ok"
+      },
+      {
+        "dtype": "object",
+        "name": "fit_status"
+      },
+      {
+        "dtype": "bool",
+        "name": "fallback_used"
+      },
+      {
+        "dtype": "float64",
+        "name": "fallback_probability"
+      },
+      {
+        "dtype": "object",
+        "name": "sample_patient_set_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "sample_patient_index_stay_sha256"
+      },
+      {
+        "dtype": "int64",
+        "name": "sampling_seed"
+      },
+      {
+        "dtype": "int64",
+        "name": "n_adaptation_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_events"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_patient_weighted"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_patient_weighted"
+      },
+      {
+        "dtype": "float64",
+        "name": "mean_predicted_probability"
+      },
+      {
+        "dtype": "float64",
+        "name": "observed_event_rate"
+      }
+    ],
+    "description": "Full repeat-level 50/200/500 patient results for selected hospitals, both models, no-update/prevalence/Jeffreys/intercept/Platt, and stay- plus patient-weighted Brier/logloss.",
+    "rows": 144000,
+    "sha256": "49cc1efc932e65b87453ab9d0112c317c880625d3cead030e3cf0abd5fd8f22e"
+  },
+  "site_adaptation_summary.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "hospitalid"
+      },
+      {
+        "dtype": "int64",
+        "name": "rank_by_eligible_patients"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "object",
+        "name": "weighting"
+      },
+      {
+        "dtype": "object",
+        "name": "status"
+      },
+      {
+        "dtype": "bool",
+        "name": "feasible_site"
+      },
+      {
+        "dtype": "int64",
+        "name": "available_adaptation_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_site_patient_memberships"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_events"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_nonevents"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_attempts"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_successes"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failures"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failure_rate"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_mean"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_mean"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_p95"
+      },
+      {
+        "dtype": "int64",
+        "name": "adaptation_draws"
+      },
+      {
+        "dtype": "float64",
+        "name": "adaptation_event_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "adaptation_event_p95"
+      }
+    ],
+    "description": "Per-site, model, budget, method and weighting summary; infeasible cells retain both weighting rows and explicit adaptation/assessment denominators. Fit counts apply only to offset/intercept and Platt fits.",
+    "rows": 1440,
+    "sha256": "2d82cb05ab27ccbaac1d04a9f58e211af11707883092c6009cfd3a151079410c"
+  },
+  "site_basic_performance.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "scope"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "object",
+        "name": "hospitalid"
+      },
+      {
+        "dtype": "int64",
+        "name": "n_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "n_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "events"
+      },
+      {
+        "dtype": "int64",
+        "name": "nonevents"
+      },
+      {
+        "dtype": "float64",
+        "name": "prevalence"
+      },
+      {
+        "dtype": "float64",
+        "name": "auroc"
+      },
+      {
+        "dtype": "object",
+        "name": "auroc_status"
+      },
+      {
+        "dtype": "float64",
+        "name": "average_precision"
+      },
+      {
+        "dtype": "object",
+        "name": "average_precision_status"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss"
+      },
+      {
+        "dtype": "float64",
+        "name": "calibration_intercept"
+      },
+      {
+        "dtype": "float64",
+        "name": "calibration_slope"
+      },
+      {
+        "dtype": "object",
+        "name": "calibration_status"
+      },
+      {
+        "dtype": "bool",
+        "name": "site_stability_flag_ge10_events_and_nonevents"
+      },
+      {
+        "dtype": "bool",
+        "name": "site_stability_rule_excludes_from_cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "metric_status"
+      },
+      {
+        "dtype": "float64",
+        "name": "mean_predicted_probability"
+      },
+      {
+        "dtype": "float64",
+        "name": "observed_event_rate"
+      }
+    ],
+    "description": "Recomputed basic FM and V+P LR metrics at all 206 repaired eICU hospitals; all point estimates retained regardless of event count.",
+    "rows": 412,
+    "sha256": "416c433abaf20568ff18e1fa7574639562ef6614673811a1f08be36b2f7f4815"
+  },
+  "site_role_flow.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "hospitalid"
+      },
+      {
+        "dtype": "int64",
+        "name": "rank_by_eligible_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "eligible_unique_patients_all"
+      },
+      {
+        "dtype": "int64",
+        "name": "global_adaptation_patients_in_site"
+      },
+      {
+        "dtype": "int64",
+        "name": "global_assessment_patients_in_site"
+      },
+      {
+        "dtype": "int64",
+        "name": "global_assessment_stays_in_site"
+      },
+      {
+        "dtype": "int64",
+        "name": "patient_role_overlap"
+      },
+      {
+        "dtype": "int64",
+        "name": "patients_crossing_hospitals_global_eicu"
+      },
+      {
+        "dtype": "object",
+        "name": "adaptation_index_stay"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_rule"
+      },
+      {
+        "dtype": "int64",
+        "name": "index_stay_seed"
+      },
+      {
+        "dtype": "object",
+        "name": "sampling_seed_by_budget"
+      },
+      {
+        "dtype": "object",
+        "name": "time_design"
+      }
+    ],
+    "description": "Selected-site counts showing globally locked patient roles, adaptation and assessment support, and no temporal design.",
+    "rows": 24,
+    "sha256": "e960579111a56b7642e69670df6f147b49b278738632381cf6f2b672c6785d06"
+  },
+  "site_roster.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "hospitalid"
+      },
+      {
+        "dtype": "int64",
+        "name": "eligible_unique_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "eligible_stays"
+      },
+      {
+        "dtype": "bool",
+        "name": "selected_top24"
+      },
+      {
+        "dtype": "int64",
+        "name": "eligible_patient_rank_largest_first"
+      },
+      {
+        "dtype": "object",
+        "name": "tie_break"
+      }
+    ],
+    "description": "All 206 repaired eICU hospitals ranked by eligible unique-patient counts; the largest 24 are selected with an ascending hospital ID tie-break.",
+    "rows": 206,
+    "sha256": "9175e2814348d0316f751d53dd86ab08cd8cbf6a4159875abbc32c795cee049d"
+  }
+}

@@ -1,0 +1,13 @@
+cohort,model_id,selected_C,budget,method,metric,assessment_mean_loss,loss_scope,n_assessment_stays,n_assessment_patients,repeats,sampling_plan_sha256
+eicu_semantic_v4_2,main20k_C_selected,0.1,500,raw,brier,0.08397575708994565,raw point loss,65157,51479,200,a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032
+eicu_semantic_v4_2,main20k_C_selected,0.1,500,raw,logloss,0.29981609843760326,raw point loss,65157,51479,200,a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032
+eicu_semantic_v4_2,main20k_C_selected,0.1,500,offset_operational,brier,0.0815299262844344,per-stay loss averaged over all 200 fit-specific probabilities,65157,51479,200,a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032
+eicu_semantic_v4_2,main20k_C_selected,0.1,500,offset_operational,logloss,0.2972502718182112,per-stay loss averaged over all 200 fit-specific probabilities,65157,51479,200,a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032
+eicu_semantic_v4_2,main20k_C_selected,0.1,500,platt_operational,brier,0.0785347005706406,per-stay loss averaged over all 200 fit-specific probabilities,65157,51479,200,a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032
+eicu_semantic_v4_2,main20k_C_selected,0.1,500,platt_operational,logloss,0.2838088165221937,per-stay loss averaged over all 200 fit-specific probabilities,65157,51479,200,a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032
+nwicu_discharge_v4_1,main20k_C_selected,0.1,500,raw,brier,0.09529044327300468,raw point loss,10080,8693,200,77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372
+nwicu_discharge_v4_1,main20k_C_selected,0.1,500,raw,logloss,0.34546271320947386,raw point loss,10080,8693,200,77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372
+nwicu_discharge_v4_1,main20k_C_selected,0.1,500,offset_operational,brier,0.0950744498696826,per-stay loss averaged over all 200 fit-specific probabilities,10080,8693,200,77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372
+nwicu_discharge_v4_1,main20k_C_selected,0.1,500,offset_operational,logloss,0.3458339315117033,per-stay loss averaged over all 200 fit-specific probabilities,10080,8693,200,77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372
+nwicu_discharge_v4_1,main20k_C_selected,0.1,500,platt_operational,brier,0.09343669163630021,per-stay loss averaged over all 200 fit-specific probabilities,10080,8693,200,77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372
+nwicu_discharge_v4_1,main20k_C_selected,0.1,500,platt_operational,logloss,0.3296209113344176,per-stay loss averaged over all 200 fit-specific probabilities,10080,8693,200,77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372

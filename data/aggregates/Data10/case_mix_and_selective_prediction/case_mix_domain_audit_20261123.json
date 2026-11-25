@@ -1,0 +1,92 @@
+{
+  "cohorts": {
+    "eicu": {
+      "age_group_value_counts": {
+        "18-49": 19026,
+        "50-64": 29543,
+        "65-74": 23789,
+        "75+": 30599
+      },
+      "age_numeric_nonmissing": 102957,
+      "eligible_prediction_population": {
+        "eligibility_table_sha256": "d138fd4bf718f051af3aa39298958dad44ccdf2462b583d554e28d214028f04d",
+        "n_eligible_24h": 130544,
+        "n_joined": 130544,
+        "n_temporal_verified": 130544,
+        "prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3"
+      },
+      "n_selected_index_patients": 102957,
+      "normalized_age_sex_cell_counts": {
+        "18-49|female": 8549,
+        "18-49|male": 10470,
+        "50-64|female": 12362,
+        "50-64|male": 17176,
+        "65-74|female": 10445,
+        "65-74|male": 13342,
+        "75+|female": 15695,
+        "75+|male": 14898
+      },
+      "normalized_sex_value_counts": {
+        "<missing>": 20,
+        "female": 47051,
+        "male": 55886
+      },
+      "raw_age_dtype": "int64",
+      "raw_sex_dtype": "float64",
+      "raw_sex_value_counts": {
+        "0.0": 47051,
+        "1.0": 55886,
+        "<missing>": 20
+      },
+      "unrecognized_raw_sex_value_counts": {}
+    },
+    "mimic": {
+      "age_group_value_counts": {
+        "18-49": 1785,
+        "50-64": 2926,
+        "65-74": 2612,
+        "75+": 3525
+      },
+      "age_numeric_nonmissing": 10848,
+      "eligible_prediction_population": {
+        "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+        "n_eligible_24h": 14890,
+        "n_joined": 14890,
+        "n_temporal_verified": 14890,
+        "prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3"
+      },
+      "n_selected_index_patients": 10848,
+      "normalized_age_sex_cell_counts": {
+        "18-49|female": 795,
+        "18-49|male": 990,
+        "50-64|female": 1070,
+        "50-64|male": 1856,
+        "65-74|female": 1040,
+        "65-74|male": 1572,
+        "75+|female": 1694,
+        "75+|male": 1831
+      },
+      "normalized_sex_value_counts": {
+        "female": 4599,
+        "male": 6249
+      },
+      "raw_age_dtype": "int64",
+      "raw_sex_dtype": "int64",
+      "raw_sex_value_counts": {
+        "0": 4599,
+        "1": 6249
+      },
+      "unrecognized_raw_sex_value_counts": {}
+    }
+  },
+  "current_sex_normalization": "case_mix_selective.normalize_sex; 0/0.0=female and 1/1.0=male; unrecognized nonmissing codes are excluded",
+  "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+  "prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3",
+  "prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+  "scope": "aggregate-only; same current strict population and deterministic one-stay-per-patient selection as case_mix_selective",
+  "seed": 20261122,
+  "source_sex_mapping_reference": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/code/repair_landmark.py",
+  "source_sex_mapping_reference_sha256": "a3852256bb22536fc192f9310b90aa0db79a57cee468c5c978f2fe76a24f9608",
+  "source_sex_mapping_semantics": "MIMIC patients.gender M/F and eICU patient.gender Male/Female or M/F are mapped to 1=male, 0=female before eligibility output",
+  "status": "complete"
+}

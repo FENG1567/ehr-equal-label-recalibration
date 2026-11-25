@@ -1,0 +1,3 @@
+# Calendar-separated restricted-input sensitivity
+
+All three seeds, early and later assessment results, random-encoder comparisons and decision curves are retained. The late_adapt rows describe the500 fitted adaptation patients and are not independent validation. The later test contains12,872 patients and1,588 deaths. Source-only bins and pretraining are documented for these new runs. The change in input scope, time period and cohort is joint, so differences from the main comparison cannot be attributed solely to delayed recording. Storetime is a recorded-system proxy. Decision-curve intervals are pointwise and conditional, and do not establish clinical benefit.

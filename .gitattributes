@@ -1,0 +1,4 @@
+# Preserve source bytes and their SHA256 hashes on Windows and Linux.
+* -text
+*.pdf binary
+*.docx binary

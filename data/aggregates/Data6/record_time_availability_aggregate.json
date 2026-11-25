@@ -1,0 +1,80 @@
+{
+  "status": "cached_raw_record_time_audit_final_eligible_population",
+  "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+  "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+  "input_scope": "retrospective_measurement_time",
+  "clinical_input_availability_verified": false,
+  "counts_are": "mapped plausible raw records before hourly means and token subsampling, not retained token counts",
+  "tables": [
+    {
+      "mapped_records": 62291580,
+      "window_records": 15538773,
+      "late_storetime_records": 415363,
+      "unknown_storetime_records": 0,
+      "pre_icu_therapy_starts": 0,
+      "pre_icu_therapy_ended_before_icu": 0,
+      "stays_any_late_storetime": 46965,
+      "stays_any_unknown_storetime": 0,
+      "stays_any_pre_icu_therapy_start": 0,
+      "table": "chartevents",
+      "eligible_stays": 73936,
+      "audit_sha256": "ffaff2f7d705fa0c71ced03231e4ce6e5e79ce06fff77ff7f708ce67d4645c97"
+    },
+    {
+      "mapped_records": 15869743,
+      "window_records": 2814902,
+      "late_storetime_records": 61039,
+      "unknown_storetime_records": 0,
+      "pre_icu_therapy_starts": 0,
+      "pre_icu_therapy_ended_before_icu": 0,
+      "stays_any_late_storetime": 7852,
+      "stays_any_unknown_storetime": 0,
+      "stays_any_pre_icu_therapy_start": 0,
+      "table": "labevents",
+      "eligible_stays": 73936,
+      "audit_sha256": "24e824cb45d522ee18b287f7acc64120b43d186d90de92d46bae9d07c41f60a1"
+    },
+    {
+      "mapped_records": 1453469,
+      "window_records": 476318,
+      "late_storetime_records": 17403,
+      "unknown_storetime_records": 0,
+      "pre_icu_therapy_starts": 3938,
+      "pre_icu_therapy_ended_before_icu": 1330,
+      "stays_any_late_storetime": 9662,
+      "stays_any_unknown_storetime": 0,
+      "stays_any_pre_icu_therapy_start": 1728,
+      "table": "inputevents",
+      "eligible_stays": 73936,
+      "audit_sha256": "5b0ca14d300cc0c42e2c1df6f16ea60f2b14656359789374df095b69c9324f72"
+    },
+    {
+      "mapped_records": 9989,
+      "window_records": 1803,
+      "late_storetime_records": 768,
+      "unknown_storetime_records": 313,
+      "pre_icu_therapy_starts": 36,
+      "pre_icu_therapy_ended_before_icu": 11,
+      "stays_any_late_storetime": 746,
+      "stays_any_unknown_storetime": 302,
+      "stays_any_pre_icu_therapy_start": 31,
+      "table": "procedureevents",
+      "eligible_stays": 73936,
+      "audit_sha256": "2704afda4231dba0bafd4dc741fb304ce946ef2534598f5d8aaf87217b0e4dee"
+    },
+    {
+      "mapped_records": 3971671,
+      "window_records": 967367,
+      "late_storetime_records": 25339,
+      "unknown_storetime_records": 0,
+      "pre_icu_therapy_starts": 0,
+      "pre_icu_therapy_ended_before_icu": 0,
+      "stays_any_late_storetime": 19753,
+      "stays_any_unknown_storetime": 0,
+      "stays_any_pre_icu_therapy_start": 0,
+      "table": "outputevents",
+      "eligible_stays": 73936,
+      "audit_sha256": "6ddc5e1cced0257cffa983e29831b9c5ba26e00b9948ad38802bca81855df38d"
+    }
+  ]
+}

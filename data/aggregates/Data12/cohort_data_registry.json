@@ -1,0 +1,88 @@
+{
+  "cohorts": {
+    "nwicu_discharge_v4_1": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/seq_nwicu.npz",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/split_nwicu.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/tab_nwicu.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/meta_nwicu.json"
+    },
+    "sicdb_zero_offset_v4_2": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/seq_sicdb_zero_offset_v4_2.npz",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/split_sicdb_zero_offset_v4_2.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/tab_sicdb_zero_offset_v4_2.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/meta_sicdb_zero_offset_v4_2.json"
+    },
+    "eicu_semantic_v4_2": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/seq_eicu_semantic_v4_2.npz",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/split_eicu_semantic_v4_2.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/tab_eicu_semantic_v4_2.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/meta_eicu_semantic_v4_2.json"
+    },
+    "inspire_postop_v4_1": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/seq_inspire_postop_v4_1.npz",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/split_inspire_postop_v4_1.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/tab_inspire_postop_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/meta_mimic.json"
+    },
+    "inspire_broad_surgery_associated_v4_1": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/seq_inspire_broad_surgery_associated_v4_1.npz",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/split_inspire_broad_surgery_associated_v4_1.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/tab_inspire_broad_surgery_associated_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/meta_mimic.json"
+    },
+    "c2012_a_v4_1": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/A/seq_c2012_a_v4_1.npz",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/A/tab_c2012_a_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/A/meta_c2012_a_v4_1.json",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/c2012_external_reviewed_v4_2/split_c2012_a_v4_1_external_all2_v4_2.npy"
+    },
+    "c2012_b_v4_1": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/B/seq_c2012_b_v4_1.npz",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/B/tab_c2012_b_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/B/meta_c2012_b_v4_1.json",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/c2012_external_reviewed_v4_2/split_c2012_b_v4_1_external_all2_v4_2.npy"
+    },
+    "c2012_c_v4_1": {
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/C/seq_c2012_c_v4_1.npz",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/C/tab_c2012_c_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c2012_extension/results/c2012_v4_1/C/meta_c2012_c_v4_1.json",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/c2012_external_reviewed_v4_2/split_c2012_c_v4_1_external_all2_v4_2.npy"
+    },
+    "mimic_available_by24_fixedselection_v4_1": {
+      "analysis_role": "same_original_heldout_test_only_score_sensitivity",
+      "cohort_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/cohort_mimic_available_by24_fixedselection_v4_1.parquet",
+      "derivative_of": "mimic",
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/eligibility_manifest.json",
+      "eligibility_table_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/mimic_available_by24_fixedselection_v4_1.parquet",
+      "eligibility_table_sha256": "2760c4ff3cdb947bb60014ce41369f23d0a8fe62fc88924185606c73258eddd5",
+      "independent_external_cohort": false,
+      "resampling_unit": "patient",
+      "review_sha256": "503bcede649006f21c13097b178bf18c721c1657b6ec53764bd8da0d4cd1a13c",
+      "selection_by24_verified": false,
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/seq_mimic_available_by24_fixedselection_v4_1.npz",
+      "source_dataset_manifest_sha256": "48e5f65f78a69a0ed4e105381ab55ab431b257844f1e425dd5e18fff0b641aed",
+      "source_registry_fragment_sha256": "2570dfcd5fe33a8d4874c06bd8f65fd3ff98f4fb2034e52cc386dbc26aff3cba",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/split_mimic_available_by24_fixedselection_v4_1.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/tab_mimic_available_by24_fixedselection_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/vocab_mimic_available_by24_fixedselection_v4_1.json"
+    },
+    "mimic_available_by24_v4_1": {
+      "analysis_role": "same_original_heldout_test_only_score_sensitivity",
+      "cohort_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1/cohort_mimic_available_by24_v4_1.parquet",
+      "derivative_of": "mimic",
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/eligibility_manifest.json",
+      "eligibility_table_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/mimic_available_by24_v4_1.parquet",
+      "eligibility_table_sha256": "f0dc6501bc18eb36f556171009611bdb6da8ec3ea3b6fb6d18c17b4acc856444",
+      "independent_external_cohort": false,
+      "resampling_unit": "patient",
+      "review_sha256": "503bcede649006f21c13097b178bf18c721c1657b6ec53764bd8da0d4cd1a13c",
+      "selection_by24_verified": true,
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1/seq_mimic_available_by24_v4_1.npz",
+      "source_dataset_manifest_sha256": "3a0c7d58acef6339a6f87d1fc81d8803c8aaeaf870eae918539fb9891990aa84",
+      "source_registry_fragment_sha256": "12cd244dcc6ba4530b812dccd3f46067672d923b7ba444ac05a8d6a0925c38b0",
+      "split_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1/split_mimic_available_by24_v4_1.npy",
+      "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1/tab_mimic_available_by24_v4_1.parquet",
+      "vocab_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1/vocab_mimic_available_by24_v4_1.json"
+    }
+  }
+}

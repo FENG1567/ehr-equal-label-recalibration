@@ -1,0 +1,128 @@
+{
+  "status": "checkpoint_metadata_and_hashes_only",
+  "torch": "2.11.0+cu128",
+  "threads": 8,
+  "records": [
+    {
+      "tag": "main20k",
+      "file_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+      "file_bytes": 1646918,
+      "stored_db": "mimic",
+      "stored_n": 20000,
+      "stored_seed": 20261102,
+      "cfg": {
+        "d": 128,
+        "layers": 2,
+        "heads": 4,
+        "ff": 512,
+        "nvar": 48
+      },
+      "state_parameter_count": 409099,
+      "stored_metadata_keys": [
+        "cfg",
+        "tag",
+        "n",
+        "db",
+        "seed"
+      ],
+      "contains_explicit_training_members": false
+    },
+    {
+      "tag": "abl_const20k",
+      "file_sha256": "fae082f589bef8fdb1997bfbda5f7e69b283c12255da52c4e8ceba56d4453c42",
+      "file_bytes": 1647679,
+      "stored_db": "mimic",
+      "stored_n": 20000,
+      "stored_seed": 20261102,
+      "cfg": {
+        "d": 128,
+        "layers": 2,
+        "heads": 4,
+        "ff": 512,
+        "nvar": 48
+      },
+      "state_parameter_count": 409099,
+      "stored_metadata_keys": [
+        "cfg",
+        "tag",
+        "n",
+        "db",
+        "seed"
+      ],
+      "contains_explicit_training_members": false
+    },
+    {
+      "tag": "common20k",
+      "file_sha256": "22e290a3890f3c69202858a94da8dcf06ce77cfd541a9286815b1228de2237bd",
+      "file_bytes": 1648016,
+      "stored_db": "mimic",
+      "stored_n": 20000,
+      "stored_seed": 20261102,
+      "cfg": {
+        "d": 128,
+        "layers": 2,
+        "heads": 4,
+        "ff": 512,
+        "nvar": 48
+      },
+      "state_parameter_count": 409099,
+      "stored_metadata_keys": [
+        "cfg",
+        "tag",
+        "n",
+        "db",
+        "seed"
+      ],
+      "contains_explicit_training_members": false
+    },
+    {
+      "tag": "big50m",
+      "file_sha256": "44aea4192aca3a156ccccf778d0a209fc558ec5c040c86112ef016b9c7ebca91",
+      "file_bytes": 227143684,
+      "stored_db": "mimic+eicu",
+      "stored_n": 200000,
+      "stored_seed": 20261102,
+      "cfg": {
+        "d": 768,
+        "layers": 8,
+        "heads": 12,
+        "ff": 3072,
+        "nvar": 48
+      },
+      "state_parameter_count": 56778251,
+      "stored_metadata_keys": [
+        "cfg",
+        "tag",
+        "n",
+        "db",
+        "seed"
+      ],
+      "contains_explicit_training_members": false
+    },
+    {
+      "tag": "big50m_full",
+      "file_sha256": "898f0ddb20a11a3db062a0b03ed47017421a51eba28f1615c1ed68c4c99c8911",
+      "file_bytes": 227150629,
+      "stored_db": "mimic+eicu+nwicu+sicdb+hirid+c2012",
+      "stored_n": 265531,
+      "stored_seed": 20261102,
+      "cfg": {
+        "d": 768,
+        "layers": 8,
+        "heads": 12,
+        "ff": 3072,
+        "nvar": 48
+      },
+      "state_parameter_count": 56778251,
+      "stored_metadata_keys": [
+        "cfg",
+        "tag",
+        "n",
+        "db",
+        "seed"
+      ],
+      "contains_explicit_training_members": false
+    }
+  ],
+  "membership_limit": "Stored db/n/seed/config and current code can support conditional membership reconstruction; no historical sequence/split hash attestation is inferred."
+}

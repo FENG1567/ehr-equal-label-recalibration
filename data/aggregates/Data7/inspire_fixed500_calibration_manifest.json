@@ -1,0 +1,161 @@
+{
+  "actual_fixed_role_identity_verified_for_all_arms": true,
+  "adaptation_role_selection_performance_blind": true,
+  "analysis_ids": [
+    "original_ordinary_C1",
+    "ordinary_tuned",
+    "density_augmented",
+    "conventional_lr_pattern_only",
+    "conventional_hgb_pattern_only",
+    "conventional_lr_value_plus_pattern",
+    "conventional_hgb_value_plus_pattern"
+  ],
+  "analysis_role": "exploratory_external_only",
+  "assessment_only_metrics": true,
+  "clinical_input_availability_verified": false,
+  "cohorts": [
+    "inspire_postop_v4_1",
+    "inspire_broad_surgery_associated_v4_1"
+  ],
+  "confirmation_allowed": false,
+  "created_utc": "2026-11-23T00:20:08Z",
+  "cross_scope_patient_independence_verified": false,
+  "executed_runner_code_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/inspire_fixed500_calibration.py",
+  "executed_runner_code_sha256": "b1ab8d375ccd74b34ebab28f3a74f070854404ea14bb4c4e4c173c67343b7494",
+  "fixed_adaptation_budget": 500,
+  "fixed_role_seed": 20261122,
+  "methods": [
+    "raw",
+    "fixed500_platt",
+    "jeffreys_prevalence"
+  ],
+  "output_files": {
+    "inspire_fixed500_metrics.csv": {
+      "bytes": 19567,
+      "sha256": "d3b06d1c217862e14927bb3cfca6e2c69122b683859862fccb2595f8aaec7382"
+    },
+    "inspire_fixed500_paired_loss_ci.csv": {
+      "bytes": 23419,
+      "sha256": "9175e75101eea2b5936f4769ac2a36a36fd3d2d7d2e45cfa0038a38a71f93df2"
+    },
+    "inspire_fixed500_platt_fit_audit.csv": {
+      "bytes": 3220,
+      "sha256": "22b1395fc03e02ff92d0e45d1aefd2cb781139f41f9520ce31d247f92166c55e"
+    },
+    "inspire_fixed500_role_identity_audit.json": {
+      "bytes": 3073,
+      "sha256": "bdd2f799456207f6025cdf578eb720bd4e6870116d532adf3ec84d22ac95b5ad"
+    },
+    "predictions/inspire_fixed500_seven_arm_predictions.parquet": {
+      "bytes": 1177233,
+      "sha256": "87be88ebd2a41989e1d7bc2289c7077cebb798273a237bfa95c0a21307bb9ffe"
+    }
+  },
+  "patient_level_exported_to_local": false,
+  "platt_fit": {
+    "C": 1000000.0,
+    "failed_fit_fallback": "Jeffreys adaptation prevalence (events+0.5)/(n+1)",
+    "predictor": "logit(clipped frozen probability)",
+    "training_role": "fixed 500-patient adaptation role only"
+  },
+  "post_run_role_identity_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/inspire_fixed500_calibration_20261123_r1/inspire_fixed500_role_identity_audit.json",
+  "post_run_role_identity_audit_sha256": "bdd2f799456207f6025cdf578eb720bd4e6870116d532adf3ec84d22ac95b5ad",
+  "pragmatic_confirmation_min_events": 200,
+  "provenance": {
+    "assessment_lock_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/inspire_exploratory_locked_v4_1/assessment_lock.json",
+    "assessment_lock_sha256": "3ac72b0d60dc47c81d5fb894f827f573735f32e220f430852281947c10152ffd",
+    "calibration_scope": "fixed 500-patient adaptation role; fixed assessment role only",
+    "clinical_input_availability_verified": false,
+    "confirmation_allowed": false,
+    "cross_scope_patient_independence_verified": false,
+    "density_prediction_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/density_repair/inspire_frozen_scoring_v4_2/frozen_density_inspire_predictions.parquet",
+    "density_prediction_sha256": "347a21e0a79c37d290fccf1f07afdd09a8de4cd8c8094f078f4ad48dc6af3d8a",
+    "density_saved_source_audit_sha256": "4e3467901d4ac021096a51232e35a165845cab7cb03e36c81eacd42020247c5b",
+    "density_scoring_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/density_repair/inspire_frozen_scoring_v4_2/frozen_density_inspire_scoring_manifest.json",
+    "density_scoring_manifest_sha256": "f7ecb20849fb48205248f3a5146e4071be96fcf5f4ddf5c3c073529840cde551",
+    "density_source_fit_calls_for_target_scoring": 0,
+    "density_source_freeze_lock_sha256": "fc69bcbe2e6433fe5d6e055e4e288eba9634857eec642822aaf9d5d2b1da5f1d",
+    "fixed_role_counts": {
+      "inspire_broad_surgery_associated_v4_1": {
+        "adaptation_events": 24,
+        "adaptation_patients": 500,
+        "assessment_events": 186,
+        "assessment_nonevents": 5027,
+        "assessment_patients": 5213,
+        "locked_table_sha256": "b98088bf81d340fb87ccf8459e72a564bab8f0907b72a07f04a3c56259f942a4",
+        "n_patients": 5713
+      },
+      "inspire_postop_v4_1": {
+        "adaptation_events": 21,
+        "adaptation_patients": 500,
+        "assessment_events": 106,
+        "assessment_nonevents": 3252,
+        "assessment_patients": 3358,
+        "locked_table_sha256": "dda5fd386f8fac5106848f207b01be4dab019f7324fb7bd1c4bce94fa366bf6d",
+        "n_patients": 3858
+      }
+    },
+    "frozen_source_model_bundle_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/models/frozen_source_models.pkl",
+    "frozen_source_model_bundle_sha256": "e9a09363585f082a92e21628979830e47f35221584d3a9d60a267ae4b782b0b6",
+    "gate_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/inspire_exploratory_locked_v4_1/eligibility_manifest.json",
+    "gate_manifest_sha256": "97c7aeacacb2af9cfce63086d6dc5b9ce9838292a4197e43d3ec98d7f533c019",
+    "no_fit_engine_reuse_runs": [
+      {
+        "analysis_ids": [
+          "abl_const20k_constant",
+          "abl_const20k_real",
+          "common20k_common8_mask",
+          "main20k_common8_mask",
+          "main20k_constant",
+          "main20k_no_h0_therapy",
+          "main20k_real"
+        ],
+        "fit_source_probe_calls": 0,
+        "manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/inspire_core_source_reuse_m69_20261123-39444bed8e30c9db/prediction_manifest.json",
+        "manifest_sha256": "13302378f056e2b9785fb19e3b12cb666a60bb6b8066c25f16b36f950d716d05",
+        "n_prediction_entries": 14,
+        "prediction_file_hashes_verified": 14,
+        "reuse_completion_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/inspire_core_source_reuse_m69_20261123-39444bed8e30c9db/target_source_probe_reuse_completion.json",
+        "reuse_completion_sha256": "47e3460fccb38c41f0e42cc12337d8a0c11a1b8796bfa92e122a464ca25e77ba",
+        "run_id": "inspire_core_source_reuse_m69_20261123",
+        "used_for_seven_arm_calibration": false
+      },
+      {
+        "analysis_ids": [
+          "big50m_full_common8_mask",
+          "big50m_full_real",
+          "big50m_real"
+        ],
+        "fit_source_probe_calls": 0,
+        "manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/inspire_big_source_reuse_m69_20261123-834854b4b4f4d7a9/prediction_manifest.json",
+        "manifest_sha256": "f7a98b530d7b6284de62c5d030c52e79d36cc2d77ed88fad27ff4a4d7b4eb11d",
+        "n_prediction_entries": 6,
+        "prediction_file_hashes_verified": 6,
+        "reuse_completion_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/inspire_big_source_reuse_m69_20261123-834854b4b4f4d7a9/target_source_probe_reuse_completion.json",
+        "reuse_completion_sha256": "89f1bc17fa0a26f22ff2142e6ea3a73e96b8091d7817326e0b6efd8903eecf69",
+        "run_id": "inspire_big_source_reuse_m69_20261123",
+        "used_for_seven_arm_calibration": false
+      }
+    ],
+    "source_baseline_manifest_sha256": "8a6b858470bd358affba569343066edc758e06b8d7c5aa0ed3c20c1cedce785d",
+    "source_baseline_prediction_manifest_sha256": "fe4f1a597479ad961b6c94ad5f935debfe853699a844126122c7c8f68c8ef4c7",
+    "source_reproduction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json",
+    "source_reproduction_manifest_sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262",
+    "subject_identity_attestation_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+    "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+  },
+  "roles_redrawn": false,
+  "schema": "ehr_fm_inspire_fixed500_paired_calibration_v1",
+  "source_model_fit_calls_in_target_scoring_job": 0,
+  "source_probe_refit_calls_for_density_heads": 0,
+  "status": "complete",
+  "target_fit_calls": 14,
+  "target_fit_scope": "Platt calibrators only; one per arm and cohort, fit on fixed adaptation labels",
+  "uncertainty": {
+    "draws": 1000,
+    "paired_contrasts": "each arm versus original_ordinary_C1 under raw and fixed500_platt; primary contrasts are density_augmented versus original_ordinary_C1 and ordinary_tuned under fixed500_platt",
+    "shared_patient_weights_across_arms_and_methods": true,
+    "type": "conditional percentile bootstrap on fixed assessment predictions and fixed adaptation Platt fits",
+    "unit": "within-scope patient"
+  }
+}

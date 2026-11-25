@@ -1,0 +1,372 @@
+{
+  "run_id": "v5_temporal_bridge_audit_20261123T151936Z_2833855",
+  "status": "complete",
+  "seed": 20261123,
+  "runtime_limits": {
+    "declared_job_memory_max_bytes": 12884901888,
+    "declared_job_memory_max_gib": 12,
+    "declared_job_memory_swap_max_bytes": 0,
+    "declared_job_cpu_quota_percent": 200,
+    "resource_scope_source": "V5_RESOURCE_SCOPE and process cgroup files; user-1100.slice is not assumed to enclose this process"
+  },
+  "runtime_resource_evidence": {
+    "proc_self_cgroup": "0::/ehrv5.slice/ehrv5-temporal-audit-v4-cwd-20261123T151935Z-2833846.service",
+    "cgroup_v2_directory": "/sys/fs/cgroup/ehrv5.slice/ehrv5-temporal-audit-v4-cwd-20261123T151935Z-2833846.service",
+    "memory_max": "12884901888",
+    "memory_high": "max",
+    "memory_swap_max": "0",
+    "cpu_max": "200000 100000"
+  },
+  "nwicu_qualification_provenance": {
+    "status": "strict_db_stay_subject_label_join_passed",
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/qualification_dod_v2_metadata.parquet",
+    "sha256": "2f5fe655a0b9ac7a8bb372b01230e22ec4d58c1137728fa9535035d2aaa41b38",
+    "n_reviewed_rows": 27114,
+    "n_qualification_rows": 27114,
+    "n_matched_rows": 27114,
+    "n_unmatched_reviewed": 0,
+    "n_unmatched_qualification": 0,
+    "n_joint_missing_labels": 550,
+    "selected_labels_complete_binary": true,
+    "nonmissing_labels_binary_and_labels_equal": true,
+    "join_key": "db,stay_id,subject",
+    "gate_changed": false,
+    "restored_field": "current_hadm_hospital_death_time_hr"
+  },
+  "inputs": {
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/seq_mimic.npz": {
+      "exists": true,
+      "size_bytes": 14248851
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/seq_eicu_semantic_v4_2.npz": {
+      "exists": true,
+      "size_bytes": 18435976
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/seq_nwicu.npz": {
+      "exists": true,
+      "size_bytes": 2721897
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/seq_sicdb_zero_offset_v4_2.npz": {
+      "exists": true,
+      "size_bytes": 4030339
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/split_mimic.npy": {
+      "exists": true,
+      "size_bytes": 94471
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/split_eicu_semantic_v4_2.npy": {
+      "exists": true,
+      "size_bytes": 192933
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/split_nwicu.npy": {
+      "exists": true,
+      "size_bytes": 27242
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/split_sicdb_zero_offset_v4_2.npy": {
+      "exists": true,
+      "size_bytes": 27351
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/qualification_dod_v2_metadata.parquet": {
+      "exists": true,
+      "size_bytes": 3831797,
+      "sha256": "2f5fe655a0b9ac7a8bb372b01230e22ec4d58c1137728fa9535035d2aaa41b38"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/input/sicdb/cases.csv.gz": {
+      "exists": true,
+      "size_bytes": 1322842,
+      "sha256": "5be0d80295ac774be0f7a7b79d6de4b6ea9daac31aa9864f75ecf5f1f5c1b76d"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/mimic.parquet": {
+      "exists": true,
+      "size_bytes": 13682377
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eicu_semantic_v4_2.parquet": {
+      "exists": true,
+      "size_bytes": 3696861
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/nwicu_discharge_v4_1.parquet": {
+      "exists": true,
+      "size_bytes": 726788
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/sicdb_zero_offset_v4_2.parquet": {
+      "exists": true,
+      "size_bytes": 601962
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/prediction_manifest.json": {
+      "exists": true,
+      "size_bytes": 75791,
+      "sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/baseline_prediction_manifest.json": {
+      "exists": true,
+      "size_bytes": 11909,
+      "sha256": "fe4f1a597479ad961b6c94ad5f935debfe853699a844126122c7c8f68c8ef4c7"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/baseline_manifest.json": {
+      "exists": true,
+      "size_bytes": 12976,
+      "sha256": "8a6b858470bd358affba569343066edc758e06b8d7c5aa0ed3c20c1cedce785d"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/baseline_prediction_manifest.json": {
+      "exists": true,
+      "size_bytes": 22229,
+      "sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json": {
+      "exists": true,
+      "size_bytes": 164698,
+      "sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json": {
+      "exists": true,
+      "size_bytes": 5759,
+      "sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json": {
+      "exists": true,
+      "size_bytes": 20167,
+      "sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json": {
+      "exists": true,
+      "size_bytes": 11084,
+      "sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/predictions/conventional_hgb_pattern_only.parquet": {
+      "exists": true,
+      "size_bytes": 4950675,
+      "sha256_attested_by_prediction_manifest": [
+        "1e6df47f43c113d38cfba002ac254f1dccd4518ed7c7873458a8feca539ab72b"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/predictions/conventional_hgb_value_plus_pattern.parquet": {
+      "exists": true,
+      "size_bytes": 5104931,
+      "sha256_attested_by_prediction_manifest": [
+        "2914688090b4de30d95e40c4883baf01c857ac982d691884aa756b67032fa203"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/predictions/conventional_lr_pattern_only.parquet": {
+      "exists": true,
+      "size_bytes": 5081829,
+      "sha256_attested_by_prediction_manifest": [
+        "85354fbb0b0e3822f5c8d6cc83af197082c6ca8d12b222edcf73990279572a46"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/predictions/conventional_lr_value_plus_pattern.parquet": {
+      "exists": true,
+      "size_bytes": 5087634,
+      "sha256_attested_by_prediction_manifest": [
+        "58658d1adb38c1a83178a5501e144ea0dae32186da91622fa9458f64d52f04f6"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/predictions/recovered_frozen_baseline_predictions.parquet": {
+      "exists": true,
+      "size_bytes": 17125450,
+      "sha256_attested_by_prediction_manifest": [
+        "d5539dca2804d8077bdb8677b02cd9aa48f1e191236d1904e36b3697fa5e0cd8"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/abl_const20k_constant.parquet": {
+      "exists": true,
+      "size_bytes": 4874252,
+      "sha256_attested_by_prediction_manifest": [
+        "9858f3825ddf937c0da56f9fc753b68507f7ebba837382eccebc2ae6602ea615"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/abl_const20k_real.parquet": {
+      "exists": true,
+      "size_bytes": 4869955,
+      "sha256_attested_by_prediction_manifest": [
+        "d49e148a4008d7463fe7ac4fd006da31221214a8a34843f50cda2e29cd98fe1b"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/common20k_common8_mask.parquet": {
+      "exists": true,
+      "size_bytes": 4874579,
+      "sha256_attested_by_prediction_manifest": [
+        "c17659c57b69dc1b30e4bd546b75d06c30a195a18eae8196f4cc63f6e43e30a2"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/main20k_common8_mask.parquet": {
+      "exists": true,
+      "size_bytes": 4874567,
+      "sha256_attested_by_prediction_manifest": [
+        "add48ed232905fbb31de07e5643eda5cf5f232c1d9220e986c56eb2b4543da8b"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/main20k_constant.parquet": {
+      "exists": true,
+      "size_bytes": 4874202,
+      "sha256_attested_by_prediction_manifest": [
+        "df9e8d2c9bf995d213c2b9117b7f6d55278d5b4aae8cdef7382673599f0c7d17"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/main20k_no_h0_therapy.parquet": {
+      "exists": true,
+      "size_bytes": 4869995,
+      "sha256_attested_by_prediction_manifest": [
+        "8fea7d88c3701c7fa0b50b5bdd802a055b0cbdacb0bdf410701227d4d4c4094c"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/main20k_real.parquet": {
+      "exists": true,
+      "size_bytes": 4869905,
+      "sha256_attested_by_prediction_manifest": [
+        "80c330ae688047cf0ed8c604d977e40d733990162f4bf93f92bcc15f446f8751"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/abl_const20k_constant.parquet": {
+      "exists": true,
+      "size_bytes": 4220232,
+      "sha256_attested_by_prediction_manifest": [
+        "c38c7e391e7d58db9bad535f1b42db3fd9a809b6bbc21fb31713b2ae58b1e089"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/abl_const20k_real.parquet": {
+      "exists": true,
+      "size_bytes": 4225745,
+      "sha256_attested_by_prediction_manifest": [
+        "64619083c52c9892833078736a9b17277997fa2be8c8b2662c63681c77e90fa1"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/common20k_common8_mask.parquet": {
+      "exists": true,
+      "size_bytes": 4241658,
+      "sha256_attested_by_prediction_manifest": [
+        "6eba86b7a1415b8d2812d00308d384182f3554e6249e6a991f128bbb75ed6edd"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/main20k_common8_mask.parquet": {
+      "exists": true,
+      "size_bytes": 4241638,
+      "sha256_attested_by_prediction_manifest": [
+        "91c97399b2d46bfd8ca142b7c63c76fc8e7fa49e12f8295cd0b9b9f373e0716f"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/main20k_constant.parquet": {
+      "exists": true,
+      "size_bytes": 4220182,
+      "sha256_attested_by_prediction_manifest": [
+        "e700e8ecfa5ae03c0f65fbfb0fdaa7d2b33f378b8c9b4010efe694e02a6172b6"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/main20k_no_h0_therapy.parquet": {
+      "exists": true,
+      "size_bytes": 4225785,
+      "sha256_attested_by_prediction_manifest": [
+        "6f054f6d1ffa374147e1e2d8563b89f71cc24b2f82511a21c05ef86f6c934d8a"
+      ]
+    },
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/main20k_real.parquet": {
+      "exists": true,
+      "size_bytes": 4225695,
+      "sha256_attested_by_prediction_manifest": [
+        "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3"
+      ]
+    },
+    "eligibility_manifest": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json",
+      "sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "cohorts": {
+        "mimic": {
+          "admissions.csv.gz": "a9584ed88e9ed664a2f66f86a5cf9fd175c8bb0af50e3b6115598b19e978384e",
+          "cohort_parquet": "dd1d06997e128a18475553b8e18cfd1c81b2cdd79f95e67ba1746afaea5cec2a",
+          "icustays.csv.gz": "3c590ed37f1fb7a77a128f2f6961f836001512ba81adcd0dfeced2702f96bc5f",
+          "patients.csv.gz": "4c7507de7ecad8c5ba7647ea4d26018e88ff6672c5fc22ab59c2a5697d687cdd",
+          "sequence_npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824"
+        },
+        "eicu": {
+          "cohort_parquet": "1ddf7cc7282912f838f0d51f4fc037a7d881df42eb4a666f43212cd2aa8fa0b4",
+          "patient.csv.gz": "2acf25f75144c5fc8a2a5b68c6741edac2dc7ca51021127f73e12f7428dc392b",
+          "sequence_npz": "5255d2c39b011126b473d51c5fbf3284d554e18b133281064d7655a4cbad786a"
+        },
+        "nwicu_discharge_v4_1": {
+          "sequence_npz": "c654c70a17019bb12cfd57645257786ac303d1acd7fa33ba7db342eb4b336560",
+          "split_npy": "6004fe59e1c17ffd71a14c134f01e537108ba9719b24bfdf8d65bd9d0c8d52b4"
+        },
+        "sicdb_zero_offset_v4_2": {
+          "sequence_npz": "3280df68390f78028d822d0b97f892aefda37dadc0ec176a23dc355b0109d59b",
+          "split_npy": "31e1ae02e0738a558790c284fc3663e3ae2ff69d30694f3dc1f47967d0df3870"
+        },
+        "eicu_semantic_v4_2": {
+          "sequence_npz": "e44507da41b045b23b2242dfb2de760b9956a961bf12522c3d55c001633da4e9",
+          "split_npy": "1daef296060d67b354a9a28b747b8bb22c7cff7f5d57834d98c7235ea21db482"
+        }
+      }
+    }
+  },
+  "prediction_provenance": {
+    "status": "transport_validated_source_and_recovered_target_artifacts",
+    "source_fm_manifest": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/prediction_manifest.json",
+    "source_fm_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+    "source_baseline_manifest": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/baseline_prediction_manifest.json",
+    "source_baseline_manifest_sha256": "fe4f1a597479ad961b6c94ad5f935debfe853699a844126122c7c8f68c8ef4c7",
+    "source_reproduction_manifest": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/results/primary_status_consistent_20261123/results/baseline_manifest.json",
+    "source_reproduction_manifest_sha256": "8a6b858470bd358affba569343066edc758e06b8d7c5aa0ed3c20c1cedce785d",
+    "target_transport": {
+      "fm_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json",
+      "fm_prediction_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+      "baseline_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/baseline_prediction_manifest.json",
+      "baseline_prediction_manifest_sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492",
+      "baseline_prediction_file_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/predictions/recovered_frozen_baseline_predictions.parquet",
+      "baseline_prediction_file_sha256": "d5539dca2804d8077bdb8677b02cd9aa48f1e191236d1904e36b3697fa5e0cd8",
+      "source_reproduction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json",
+      "source_reproduction_manifest_sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262",
+      "source_model_bundle_sha256": "e9a09363585f082a92e21628979830e47f35221584d3a9d60a267ae4b782b0b6",
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "subject_identity_attestation_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+      "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55",
+      "identity_scope": "within-source patient clustering only; cross-source and cross-scope independence unverified",
+      "clinical_input_availability_verified": false,
+      "clinical_promotion_allowed": false,
+      "patient_level_exported_to_local": false
+    },
+    "target_endpoint_by_db": {
+      "nwicu_discharge_v4_1": "hospital",
+      "sicdb_zero_offset_v4_2": "icu",
+      "eicu_semantic_v4_2": "hospital"
+    },
+    "target_gate_cohorts": [
+      "eicu_semantic_v4_2",
+      "nwicu_discharge_v4_1",
+      "sicdb_zero_offset_v4_2"
+    ],
+    "validated_counts_by_model_and_cohort": {
+      "fm": {
+        "mimic": 14890,
+        "eicu": 130544,
+        "nwicu": 19972,
+        "sicdb": 6774
+      },
+      "lr": {
+        "mimic": 14890,
+        "eicu": 130544,
+        "nwicu": 19972,
+        "sicdb": 6774
+      },
+      "hgb": {
+        "mimic": 14890,
+        "eicu": 130544,
+        "nwicu": 19972,
+        "sicdb": 6774
+      }
+    },
+    "MIMIC": "original FM and original source baseline predictions; no recovered target repair applied",
+    "external": "repaired recovered predictions validated by transport._load_all_model_frames; mismatched artifacts are never intersected"
+  },
+  "aggregate_only": true,
+  "patient_level_rows_written": false,
+  "scope": "clinical flow, outcome/transfer boundaries, and exported sequence-time/coverage support",
+  "severity_fields": "only available source fields are summarized; no unified score is inferred",
+  "record_time_availability": "sequence hour bounds do not quantify late-store availability or retained-token exposure",
+  "MIMIC_date_interpretation": "calendar dates are de-identified and are not interpreted as true cross-patient calendar time",
+  "files": [
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/cohorts/v5_temporal_bridge_audit_20261123T151936Z_2833855/clinical_category_support.csv",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/cohorts/v5_temporal_bridge_audit_20261123T151936Z_2833855/clinical_flow_and_missingness.csv",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/cohorts/v5_temporal_bridge_audit_20261123T151936Z_2833855/input_time_validation.csv",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/cohorts/v5_temporal_bridge_audit_20261123T151936Z_2833855/outcome_transfer_time_support.csv",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/cohorts/v5_temporal_bridge_audit_20261123T151936Z_2833855/sequence_support.csv",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/cohorts/v5_temporal_bridge_audit_20261123T151936Z_2833855/variable_coverage.csv"
+  ]
+}

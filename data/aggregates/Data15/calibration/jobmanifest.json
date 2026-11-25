@@ -1,0 +1,1439 @@
+{
+  "calibration_protocol": {
+    "adaptation_p05_p95": "empirical 200-repeat fit distribution, separate from bootstrap CI",
+    "cohorts": [
+      "eicu_semantic_v4_2",
+      "nwicu_discharge_v4_1"
+    ],
+    "constant_fallback": "single-point reference; no fabricated curve",
+    "curve_cluster_bootstrap_draws": 1000,
+    "curve_cluster_unit": "patient; all assessment stays retained",
+    "curve_knots": "assessment logit score q10/q50/q90",
+    "curve_parameters": "2 predictor degrees of freedom plus unpenalized intercept; 3 coefficients",
+    "curve_support": "assessment prediction p01-p99",
+    "fixed_fit": "server-only Platt fit, budget 500, repeat 0",
+    "gap_scope": "per-stay loss means over all 200 fits; patient-cluster assessment bootstrap",
+    "hgbt_supplement": "verified v4 eICU/NWICU aggregate; 200 draws; not recomputed on repaired-v5 scores",
+    "models": [
+      "main20k_real",
+      "conventional_lr_value_plus_pattern"
+    ],
+    "paired_gap_bootstrap_draws": 1000,
+    "proper_scores": [
+      "brier",
+      "logloss"
+    ]
+  },
+  "documentation": {
+    "readme_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/calibration/v5_20261123/README.md",
+    "readme_sha256": "84a368d2fb0b86ce4762ae1cc08fbff13e73109d6f28953a5d59e9719dd8cbe6",
+    "schema_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/calibration/v5_20261123/schema.json",
+    "schema_sha256": "5dc51d8dcacfbb14007d76b1099b15d484366a024469794ffe32efde06173e81"
+  },
+  "global_role_seed_reused_from_v4": 20261122,
+  "host": "super-Super-Server",
+  "inputs_internal": {
+    "direct_server_only_artifacts": {
+      "eicu_semantic_v4_2": {
+        "assessment_events": 5979,
+        "assessment_patients": 51479,
+        "assessment_stays": 65157,
+        "cohort_manifest_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/eicu_semantic_v4_2/cohort_manifest.json",
+        "cohort_manifest_sha256": "11dae4ceafe7f7174721e1560e2b01f008d4d75da4620d7051cce90cd495de68",
+        "fit_parameters_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/eicu_semantic_v4_2/server_only_fit_parameters.csv",
+        "fit_parameters_sha256": "85be0547ec0e7578a30b13e60a18966047de78079de1badc088c3f83c2b4e014",
+        "per_stay_loss_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/eicu_semantic_v4_2/server_only_per_stay_mean_losses.npz",
+        "per_stay_loss_sha256": "a1814a1243bafca2323190ec8bd66425fc04132cdc97c55854e315c8f4f0577b",
+        "per_stay_roster_identity_verified": true,
+        "sampling_plan_sha256": "a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032"
+      },
+      "nwicu_discharge_v4_1": {
+        "assessment_events": 1107,
+        "assessment_patients": 8693,
+        "assessment_stays": 10080,
+        "cohort_manifest_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/nwicu_discharge_v4_1/cohort_manifest.json",
+        "cohort_manifest_sha256": "810be04ab93aaba2b57a0b8e6095a0667023f5fb836b4df62a34dc1f2ce58190",
+        "fit_parameters_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/nwicu_discharge_v4_1/server_only_fit_parameters.csv",
+        "fit_parameters_sha256": "1d260ad6b603515e4a1e72ce5c1e2d61dc2b3310e2227133dde6e35141973307",
+        "per_stay_loss_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/nwicu_discharge_v4_1/server_only_per_stay_mean_losses.npz",
+        "per_stay_loss_sha256": "74a87926b718640127bbe4b8ed5224720c4e559672c9e4a7fc25a448a958290c",
+        "per_stay_roster_identity_verified": true,
+        "sampling_plan_sha256": "77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372"
+      }
+    },
+    "eligibility_eicu_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eicu.parquet",
+    "eligibility_eicu_semantic_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eicu_semantic_v4_2.parquet",
+    "eligibility_eicu_semantic_sha256": "fb14b4a31c924b123923df0ed76d1c3c87c8495b230fa5c8584b67a974b180a8",
+    "eligibility_eicu_sha256": "d138fd4bf718f051af3aa39298958dad44ccdf2462b583d554e28d214028f04d",
+    "endpoint_by_cohort": {
+      "eicu_semantic_v4_2": "hospital",
+      "nwicu_discharge_v4_1": "hospital",
+      "sicdb_zero_offset_v4_2": "icu"
+    },
+    "launcher_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_calibration_sites_launch.sh",
+    "launcher_sha256": "130936e98b89a3d55c4801a30858c4665a06f2fff4731f7bc40e21e91ba6857f",
+    "runner_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_calibration_sites_runner.sh",
+    "runner_sha256": "0beea635f0f93f0e6504fcc3a2c4c2a716b977567bebefd9add55cdebe3183ea",
+    "script_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_calibration_sites.py",
+    "v4_loader_provenance": {
+      "baseline_prediction_file_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/predictions/recovered_frozen_baseline_predictions.parquet",
+      "baseline_prediction_file_sha256": "d5539dca2804d8077bdb8677b02cd9aa48f1e191236d1904e36b3697fa5e0cd8",
+      "baseline_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/baseline_prediction_manifest.json",
+      "baseline_prediction_manifest_sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492",
+      "clinical_input_availability_verified": false,
+      "clinical_promotion_allowed": false,
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "fm_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json",
+      "fm_prediction_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+      "identity_scope": "within-source patient clustering only; cross-source and cross-scope independence unverified",
+      "patient_level_exported_to_local": false,
+      "source_model_bundle_sha256": "e9a09363585f082a92e21628979830e47f35221584d3a9d60a267ae4b782b0b6",
+      "source_reproduction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json",
+      "source_reproduction_manifest_sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262",
+      "subject_identity_attestation_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+      "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+    },
+    "verified_hgbt_calibration_supplement_v4": {
+      "eicu_semantic_v4_2": {
+        "adaptation_index_patient_stay_sha256": "79b5f2270652e74cc591d3607c7ef2fbf2e7fc73e2c3ff2d77fe1fc8e5d0037a",
+        "adaptation_seed": 20261122,
+        "analysis_id": "conventional_hgb_value_plus_pattern",
+        "assessment_patient_set_sha256": "417f7de96b972604ffb4d6c1482f124d8c23e3d3352651246476e904c9bd9817",
+        "assessment_patients": 51479,
+        "assessment_population_identity_sha256": "3a7af42be79cec1121b6683abd8dd058f18f98cae1137c6b515611a517f7e951",
+        "assessment_stays": 65157,
+        "endpoint_scope": "retrospective_landmark_prediction_measurement_time",
+        "model_tag": "conventional_hgb",
+        "operational_rows_with_200_valid_draws": 20,
+        "path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/publication_assembly/table2_recalibration_summary_eicu_allmethods.csv",
+        "repeats": 200,
+        "rows_retained": 28,
+        "sampling_plan_sha256": "a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032",
+        "sha256": "6d05d787ac33163f0f757fa208518e9415b80ab8b50a53385b3a0232a0d36fb7",
+        "status": "ok"
+      },
+      "nwicu_discharge_v4_1": {
+        "adaptation_index_patient_stay_sha256": "b75573885e4545867eedd1a617d04f4bb9b694f525a3a591fb7c7c000d626c70",
+        "adaptation_seed": 20261122,
+        "analysis_id": "conventional_hgb_value_plus_pattern",
+        "assessment_patient_set_sha256": "b4baeb269e458ae7530cf8801febbe39b46c5a074495c10b0b4c614af12d3999",
+        "assessment_patients": 8693,
+        "assessment_population_identity_sha256": "d1e656dc0650566346d7c015783785aa5b48da6302ceb80972aa4f8c20a9541b",
+        "assessment_stays": 10080,
+        "endpoint_scope": "retrospective_landmark_prediction_measurement_time",
+        "model_tag": "conventional_hgb",
+        "operational_rows_with_200_valid_draws": 20,
+        "path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/publication_assembly/table2_recalibration_summary_nw_sic_allmethods.csv",
+        "repeats": 200,
+        "rows_retained": 28,
+        "sampling_plan_sha256": "77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372",
+        "sha256": "e0cc66e7945c6af10a4d05168bc2ff48be6df1636ea88590c3f6e9f519b7cc49",
+        "status": "ok"
+      }
+    }
+  },
+  "patient_level_exported_to_local": false,
+  "private_source_paths_only_in_internal_manifest": true,
+  "resource_limits": {
+    "account_slice_memory_high_bytes": 182536110080,
+    "account_slice_memory_max_bytes": 186705375232,
+    "cpu_quota_percent": 200,
+    "cpu_threads": 2,
+    "environment_reinstalled": false,
+    "memory_max_bytes": 12884901888,
+    "memory_swap_max_bytes": 0
+  },
+  "run_id": "v5_20261123",
+  "schema_version": "ehr_fm_v5_calibration_sites_1",
+  "section": "calibration",
+  "seed": 20261123,
+  "site_protocol": {
+    "across_site_estimands": {
+      "bootstrap": "1000 global patient-cluster draws shared across sites, conditional on mean loss over 200 adaptation repeats",
+      "macro_patient_weighted": "equal mean of feasible-site patient-weighted losses",
+      "macro_stay_weighted": "equal mean of feasible-site stay-weighted losses",
+      "micro_patient_weighted": "mean of global patient mean stay losses; cross-site patients appear once",
+      "micro_stay_weighted": "pooled assessment stay loss over the feasible sites"
+    },
+    "all_eligible_source_hospitals": 206,
+    "all_hospital_performance_denominator": 206,
+    "budgets": [
+      50,
+      200,
+      500
+    ],
+    "calibration_slope_point_coverage_by_model": {
+      "conventional_lr_value_plus_pattern": 191,
+      "main20k_real": 193
+    },
+    "finite_calibration_slope_point_hospitals_fm": 193,
+    "fit_failure_fallback": "Jeffreys prevalence (events+0.5)/(budget+1)",
+    "global_adaptation_role_sha256": "37a6444fcdba618135388aa139ef1c43994df2e5dee882d8c9bc0971b024f805",
+    "global_assessment_role_sha256": "417f7de96b972604ffb4d6c1482f124d8c23e3d3352651246476e904c9bd9817",
+    "global_role_seed": 20261122,
+    "global_site_role_flow": [
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 3751,
+        "global_adaptation_patients_in_site": 1853,
+        "global_assessment_patients_in_site": 1898,
+        "global_assessment_stays_in_site": 2599,
+        "hospitalid": "73",
+        "index_stay_seed": 2537244666,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 1,
+        "sampling_seed_by_budget": "{\"200\": 2537244765, \"50\": 2537244615, \"500\": 2537245065}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 3381,
+        "global_adaptation_patients_in_site": 1649,
+        "global_assessment_patients_in_site": 1732,
+        "global_assessment_stays_in_site": 2091,
+        "hospitalid": "264",
+        "index_stay_seed": 3168449217,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 2,
+        "sampling_seed_by_budget": "{\"200\": 3168449316, \"50\": 3168449166, \"500\": 3168449616}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2795,
+        "global_adaptation_patients_in_site": 1362,
+        "global_assessment_patients_in_site": 1433,
+        "global_assessment_stays_in_site": 1928,
+        "hospitalid": "420",
+        "index_stay_seed": 3700097959,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 3,
+        "sampling_seed_by_budget": "{\"200\": 3700098058, \"50\": 3700097908, \"500\": 3700098358}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2504,
+        "global_adaptation_patients_in_site": 1221,
+        "global_assessment_patients_in_site": 1283,
+        "global_assessment_stays_in_site": 1603,
+        "hospitalid": "338",
+        "index_stay_seed": 1589941814,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 4,
+        "sampling_seed_by_budget": "{\"200\": 1589941913, \"50\": 1589941763, \"500\": 1589942213}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2421,
+        "global_adaptation_patients_in_site": 1179,
+        "global_assessment_patients_in_site": 1242,
+        "global_assessment_stays_in_site": 1588,
+        "hospitalid": "243",
+        "index_stay_seed": 1937322888,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 5,
+        "sampling_seed_by_budget": "{\"200\": 1937322987, \"50\": 1937322837, \"500\": 1937323287}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2378,
+        "global_adaptation_patients_in_site": 1185,
+        "global_assessment_patients_in_site": 1193,
+        "global_assessment_stays_in_site": 1433,
+        "hospitalid": "458",
+        "index_stay_seed": 2924923936,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 6,
+        "sampling_seed_by_budget": "{\"200\": 2924924035, \"50\": 2924923885, \"500\": 2924924335}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2272,
+        "global_adaptation_patients_in_site": 1147,
+        "global_assessment_patients_in_site": 1125,
+        "global_assessment_stays_in_site": 1420,
+        "hospitalid": "443",
+        "index_stay_seed": 1849330562,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 7,
+        "sampling_seed_by_budget": "{\"200\": 1849330661, \"50\": 1849330511, \"500\": 1849330961}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2185,
+        "global_adaptation_patients_in_site": 1085,
+        "global_assessment_patients_in_site": 1100,
+        "global_assessment_stays_in_site": 1353,
+        "hospitalid": "300",
+        "index_stay_seed": 2574319484,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 8,
+        "sampling_seed_by_budget": "{\"200\": 2574319583, \"50\": 2574319433, \"500\": 2574319883}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2179,
+        "global_adaptation_patients_in_site": 1091,
+        "global_assessment_patients_in_site": 1088,
+        "global_assessment_stays_in_site": 1420,
+        "hospitalid": "199",
+        "index_stay_seed": 1533998149,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 9,
+        "sampling_seed_by_budget": "{\"200\": 1533998248, \"50\": 1533998098, \"500\": 1533998548}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2178,
+        "global_adaptation_patients_in_site": 1088,
+        "global_assessment_patients_in_site": 1090,
+        "global_assessment_stays_in_site": 1333,
+        "hospitalid": "188",
+        "index_stay_seed": 3610985766,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 10,
+        "sampling_seed_by_budget": "{\"200\": 3610985865, \"50\": 3610985715, \"500\": 3610986165}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 2042,
+        "global_adaptation_patients_in_site": 1003,
+        "global_assessment_patients_in_site": 1039,
+        "global_assessment_stays_in_site": 1289,
+        "hospitalid": "252",
+        "index_stay_seed": 3625634675,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 11,
+        "sampling_seed_by_budget": "{\"200\": 3625634774, \"50\": 3625634624, \"500\": 3625635074}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1976,
+        "global_adaptation_patients_in_site": 999,
+        "global_assessment_patients_in_site": 977,
+        "global_assessment_stays_in_site": 1250,
+        "hospitalid": "167",
+        "index_stay_seed": 1963531042,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 12,
+        "sampling_seed_by_budget": "{\"200\": 1963531141, \"50\": 1963530991, \"500\": 1963531441}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1900,
+        "global_adaptation_patients_in_site": 920,
+        "global_assessment_patients_in_site": 980,
+        "global_assessment_stays_in_site": 1167,
+        "hospitalid": "122",
+        "index_stay_seed": 487926953,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 13,
+        "sampling_seed_by_budget": "{\"200\": 487927052, \"50\": 487926902, \"500\": 487927352}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1848,
+        "global_adaptation_patients_in_site": 951,
+        "global_assessment_patients_in_site": 897,
+        "global_assessment_stays_in_site": 1165,
+        "hospitalid": "208",
+        "index_stay_seed": 2401999052,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 14,
+        "sampling_seed_by_budget": "{\"200\": 2401999151, \"50\": 2401999001, \"500\": 2401999451}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1477,
+        "global_adaptation_patients_in_site": 784,
+        "global_assessment_patients_in_site": 693,
+        "global_assessment_stays_in_site": 882,
+        "hospitalid": "281",
+        "index_stay_seed": 1926687083,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 15,
+        "sampling_seed_by_budget": "{\"200\": 1926687182, \"50\": 1926687032, \"500\": 1926687482}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1427,
+        "global_adaptation_patients_in_site": 713,
+        "global_assessment_patients_in_site": 714,
+        "global_assessment_stays_in_site": 817,
+        "hospitalid": "449",
+        "index_stay_seed": 1264962433,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 16,
+        "sampling_seed_by_budget": "{\"200\": 1264962532, \"50\": 1264962382, \"500\": 1264962832}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1424,
+        "global_adaptation_patients_in_site": 734,
+        "global_assessment_patients_in_site": 690,
+        "global_assessment_stays_in_site": 866,
+        "hospitalid": "176",
+        "index_stay_seed": 3436688625,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 17,
+        "sampling_seed_by_budget": "{\"200\": 3436688724, \"50\": 3436688574, \"500\": 3436689024}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1279,
+        "global_adaptation_patients_in_site": 650,
+        "global_assessment_patients_in_site": 629,
+        "global_assessment_stays_in_site": 884,
+        "hospitalid": "411",
+        "index_stay_seed": 1411807531,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 18,
+        "sampling_seed_by_budget": "{\"200\": 1411807630, \"50\": 1411807480, \"500\": 1411807930}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1250,
+        "global_adaptation_patients_in_site": 604,
+        "global_assessment_patients_in_site": 646,
+        "global_assessment_stays_in_site": 796,
+        "hospitalid": "416",
+        "index_stay_seed": 1763043103,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 19,
+        "sampling_seed_by_budget": "{\"200\": 1763043202, \"50\": 1763043052, \"500\": 1763043502}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1216,
+        "global_adaptation_patients_in_site": 633,
+        "global_assessment_patients_in_site": 583,
+        "global_assessment_stays_in_site": 685,
+        "hospitalid": "394",
+        "index_stay_seed": 101108038,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 20,
+        "sampling_seed_by_budget": "{\"200\": 101108137, \"50\": 101107987, \"500\": 101108437}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1187,
+        "global_adaptation_patients_in_site": 592,
+        "global_assessment_patients_in_site": 595,
+        "global_assessment_stays_in_site": 677,
+        "hospitalid": "413",
+        "index_stay_seed": 494869399,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 21,
+        "sampling_seed_by_budget": "{\"200\": 494869498, \"50\": 494869348, \"500\": 494869798}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1162,
+        "global_adaptation_patients_in_site": 590,
+        "global_assessment_patients_in_site": 572,
+        "global_assessment_stays_in_site": 763,
+        "hospitalid": "283",
+        "index_stay_seed": 3787076575,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 22,
+        "sampling_seed_by_budget": "{\"200\": 3787076674, \"50\": 3787076524, \"500\": 3787076974}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1156,
+        "global_adaptation_patients_in_site": 581,
+        "global_assessment_patients_in_site": 575,
+        "global_assessment_stays_in_site": 691,
+        "hospitalid": "197",
+        "index_stay_seed": 2365644329,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 23,
+        "sampling_seed_by_budget": "{\"200\": 2365644428, \"50\": 2365644278, \"500\": 2365644728}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      },
+      {
+        "adaptation_index_stay": "one outcome-blind stay per adaptation patient within site",
+        "assessment_rule": "all eligible stays of globally held-out patients",
+        "eligible_unique_patients_all": 1143,
+        "global_adaptation_patients_in_site": 605,
+        "global_assessment_patients_in_site": 538,
+        "global_assessment_stays_in_site": 717,
+        "hospitalid": "183",
+        "index_stay_seed": 3118725594,
+        "patient_role_overlap": 0,
+        "patients_crossing_hospitals_global_eicu": 2330,
+        "rank_by_eligible_patients": 24,
+        "sampling_seed_by_budget": "{\"200\": 3118725693, \"50\": 3118725543, \"500\": 3118725993}",
+        "time_design": "random within-site adaptation; no temporal claim"
+      }
+    ],
+    "methods": [
+      "no_update",
+      "prevalence",
+      "jeffreys_prevalence",
+      "intercept",
+      "platt"
+    ],
+    "models": [
+      "main20k_real",
+      "conventional_lr_value_plus_pattern"
+    ],
+    "original_v4_site_reference": {
+      "counts_source": "original v4 aggregate and manifest; not repaired-v5 site counts",
+      "finite_calibration_slope_points": 193,
+      "hospital_denominator": 206,
+      "model_id": "main20k_real",
+      "source_manifest_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/hospital_primary_v4_20261123_0515/hospital_analysis_manifest.json",
+      "source_manifest_sha256": "0c227dd9c19c471763b328381e1bf4502f2bfbabfcd042592c3763c97bc2e56e",
+      "source_metrics_path_internal": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/hospital_primary_v4_20261123_0515/eicu_hospital_metrics.csv",
+      "source_metrics_sha256": "b055744e6674b27c287bae7b90a2926e11a07e519442b83bbac1b5d8d0a393f4",
+      "source_scope": "selected_hospital_all_stays; original v4 eICU predictions",
+      "source_status": "complete",
+      "stable_site_rule": ">=10 events and >=10 nonevents; display/stability rule only",
+      "stable_sites_ge10_events_and_nonevents": 147,
+      "status": "verified_original_v4_reference"
+    },
+    "patient_weighted_sensitivity": "mean per-patient stay loss, then equal patient mean",
+    "patients_crossing_hospitals": 2330,
+    "primary_assessment_weighting": "all eligible stays from globally held-out patients",
+    "repeats": 200,
+    "selected_hospitals": 24,
+    "selection_rule": "largest eligible unique-patient counts; ascending canonical hospital ID tie-break; outcome/performance blind",
+    "stable_site_threshold": ">=10 events and >=10 nonevents; interval/stability rule only, not exclusion from point estimates or hospital selection",
+    "stable_site_threshold_hospitals_fm": 147,
+    "stable_threshold_coverage_by_model": {
+      "conventional_lr_value_plus_pattern": 147,
+      "main20k_real": 147
+    },
+    "temporal_claim_status": "not performed; no comparable cross-patient calendar time in frozen prediction roles"
+  },
+  "status": "complete",
+  "tables": {
+    "calibration_curve_points.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "object",
+          "name": "model"
+        },
+        {
+          "dtype": "object",
+          "name": "model_id"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "object",
+          "name": "curve_type"
+        },
+        {
+          "dtype": "int64",
+          "name": "point_index"
+        },
+        {
+          "dtype": "float64",
+          "name": "predicted_probability"
+        },
+        {
+          "dtype": "float64",
+          "name": "smoothed_observed_risk"
+        },
+        {
+          "dtype": "float64",
+          "name": "ci95_lower"
+        },
+        {
+          "dtype": "float64",
+          "name": "ci95_upper"
+        },
+        {
+          "dtype": "float64",
+          "name": "risk_support_low"
+        },
+        {
+          "dtype": "float64",
+          "name": "risk_support_high"
+        },
+        {
+          "dtype": "int64",
+          "name": "smoother_predictor_df"
+        },
+        {
+          "dtype": "int64",
+          "name": "smoother_coefficient_count"
+        },
+        {
+          "dtype": "float64",
+          "name": "knot_logit_q10"
+        },
+        {
+          "dtype": "float64",
+          "name": "knot_logit_q50"
+        },
+        {
+          "dtype": "float64",
+          "name": "knot_logit_q90"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_requested"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_valid"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_invalid"
+        },
+        {
+          "dtype": "object",
+          "name": "curve_fit_status"
+        }
+      ],
+      "description": "Smooth risk curves and pointwise patient-cluster intervals for raw predictions and the fixed 500-label Platt repeat-0 fit.",
+      "rows": 488,
+      "sha256": "1bf903f9aca294c5616ad96a147bc370bf6e4d323e34450d76b0e8bc7ffdc090"
+    },
+    "calibration_risk_bins.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "object",
+          "name": "model"
+        },
+        {
+          "dtype": "object",
+          "name": "model_id"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "int64",
+          "name": "bin"
+        },
+        {
+          "dtype": "int64",
+          "name": "n_stays"
+        },
+        {
+          "dtype": "int64",
+          "name": "events"
+        },
+        {
+          "dtype": "float64",
+          "name": "mean_predicted"
+        },
+        {
+          "dtype": "float64",
+          "name": "observed"
+        }
+      ],
+      "description": "Empirical score-bin support, event counts, mean predictions and observed event fractions underlying the smooth curves.",
+      "rows": 80,
+      "sha256": "170d12f3de7b2bf05199830d861a88d7102b20ff96d5cfb401eca9d528eed85a"
+    },
+    "calibration_risk_summary.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "object",
+          "name": "model"
+        },
+        {
+          "dtype": "object",
+          "name": "model_id"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "object",
+          "name": "curve_status"
+        },
+        {
+          "dtype": "int64",
+          "name": "n_stays"
+        },
+        {
+          "dtype": "int64",
+          "name": "n_patients"
+        },
+        {
+          "dtype": "int64",
+          "name": "events"
+        },
+        {
+          "dtype": "int64",
+          "name": "nonevents"
+        },
+        {
+          "dtype": "float64",
+          "name": "mean_predicted_probability"
+        },
+        {
+          "dtype": "float64",
+          "name": "observed_event_rate"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss"
+        },
+        {
+          "dtype": "float64",
+          "name": "p_min"
+        },
+        {
+          "dtype": "float64",
+          "name": "p01"
+        },
+        {
+          "dtype": "float64",
+          "name": "p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "p25"
+        },
+        {
+          "dtype": "float64",
+          "name": "p50"
+        },
+        {
+          "dtype": "float64",
+          "name": "p75"
+        },
+        {
+          "dtype": "float64",
+          "name": "p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "p99"
+        },
+        {
+          "dtype": "float64",
+          "name": "p_max"
+        },
+        {
+          "dtype": "int64",
+          "name": "smoother_predictor_df"
+        },
+        {
+          "dtype": "int64",
+          "name": "smoother_coefficient_count"
+        },
+        {
+          "dtype": "object",
+          "name": "smoother_coefficients"
+        },
+        {
+          "dtype": "object",
+          "name": "knots_logit"
+        },
+        {
+          "dtype": "object",
+          "name": "probability_support"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_requested"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_valid"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_invalid"
+        },
+        {
+          "dtype": "object",
+          "name": "bootstrap_failures"
+        },
+        {
+          "dtype": "bool",
+          "name": "fixed_calibrator_fallback"
+        },
+        {
+          "dtype": "object",
+          "name": "assessment_scope"
+        },
+        {
+          "dtype": "int64",
+          "name": "fixed_calibrator_budget"
+        },
+        {
+          "dtype": "int64",
+          "name": "fixed_calibrator_repeat"
+        },
+        {
+          "dtype": "bool",
+          "name": "platt_fit_ok"
+        },
+        {
+          "dtype": "object",
+          "name": "platt_fit_status"
+        },
+        {
+          "dtype": "object",
+          "name": "global_sampling_plan_sha256"
+        }
+      ],
+      "description": "Risk distribution, mean predicted and observed risks, Brier/logloss, curve status and fixed-fit provenance per model/cohort.",
+      "rows": 8,
+      "sha256": "9f87b9749af7620df9664db0ea3c50e4c4c620c7f5101f9bb54c1e922b47dd27"
+    },
+    "global_50_500_summary.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "object",
+          "name": "model"
+        },
+        {
+          "dtype": "object",
+          "name": "model_id"
+        },
+        {
+          "dtype": "int64",
+          "name": "budget"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "int64",
+          "name": "attempts"
+        },
+        {
+          "dtype": "float64",
+          "name": "fit_successes"
+        },
+        {
+          "dtype": "int64",
+          "name": "fallback_count"
+        },
+        {
+          "dtype": "float64",
+          "name": "events_p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "events_p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_mean"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_mean"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "fit_attempts"
+        },
+        {
+          "dtype": "float64",
+          "name": "fit_failures"
+        },
+        {
+          "dtype": "float64",
+          "name": "fit_failure_rate"
+        }
+      ],
+      "description": "Complete 200-draw results at 50 and 500 labels, both proper scores, adaptation event P05/P95 and failed-fit/fallback counts.",
+      "rows": 40,
+      "sha256": "0391dd737bf30e805597da5ab7873032e98a1e6a63e21503016e8e83f87965c2"
+    },
+    "global_recalibration_repeat_scores.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "object",
+          "name": "model"
+        },
+        {
+          "dtype": "object",
+          "name": "model_id"
+        },
+        {
+          "dtype": "int64",
+          "name": "budget"
+        },
+        {
+          "dtype": "int64",
+          "name": "repeat"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "int64",
+          "name": "events"
+        },
+        {
+          "dtype": "int64",
+          "name": "nonevents"
+        },
+        {
+          "dtype": "bool",
+          "name": "fit_ok"
+        },
+        {
+          "dtype": "object",
+          "name": "fit_status"
+        },
+        {
+          "dtype": "bool",
+          "name": "fallback_used"
+        },
+        {
+          "dtype": "float64",
+          "name": "fallback_probability"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_patient_weighted"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_patient_weighted"
+        },
+        {
+          "dtype": "float64",
+          "name": "mean_predicted_probability"
+        },
+        {
+          "dtype": "float64",
+          "name": "observed_event_rate"
+        }
+      ],
+      "description": "All 200 repeat-level raw, prevalence, Jeffreys, intercept and Platt results for each available budget; Brier/logloss and patient-weighted sensitivity.",
+      "rows": 16000,
+      "sha256": "dd595b631e5b319682d76f33e86520fcb0471af588db6e438ba8539e0b7b4f8a"
+    },
+    "hgbt_supplementary_calibration_v4.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "db"
+        },
+        {
+          "dtype": "object",
+          "name": "status"
+        },
+        {
+          "dtype": "object",
+          "name": "cohort_status"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_eligible_stays"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_index_patients"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_adaptation_patients"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_assessment_patients"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_assessment_stays"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_assessment_events"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_assessment_nonevents"
+        },
+        {
+          "dtype": "object",
+          "name": "assessment_precision_feasibility_200_events_200_nonevents"
+        },
+        {
+          "dtype": "object",
+          "name": "primary_budget_500_feasible_for_confirmation"
+        },
+        {
+          "dtype": "object",
+          "name": "primary_budget_feasibility_is_performance_blind"
+        },
+        {
+          "dtype": "float64",
+          "name": "patient_overlap"
+        },
+        {
+          "dtype": "object",
+          "name": "bootstrap_cluster_unit"
+        },
+        {
+          "dtype": "object",
+          "name": "independent_patient_clustering_verified"
+        },
+        {
+          "dtype": "object",
+          "name": "one_random_index_stay_per_adaptation_patient"
+        },
+        {
+          "dtype": "object",
+          "name": "index_stay_selection_uses_outcome"
+        },
+        {
+          "dtype": "object",
+          "name": "stratified_by_patient_any_event"
+        },
+        {
+          "dtype": "object",
+          "name": "patient_pool_split_uses_outcomes"
+        },
+        {
+          "dtype": "object",
+          "name": "assessment_weighting"
+        },
+        {
+          "dtype": "object",
+          "name": "repeat_uncertainty_scope"
+        },
+        {
+          "dtype": "object",
+          "name": "bootstrap_uncertainty_scope"
+        },
+        {
+          "dtype": "object",
+          "name": "fixed_population_identity_sha256"
+        },
+        {
+          "dtype": "object",
+          "name": "adaptation_index_patient_stay_sha256"
+        },
+        {
+          "dtype": "object",
+          "name": "adaptation_patient_set_sha256"
+        },
+        {
+          "dtype": "object",
+          "name": "assessment_population_identity_sha256"
+        },
+        {
+          "dtype": "object",
+          "name": "assessment_patient_set_sha256"
+        },
+        {
+          "dtype": "float64",
+          "name": "seed"
+        },
+        {
+          "dtype": "float64",
+          "name": "repeats"
+        },
+        {
+          "dtype": "object",
+          "name": "budgets"
+        },
+        {
+          "dtype": "object",
+          "name": "sampling_plan_sha256"
+        },
+        {
+          "dtype": "object",
+          "name": "analysis_id"
+        },
+        {
+          "dtype": "object",
+          "name": "model_tag"
+        },
+        {
+          "dtype": "bool",
+          "name": "reused_original_eicu_sampling_plan"
+        },
+        {
+          "dtype": "bool",
+          "name": "cross_version_curve_comparison_allowed"
+        },
+        {
+          "dtype": "float64",
+          "name": "budget"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_repeats"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_valid_repeats"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_budget_patients"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_budget_stays"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_zero_class_draws"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_one_class_draws"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_mixed_class_draws"
+        },
+        {
+          "dtype": "float64",
+          "name": "events_min"
+        },
+        {
+          "dtype": "float64",
+          "name": "events_median"
+        },
+        {
+          "dtype": "float64",
+          "name": "events_max"
+        },
+        {
+          "dtype": "float64",
+          "name": "nonevents_min"
+        },
+        {
+          "dtype": "float64",
+          "name": "nonevents_median"
+        },
+        {
+          "dtype": "float64",
+          "name": "nonevents_max"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_mean"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "brier_p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_mean"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "logloss_p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "negative_bss_rate_descriptive"
+        },
+        {
+          "dtype": "float64",
+          "name": "fit_failure_rate"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_fit_fail"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_fit_success"
+        },
+        {
+          "dtype": "float64",
+          "name": "n_fit_attempts"
+        },
+        {
+          "dtype": "object",
+          "name": "fit_failure_reasons"
+        },
+        {
+          "dtype": "object",
+          "name": "conditional_on_assessment_patients"
+        },
+        {
+          "dtype": "object",
+          "name": "assessment_prevalence_bss_is_deployable_reference"
+        },
+        {
+          "dtype": "object",
+          "name": "source_version"
+        },
+        {
+          "dtype": "object",
+          "name": "source_archive_method"
+        },
+        {
+          "dtype": "object",
+          "name": "source_artifact_path_internal"
+        },
+        {
+          "dtype": "object",
+          "name": "source_artifact_sha256"
+        },
+        {
+          "dtype": "object",
+          "name": "source_endpoint_scope"
+        },
+        {
+          "dtype": "object",
+          "name": "supplement_scope"
+        }
+      ],
+      "description": "Verified v4 pooled eICU/NWICU HGBT calibration summaries across 200 adaptation draws; offset is displayed as intercept and preserved in source_archive_method. Historical aggregate only, not recomputed on repaired-v5 scores or site-level.",
+      "rows": 56,
+      "sha256": "4bb0f999ddc63a076910bd2578ac9c86f4c7fab1415d8e3739afa57f32533029"
+    },
+    "paired_loss_gap_bootstrap.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "int64",
+          "name": "budget"
+        },
+        {
+          "dtype": "object",
+          "name": "metric"
+        },
+        {
+          "dtype": "object",
+          "name": "contrast"
+        },
+        {
+          "dtype": "object",
+          "name": "weighting"
+        },
+        {
+          "dtype": "float64",
+          "name": "estimate"
+        },
+        {
+          "dtype": "float64",
+          "name": "bootstrap_ci_95_lower"
+        },
+        {
+          "dtype": "float64",
+          "name": "bootstrap_ci_95_upper"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_requested"
+        },
+        {
+          "dtype": "int64",
+          "name": "bootstrap_valid"
+        },
+        {
+          "dtype": "int64",
+          "name": "assessment_stays"
+        },
+        {
+          "dtype": "int64",
+          "name": "assessment_patients"
+        },
+        {
+          "dtype": "int64",
+          "name": "adaptation_draws"
+        },
+        {
+          "dtype": "float64",
+          "name": "adaptation_draw_p05"
+        },
+        {
+          "dtype": "float64",
+          "name": "adaptation_draw_p95"
+        },
+        {
+          "dtype": "float64",
+          "name": "adaptation_draw_mean"
+        },
+        {
+          "dtype": "object",
+          "name": "interval_scope"
+        }
+      ],
+      "description": "Raw gap, Platt gap, and post-gap minus raw-gap for Brier/logloss using saved per-stay means across all 200 fits; 1000 paired patient-cluster bootstraps and patient-weighted sensitivity.",
+      "rows": 96,
+      "sha256": "c9ca9e88adb69bc6b381fa30c0c3ae00b32a1d08e81e3e0b8c30245777ea4037"
+    },
+    "per_stay_repeat_mean_parity.csv": {
+      "columns": [
+        {
+          "dtype": "object",
+          "name": "cohort"
+        },
+        {
+          "dtype": "object",
+          "name": "model"
+        },
+        {
+          "dtype": "object",
+          "name": "model_id"
+        },
+        {
+          "dtype": "int64",
+          "name": "budget"
+        },
+        {
+          "dtype": "object",
+          "name": "method"
+        },
+        {
+          "dtype": "object",
+          "name": "metric"
+        },
+        {
+          "dtype": "bool",
+          "name": "parity_ok"
+        },
+        {
+          "dtype": "float64",
+          "name": "max_abs_difference"
+        }
+      ],
+      "description": "Parity checks that saved fit parameters recreate each server-only per-stay mean-loss array across 200 fits.",
+      "rows": 64,
+      "sha256": "55f258add5b2061271d517c918d0f3f1a2160a11f162127fa4e3388a6f5273e9"
+    }
+  }
+}

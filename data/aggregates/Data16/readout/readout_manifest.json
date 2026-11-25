@@ -1,0 +1,402 @@
+{
+  "bootstrap_unit": "patient; all stays from each sampled patient are carried together",
+  "cache_attestations": {
+    "eicu_semantic_v4_2": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "audit_anchor_sources": {
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+      },
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_real_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-3f453e2f4b91e5d9_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+      "db": "eicu_semantic_v4_2",
+      "input_condition": "real",
+      "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+      "key": [
+        "eicu_semantic_v4_2",
+        "main20k",
+        "real"
+      ],
+      "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+      "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+      "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+      "model_tag": "main20k",
+      "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+      "status": "verified_frozen_v4_cache_archive"
+    },
+    "mimic": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "audit_anchor_sources": {
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+      },
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_mimic_main20k_real_ckpt-0719db57b91b2618_id-009c81e89cf7b3ad_mask-3f453e2f4b91e5d9_src-9bd20bf1394a_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "664e673209fcf06e77deaf5de53704c5958be50d7a069a9eb09baf13bb0ad76e",
+      "db": "mimic",
+      "input_condition": "real",
+      "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+      "key": [
+        "mimic",
+        "main20k",
+        "real"
+      ],
+      "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+      "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+      "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+      "model_tag": "main20k",
+      "row_identity_sha256": "009c81e89cf7b3ad50f067da2e650546a39672eef3165c72e6676cd92f903f87",
+      "status": "verified_frozen_v4_cache_archive"
+    },
+    "nwicu_discharge_v4_1": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "audit_anchor_sources": {
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+      },
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_nwicu_discharge_v4_1_main20k_real_ckpt-0719db57b91b2618_id-8c761f0044604741_mask-3f453e2f4b91e5d9_src-c654c70a1701_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "7767f835f63b705045b41e4ce4592a6ae739588dc7ab1cc6a154b918d5a1b8fa",
+      "db": "nwicu_discharge_v4_1",
+      "input_condition": "real",
+      "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+      "key": [
+        "nwicu_discharge_v4_1",
+        "main20k",
+        "real"
+      ],
+      "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+      "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+      "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+      "model_tag": "main20k",
+      "row_identity_sha256": "8c761f004460474176160ad906851d27edfc5aaf6540fd817d1c8669416518fc",
+      "status": "verified_frozen_v4_cache_archive"
+    }
+  },
+  "contrast_sign": "candidate minus reference; negative Brier/logloss differences favor the candidate",
+  "created_utc": "2026-11-23T18:00:34Z",
+  "csv_outputs": {
+    "source_c_mimic_split2_loss_contrasts.csv": {
+      "columns": [
+        "cohort",
+        "scope",
+        "candidate_model",
+        "reference_model",
+        "metric",
+        "weighting",
+        "difference_new_minus_reference",
+        "ci_95_low",
+        "ci_95_high",
+        "n_patients",
+        "n_stays",
+        "bootstrap_draws",
+        "ci_scope"
+      ],
+      "purpose": "paired selected-C minus historical/conventional Brier and logloss differences on MIMIC split2"
+    },
+    "source_c_mimic_split2_metrics.csv": {
+      "columns": [
+        "cohort",
+        "scope",
+        "model_id",
+        "n_stays",
+        "n_patients",
+        "events",
+        "prevalence",
+        "mean_predicted",
+        "auroc",
+        "average_precision",
+        "brier",
+        "logloss"
+      ],
+      "purpose": "point metrics for selected C, historical C=1, and frozen conventional references on MIMIC split2"
+    },
+    "source_c_paired_loss_contrasts.csv": {
+      "columns": [
+        "cohort",
+        "scope",
+        "candidate_model",
+        "reference_model",
+        "metric",
+        "weighting",
+        "difference_new_minus_reference",
+        "ci_95_low",
+        "ci_95_high",
+        "n_patients",
+        "n_stays",
+        "bootstrap_draws",
+        "ci_scope"
+      ],
+      "purpose": "paired selected-C minus historical/frozen-reference Brier and logloss contrasts with cluster intervals"
+    },
+    "source_c_paired_roster_metrics.csv": {
+      "columns": [
+        "cohort",
+        "scope",
+        "model_id",
+        "n_stays",
+        "n_patients",
+        "events",
+        "prevalence",
+        "mean_predicted",
+        "auroc",
+        "average_precision",
+        "brier",
+        "logloss"
+      ],
+      "purpose": "point metrics for every scored arm on the matched MIMIC split2 and reviewed external rosters"
+    },
+    "source_c_selected_500_calibration_loss_summary.csv": {
+      "columns": [
+        "cohort",
+        "model_id",
+        "selected_C",
+        "budget",
+        "method",
+        "metric",
+        "assessment_mean_loss",
+        "loss_scope",
+        "n_assessment_stays",
+        "n_assessment_patients",
+        "repeats",
+        "sampling_plan_sha256"
+      ],
+      "purpose": "selected-C raw point losses and within-stay losses averaged over the complete 200-repeat 500-label fit plan"
+    },
+    "source_c_selected_500_calibration_paired_contrasts.csv": {
+      "columns": [
+        "cohort",
+        "candidate_model",
+        "selected_C",
+        "reference_model",
+        "budget",
+        "method",
+        "metric",
+        "difference_candidate_minus_reference",
+        "ci_95_low",
+        "ci_95_high",
+        "weighting",
+        "n_assessment_stays",
+        "n_assessment_patients",
+        "bootstrap_draws",
+        "uncertainty_scope",
+        "sampling_plan_sha256"
+      ],
+      "purpose": "selected-C minus historical C1, V+P LR, and V+P HGBT loss differences on exactly matched v4 500-label draws and assessment stays"
+    },
+    "source_c_selected_500_calibration_repeat_metrics.csv": {
+      "columns": [
+        "cohort",
+        "model_id",
+        "budget",
+        "selected_C",
+        "repeat",
+        "events",
+        "nonevents",
+        "adaptation_sample_index_sha256",
+        "adaptation_sample_patient_index_stay_sha256",
+        "sampling_plan_sha256",
+        "stratified_patient_pool_split",
+        "offset_fit_ok",
+        "offset_fit_status",
+        "offset_slope",
+        "offset_intercept",
+        "offset_fallback_probability",
+        "offset_operational_brier",
+        "offset_operational_logloss",
+        "platt_fit_ok",
+        "platt_fit_status",
+        "platt_slope",
+        "platt_intercept",
+        "platt_fallback_probability",
+        "platt_operational_brier",
+        "platt_operational_logloss",
+        "raw_brier",
+        "raw_logloss"
+      ],
+      "purpose": "repeat-level aggregate events, fit status, fallback, and assessment scores for all matched 500-label selected-C offset and Platt fits"
+    }
+  },
+  "embedding_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+  "evaluated_rosters": {
+    "eicu_semantic_v4_2": {
+      "identity_sha256": "69273a457af057480ea2533ca2a73aa2c182e66190e1545319b6a327265ca8fa",
+      "n_patients": 102957,
+      "n_stays": 130544,
+      "roster_source": "exact reviewed main20k_real frozen v4 target score roster"
+    },
+    "mimic": {
+      "identity_sha256": "ee582da8ae59725d379930504213a4277e7141abc08a5585b42a0e14dbcdff57",
+      "n_patients": 10848,
+      "n_stays": 14890,
+      "roster_source": "eligible MIMIC split2 source test partition",
+      "split": 2
+    },
+    "nwicu_discharge_v4_1": {
+      "identity_sha256": "d2bf248664e53c84d704e7bd62d99766b0d629fe2e98f555c7a14d7aac677a8f",
+      "n_patients": 17385,
+      "n_stays": 19972,
+      "roster_source": "exact reviewed main20k_real frozen v4 target score roster"
+    }
+  },
+  "input_cache_rows_used": {
+    "eicu_semantic_v4_2": 192805,
+    "mimic": 94343,
+    "nwicu_discharge_v4_1": 27114
+  },
+  "metrics_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_paired_roster_metrics.csv",
+  "metrics_csv_sha256": "90354a0cea4e5ea7af255605442e65500c307b1f797be2c2393878697fa9cda5",
+  "model_ids": {
+    "external_references": [
+      "main20k_real",
+      "conventional_lr_value_plus_pattern",
+      "conventional_hgb_value_plus_pattern"
+    ],
+    "historical_reference": "main20k_C1_historical",
+    "selected_candidate": "main20k_C_selected"
+  },
+  "models": [
+    "historical main20k C=1",
+    "MIMIC split1-Brier-selected main20k C",
+    "existing source-selected value-plus-pattern logistic regression",
+    "existing source-selected value-plus-pattern histogram gradient boosting"
+  ],
+  "numerical_readout_threading": {
+    "blas_workers_per_grid_fit": 8,
+    "cpu_quota_or_global_thread_policy_changed": false,
+    "dedicated_cgroup_cpu_quota_cores": 2,
+    "dedicated_cgroup_cpu_quota_percent": 200,
+    "reason": "reproduce the historical C=1 source-head numerical path",
+    "scope": "all six source-grid LogisticRegression.fit calls only"
+  },
+  "paired_ci": "1000 patient-cluster draws for paired Brier and logloss loss differences; stay- and patient-weighted",
+  "paired_contrasts_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_paired_loss_contrasts.csv",
+  "paired_contrasts_csv_sha256": "8fb9763619b5e5be9be599c7f3c6cef29ec3fbf36cd24fbc0ff3eba5191a6211",
+  "patient_level_predictions_exported": false,
+  "raw_probability_loss_clip": [
+    1e-06,
+    0.999999
+  ],
+  "run_id": "v5rc_20261123T175424Z_4058026",
+  "same_roster_identity_checks": "all source and target model arms passed one-to-one stay/patient/source-row/split/label identity checks",
+  "scope": "MIMIC source split2 plus repaired eICU and NWICU only",
+  "selected_c_calibration_500": {
+    "budget": 500,
+    "comparison_scope": "selected-C raw, offset, and Platt operational losses paired against the same v4 500-label / 200-draw losses for historical C1, V+P LR, and V+P HGBT",
+    "fallback": "Jeffreys-smoothed adaptation prevalence after offset/Platt fit failure",
+    "loss_aggregation": "per-stay loss averaged over all 200 fit-specific probabilities before patient-cluster uncertainty",
+    "loss_summary_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_selected_500_calibration_loss_summary.csv",
+    "loss_summary_csv_sha256": "728884885a3422795704e03a63c45af4e81a5eb2e2d29d52f351557705dc8580",
+    "paired_contrasts_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_selected_500_calibration_paired_contrasts.csv",
+    "paired_contrasts_csv_sha256": "b4fb706a098d13c1c122547faa207b8ea47be3c16294b1d21fa7afec556e1d84",
+    "provenance_by_cohort": {
+      "eicu_semantic_v4_2": {
+        "budget": 500,
+        "cohort": "eicu_semantic_v4_2",
+        "draws_reused": "all v4 500-label draws (200 repetitions), each checked against the plan's index and patient/stay hashes",
+        "fallback": "Jeffreys-smoothed adaptation prevalence after offset/Platt fit failure",
+        "fit_failure_by_arm": {
+          "offset": 0,
+          "platt": 0
+        },
+        "fit_success_by_arm": {
+          "offset": 200,
+          "platt": 200
+        },
+        "loss_aggregation": "mean of the 200 fit-specific per-stay losses, followed by patient-cluster paired bootstrap",
+        "n_adaptation_patients": 51478,
+        "n_assessment_events": 5979,
+        "n_assessment_patients": 51479,
+        "n_assessment_stays": 65157,
+        "patient_level_predictions_exported": false,
+        "patient_overlap": 0,
+        "repeats": 200,
+        "roles_reused": "v4 20261122 random patient roles; one outcome-blind adaptation index stay per patient; all eligible assessment stays",
+        "sampling_plan_sha256": "a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032",
+        "selected_C": 0.1,
+        "status": "complete",
+        "v4_archive_manifest_sha256": "11dae4ceafe7f7174721e1560e2b01f008d4d75da4620d7051cce90cd495de68",
+        "v4_archive_sha256": "a1814a1243bafca2323190ec8bd66425fc04132cdc97c55854e315c8f4f0577b",
+        "v4_sampling_plan_sha256": "a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032"
+      },
+      "nwicu_discharge_v4_1": {
+        "budget": 500,
+        "cohort": "nwicu_discharge_v4_1",
+        "draws_reused": "all v4 500-label draws (200 repetitions), each checked against the plan's index and patient/stay hashes",
+        "fallback": "Jeffreys-smoothed adaptation prevalence after offset/Platt fit failure",
+        "fit_failure_by_arm": {
+          "offset": 0,
+          "platt": 0
+        },
+        "fit_success_by_arm": {
+          "offset": 200,
+          "platt": 200
+        },
+        "loss_aggregation": "mean of the 200 fit-specific per-stay losses, followed by patient-cluster paired bootstrap",
+        "n_adaptation_patients": 8692,
+        "n_assessment_events": 1107,
+        "n_assessment_patients": 8693,
+        "n_assessment_stays": 10080,
+        "patient_level_predictions_exported": false,
+        "patient_overlap": 0,
+        "repeats": 200,
+        "roles_reused": "v4 20261122 random patient roles; one outcome-blind adaptation index stay per patient; all eligible assessment stays",
+        "sampling_plan_sha256": "77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372",
+        "selected_C": 0.1,
+        "status": "complete",
+        "v4_archive_manifest_sha256": "810be04ab93aaba2b57a0b8e6095a0667023f5fb836b4df62a34dc1f2ce58190",
+        "v4_archive_sha256": "74a87926b718640127bbe4b8ed5224720c4e559672c9e4a7fc25a448a958290c",
+        "v4_sampling_plan_sha256": "77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372"
+      }
+    },
+    "repeat_metrics_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_selected_500_calibration_repeat_metrics.csv",
+    "repeat_metrics_csv_sha256": "1120573562299b5c689b4029ae10411779bb16717451466a512098027e1a38ee",
+    "repeats": 200,
+    "status": "complete"
+  },
+  "sicdb_scored": false,
+  "source_c1_refit_matches_historical_probe_within_2e-6": true,
+  "source_c1_refit_vs_historical_max_abs_probability_difference": 0.0,
+  "source_c1_reproduction_guard": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c1_reproduction_guard.json",
+  "source_c1_reproduction_guard_sha256": "7be26dc942a3255b817cbbd33713ef1d1792360a91db6bc66a6858e9ffaea978",
+  "source_choice_lock": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_choice_lock.json",
+  "source_choice_lock_sha256": "da5d2994df40ec5cf7b9d642393866d59642ffe280d8289cc3652532a8db6825",
+  "source_mimic_split2_contrasts_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_mimic_split2_loss_contrasts.csv",
+  "source_mimic_split2_contrasts_csv_sha256": "27c60e7295f7fccb97a49cf9447f4463abcda8fe32ec95237023dba60b59c2d1",
+  "source_mimic_split2_metrics_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_mimic_split2_metrics.csv",
+  "source_mimic_split2_metrics_csv_sha256": "d3cd4e57861ca4d4913543e8ac425a4a43710a5005a53f4f50ae3ee7d7eaef28",
+  "source_split_counts": {
+    "0": 51714,
+    "1": 7332,
+    "2": 14890
+  },
+  "status": "complete",
+  "target_endpoints": {
+    "eicu_semantic_v4_2": "hospital",
+    "nwicu_discharge_v4_1": "hospital"
+  },
+  "target_evaluated": [
+    "eicu_semantic_v4_2",
+    "nwicu_discharge_v4_1"
+  ],
+  "transport_provenance": {
+    "baseline_prediction_file_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/predictions/recovered_frozen_baseline_predictions.parquet",
+    "baseline_prediction_file_sha256": "d5539dca2804d8077bdb8677b02cd9aa48f1e191236d1904e36b3697fa5e0cd8",
+    "baseline_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/baseline_prediction_manifest.json",
+    "baseline_prediction_manifest_sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492",
+    "clinical_input_availability_verified": false,
+    "clinical_promotion_allowed": false,
+    "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+    "fm_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json",
+    "fm_prediction_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+    "identity_scope": "within-source patient clustering only; cross-source and cross-scope independence unverified",
+    "patient_level_exported_to_local": false,
+    "source_model_bundle_sha256": "e9a09363585f082a92e21628979830e47f35221584d3a9d60a267ae4b782b0b6",
+    "source_reproduction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json",
+    "source_reproduction_manifest_sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262",
+    "subject_identity_attestation_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+    "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+  },
+  "transport_sampling_plan_sha256": "8d3579bfeee432271cc9c374532956deb1eff33940a1a6e628436f88fc9c4e64"
+}

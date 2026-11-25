@@ -1,0 +1,23 @@
+{
+  "checkpoint_contents": "aggregate counts only; no row-level data",
+  "cohort": "sicdb_zero_offset_v4_2",
+  "completed_draws": 1000,
+  "endpoint": "icu",
+  "group_count": 5,
+  "group_number": 5,
+  "invalid_optimizer_draws_by_arm": {
+    "big50m_full_common8_mask": 0,
+    "big50m_full_real": 0,
+    "big50m_real": 0,
+    "main20k_common8_mask": 0,
+    "main20k_real": 0
+  },
+  "one_class_draws": 0,
+  "population_identity_sha256": "55652cb30f1f2217d9576084ed60bb5f83855a22ee089e61af9821977f5c454e",
+  "requested_draws": 1000,
+  "status": "complete",
+  "completed_groups": 5,
+  "finished_draws": 1000,
+  "metrics_rows": 189,
+  "flow_rows": 17
+}

@@ -1,0 +1,78 @@
+{
+  "all_invalid_bootstrap_counts_reported_per_metric": true,
+  "base_seed": 20261123,
+  "big_analyses": {
+    "big50m_full_common8_mask": {
+      "input_condition": "common8_mask",
+      "model_tag": "big50m_full"
+    },
+    "big50m_full_real": {
+      "input_condition": "real",
+      "model_tag": "big50m_full"
+    },
+    "big50m_real": {
+      "input_condition": "real",
+      "model_tag": "big50m"
+    }
+  },
+  "big_manifest_sha256": "ee1c581293fd337f96e2cd3ea299e910eabb863db28795c86e2e810e1125d32a",
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "patient/subject cluster sampled with replacement; all stays retained",
+  "calibration": "paired_metrics_v4 original weighted slope/intercept fit, slope penalty 1e-6, intercept unpenalized; offset is fixed-slope intercept recalibration",
+  "checkpoint_metadata_audit_sha256": "fc1c3dab84114f3e47ccae9661619d14289052bddee27548c556a07866f96677",
+  "ci": "percentile 95% bootstrap interval; per-cell full prediction population, paired contrasts on exact intersection",
+  "cohort_slices": {
+    "eicu_all_eligible": "all eligible rows in original eICU prediction flow",
+    "eicu_native_split2_sensitivity": "original eICU native split=2 rows only; this partition does not prove absence of historical pretraining exposure",
+    "mimic_test": "original MIMIC test partition only (split=2)"
+  },
+  "contrasts": {
+    "big50m_full_common8_mask_minus_big50m_full_real": {
+      "left": "big50m_full_real",
+      "reported_difference": "right minus left",
+      "right": "big50m_full_common8_mask"
+    },
+    "big50m_full_common8_mask_minus_main20k_common8_mask": {
+      "left": "main20k_common8_mask",
+      "reported_difference": "right minus left",
+      "right": "big50m_full_common8_mask"
+    },
+    "big50m_full_real_minus_big50m_real": {
+      "left": "big50m_real",
+      "reported_difference": "right minus left",
+      "right": "big50m_full_real"
+    },
+    "big50m_real_minus_main20k_real": {
+      "left": "main20k_real",
+      "reported_difference": "right minus left",
+      "right": "big50m_real"
+    }
+  },
+  "core_analyses_for_contrasts": [
+    "main20k_real",
+    "main20k_common8_mask"
+  ],
+  "core_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+  "interpretation_limit": "descriptive comparisons only; no scaling-law, causal, or more-parameters claim; pretraining data/epochs differ and BIG training membership is unknown",
+  "landmark_gate_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "brier",
+    "logloss",
+    "calibration_slope",
+    "calibration_intercept",
+    "offset_intercept"
+  ],
+  "paired_intersection": "exact db/stay_id key intersection verified for subject, rows, split, outcome, and endpoint via paired_metrics_v4.pair_rows",
+  "parameter_counts": {
+    "big50m": 56778251,
+    "big50m_full": 56778251,
+    "main20k": 409099
+  },
+  "pretraining_exposure": "big-model historical pretraining exposure is documented; the original eICU split=2 sensitivity does not establish absence of historical exposure",
+  "ranking_metrics": "verified semantic_contrast descending weighted score-group helper; tied-score and zero-weight synthetic and actual weighted draws cross-checked with sklearn and paired_metrics_v4",
+  "source_loading": "existing paired_metrics_v4 validation functions used directly; immutable run manifests and prediction artifacts were hash/digest checked",
+  "status": "complete",
+  "weighted_actual_draw_crosscheck": true
+}

@@ -1,0 +1,584 @@
+{
+  "controls": {
+    "control_a_fixed_main20k_head": {
+      "eicu": {
+        "conditions": {
+          "donor": {
+            "aggregate": {
+              "alternative_metrics": {
+                "auroc": 0.5655076199796805,
+                "average_precision": 0.11554225168211117,
+                "brier": 0.09570301540750738,
+                "logloss": 0.354587016920112
+              },
+              "base_metrics": {
+                "auroc": 0.696100354193288,
+                "average_precision": 0.21206025447856747,
+                "brier": 0.08575894030573132,
+                "logloss": 0.3078467822406854
+              },
+              "bootstrap_ci_conditioning": "fixed eligible evaluation rows; patients sampled with replacement, all their stays carried together",
+              "bootstrap_replicates": 1000,
+              "change_alternative_minus_base": {
+                "auroc": -0.1305927342136075,
+                "average_precision": -0.0965180027964563,
+                "brier": 0.009944075101776056,
+                "logloss": 0.04674023467942662,
+                "mean_abs_delta_logit": 1.3157243434983719,
+                "mean_abs_delta_probability": 0.1030959390289378,
+                "mean_delta_logit": 0.08898457172337798,
+                "mean_delta_probability": -0.0025900880950952185
+              },
+              "n_patients": 102957,
+              "n_rows": 130544,
+              "paired_patient_bootstrap_95pct_ci": {
+                "auroc": [
+                  -0.13675908772018644,
+                  -0.12434445331087908
+                ],
+                "average_precision": [
+                  -0.10244795341169213,
+                  -0.09100394813371593
+                ],
+                "brier": [
+                  0.009196086272149311,
+                  0.010726779755371443
+                ],
+                "logloss": [
+                  0.04378325994259579,
+                  0.049455462520949275
+                ],
+                "mean_abs_delta_logit": [
+                  1.3097720429304804,
+                  1.321620360838758
+                ],
+                "mean_abs_delta_probability": [
+                  0.10237770384854604,
+                  0.10385024653752324
+                ],
+                "mean_delta_logit": [
+                  0.07836332576614742,
+                  0.09901685791384195
+                ],
+                "mean_delta_probability": [
+                  -0.003611700987131169,
+                  -0.0016400148990903655
+                ]
+              },
+              "patient_cluster_bootstrap_seed": 20262133
+            },
+            "changed_token_fraction": 0.8627677324955719,
+            "donor_coverage": {
+              "donor_assignment": "uniform over distinct eligible evaluation subjects with this variable; one donor per target subject-variable; donor B bins sampled with replacement to fill target token positions",
+              "donor_candidates_max": 101718,
+              "donor_candidates_median": 92910.0,
+              "donor_candidates_min": 1658,
+              "donor_coverage_fraction": 1.0,
+              "donor_coverage_groups": 1625270,
+              "no_other_donor_groups": 0,
+              "outcome_used_for_donor_assignment": false,
+              "self_donor_groups": 0,
+              "target_subject_variable_groups": 1625270,
+              "unique_donor_subjects": 102844
+            }
+          },
+          "within": {
+            "aggregate": {
+              "alternative_metrics": {
+                "auroc": 0.6967344421560009,
+                "average_precision": 0.21179808894968316,
+                "brier": 0.08638913048655704,
+                "logloss": 0.3091336416064787
+              },
+              "base_metrics": {
+                "auroc": 0.696100354193288,
+                "average_precision": 0.21206025447856747,
+                "brier": 0.08575894030573132,
+                "logloss": 0.3078467822406854
+              },
+              "bootstrap_ci_conditioning": "fixed eligible evaluation rows; patients sampled with replacement, all their stays carried together",
+              "bootstrap_replicates": 1000,
+              "change_alternative_minus_base": {
+                "auroc": 0.0006340879627129148,
+                "average_precision": -0.0002621655288843061,
+                "brier": 0.0006301901808257182,
+                "logloss": 0.0012868593657933136,
+                "mean_abs_delta_logit": 0.24530023174748794,
+                "mean_abs_delta_probability": 0.01888186224924208,
+                "mean_delta_logit": 0.03298496661131883,
+                "mean_delta_probability": 0.0035219333431007927
+              },
+              "n_patients": 102957,
+              "n_rows": 130544,
+              "paired_patient_bootstrap_95pct_ci": {
+                "auroc": [
+                  -0.00039629322809733023,
+                  0.0016376084357510835
+                ],
+                "average_precision": [
+                  -0.0014199923420331868,
+                  0.0008198901491994954
+                ],
+                "brier": [
+                  0.0004942584817437288,
+                  0.0007763770052068436
+                ],
+                "logloss": [
+                  0.0008153017854293815,
+                  0.0017756550509407637
+                ],
+                "mean_abs_delta_logit": [
+                  0.2442420112778197,
+                  0.24636028642423094
+                ],
+                "mean_abs_delta_probability": [
+                  0.018730664152656815,
+                  0.019034229291193153
+                ],
+                "mean_delta_logit": [
+                  0.031188178265196397,
+                  0.03469278331834837
+                ],
+                "mean_delta_probability": [
+                  0.003353266740270075,
+                  0.0036884959620169964
+                ]
+              },
+              "patient_cluster_bootstrap_seed": 20262123
+            },
+            "changed_token_fraction": 0.5606421433211763,
+            "donor_coverage": null
+          }
+        },
+        "interpretation_limits": [
+          "The temporal shuffle preserves each stay-variable B-bin multiset and all V/H/L/padding positions.",
+          "The donor replacement assigns a different patient uniformly within variable-specific eligible donors and samples donor bins with replacement.",
+          "Different-patient donor replacement breaks joint physiology; it is a representation-response control, not a causal intervention.",
+          "Cohorts are retrospective measurement-time analyses; real-time clinical input availability is unverified."
+        ],
+        "n": 130544,
+        "prevalence": 0.0914863953915921,
+        "real_input_metrics": {
+          "auroc": 0.696100354193288,
+          "average_precision": 0.21206025447856747,
+          "brier": 0.08575894030573132,
+          "logloss": 0.3078467822406854
+        }
+      },
+      "mimic": {
+        "conditions": {
+          "donor": {
+            "aggregate": {
+              "alternative_metrics": {
+                "auroc": 0.5646256345965971,
+                "average_precision": 0.1343947289853471,
+                "brier": 0.10494467734017787,
+                "logloss": 0.3772058798101856
+              },
+              "base_metrics": {
+                "auroc": 0.8067152546010018,
+                "average_precision": 0.3851306503710701,
+                "brier": 0.08376538778216679,
+                "logloss": 0.28503806816001515
+              },
+              "bootstrap_ci_conditioning": "fixed eligible evaluation rows; patients sampled with replacement, all their stays carried together",
+              "bootstrap_replicates": 1000,
+              "change_alternative_minus_base": {
+                "auroc": -0.2420896200044047,
+                "average_precision": -0.250735921385723,
+                "brier": 0.021179289558011086,
+                "logloss": 0.09216781165017046,
+                "mean_abs_delta_logit": 1.060685306366322,
+                "mean_abs_delta_probability": 0.09092558341100476,
+                "mean_delta_logit": 0.07381214683953236,
+                "mean_delta_probability": -0.011465286965256538
+              },
+              "n_patients": 10848,
+              "n_rows": 14890,
+              "paired_patient_bootstrap_95pct_ci": {
+                "auroc": [
+                  -0.25880825309287087,
+                  -0.22395958061893567
+                ],
+                "average_precision": [
+                  -0.2757821989628492,
+                  -0.22829442161948202
+                ],
+                "brier": [
+                  0.019032435286416724,
+                  0.02349939610343508
+                ],
+                "logloss": [
+                  0.08400157053296634,
+                  0.100590808384236
+                ],
+                "mean_abs_delta_logit": [
+                  1.0465496354050907,
+                  1.076091319141029
+                ],
+                "mean_abs_delta_probability": [
+                  0.0891058320583749,
+                  0.09300772040932731
+                ],
+                "mean_delta_logit": [
+                  0.048656998196289145,
+                  0.09847491228661076
+                ],
+                "mean_delta_probability": [
+                  -0.014038836812701152,
+                  -0.008918357264864903
+                ]
+              },
+              "patient_cluster_bootstrap_seed": 20261133
+            },
+            "changed_token_fraction": 0.8443329369622761,
+            "donor_coverage": {
+              "donor_assignment": "uniform over distinct eligible evaluation subjects with this variable; one donor per target subject-variable; donor B bins sampled with replacement to fill target token positions",
+              "donor_candidates_max": 10833,
+              "donor_candidates_median": 8561.0,
+              "donor_candidates_min": 156,
+              "donor_coverage_fraction": 1.0,
+              "donor_coverage_groups": 308475,
+              "no_other_donor_groups": 0,
+              "outcome_used_for_donor_assignment": false,
+              "self_donor_groups": 0,
+              "target_subject_variable_groups": 308475,
+              "unique_donor_subjects": 10848
+            }
+          },
+          "within": {
+            "aggregate": {
+              "alternative_metrics": {
+                "auroc": 0.8085464617886731,
+                "average_precision": 0.38560165005351343,
+                "brier": 0.08360736584952337,
+                "logloss": 0.28421107214612334
+              },
+              "base_metrics": {
+                "auroc": 0.8067152546010018,
+                "average_precision": 0.3851306503710701,
+                "brier": 0.08376538778216679,
+                "logloss": 0.28503806816001515
+              },
+              "bootstrap_ci_conditioning": "fixed eligible evaluation rows; patients sampled with replacement, all their stays carried together",
+              "bootstrap_replicates": 1000,
+              "change_alternative_minus_base": {
+                "auroc": 0.0018312071876712688,
+                "average_precision": 0.00047099968244335155,
+                "brier": -0.00015802193264341513,
+                "logloss": -0.0008269960138918009,
+                "mean_abs_delta_logit": 0.21020990420023092,
+                "mean_abs_delta_probability": 0.017169770935175317,
+                "mean_delta_logit": 0.021176356180593745,
+                "mean_delta_probability": 0.0023099166490010586
+              },
+              "n_patients": 10848,
+              "n_rows": 14890,
+              "paired_patient_bootstrap_95pct_ci": {
+                "auroc": [
+                  -0.0008875074586156079,
+                  0.0046069382218697245
+                ],
+                "average_precision": [
+                  -0.004576454473049492,
+                  0.00555387437175596
+                ],
+                "brier": [
+                  -0.0005302963671570165,
+                  0.00021155343212214678
+                ],
+                "logloss": [
+                  -0.002016361365824515,
+                  0.0004072085349524548
+                ],
+                "mean_abs_delta_logit": [
+                  0.2076974669702527,
+                  0.21270618912842243
+                ],
+                "mean_abs_delta_probability": [
+                  0.01681898300752976,
+                  0.017533077896062246
+                ],
+                "mean_delta_logit": [
+                  0.017199333607236616,
+                  0.025236708001656106
+                ],
+                "mean_delta_probability": [
+                  0.0018811967740946433,
+                  0.002742731271770746
+                ]
+              },
+              "patient_cluster_bootstrap_seed": 20261123
+            },
+            "changed_token_fraction": 0.5514518908792758,
+            "donor_coverage": null
+          }
+        },
+        "interpretation_limits": [
+          "The temporal shuffle preserves each stay-variable B-bin multiset and all V/H/L/padding positions.",
+          "The donor replacement assigns a different patient uniformly within variable-specific eligible donors and samples donor bins with replacement.",
+          "Different-patient donor replacement breaks joint physiology; it is a representation-response control, not a causal intervention.",
+          "Cohorts are retrospective measurement-time analyses; real-time clinical input availability is unverified."
+        ],
+        "n": 14890,
+        "prevalence": 0.11249160510409671,
+        "real_input_metrics": {
+          "auroc": 0.8067152546010018,
+          "average_precision": 0.3851306503710701,
+          "brier": 0.08376538778216679,
+          "logloss": 0.28503806816001515
+        }
+      }
+    },
+    "control_b_random_initialized_same_architecture": {
+      "eicu": {
+        "interpretation_limits": [
+          "The encoder is randomly initialized from the same architecture and receives no pretrained weights.",
+          "Only the source C1 scaler/readout is fit, using eligible MIMIC split0 rows.",
+          "This compares initialization/pretraining at matched architecture; it is not a patient-membership or causal analysis."
+        ],
+        "n": 130544,
+        "n_source_train_split0": 51714,
+        "random_init_metrics": {
+          "auroc": 0.6864759013537391,
+          "average_precision": 0.18806780356256603,
+          "brier": 0.10287034718095597,
+          "logloss": 0.35274366370132904
+        },
+        "random_minus_trained_paired_patient_bootstrap": {
+          "alternative_metrics": {
+            "auroc": 0.6864759013537391,
+            "average_precision": 0.18806780356256603,
+            "brier": 0.10287034718095597,
+            "logloss": 0.35274366370132904
+          },
+          "base_metrics": {
+            "auroc": 0.696100354193288,
+            "average_precision": 0.21206025447856747,
+            "brier": 0.08575894030573132,
+            "logloss": 0.3078467822406854
+          },
+          "bootstrap_ci_conditioning": "fixed eligible evaluation rows; patients sampled with replacement, all their stays carried together",
+          "bootstrap_replicates": 1000,
+          "change_alternative_minus_base": {
+            "auroc": -0.009624452839548825,
+            "average_precision": -0.02399245091600144,
+            "brier": 0.017111406875224652,
+            "logloss": 0.044896881460643634,
+            "mean_abs_delta_logit": 0.8311984721564541,
+            "mean_abs_delta_probability": 0.07151237815589918,
+            "mean_delta_logit": 0.30603649050038145,
+            "mean_delta_probability": 0.03862261472579348
+          },
+          "n_patients": 102957,
+          "n_rows": 130544,
+          "paired_patient_bootstrap_95pct_ci": {
+            "auroc": [
+              -0.012903849545623078,
+              -0.006546915664010923
+            ],
+            "average_precision": [
+              -0.027256592363019336,
+              -0.020729228470650334
+            ],
+            "brier": [
+              0.016516489220261957,
+              0.017735315787920595
+            ],
+            "logloss": [
+              0.043021719888064046,
+              0.046944320135467114
+            ],
+            "mean_abs_delta_logit": [
+              0.8276205261993291,
+              0.8352055079540766
+            ],
+            "mean_abs_delta_probability": [
+              0.07093604849391273,
+              0.07204490573661648
+            ],
+            "mean_delta_logit": [
+              0.3004355206369074,
+              0.3121133739903016
+            ],
+            "mean_delta_probability": [
+              0.037981862595629204,
+              0.03925904026961652
+            ]
+          },
+          "patient_cluster_bootstrap_seed": 20267123
+        },
+        "trained_main20k_metrics": {
+          "auroc": 0.696100354193288,
+          "average_precision": 0.21206025447856747,
+          "brier": 0.08575894030573132,
+          "logloss": 0.3078467822406854
+        }
+      },
+      "mimic": {
+        "interpretation_limits": [
+          "The encoder is randomly initialized from the same architecture and receives no pretrained weights.",
+          "Only the source C1 scaler/readout is fit, using eligible MIMIC split0 rows.",
+          "This compares initialization/pretraining at matched architecture; it is not a patient-membership or causal analysis."
+        ],
+        "n": 14890,
+        "n_source_train_split0": 51714,
+        "random_init_metrics": {
+          "auroc": 0.8060978648189248,
+          "average_precision": 0.37705880186157753,
+          "brier": 0.08413838408874419,
+          "logloss": 0.2863394175447828
+        },
+        "random_minus_trained_paired_patient_bootstrap": {
+          "alternative_metrics": {
+            "auroc": 0.8060978648189248,
+            "average_precision": 0.37705880186157753,
+            "brier": 0.08413838408874419,
+            "logloss": 0.2863394175447828
+          },
+          "base_metrics": {
+            "auroc": 0.8067152546010018,
+            "average_precision": 0.3851306503710701,
+            "brier": 0.08376538778216679,
+            "logloss": 0.28503806816001515
+          },
+          "bootstrap_ci_conditioning": "fixed eligible evaluation rows; patients sampled with replacement, all their stays carried together",
+          "bootstrap_replicates": 1000,
+          "change_alternative_minus_base": {
+            "auroc": -0.000617389782077038,
+            "average_precision": -0.008071848509492552,
+            "brier": 0.0003729963065774028,
+            "logloss": 0.0013013493847676694,
+            "mean_abs_delta_logit": 0.4857041760011075,
+            "mean_abs_delta_probability": 0.03965143166713091,
+            "mean_delta_logit": 0.0027882963622939457,
+            "mean_delta_probability": -0.0003803226774879949
+          },
+          "n_patients": 10848,
+          "n_rows": 14890,
+          "paired_patient_bootstrap_95pct_ci": {
+            "auroc": [
+              -0.0069706348165767314,
+              0.005896045048411527
+            ],
+            "average_precision": [
+              -0.02116124923908933,
+              0.0055412007209688415
+            ],
+            "brier": [
+              -0.0005521686499520134,
+              0.0012641608291016158
+            ],
+            "logloss": [
+              -0.0017368450487869266,
+              0.00441474785823697
+            ],
+            "mean_abs_delta_logit": [
+              0.47933762648100153,
+              0.4914977618888852
+            ],
+            "mean_abs_delta_probability": [
+              0.03885372440411902,
+              0.04057164679906083
+            ],
+            "mean_delta_logit": [
+              -0.007785966418322518,
+              0.012389862377381163
+            ],
+            "mean_delta_probability": [
+              -0.0015274185755630712,
+              0.0006339262676237905
+            ]
+          },
+          "patient_cluster_bootstrap_seed": 20266123
+        },
+        "trained_main20k_metrics": {
+          "auroc": 0.8067152546010018,
+          "average_precision": 0.3851306503710701,
+          "brier": 0.08376538778216679,
+          "logloss": 0.28503806816001515
+        }
+      }
+    }
+  },
+  "created_utc": "2026-11-22T20:05:58Z",
+  "embedding_producer_runtime_by_cohort": {
+    "eicu": {
+      "cuda_compute_capability": [
+        8,
+        6
+      ],
+      "cuda_device": {
+        "index": 0,
+        "name": "NVIDIA RTX A5000"
+      },
+      "encoding_device": "cuda",
+      "encoding_dtype": "float32",
+      "model_parameter_dtypes": [
+        "torch.float32"
+      ],
+      "platform_machine": "x86_64",
+      "python_implementation": "CPython",
+      "python_version": "3.11.16",
+      "torch_cuda_version": "12.8",
+      "torch_num_threads": 8,
+      "torch_version": "2.11.0+cu128"
+    },
+    "mimic": {
+      "cuda_compute_capability": [
+        8,
+        6
+      ],
+      "cuda_device": {
+        "index": 0,
+        "name": "NVIDIA RTX A5000"
+      },
+      "encoding_device": "cuda",
+      "encoding_dtype": "float32",
+      "model_parameter_dtypes": [
+        "torch.float32"
+      ],
+      "platform_machine": "x86_64",
+      "python_implementation": "CPython",
+      "python_version": "3.11.16",
+      "torch_cuda_version": "12.8",
+      "torch_num_threads": 8,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "fixed_probe_consumer_runtime": {
+    "implementation": "CPython",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "python": "3.12.3",
+    "python_executable": "/usr/bin/python3",
+    "scipy": "1.11.4",
+    "sklearn": "1.8.0"
+  },
+  "fixed_probe_sha256": "25b6c9015cf73d5e0156b76197cf1101d6f6e4649407b3ba15b48b2f90a00707",
+  "gpu_encode_manifest_sha256": "d0c14676447ef8f8ec344da1f004d9156ea49d005fdc87082a34b6435212d3bf",
+  "gpu_encoder_runtime": {
+    "batch_size": 16,
+    "compute_capability": [
+      8,
+      6
+    ],
+    "cuda_memory_fraction_limit": 0.18,
+    "device": "NVIDIA RTX A5000",
+    "implementation": "CPython",
+    "max_cuda_memory_allocated_bytes": 25954816,
+    "numpy": "1.26.4",
+    "python": "3.11.16",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "torch_num_threads": 8
+  },
+  "gpu_intermediate_sha256": "5cca0ff5d9f35589d0c4a19e578d2d5f46338a71339650302e4b80c64fe4fb56",
+  "not_performed": [
+    "No derived secondary outcomes",
+    "No influence-function estimates",
+    "No INSPIRE scoring"
+  ],
+  "preflight_manifest_sha256": "f15dcceed118a462a00707394400c527503d6de9203b20e6906b50c23d2a163f",
+  "status": "analysis_complete"
+}

@@ -1,0 +1,36 @@
+{
+  "cell_counts_by_cohort": {
+    "eicu": {
+      "18-49|female": 8549,
+      "18-49|male": 10470,
+      "50-64|female": 12362,
+      "50-64|male": 17176,
+      "65-74|female": 10445,
+      "65-74|male": 13342,
+      "75+|female": 15695,
+      "75+|male": 14898
+    },
+    "mimic": {
+      "18-49|female": 795,
+      "18-49|male": 990,
+      "50-64|female": 1070,
+      "50-64|male": 1856,
+      "65-74|female": 1040,
+      "65-74|male": 1572,
+      "75+|female": 1694,
+      "75+|male": 1831
+    }
+  },
+  "common_support_cells": [
+    "18-49|female",
+    "18-49|male",
+    "50-64|female",
+    "50-64|male",
+    "65-74|female",
+    "65-74|male",
+    "75+|female",
+    "75+|male"
+  ],
+  "scope": "aggregate-only corrected age-sex cell audit; no model fitting or bootstrap",
+  "status": "complete"
+}

@@ -1,0 +1,4 @@
+cohort,n_full_rows,n_nomg_rows,n_exact_stay_id_intersection,n_full_only,n_nomg_only,n_proxy_identity_conflicts,n_label_conflicts,n_full_events,n_nomg_events,n_paired_events,n_paired_non_events,n_paired_record_id_proxy_clusters,identity_unit,exact_stay_id_intersection_used,comparison_direction,full_condition,no_mg_condition,proxy_and_label_identity_verified
+c2012_a_v4_1,3964,3964,3964,0,0,0,0,528,528,528,3436,3964,record_id_proxy; not verified as independent patients,True,full_minus_no_mg,main20k_real,symmetric_mg_omitted_p_nomg,True
+c2012_b_v4_1,3965,3965,3965,0,0,0,0,543,543,543,3422,3965,record_id_proxy; not verified as independent patients,True,full_minus_no_mg,main20k_real,symmetric_mg_omitted_p_nomg,True
+c2012_c_v4_1,3957,3957,3957,0,0,0,0,549,549,549,3408,3957,record_id_proxy; not verified as independent patients,True,full_minus_no_mg,main20k_real,symmetric_mg_omitted_p_nomg,True

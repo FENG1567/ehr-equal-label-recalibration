@@ -1,0 +1,148 @@
+{
+  "public_release": "v1.0.0",
+  "editor_package": "20261125-r9",
+  "current_figure_display_index": "2026.11.25-r7",
+  "documents": [
+    {
+      "role": "English manuscript",
+      "filename": "Manuscript_EN.docx",
+      "editor_package": "20261125-r9",
+      "sha256": "9c00d1f350f226decb325da4210352153b221ba0db727936b88f7f1b0fc10f32",
+      "evidence": "WPS reopen/read extraction",
+      "evidence_sha256": "9c04a61c1f7dc0169fa7b86bad7d7cf341b57f01e3b60d3215e74437b0785c88"
+    },
+    {
+      "role": "Supplementary Information",
+      "filename": "Supplementary_Information.docx",
+      "editor_package": "20261125-r8 (unchanged in r9)",
+      "sha256": "16a510f12f344a86946f4b104c7289c6a4523c6298e129d3ce63f737b12e9191",
+      "evidence": "WPS reopen/read extraction",
+      "evidence_sha256": "d9fddd87314163ea963e894302ba4521d241281e4b99703c66e127284cadb3b8"
+    }
+  ],
+  "normalization": "Cell text was compared after collapsing whitespace and line breaks, removing whitespace around slash separators, and normalizing Unicode minus/dash variants to hyphen. The comparison includes all table body cells, including numeric cells.",
+  "table_body_note": "Captions and notes are outside this cell-body comparison and may differ following external file-pointer cleanup.",
+  "bindings": [
+    {
+      "table": "Table1",
+      "document": "Manuscript_EN.docx",
+      "table_index": 1,
+      "rows_including_header": 4,
+      "columns": 6,
+      "cells_compared": 24,
+      "numeric_tokens_compared": 49,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "Table2",
+      "document": "Manuscript_EN.docx",
+      "table_index": 2,
+      "rows_including_header": 9,
+      "columns": 7,
+      "cells_compared": 63,
+      "numeric_tokens_compared": 74,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS1",
+      "document": "Supplementary_Information.docx",
+      "table_index": 1,
+      "rows_including_header": 11,
+      "columns": 4,
+      "cells_compared": 44,
+      "numeric_tokens_compared": 68,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS2A",
+      "document": "Supplementary_Information.docx",
+      "table_index": 2,
+      "rows_including_header": 7,
+      "columns": 6,
+      "cells_compared": 42,
+      "numeric_tokens_compared": 72,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS2B",
+      "document": "Supplementary_Information.docx",
+      "table_index": 3,
+      "rows_including_header": 7,
+      "columns": 6,
+      "cells_compared": 42,
+      "numeric_tokens_compared": 72,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS2C",
+      "document": "Supplementary_Information.docx",
+      "table_index": 4,
+      "rows_including_header": 7,
+      "columns": 6,
+      "cells_compared": 42,
+      "numeric_tokens_compared": 72,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS2D",
+      "document": "Supplementary_Information.docx",
+      "table_index": 5,
+      "rows_including_header": 7,
+      "columns": 6,
+      "cells_compared": 42,
+      "numeric_tokens_compared": 72,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS3",
+      "document": "Supplementary_Information.docx",
+      "table_index": 6,
+      "rows_including_header": 13,
+      "columns": 7,
+      "cells_compared": 91,
+      "numeric_tokens_compared": 122,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS4",
+      "document": "Supplementary_Information.docx",
+      "table_index": 7,
+      "rows_including_header": 10,
+      "columns": 7,
+      "cells_compared": 70,
+      "numeric_tokens_compared": 54,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS5",
+      "document": "Supplementary_Information.docx",
+      "table_index": 8,
+      "rows_including_header": 2,
+      "columns": 6,
+      "cells_compared": 12,
+      "numeric_tokens_compared": 19,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    },
+    {
+      "table": "TableS6",
+      "document": "Supplementary_Information.docx",
+      "table_index": 9,
+      "rows_including_header": 5,
+      "columns": 3,
+      "cells_compared": 15,
+      "numeric_tokens_compared": 16,
+      "all_cell_text_match": true,
+      "numeric_cell_text_match": true
+    }
+  ]
+}

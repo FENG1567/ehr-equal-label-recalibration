@@ -1,0 +1,7 @@
+scope,field,available,n_cases,n_nonmissing,n_missing,n_unique_raw,numeric_min,numeric_median,numeric_max,n_zero,n_observed,min,median,max,definition,case_close_is_index_icu_exit,continuous_icu_at_h24_verified,icu_death_verified,endpoint_name,candidate_event_fields,status
+all_cases,dischargestate,True,27350.0,27350.0,0.0,3.0,2202.0,2202.0,2215.0,0.0,,,,,,,,,,,
+all_cases,timeofstay,True,27350.0,27350.0,0.0,6782.0,120.0,126000.0,10890000.0,0.0,,,,,,,,,,,
+all_cases,offsetofdeath,True,27350.0,5088.0,22262.0,5005.0,60.0,3748170.0,30747900.0,0.0,,,,,,,,,,,
+all_cases,icuoffset,True,27350.0,27350.0,0.0,919.0,0.0,6540.0,2889360.0,12345.0,,,,,,,,,,,
+all_cases,case_closure_relative_hr,True,27350.0,,0.0,,,,,,27350.0,-14.4,33.96666666666667,3020.016666666667,"(TimeOfStay - ICUOffset)/3600; case closure relative to ICU start proxy, not an ICU exit",,,,,,
+endpoint_qualification,interpretation,True,,,,,,,,,,,,,,False,False,False,SICdb case-period/discharge/death proxy,DischargeState and OffsetOfDeath; neither verifies an index-ICU death,case-period/discharge/death proxy only; exploratory

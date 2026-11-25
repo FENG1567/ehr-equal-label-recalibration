@@ -1,0 +1,172 @@
+{
+  "adaptation_repeats": 200,
+  "analysis_code_sha256": "dec9419e00b647d72c97e333537803d0bffccc0d46f1928c937dca0637468059",
+  "assessment_patient_cluster_bootstrap_draws": 1000,
+  "baselines": [
+    "conventional_lr_pattern_only",
+    "conventional_hgb_pattern_only",
+    "conventional_lr_value_plus_pattern",
+    "conventional_hgb_value_plus_pattern"
+  ],
+  "budgets": [
+    50,
+    200,
+    500,
+    2000
+  ],
+  "cohort_manifests": {
+    "eicu_semantic_v4_2": {
+      "assessment_identity_sha256": "3a7af42be79cec1121b6683abd8dd058f18f98cae1137c6b515611a517f7e951",
+      "bootstrap_draws": 1000,
+      "bootstrap_seed": 20301122,
+      "db": "eicu_semantic_v4_2",
+      "direct_contrast_rows": 96,
+      "fit_parameter_rows": 8000,
+      "fit_parameters_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/eicu_semantic_v4_2/server_only_fit_parameters.csv",
+      "fit_parameters_sha256": "85be0547ec0e7578a30b13e60a18966047de78079de1badc088c3f83c2b4e014",
+      "n_assessment_patients": 51479,
+      "n_assessment_stays": 65157,
+      "parity": {
+        "fit_status_cells_checked": 19970,
+        "metric_cells_checked": 39940,
+        "rows_checked": 19970
+      },
+      "patient_level_exported_to_local": false,
+      "per_stay_loss_archive_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/eicu_semantic_v4_2/server_only_per_stay_mean_losses.npz",
+      "per_stay_loss_archive_sha256": "a1814a1243bafca2323190ec8bd66425fc04132cdc97c55854e315c8f4f0577b",
+      "sampling_plan_sha256": "a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032",
+      "status": "parity_verified"
+    },
+    "mimic": {
+      "assessment_identity_sha256": "49b8fdd27a293ec146f218f6b70220e9783e03bf2b8f254f2b6a3efcafcc8ee6",
+      "bootstrap_draws": 1000,
+      "bootstrap_seed": 20271122,
+      "db": "mimic",
+      "direct_contrast_rows": 96,
+      "fit_parameter_rows": 8000,
+      "fit_parameters_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/mimic/server_only_fit_parameters.csv",
+      "fit_parameters_sha256": "d4bf9141be0fafc18f2e67c2a368ded92daa30645e3c801de19979399b28e3e7",
+      "n_assessment_patients": 5424,
+      "n_assessment_stays": 7345,
+      "parity": {
+        "fit_status_cells_checked": 20000,
+        "metric_cells_checked": 40000,
+        "rows_checked": 20000
+      },
+      "patient_level_exported_to_local": false,
+      "per_stay_loss_archive_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/mimic/server_only_per_stay_mean_losses.npz",
+      "per_stay_loss_archive_sha256": "93ae48e290696fb2df5070a7903e28408e073279cc22a0314fbcde93200dd7fe",
+      "sampling_plan_sha256": "9aa9a1db68eb0638748969d8282b699f2e797083019bea1228777ffff15e9e9e",
+      "status": "parity_verified"
+    },
+    "nwicu_discharge_v4_1": {
+      "assessment_identity_sha256": "d1e656dc0650566346d7c015783785aa5b48da6302ceb80972aa4f8c20a9541b",
+      "bootstrap_draws": 1000,
+      "bootstrap_seed": 20281122,
+      "db": "nwicu_discharge_v4_1",
+      "direct_contrast_rows": 96,
+      "fit_parameter_rows": 8000,
+      "fit_parameters_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/nwicu_discharge_v4_1/server_only_fit_parameters.csv",
+      "fit_parameters_sha256": "1d260ad6b603515e4a1e72ce5c1e2d61dc2b3310e2227133dde6e35141973307",
+      "n_assessment_patients": 8693,
+      "n_assessment_stays": 10080,
+      "parity": {
+        "fit_status_cells_checked": 19990,
+        "metric_cells_checked": 39980,
+        "rows_checked": 19990
+      },
+      "patient_level_exported_to_local": false,
+      "per_stay_loss_archive_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/nwicu_discharge_v4_1/server_only_per_stay_mean_losses.npz",
+      "per_stay_loss_archive_sha256": "74a87926b718640127bbe4b8ed5224720c4e559672c9e4a7fc25a448a958290c",
+      "sampling_plan_sha256": "77a821e561ba78d1b1d90de6da5e95248fbab1c7b909b718efa2c17b6b5e9372",
+      "status": "parity_verified"
+    },
+    "sicdb_zero_offset_v4_2": {
+      "assessment_identity_sha256": "f3cea40f5ec9b6c914eb7038a36e0e8bdaae3ca52ddcc9d1514bd1dd94bb1f6d",
+      "bootstrap_draws": 1000,
+      "bootstrap_seed": 20291122,
+      "db": "sicdb_zero_offset_v4_2",
+      "direct_contrast_rows": 96,
+      "fit_parameter_rows": 8000,
+      "fit_parameters_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/sicdb_zero_offset_v4_2/server_only_fit_parameters.csv",
+      "fit_parameters_sha256": "41f3b64b1734f9aa82ef3bd11ec52f2821657896c3677f4e5ac0e0712a1acb50",
+      "n_assessment_patients": 3076,
+      "n_assessment_stays": 3398,
+      "parity": {
+        "fit_status_cells_checked": 19930,
+        "metric_cells_checked": 39860,
+        "rows_checked": 19930
+      },
+      "patient_level_exported_to_local": false,
+      "per_stay_loss_archive_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/cohorts/sicdb_zero_offset_v4_2/server_only_per_stay_mean_losses.npz",
+      "per_stay_loss_archive_sha256": "2a3e27b3265423a8d498d02cee2f0273c944cb4b4409bdeb490e57ad1be3c2ff",
+      "sampling_plan_sha256": "72cd551b16b03c27bea08579c24ae64b954cd36b191b6987e39f4ac2344897bc",
+      "status": "parity_verified"
+    }
+  },
+  "cohorts": [
+    "mimic",
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2",
+    "eicu_semantic_v4_2"
+  ],
+  "created_utc": "2026-11-22T23:57:43Z",
+  "direct_ci_rows": 384,
+  "direct_ci_table_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/direct_calibrated_fm_minus_baseline_patient_ci.csv",
+  "direct_ci_table_sha256": "ca8988897ba194dd5af9c5fe2af7f6c44b029a9bcdc546a690e5bd14ccdc359d",
+  "eicu_scope": "within repaired-r2 frozen plan only; no old-vs-repaired draw identity or cross-version curve claim",
+  "elapsed_seconds": 368.69,
+  "estimand": "For each model/method/repeat, compute assessment-stay Brier/log-loss; average each stay's loss across 200 realized repeats, then take the stay-weighted FM-minus-baseline mean. Bootstrap assessment patients (all their stays) with common resamples across contrasts.",
+  "inputs": {
+    "recalibration_code_sha256": "91a2dd465aa7b9e711cebe685a453ce2f31186ed7c4bd7979937f68bbe1c0ea3",
+    "source": {
+      "baseline_prediction_manifest_sha256": "fe4f1a597479ad961b6c94ad5f935debfe853699a844126122c7c8f68c8ef4c7",
+      "conventional_hgb_pattern_only_draws_sha256": "4abd06d19ce5cf2887069b974b8b8ba4ee4f96510ff390fa430e38084c7de2bb",
+      "conventional_hgb_pattern_only_run_manifest_sha256": "8ca39a408b95defa8e91b57967186b3c5b7fa975278edae894421c2e1905b641",
+      "conventional_hgb_value_plus_pattern_draws_sha256": "cc898d0f6e147751e7a4d767b256ba4d8a667d7931670e8abe24aa951db2989c",
+      "conventional_hgb_value_plus_pattern_run_manifest_sha256": "5f9cfab92d1173a2163980c7ea160998bb49d49d5e3b83bb225c29b824bf5ad1",
+      "conventional_lr_pattern_only_draws_sha256": "41b98e43c1371bec203f5359df38659c69332a1b8969d1811efcf59fad450923",
+      "conventional_lr_pattern_only_run_manifest_sha256": "e584f36eb4bd4188ed29ab5c4256bf92dfbf43ef6a37b33cbdb8b69cf7dfe5e5",
+      "conventional_lr_value_plus_pattern_draws_sha256": "faca1c64e729081fc69799d4e7153d8e9c03c8bd397862e913aba52a191b1edb",
+      "conventional_lr_value_plus_pattern_run_manifest_sha256": "05d210970a422cd2262639ea8ee9f7986b27003cbaa8eb3be48ba556485b6b18",
+      "fm_prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3",
+      "fm_prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+      "main20k_real_draws_sha256": "472f48a032b572a0221d502df9344e8ada2218a02dad0c67f13e0ab23af976b9",
+      "main20k_real_run_manifest_sha256": "fbf4da652693cde3e1f399cb6c19bc2f4796036c10c9edfb38de9802a57ad088"
+    },
+    "transport": {
+      "baseline_prediction_manifest_sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492",
+      "fm_prediction_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+      "nw_sic_analysis_manifest_sha256": "2f6ca3ea9a358f91e4ee55b8f7a2d0e78383a56f973d5bd5e8660a0b36c419c9",
+      "nw_sic_calibration_draws_sha256": "89af532f423ce9620f7db4f35ae16f22a6aa8a4dfbdd6468a869bf151097f3b6",
+      "nw_sic_plan_manifest_sha256": "f7cc3d798cadba70d40aed026d68ff53fec3a0a183662b708e40434253d09e20",
+      "repaired_r2_analysis_manifest_sha256": "fdd84f12ee3fdb9213fd6647ba5f50742604ec148261b7199f4f3ade4efe52ea",
+      "repaired_r2_calibration_draws_sha256": "6602d4d7ca607d62866c580aaf121d840c8427894955f3812dd7099a0cc7a2fc",
+      "repaired_r2_plan_manifest_sha256": "8d3579bfeee432271cc9c374532956deb1eff33940a1a6e628436f88fc9c4e64",
+      "sampling_plan_manifest_sha256": "8d3579bfeee432271cc9c374532956deb1eff33940a1a6e628436f88fc9c4e64",
+      "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55",
+      "transport_analysis_manifest_sha256": "fdd84f12ee3fdb9213fd6647ba5f50742604ec148261b7199f4f3ade4efe52ea"
+    },
+    "transport_analysis_code_sha256": "222ab1bfb64dcf77067ccd71621e414b1c3131f5942589b1a7028da391126396"
+  },
+  "methods": [
+    "raw",
+    "offset_operational",
+    "platt_operational"
+  ],
+  "models": [
+    "main20k_real",
+    "conventional_lr_pattern_only",
+    "conventional_hgb_pattern_only",
+    "conventional_lr_value_plus_pattern",
+    "conventional_hgb_value_plus_pattern"
+  ],
+  "patient_level_exported_to_local": false,
+  "preflight_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/calibrated_model_pairs/results/direct_calibrated_fm_baseline_v1/preflight_manifest.json",
+  "preflight_manifest_sha256": "c408ff7083db05b19c13cb85b92cf1f2ca805bdc48d64e04e2dcf063eb6db7f9",
+  "replay_parity": "all retained per-repeat raw/offset/Platt score rows, fit statuses, fallback flags, and actual adaptation/index-stay hashes matched before CI table publication",
+  "replay_status": "calibration-only replay on frozen source probabilities and exact frozen adaptation/assessment plans; no source head, encoder, predictor, target model, or sampling plan refit/redraw",
+  "schema": "ehr_fm_direct_calibrated_model_pairs_v1",
+  "scope": "all 200 operational repeats; offset/Platt use Jeffreys-smoothed adaptation prevalence after fit failure; raw is frozen source-p prediction",
+  "status": "complete"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "label_only_release_verified",
+  "original_file": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_proxy_metrics/results/paired_c_proxy_full_vs_no_mg_v1/paired_c_proxy_metrics.csv",
+  "original_sha256": "fde25fef18cdde8488120a99b79d633271b0e4c8ea92c447850e72c8b638a1f0",
+  "release_file": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_proxy_metrics/results/paired_c_proxy_full_vs_no_mg_v1/paired_c_proxy_metrics_release.csv",
+  "release_sha256": "c0b4ed89bfa8f52cd3f74a6435f78a44f08fb80b050bf966812e27204148890f",
+  "rows": 21,
+  "changed_field": "evaluation_weighting",
+  "all_other_fields_textually_identical": true,
+  "reason": "Generic paired helper used patient wording in one descriptor; actual group column and bootstrap_unit were record_id_proxy throughout.",
+  "original_result_manifest_sha256": "e8b38a7bbd5951d72b97be253d0f417c96c59ad8e46ae7084d67080dc868006c",
+  "executed_analysis_code_sha256": "bb5cb4475ca465fe83f2f886fa8335639cfdbba699e16dba8237d72281a0f0ac",
+  "analysis_rerun": false,
+  "code_sha256": "b9957fff502480bb7f8fe734c9ad41ab9125068bc51c890506da3aaf67d31126"
+}

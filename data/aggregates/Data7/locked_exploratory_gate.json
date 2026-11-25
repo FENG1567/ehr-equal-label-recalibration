@@ -1,0 +1,242 @@
+{
+  "gate_version": "inspire_exploratory_locked_v4_1",
+  "cohorts": {
+    "mimic": {
+      "clinical_input_availability_verified": false,
+      "counts": {
+        "hospitalid_coverage": 0,
+        "hospitalid_coverage_eligible": 0,
+        "hospitalid_unique_all": 0,
+        "hospitalid_unique_eligible": 0,
+        "n_adult_eligible": 94343,
+        "n_alive_at_24h": 92289,
+        "n_alive_at_24h_eligible": 73936,
+        "n_eicu_unit_expired_hospital_alive": 0,
+        "n_eligible_24h": 73936,
+        "n_eligible_negative": 65793,
+        "n_eligible_positive": 8143,
+        "n_hospital_admit_after_24h": 1,
+        "n_hospital_admit_after_24h_eligible": 1,
+        "n_hospital_admit_after_icu_start": 449,
+        "n_hospital_admit_after_icu_start_eligible": 422,
+        "n_hospital_death": 11323,
+        "n_icu_death": 7319,
+        "n_in_icu_at_24h": 74565,
+        "n_in_icu_at_24h_eligible": 73936,
+        "n_input_available_24h": 94343,
+        "n_mimic_dod_death_by_24h_proven": 991,
+        "n_mimic_dod_death_by_24h_proven_eligible": 0,
+        "n_mimic_dod_interval_known": 37905,
+        "n_mimic_dod_interval_overlaps_24h_uncertain": 1712,
+        "n_mimic_dod_interval_overlaps_24h_uncertain_eligible": 538,
+        "n_mimic_dod_preindex_proven": 6,
+        "n_negative_hour_input_eligible": 0,
+        "n_negative_hour_input_rows": 0,
+        "n_post24_exit_order_issues": 12467,
+        "n_post24_exit_order_issues_eligible": 12153,
+        "n_rows": 94343,
+        "n_source_endpoint_unknown_eligible": 0,
+        "n_source_endpoint_unknown_rows": 0,
+        "n_source_label_mismatch_eligible": 0,
+        "n_source_label_mismatch_rows": 0,
+        "n_source_landmark_contradictions": 248,
+        "n_source_landmark_contradictions_eligible": 0,
+        "n_source_landmark_issues": 4902,
+        "n_source_landmark_issues_eligible": 0,
+        "n_source_time_status_conflicts_eligible": 0,
+        "n_source_time_status_conflicts_total": 0,
+        "n_temporal_verified": 89428,
+        "n_unique_stay_subject": 94343,
+        "post24_exit_order_all": {
+          "duration_hr_quantiles": {
+            "median": 0.9413888888889232,
+            "p05": 0.01166666666666778,
+            "p95": 7.924055555555495
+          },
+          "rows": 12467,
+          "source_label_distribution": {
+            "hospital_death_1": 5340,
+            "hospital_survival_0": 7127,
+            "unknown_or_nonbinary": 0
+          }
+        },
+        "post24_exit_order_eligible": {
+          "duration_hr_quantiles": {
+            "median": 0.8741666666666674,
+            "p05": 0.011388888888888005,
+            "p95": 5.614944444444447
+          },
+          "rows": 12153,
+          "source_label_distribution": {
+            "hospital_death_1": 5027,
+            "hospital_survival_0": 7126,
+            "unknown_or_nonbinary": 0
+          }
+        },
+        "reason_counts": {
+          "eligible_24h": 73936,
+          "not_in_icu_at_24h": 15505,
+          "source_landmark_issue": 3911,
+          "source_mimic_dod_death_by_24h_proven": 991
+        },
+        "source_label_distribution_eligible": {
+          "hospital_death_1": 8143,
+          "hospital_survival_0": 65793,
+          "unknown_or_nonbinary": 0
+        }
+      },
+      "db": "mimic",
+      "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+      "endpoint": "hospital",
+      "evidence": "exact",
+      "evidencelevel": "exact",
+      "input_time_definition": {
+        "event_table": "events_mimic.parquet",
+        "min_hour": 0.0,
+        "n_events": 64772630,
+        "n_events_hour_ge_24": 41390150,
+        "n_events_hour_lt_24": 23382480,
+        "n_negative_hour_events": 0,
+        "n_negative_hour_stays_in_sequence": 0,
+        "n_stays_with_negative_hour": 0,
+        "negative_hour_input_clipping_risk": false,
+        "status": "documented"
+      },
+      "input_scope": "retrospective_measurement_time",
+      "inputs_temporal_scope": "retrospective_measurement_time",
+      "output": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/status_consistent_v4_1/landmark_v4_1/mimic.parquet",
+      "ready_for_future24h_clinical_claim": false,
+      "ready_for_future24h_landmark_analysis": true,
+      "ready_for_retrospective_24h_measurement_analysis": true,
+      "retrospective_landmark_prediction_allowed": true,
+      "selected_keys_labels_sha256": "358c3dd6cf900aa1611a8c7a8dbba041360d74edb2dcce6b956e693bc95fe534",
+      "source_issue_definitions": {
+        "eicu_status_conflict": "unitdischargestatus is expired while hospitaldischargestatus is alive",
+        "hospital_admit_order": "recorded as an administrative timing flag only; does not independently exclude rows",
+        "mimic_dod_interval": "date-only DOD is represented as [midnight, next midnight); exclude only when interval upper bound is at or before 24h or at/before index",
+        "source_postlandmark_ordering_issue": "finite ICU exit is after finite hospital exit, with hospital exit after 24h; retained in the primary variant and excluded only in post24_exit_order_sensitivity"
+      },
+      "source_join_coverage": 1.0,
+      "source_metadata_evidence": {
+        "hospital_admit_after_24h_rows": 1,
+        "hospital_admit_after_icu_start_rows": 449,
+        "hospital_death_source": "admissions.deathtime; hospital_expire_flag",
+        "hospital_id_coverage": 0,
+        "hospitalid_coverage": 0,
+        "hospitalid_source": "not available in MIMIC admission rows",
+        "hospitalid_unique": 0,
+        "icu_exit_after_hospital_exit_after_24": 12467,
+        "icu_exit_source": "icustays.intime/outtime",
+        "mimic_dod_24h_overlap_uncertain_rows": 1712,
+        "mimic_dod_preindex_proven_rows": 6,
+        "mimic_dod_proven_death_by_24h_rows": 991,
+        "mimic_patients_dod_precision": "date_only; bounds are [dod midnight, next midnight) relative to ICU intime",
+        "readiness_basis": "exact ICU intime/outtime and hospital deathtime/dischtime source timestamps",
+        "source_endpoint_unknown_count": 0,
+        "source_join_coverage": 1.0,
+        "source_label_mismatch_count": 0,
+        "source_landmark_contradictions": 248,
+        "source_time_status_conflicts": 0,
+        "unit_expired_hospital_alive_conflict_rows": 0
+      },
+      "sourcefiles": [
+        "icustays.csv.gz",
+        "patients.csv.gz",
+        "admissions.csv.gz"
+      ],
+      "sourcehashes": {
+        "admissions.csv.gz": "a9584ed88e9ed664a2f66f86a5cf9fd175c8bb0af50e3b6115598b19e978384e",
+        "cohort_parquet": "dd1d06997e128a18475553b8e18cfd1c81b2cdd79f95e67ba1746afaea5cec2a",
+        "icustays.csv.gz": "3c590ed37f1fb7a77a128f2f6961f836001512ba81adcd0dfeced2702f96bc5f",
+        "patients.csv.gz": "4c7507de7ecad8c5ba7647ea4d26018e88ff6672c5fc22ab59c2a5697d687cdd",
+        "sequence_npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824"
+      },
+      "status": "exact_timestamp_metadata",
+      "subject_identity_basis": {
+        "basis": "source subject_id",
+        "patient_disjoint_claim_allowed": true
+      },
+      "variant": "landmark_v4_1",
+      "variant_role": "primary_retrospective_landmark"
+    },
+    "inspire_postop_v4_1": {
+      "status": "analysis_scope_defined",
+      "evidence": "operational_proxy",
+      "evidence_basis": "Independently reconstructed current-HADM ICU/hospital follow-up>24h and no recorded death<=24h; released chart-time inputs, clinical availability unverified; exploratory only.",
+      "prediction_scope": "retrospective_landmark_prediction_measurement_time",
+      "input_scope": "retrospective_measurement_time",
+      "clinical_input_availability_verified": false,
+      "retrospective_landmark_prediction_allowed": true,
+      "ready_for_future24h_landmark_analysis": true,
+      "ready_for_future24h_clinical_claim": false,
+      "source_patient_identity_verified": true,
+      "patient_disjoint_claim_allowed": true,
+      "n_rows": 3858,
+      "n_eligible_24h": 3858,
+      "n_eligible_positive": 127,
+      "n_eligible_negative": 3731,
+      "n_eligible_patients": 3858,
+      "sourcehashes": {
+        "sequence_npz": "1497f8c288d29cd2ce8c603f5f0013c4230ea24f904685cff9054c03e529044c",
+        "split_npy": "db68ac8f479d27370d22cd8ffe9761b58f4fdcddff4d921980872058fab662c9"
+      },
+      "table_sha256": "dda5fd386f8fac5106848f207b01be4dab019f7324fb7bd1c4bce94fa366bf6d",
+      "analysis_role": "exploratory_external_only",
+      "confirmation_allowed": false,
+      "source_development_lock_sha256": "fc69bcbe2e6433fe5d6e055e4e288eba9634857eec642822aaf9d5d2b1da5f1d",
+      "fixed_patient_role_counts": {
+        "adaptation_patients": 500,
+        "adaptation_events": 21,
+        "assessment_patients": 3358,
+        "assessment_events": 106,
+        "assessment_nonevents": 3252
+      },
+      "fixed_role_table_sha256": "dda5fd386f8fac5106848f207b01be4dab019f7324fb7bd1c4bce94fa366bf6d",
+      "resampling_unit": "patient",
+      "pragmatic_confirmation_min_events": 200,
+      "pragmatic_confirmation_count_gate_met": false,
+      "scoring_protocol": "Score all for role-bound inference; headline metrics and uncalibrated/calibrated pairs use assessment role ONLY. Adaptation labels used only for prespecified calibration."
+    },
+    "inspire_broad_surgery_associated_v4_1": {
+      "status": "analysis_scope_defined",
+      "evidence": "operational_proxy",
+      "evidence_basis": "Independently reconstructed current-HADM ICU/hospital follow-up>24h and no recorded death<=24h; released chart-time inputs, clinical availability unverified; exploratory only.",
+      "prediction_scope": "retrospective_landmark_prediction_measurement_time",
+      "input_scope": "retrospective_measurement_time",
+      "clinical_input_availability_verified": false,
+      "retrospective_landmark_prediction_allowed": true,
+      "ready_for_future24h_landmark_analysis": true,
+      "ready_for_future24h_clinical_claim": false,
+      "source_patient_identity_verified": true,
+      "patient_disjoint_claim_allowed": true,
+      "n_rows": 5713,
+      "n_eligible_24h": 5713,
+      "n_eligible_positive": 210,
+      "n_eligible_negative": 5503,
+      "n_eligible_patients": 5713,
+      "sourcehashes": {
+        "sequence_npz": "73a495fb7d56a93ba68fcb7c83e6457dcf71d79246d7d79030b61e8c71f0af13",
+        "split_npy": "33fadd9d626035f42febd849d566ec77c4070dd2e5ff83cf6ff5aa3c3e4b9732"
+      },
+      "table_sha256": "b98088bf81d340fb87ccf8459e72a564bab8f0907b72a07f04a3c56259f942a4",
+      "analysis_role": "exploratory_external_only",
+      "confirmation_allowed": false,
+      "source_development_lock_sha256": "fc69bcbe2e6433fe5d6e055e4e288eba9634857eec642822aaf9d5d2b1da5f1d",
+      "fixed_patient_role_counts": {
+        "adaptation_patients": 500,
+        "adaptation_events": 24,
+        "assessment_patients": 5213,
+        "assessment_events": 186,
+        "assessment_nonevents": 5027
+      },
+      "fixed_role_table_sha256": "b98088bf81d340fb87ccf8459e72a564bab8f0907b72a07f04a3c56259f942a4",
+      "resampling_unit": "patient",
+      "pragmatic_confirmation_min_events": 200,
+      "pragmatic_confirmation_count_gate_met": false,
+      "scoring_protocol": "Score all for role-bound inference; headline metrics and uncalibrated/calibrated pairs use assessment role ONLY. Adaptation labels used only for prespecified calibration."
+    }
+  },
+  "analysis_role": "exploratory_external_only",
+  "source_development_lock_sha256": "fc69bcbe2e6433fe5d6e055e4e288eba9634857eec642822aaf9d5d2b1da5f1d",
+  "cross_scope_limit": "Scopes overlap3788patients/3724exactepisodes;3487sharedsampledsequences differ due scope RNG. Separate exploratory assessments; neither independent replication nor fixed-input scope contrast."
+}

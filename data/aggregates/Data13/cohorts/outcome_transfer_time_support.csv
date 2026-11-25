@@ -1,0 +1,18 @@
+db,field,n_total,n_observed,n_missing,year_min,year_max,time_min,time_max,time_interpretation,date_evidence,n_le_24,n_gt_24,min,median,max,n_both_observed,n_icu_after_hospital,n_hospital_exit_before_icu_and_after24
+mimic,icu_start_time,94343,94343.0,0.0,,,,,de-identified calendar date values; not comparable as true cross-patient calendar time,reviewed eligibility has no anchor_year_group or official source-period field; only de-identified date values are available,,,,,,,,
+mimic,icu_exit_time,94343,94329.0,14.0,,,,,de-identified calendar date values; not comparable as true cross-patient calendar time,reviewed eligibility has no anchor_year_group or official source-period field; only de-identified date values are available,,,,,,,,
+mimic,hospital_exit_time,94343,94343.0,0.0,,,,,de-identified calendar date values; not comparable as true cross-patient calendar time,reviewed eligibility has no anchor_year_group or official source-period field; only de-identified date values are available,,,,,,,,
+mimic,hospital_death_time,94343,11314.0,83029.0,,,,,de-identified calendar date values; not comparable as true cross-patient calendar time,reviewed eligibility has no anchor_year_group or official source-period field; only de-identified date values are available,,,,,,,,
+mimic,icu_death_time,94343,7319.0,87024.0,,,,,de-identified calendar date values; not comparable as true cross-patient calendar time,reviewed eligibility has no anchor_year_group or official source-period field; only de-identified date values are available,,,,,,,,
+mimic,icu_exit_hr,94343,94329.0,14.0,,,,,relative hours since source admission/index; not actual calendar time,,19509.0,74820.0,0.03,47.215,5433.6738888888885,,,
+mimic,hospital_exit_hr,94343,94343.0,0.0,,,,,relative hours since source admission/index; not actual calendar time,,4522.0,89821.0,-30.32472222222222,146.06666666666666,12368.179166666667,,,
+mimic,hospital_death_time_hr,94343,11314.0,83029.0,,,,,relative hours since source admission/index; not actual calendar time,,2028.0,9286.0,-22.966666666666665,116.1525,5916.433333333333,,,
+mimic,icu_death_time_hr,94343,7319.0,87024.0,,,,,relative hours since source admission/index; not actual calendar time,,1936.0,5383.0,0.06861111111111111,64.3975,3054.606111111111,,,
+mimic,icu_hospital_exit_order,94343,,,,,,,,,,,,,,94329.0,16780.0,12467.0
+eicu,icu_exit_hr,192805,192805.0,0.0,,,,,relative hours since source admission/index; not actual calendar time,,60905.0,131900.0,-2.6333333333333333,39.5,12152.933333333332,,,
+eicu,hospital_exit_hr,192805,192805.0,0.0,,,,,relative hours since source admission/index; not actual calendar time,,15356.0,177449.0,-142.48333333333332,111.85,18102.966666666667,,,
+eicu,icu_hospital_exit_order,192805,,,,,,,,,,,,,,192805.0,2295.0,1418.0
+nwicu,icu_exit_hr,27114,27114.0,0.0,,,,,relative hours since source admission/index; not actual calendar time,,6579.0,20535.0,0.016666666666666666,45.016666666666666,4879.633333333333,,,
+nwicu,hospital_exit_hr,27114,27114.0,0.0,,,,,relative hours since source admission/index; not actual calendar time,,1808.0,25306.0,-15.9,119.35,4879.633333333333,,,
+nwicu,icu_hospital_exit_order,27114,,,,,,,,,,,,,,27114.0,72.0,52.0
+sicdb,case_closure_relative_hr,27223,27223.0,0.0,,,,,SICdb case closure proxy relative to ICUOffset; not an index-ICU exit,,12010.0,15213.0,-14.4,34.0,3020.016666666667,,,

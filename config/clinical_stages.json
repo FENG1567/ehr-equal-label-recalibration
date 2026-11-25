@@ -1,0 +1,55 @@
+{
+  "original_root": "/data/admin/fengshuo/ehr_fm_20261102",
+  "stages": [
+    {
+      "id": "extract",
+      "script": "code/extract.py",
+      "needs": [
+        "data/raw",
+        "mapping_table.csv"
+      ]
+    },
+    {
+      "id": "tokens",
+      "script": "code/build_data.py",
+      "needs": [
+        "data/interim"
+      ]
+    },
+    {
+      "id": "engine",
+      "script": "revision_v4_20261122/engine/code/v4_engine.py",
+      "needs": [
+        "data/processed",
+        "models",
+        "revision_v4_20261122/temporal/results/eligibility"
+      ]
+    },
+    {
+      "id": "source_only",
+      "script": "revision_v5_20261123/scripts/v5_clean_pretraining_prepare_v2_unicode.py",
+      "needs": [
+        "data/interim",
+        "data/processed",
+        "revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2"
+      ]
+    },
+    {
+      "id": "calendar",
+      "script": "revision_v7_20261124/scripts/temporal_availability_v7.py",
+      "needs": [
+        "revision_v7_20261124/recovered_inputs/patients.csv.gz",
+        "revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1",
+        "data/interim",
+        "data/processed"
+      ]
+    },
+    {
+      "id": "clean_calibration",
+      "script": "revision_v7_20261124/scripts/clean_calibration_extension_v7.py",
+      "needs": [
+        "revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z"
+      ]
+    }
+  ]
+}

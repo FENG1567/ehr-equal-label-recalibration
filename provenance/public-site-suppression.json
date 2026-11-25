@@ -1,0 +1,40 @@
+{
+  "policy": "For this open repository only, omit site-linked rows for any hospital with fewer than10 unique patients in either the historical hospital summary or repaired cohort roster. This is a conservative author-side release policy, not an asserted universal DUA threshold.",
+  "affected_site_count": 11,
+  "site_identifiers_not_disclosed_in_this_report": true,
+  "scope": "Original analyses, manuscript, complete private source and final submission files are unchanged. Suppression applies only to the separate open repository copy.",
+  "changes": [
+    {
+      "path": "data/aggregates/Data10/hospitals/eicu_hospital_metrics.csv",
+      "rows_before": 618,
+      "rows_after": 585,
+      "site_linked_rows_suppressed": 33,
+      "original_sha256": "b055744e6674b27c287bae7b90a2926e11a07e519442b83bbac1b5d8d0a393f4",
+      "public_sha256": "ff74b3b4ec2d838e773eeeee8dc611aeb740dc80ef75d2405354a07d9a7b5a67"
+    },
+    {
+      "path": "data/aggregates/Data10/hospitals/eicu_hospital_paired_deltas.csv",
+      "rows_before": 412,
+      "rows_after": 390,
+      "site_linked_rows_suppressed": 22,
+      "original_sha256": "5c78f1183e555090392db38aa39f675efbe044fb9dd9c8e80af1e794c27ed5ea",
+      "public_sha256": "8febcb67462bccb4eb1b0bab7e389dd0b9f06e9c75410fd3526ccb0c08037a6d"
+    },
+    {
+      "path": "data/aggregates/Data15/sites/site_basic_performance.csv",
+      "rows_before": 412,
+      "rows_after": 390,
+      "site_linked_rows_suppressed": 22,
+      "original_sha256": "416c433abaf20568ff18e1fa7574639562ef6614673811a1f08be36b2f7f4815",
+      "public_sha256": "94cc62b8da3afbb5c84fc298514b573eea2c5c9f4469e51869dc5688a811161c"
+    },
+    {
+      "path": "data/aggregates/Data15/sites/site_roster.csv",
+      "rows_before": 206,
+      "rows_after": 195,
+      "site_linked_rows_suppressed": 11,
+      "original_sha256": "9175e2814348d0316f751d53dd86ab08cd8cbf6a4159875abbc32c795cee049d",
+      "public_sha256": "51ae4143a4387b243cceef6459ee78dfda58e55eb1769cc18cc43ddcb30aa2cc"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+cohort,model,model_id,budget,method,metric,parity_ok,max_abs_difference
+eicu_semantic_v4_2,FM,main20k_real,50,intercept,brier,True,2.9797712075563254e-08
+eicu_semantic_v4_2,FM,main20k_real,50,intercept,logloss,True,3.6645832679482737e-07
+eicu_semantic_v4_2,FM,main20k_real,50,platt,brier,True,2.9791374145382576e-08
+eicu_semantic_v4_2,FM,main20k_real,50,platt,logloss,True,2.3799044512884398e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,50,intercept,brier,True,2.9802144307922166e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,50,intercept,logloss,True,2.373374332620415e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,50,platt,brier,True,2.979991664542325e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,50,platt,logloss,True,2.38282841458215e-07
+eicu_semantic_v4_2,FM,main20k_real,200,intercept,brier,True,2.9802144307922166e-08
+eicu_semantic_v4_2,FM,main20k_real,200,intercept,logloss,True,3.4157621087160805e-07
+eicu_semantic_v4_2,FM,main20k_real,200,platt,brier,True,2.9796899392309232e-08
+eicu_semantic_v4_2,FM,main20k_real,200,platt,logloss,True,2.371017027158473e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,200,intercept,brier,True,2.979993851681684e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,200,intercept,logloss,True,2.382248176502344e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,200,platt,brier,True,2.9800201639673677e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,200,platt,logloss,True,2.369199014751189e-07
+eicu_semantic_v4_2,FM,main20k_real,500,intercept,brier,True,2.9795750533523343e-08
+eicu_semantic_v4_2,FM,main20k_real,500,intercept,logloss,True,4.358896177336647e-07
+eicu_semantic_v4_2,FM,main20k_real,500,platt,brier,True,2.9799255285567483e-08
+eicu_semantic_v4_2,FM,main20k_real,500,platt,logloss,True,2.360184074845506e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,500,intercept,brier,True,2.979132252001193e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,500,intercept,logloss,True,2.3835096651936285e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,500,platt,brier,True,2.980060120894024e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,500,platt,logloss,True,2.3672529003704315e-07
+eicu_semantic_v4_2,FM,main20k_real,2000,intercept,brier,True,2.9797300848954933e-08
+eicu_semantic_v4_2,FM,main20k_real,2000,intercept,logloss,True,4.2126824695287723e-07
+eicu_semantic_v4_2,FM,main20k_real,2000,platt,brier,True,2.9798247425105728e-08
+eicu_semantic_v4_2,FM,main20k_real,2000,platt,logloss,True,2.2928541465461197e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,2000,intercept,brier,True,2.9801529244366524e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,2000,intercept,logloss,True,2.384179484948845e-07
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,2000,platt,brier,True,2.9801539014329137e-08
+eicu_semantic_v4_2,V+P LR,conventional_lr_value_plus_pattern,2000,platt,logloss,True,2.351966044145115e-07
+nwicu_discharge_v4_1,FM,main20k_real,50,intercept,brier,True,2.9786604849313392e-08
+nwicu_discharge_v4_1,FM,main20k_real,50,intercept,logloss,True,4.7448484608025865e-07
+nwicu_discharge_v4_1,FM,main20k_real,50,platt,brier,True,2.979348612264232e-08
+nwicu_discharge_v4_1,FM,main20k_real,50,platt,logloss,True,2.3463489284836214e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,50,intercept,brier,True,2.976882051974883e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,50,intercept,logloss,True,1.985195137166329e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,50,platt,brier,True,2.9796467182485742e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,50,platt,logloss,True,2.3833178808274624e-07
+nwicu_discharge_v4_1,FM,main20k_real,200,intercept,brier,True,2.9758946196167813e-08
+nwicu_discharge_v4_1,FM,main20k_real,200,intercept,logloss,True,4.75377092357121e-07
+nwicu_discharge_v4_1,FM,main20k_real,200,platt,brier,True,2.973381041382339e-08
+nwicu_discharge_v4_1,FM,main20k_real,200,platt,logloss,True,2.1902139746288185e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,200,intercept,brier,True,2.9800932943579994e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,200,intercept,logloss,True,2.0928780042339667e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,200,platt,brier,True,2.979966717830962e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,200,platt,logloss,True,1.9410625817783966e-07
+nwicu_discharge_v4_1,FM,main20k_real,500,intercept,brier,True,2.979661228863506e-08
+nwicu_discharge_v4_1,FM,main20k_real,500,intercept,logloss,True,3.962097903098538e-07
+nwicu_discharge_v4_1,FM,main20k_real,500,platt,brier,True,2.9799242629025002e-08
+nwicu_discharge_v4_1,FM,main20k_real,500,platt,logloss,True,2.3799505299848533e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,500,intercept,brier,True,2.979289048798961e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,500,intercept,logloss,True,2.1515364245772162e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,500,platt,brier,True,2.9774992138520417e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,500,platt,logloss,True,1.8877321750210285e-07
+nwicu_discharge_v4_1,FM,main20k_real,2000,intercept,brier,True,2.9721657135439727e-08
+nwicu_discharge_v4_1,FM,main20k_real,2000,intercept,logloss,True,3.841967384232703e-07
+nwicu_discharge_v4_1,FM,main20k_real,2000,platt,brier,True,2.979121960233755e-08
+nwicu_discharge_v4_1,FM,main20k_real,2000,platt,logloss,True,2.3157040818233554e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,2000,intercept,brier,True,2.9746416663201103e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,2000,intercept,logloss,True,1.7317371980851703e-07
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,2000,platt,brier,True,2.973396051597632e-08
+nwicu_discharge_v4_1,V+P LR,conventional_lr_value_plus_pattern,2000,platt,logloss,True,2.2005740873964896e-07

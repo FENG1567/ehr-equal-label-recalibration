@@ -1,0 +1,433 @@
+library,canonical_variable,source_table,source_field,unit,conversion,coverage,status,note
+mimic,age,hosp/patients,anchor_age,years,-,1.0,event_level,"cohort table, not an event"
+mimic,sex,hosp/patients,gender,M/F,-,1.0,event_level,"cohort table, not an event"
+mimic,weight,icu/chartevents,"226512,224639",kg,-,0.3593,event_level,
+mimic,height,icu/chartevents,226730,cm,-,0.015,event_level,
+mimic,bmi,derived,weight/(height/100)^2,kg/m2,-,0.0,event_level,
+mimic,hr,icu/chartevents,220045,bpm,-,1.0,event_level,
+mimic,sbp,icu/chartevents,"220050,220179",mmHg,-,0.9956,event_level,
+mimic,dbp,icu/chartevents,"220051,220180",mmHg,-,0.9955,event_level,
+mimic,map,icu/chartevents,"220052,220181,225312",mmHg,-,0.9989,event_level,
+mimic,rr,icu/chartevents,"220210,224690",/min,-,0.9983,event_level,
+mimic,temp,icu/chartevents,"223762,223761",C,F->C,0.971,event_level,
+mimic,spo2,icu/chartevents,220277,%,-,0.9986,event_level,
+mimic,etco2,icu/chartevents,228640,mmHg,-,0.1087,event_level,
+mimic,gcs_total,-,-,3-15,-,0.9933,event_level,
+mimic,gcs_motor,icu/chartevents,223901,1-6,-,0.9929,event_level,
+mimic,gcs_eye,icu/chartevents,220739,1-4,-,0.9933,event_level,
+mimic,fio2,icu/chartevents,223835,%,-,0.4614,event_level,
+mimic,peep,icu/chartevents,220339,cmH2O,-,0.3831,event_level,
+mimic,tv,icu/chartevents,224685,mL,-,0.3804,event_level,
+mimic,ppeak,icu/chartevents,224695,cmH2O,-,0.3804,event_level,
+mimic,pao2,hosp/labevents,50821,mmHg,-,0.4828,event_level,
+mimic,paco2,hosp/labevents,50818,mmHg,-,0.4835,event_level,
+mimic,ph,hosp/labevents,50820,-,-,0.5011,event_level,
+mimic,be,hosp/labevents,50802,mmol/L,-,0.4835,event_level,
+mimic,creatinine,hosp/labevents,50912,mg/dL,-,0.874,event_level,
+mimic,bun,hosp/labevents,51006,mg/dL,-,0.8738,event_level,
+mimic,urine,icu/outputevents,"226559,...",mL,-,0.9481,event_level,
+mimic,lactate,hosp/labevents,50813,mmol/L,-,0.4819,event_level,
+mimic,wbc,hosp/labevents,51301,10^9/L,-,0.8683,event_level,
+mimic,hgb,hosp/labevents,51222,g/dL,-,0.8685,event_level,
+mimic,platelet,hosp/labevents,51265,10^9/L,-,0.8687,event_level,
+mimic,inr,hosp/labevents,51237,-,-,0.73,event_level,
+mimic,aptt,hosp/labevents,51275,s,-,0.7236,event_level,
+mimic,sodium,hosp/labevents,50983,mmol/L,-,0.8745,event_level,
+mimic,potassium,hosp/labevents,50971,mmol/L,-,0.8742,event_level,
+mimic,chloride,hosp/labevents,50902,mmol/L,-,0.8744,event_level,
+mimic,calcium,hosp/labevents,50893,mg/dL,-,0.8102,event_level,
+mimic,magnesium,hosp/labevents,50960,mg/dL,-,0.8457,event_level,
+mimic,phosphate,hosp/labevents,50970,mg/dL,-,0.8164,event_level,
+mimic,glucose,hosp/labevents,50931,mg/dL,-,0.8708,event_level,
+mimic,albumin,hosp/labevents,50862,g/dL,-,0.2421,event_level,
+mimic,bili,hosp/labevents,50885,mg/dL,-,0.3864,event_level,
+mimic,ast,hosp/labevents,50878,U/L,-,0.3921,event_level,
+mimic,alt,hosp/labevents,50861,U/L,-,0.3886,event_level,
+mimic,crp,hosp/labevents,50889,mg/L,-,0.0224,event_level,
+mimic,vaso,icu/inputevents,"221906,221289,221662,222315,221749",0/1,-,0.2525,event_level,
+mimic,rrt,icu/procedureevents,"225441,225802",0/1,-,0.0209,event_level,
+mimic,sedation,icu/inputevents,"222168,221668,225942",0/1,-,0.3268,event_level,
+eicu,age,patient,age,years,-,1.0,event_level,"cohort table, not an event"
+eicu,sex,patient,gender,M/F,-,1.0,event_level,"cohort table, not an event"
+eicu,weight,patient,admissionweight,kg,-,0.0,event_level,
+eicu,height,patient,admissionheight,cm,-,0.0,event_level,
+eicu,bmi,derived,weight/(height/100)^2,kg/m2,-,0.0,event_level,
+eicu,hr,vitalPeriodic(truncated),heartrate,bpm,-,0.9913,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,sbp,vitalPeriodic(truncated),systemicsystolic,mmHg,-,0.2195,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,dbp,vitalPeriodic(truncated),systemicdiastolic,mmHg,-,0.2197,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,map,vitalPeriodic(truncated),systemicmean,mmHg,-,0.22,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,rr,lab,respiratory rate,/min,-,0.9126,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,temp,lab,temperature,C,F->C,0.0852,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,spo2,lab,o2 sat (%),%,-,0.9764,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,etco2,vitalPeriodic(truncated),etco2,mmHg,-,0.0345,event_level,vitalPeriodic gzip truncated: coverage reflects partial file
+eicu,gcs_total,-,-,3-15,-,0.0,event_level,
+eicu,gcs_motor,-,-,1-6,-,0.0,event_level,
+eicu,gcs_eye,-,-,1-4,-,0.0,event_level,
+eicu,fio2,lab,fio2,%,-,0.3263,event_level,
+eicu,peep,lab,peep,cmH2O,-,0.1003,event_level,
+eicu,tv,lab,tv,mL,-,0.0843,event_level,
+eicu,ppeak,-,-,cmH2O,-,0.0,event_level,
+eicu,pao2,lab,pao2,mmHg,-,0.3032,event_level,
+eicu,paco2,lab,paco2,mmHg,-,0.3002,event_level,
+eicu,ph,lab,ph,-,-,0.2979,event_level,
+eicu,be,lab,base excess,mmol/L,-,0.0,event_level,
+eicu,creatinine,lab,creatinine,mg/dL,-,0.8788,event_level,
+eicu,bun,lab,bun,mg/dL,-,0.8754,event_level,
+eicu,urine,intakeOutput,celllabel~urine,mL,-,0.665,event_level,
+eicu,lactate,lab,lactate,mmol/L,-,0.2274,event_level,
+eicu,wbc,lab,wbc x 1000,10^9/L,-,0.0,event_level,
+eicu,hgb,lab,hgb,g/dL,-,0.852,event_level,
+eicu,platelet,lab,platelets x 1000,10^9/L,-,0.0,event_level,
+eicu,inr,lab,pt - inr,-,-,0.0,event_level,
+eicu,aptt,lab,ptt,s,-,0.0,event_level,
+eicu,sodium,lab,sodium,mmol/L,-,0.8797,event_level,
+eicu,potassium,lab,potassium,mmol/L,-,0.8872,event_level,
+eicu,chloride,lab,chloride,mmol/L,-,0.8738,event_level,
+eicu,calcium,lab,calcium,mg/dL,-,0.856,event_level,
+eicu,magnesium,lab,magnesium,mg/dL,-,0.5078,event_level,
+eicu,phosphate,lab,phosphate,mg/dL,-,0.3259,event_level,
+eicu,glucose,lab,glucose,mg/dL,-,0.8736,event_level,
+eicu,albumin,lab,albumin,g/dL,-,0.4259,event_level,
+eicu,bili,lab,total bilirubin,mg/dL,-,0.0,event_level,
+eicu,ast,lab,ast (sgot),U/L,-,0.0,event_level,
+eicu,alt,lab,alt (sgpt),U/L,-,0.0,event_level,
+eicu,crp,lab,crp,mg/L,-,0.0118,event_level,
+eicu,vaso,infusionDrug,norepinephrine|dopamine|vasopressin|...,0/1,-,0.1153,event_level,
+eicu,rrt,treatment,renal replacement,0/1,-,0.0,event_level,
+eicu,sedation,infusionDrug,propofol|midazolam|fentanyl|dexmedetomidine,0/1,-,0.116,event_level,
+nwicu,age,nw_hosp/patients,anchor_age,years,-,1.0,event_level,"cohort table, not an event"
+nwicu,sex,nw_hosp/patients,gender,M/F,-,1.0,event_level,"cohort table, not an event"
+nwicu,weight,nw_icu/chartevents,326531,kg,-,0.0,event_level,
+nwicu,height,nw_icu/chartevents,326707,cm,-,0.0,event_level,
+nwicu,bmi,nw_icu/chartevents,300001,kg/m2,-,0.0,event_level,
+nwicu,hr,nw_icu/chartevents,320045,bpm,-,0.7459,event_level,
+nwicu,sbp,nw_icu/chartevents,"320050,320179",mmHg,-,0.7452,event_level,
+nwicu,dbp,nw_icu/chartevents,"320051,320180",mmHg,-,0.7452,event_level,
+nwicu,map,nw_hosp/labevents,label~regex,mmHg,-,0.0,event_level,
+nwicu,rr,nw_icu/chartevents,320210,/min,-,0.7429,event_level,
+nwicu,temp,nw_icu/chartevents,323761,C,F->C,0.7391,event_level,
+nwicu,spo2,nw_icu/chartevents,320277,%,-,0.7451,event_level,
+nwicu,etco2,nw_hosp/labevents,label~regex,mmHg,-,0.0,event_level,
+nwicu,gcs_total,nw_hosp/labevents,label~regex,3-15,-,0.0,event_level,
+nwicu,gcs_motor,nw_hosp/labevents,label~regex,1-6,-,0.0,event_level,
+nwicu,gcs_eye,nw_hosp/labevents,label~regex,1-4,-,0.0,event_level,
+nwicu,fio2,nw_hosp/labevents,label~regex,%,-,0.0,event_level,
+nwicu,peep,nw_hosp/labevents,label~regex,cmH2O,-,0.0,event_level,
+nwicu,tv,nw_hosp/labevents,label~regex,mL,-,0.0,event_level,
+nwicu,ppeak,nw_hosp/labevents,label~regex,cmH2O,-,0.0,event_level,
+nwicu,pao2,nw_hosp/labevents,label~regex,mmHg,-,0.0,event_level,
+nwicu,paco2,nw_hosp/labevents,label~regex,mmHg,-,0.0,event_level,
+nwicu,ph,nw_hosp/labevents,label~regex,-,-,0.0041,event_level,
+nwicu,be,nw_hosp/labevents,label~regex,mmol/L,-,0.0,event_level,
+nwicu,creatinine,nw_hosp/labevents,label~regex,mg/dL,-,0.9173,event_level,
+nwicu,bun,nw_hosp/labevents,label~regex,mg/dL,-,0.9143,event_level,
+nwicu,urine,nw_hosp/labevents,label~regex,mL,-,0.0,event_level,
+nwicu,lactate,nw_hosp/labevents,label~regex,mmol/L,-,0.228,event_level,
+nwicu,wbc,nw_hosp/labevents,label~regex,10^9/L,-,0.8878,event_level,
+nwicu,hgb,nw_hosp/labevents,label~regex,g/dL,-,0.8843,event_level,
+nwicu,platelet,nw_hosp/labevents,label~regex,10^9/L,-,0.889,event_level,
+nwicu,inr,nw_hosp/labevents,label~regex,-,-,0.0,event_level,
+nwicu,aptt,nw_hosp/labevents,label~regex,s,-,0.2677,event_level,
+nwicu,sodium,nw_hosp/labevents,label~regex,mmol/L,-,0.9168,event_level,
+nwicu,potassium,nw_hosp/labevents,label~regex,mmol/L,-,0.9172,event_level,
+nwicu,chloride,nw_hosp/labevents,label~regex,mmol/L,-,0.915,event_level,
+nwicu,calcium,nw_hosp/labevents,label~regex,mg/dL,-,0.9173,event_level,
+nwicu,magnesium,nw_hosp/labevents,label~regex,mg/dL,-,0.6711,event_level,
+nwicu,phosphate,nw_hosp/labevents,label~regex,mg/dL,-,0.4579,event_level,
+nwicu,glucose,nw_hosp/labevents,label~regex,mg/dL,-,0.9313,event_level,
+nwicu,albumin,nw_hosp/labevents,label~regex,g/dL,-,0.501,event_level,
+nwicu,bili,nw_hosp/labevents,label~regex,mg/dL,-,0.4821,event_level,
+nwicu,ast,nw_hosp/labevents,label~regex,U/L,-,0.0,event_level,
+nwicu,alt,nw_hosp/labevents,label~regex,U/L,-,0.2385,event_level,
+nwicu,crp,nw_hosp/labevents,label~regex,mg/L,-,0.0964,event_level,
+nwicu,vaso,nw_hosp/labevents,label~regex,0/1,-,0.0,event_level,
+nwicu,rrt,nw_hosp/labevents,label~regex,0/1,-,0.0,event_level,
+nwicu,sedation,nw_hosp/labevents,label~regex,0/1,-,0.0,event_level,
+sicdb,age,events_sicdb (built locally),see code/*_build.py / c2012_build.py,years,-,1.0,event_level,"cohort table, not an event"
+sicdb,sex,events_sicdb (built locally),see code/*_build.py / c2012_build.py,M/F,-,1.0,event_level,"cohort table, not an event"
+sicdb,weight,events_sicdb (built locally),see code/*_build.py / c2012_build.py,kg,-,0.0,event_level,
+sicdb,height,events_sicdb (built locally),see code/*_build.py / c2012_build.py,cm,-,0.0,event_level,
+sicdb,bmi,events_sicdb (built locally),see code/*_build.py / c2012_build.py,kg/m2,-,0.0,event_level,
+sicdb,hr,events_sicdb (built locally),see code/*_build.py / c2012_build.py,bpm,-,0.9996,event_level,
+sicdb,sbp,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9975,event_level,
+sicdb,dbp,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9976,event_level,
+sicdb,map,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9977,event_level,
+sicdb,rr,events_sicdb (built locally),see code/*_build.py / c2012_build.py,/min,-,0.9874,event_level,
+sicdb,temp,events_sicdb (built locally),see code/*_build.py / c2012_build.py,C,F->C,0.8905,event_level,
+sicdb,spo2,events_sicdb (built locally),see code/*_build.py / c2012_build.py,%,-,0.9983,event_level,
+sicdb,etco2,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.6654,event_level,
+sicdb,gcs_total,events_sicdb (built locally),see code/*_build.py / c2012_build.py,3-15,-,0.0,event_level,not available in SICdb extract
+sicdb,gcs_motor,events_sicdb (built locally),see code/*_build.py / c2012_build.py,1-6,-,0.0,event_level,
+sicdb,gcs_eye,events_sicdb (built locally),see code/*_build.py / c2012_build.py,1-4,-,0.0,event_level,
+sicdb,fio2,events_sicdb (built locally),see code/*_build.py / c2012_build.py,%,-,0.6971,event_level,
+sicdb,peep,events_sicdb (built locally),see code/*_build.py / c2012_build.py,cmH2O,-,0.3956,event_level,
+sicdb,tv,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mL,-,0.5157,event_level,
+sicdb,ppeak,events_sicdb (built locally),see code/*_build.py / c2012_build.py,cmH2O,-,0.6598,event_level,
+sicdb,pao2,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.942,event_level,
+sicdb,paco2,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9658,event_level,
+sicdb,ph,events_sicdb (built locally),see code/*_build.py / c2012_build.py,-,-,0.943,event_level,
+sicdb,be,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.0,event_level,
+sicdb,creatinine,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9377,event_level,
+sicdb,bun,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9424,event_level,
+sicdb,urine,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mL,-,0.8237,event_level,
+sicdb,lactate,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.009,event_level,
+sicdb,wbc,events_sicdb (built locally),see code/*_build.py / c2012_build.py,10^9/L,-,0.9423,event_level,
+sicdb,hgb,events_sicdb (built locally),see code/*_build.py / c2012_build.py,g/dL,-,0.9425,event_level,
+sicdb,platelet,events_sicdb (built locally),see code/*_build.py / c2012_build.py,10^9/L,-,0.9427,event_level,
+sicdb,inr,events_sicdb (built locally),see code/*_build.py / c2012_build.py,-,-,0.0,event_level,not available in SICdb extract
+sicdb,aptt,events_sicdb (built locally),see code/*_build.py / c2012_build.py,s,-,0.0,event_level,not available in SICdb extract
+sicdb,sodium,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.8664,event_level,
+sicdb,potassium,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.353,event_level,
+sicdb,chloride,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.2304,event_level,
+sicdb,calcium,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9401,event_level,
+sicdb,magnesium,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.919,event_level,
+sicdb,phosphate,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9082,event_level,
+sicdb,glucose,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.0,event_level,
+sicdb,albumin,events_sicdb (built locally),see code/*_build.py / c2012_build.py,g/dL,-,0.021,event_level,
+sicdb,bili,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.3143,event_level,
+sicdb,ast,events_sicdb (built locally),see code/*_build.py / c2012_build.py,U/L,-,0.3189,event_level,
+sicdb,alt,events_sicdb (built locally),see code/*_build.py / c2012_build.py,U/L,-,0.3202,event_level,
+sicdb,crp,events_sicdb (built locally),see code/*_build.py / c2012_build.py,mg/L,-,0.0001,event_level,
+sicdb,vaso,events_sicdb (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,not available in SICdb extract
+sicdb,rrt,events_sicdb (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0144,event_level,
+sicdb,sedation,events_sicdb (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,not available in SICdb extract
+hirid,age,events_hirid (built locally),see code/*_build.py / c2012_build.py,years,-,1.0,event_level,"cohort table, not an event"
+hirid,sex,events_hirid (built locally),see code/*_build.py / c2012_build.py,M/F,-,1.0,event_level,"cohort table, not an event"
+hirid,weight,events_hirid (built locally),see code/*_build.py / c2012_build.py,kg,-,0.0,event_level,
+hirid,height,events_hirid (built locally),see code/*_build.py / c2012_build.py,cm,-,0.0,event_level,
+hirid,bmi,events_hirid (built locally),see code/*_build.py / c2012_build.py,kg/m2,-,0.0,event_level,
+hirid,hr,events_hirid (built locally),see code/*_build.py / c2012_build.py,bpm,-,0.9978,event_level,
+hirid,sbp,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9978,event_level,
+hirid,dbp,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9978,event_level,
+hirid,map,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.9978,event_level,
+hirid,rr,events_hirid (built locally),see code/*_build.py / c2012_build.py,/min,-,0.9958,event_level,
+hirid,temp,events_hirid (built locally),see code/*_build.py / c2012_build.py,C,F->C,0.5535,event_level,
+hirid,spo2,events_hirid (built locally),see code/*_build.py / c2012_build.py,%,-,0.9976,event_level,
+hirid,etco2,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.5942,event_level,
+hirid,gcs_total,events_hirid (built locally),see code/*_build.py / c2012_build.py,3-15,-,0.0,event_level,
+hirid,gcs_motor,events_hirid (built locally),see code/*_build.py / c2012_build.py,1-6,-,0.0,event_level,
+hirid,gcs_eye,events_hirid (built locally),see code/*_build.py / c2012_build.py,1-4,-,0.0,event_level,
+hirid,fio2,events_hirid (built locally),see code/*_build.py / c2012_build.py,%,-,0.5858,event_level,
+hirid,peep,events_hirid (built locally),see code/*_build.py / c2012_build.py,cmH2O,-,0.588,event_level,
+hirid,tv,events_hirid (built locally),see code/*_build.py / c2012_build.py,mL,-,0.5878,event_level,
+hirid,ppeak,events_hirid (built locally),see code/*_build.py / c2012_build.py,cmH2O,-,0.5853,event_level,
+hirid,pao2,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.0,event_level,
+hirid,paco2,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.0,event_level,
+hirid,ph,events_hirid (built locally),see code/*_build.py / c2012_build.py,-,-,0.7665,event_level,
+hirid,be,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.8568,event_level,
+hirid,creatinine,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.8277,event_level,
+hirid,bun,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.717,event_level,
+hirid,urine,events_hirid (built locally),see code/*_build.py / c2012_build.py,mL,-,0.9004,event_level,
+hirid,lactate,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.8629,event_level,
+hirid,wbc,events_hirid (built locally),see code/*_build.py / c2012_build.py,10^9/L,-,0.8896,event_level,
+hirid,hgb,events_hirid (built locally),see code/*_build.py / c2012_build.py,g/dL,-,0.8894,event_level,
+hirid,platelet,events_hirid (built locally),see code/*_build.py / c2012_build.py,10^9/L,-,0.0,event_level,
+hirid,inr,events_hirid (built locally),see code/*_build.py / c2012_build.py,-,-,0.0,event_level,
+hirid,aptt,events_hirid (built locally),see code/*_build.py / c2012_build.py,s,-,0.0,event_level,
+hirid,sodium,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.9329,event_level,
+hirid,potassium,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.9328,event_level,
+hirid,chloride,events_hirid (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.1296,event_level,
+hirid,calcium,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.053,event_level,
+hirid,magnesium,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.4898,event_level,
+hirid,phosphate,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.4688,event_level,
+hirid,glucose,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.0693,event_level,
+hirid,albumin,events_hirid (built locally),see code/*_build.py / c2012_build.py,g/dL,-,0.05,event_level,
+hirid,bili,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.2826,event_level,
+hirid,ast,events_hirid (built locally),see code/*_build.py / c2012_build.py,U/L,-,0.0,event_level,
+hirid,alt,events_hirid (built locally),see code/*_build.py / c2012_build.py,U/L,-,0.0,event_level,
+hirid,crp,events_hirid (built locally),see code/*_build.py / c2012_build.py,mg/L,-,0.0,event_level,
+hirid,vaso,events_hirid (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,drug table not extracted
+hirid,rrt,events_hirid (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,
+hirid,sedation,events_hirid (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,drug table not extracted
+c2012,age,events_c2012 (built locally),see code/*_build.py / c2012_build.py,years,-,1.0,event_level,"cohort table, not an event"
+c2012,sex,events_c2012 (built locally),see code/*_build.py / c2012_build.py,M/F,-,1.0,event_level,"cohort table, not an event"
+c2012,weight,events_c2012 (built locally),see code/*_build.py / c2012_build.py,kg,-,0.0,event_level,
+c2012,height,events_c2012 (built locally),see code/*_build.py / c2012_build.py,cm,-,0.0,event_level,
+c2012,bmi,events_c2012 (built locally),see code/*_build.py / c2012_build.py,kg/m2,-,0.0,event_level,
+c2012,hr,events_c2012 (built locally),see code/*_build.py / c2012_build.py,bpm,-,0.9837,event_level,
+c2012,sbp,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.658,event_level,
+c2012,dbp,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.658,event_level,
+c2012,map,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.6585,event_level,
+c2012,rr,events_c2012 (built locally),see code/*_build.py / c2012_build.py,/min,-,0.2747,event_level,
+c2012,temp,events_c2012 (built locally),see code/*_build.py / c2012_build.py,C,F->C,0.9832,event_level,
+c2012,spo2,events_c2012 (built locally),see code/*_build.py / c2012_build.py,%,-,0.3771,event_level,
+c2012,etco2,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.0,event_level,
+c2012,gcs_total,events_c2012 (built locally),see code/*_build.py / c2012_build.py,3-15,-,0.9825,event_level,
+c2012,gcs_motor,events_c2012 (built locally),see code/*_build.py / c2012_build.py,1-6,-,0.0,event_level,not measured in Challenge 2012
+c2012,gcs_eye,events_c2012 (built locally),see code/*_build.py / c2012_build.py,1-4,-,0.0,event_level,not measured in Challenge 2012
+c2012,fio2,events_c2012 (built locally),see code/*_build.py / c2012_build.py,%,-,0.0,event_level,
+c2012,peep,events_c2012 (built locally),see code/*_build.py / c2012_build.py,cmH2O,-,0.0,event_level,
+c2012,tv,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mL,-,0.0,event_level,
+c2012,ppeak,events_c2012 (built locally),see code/*_build.py / c2012_build.py,cmH2O,-,0.0,event_level,
+c2012,pao2,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.7141,event_level,
+c2012,paco2,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmHg,-,0.7141,event_level,
+c2012,ph,events_c2012 (built locally),see code/*_build.py / c2012_build.py,-,-,0.7168,event_level,
+c2012,be,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.0,event_level,
+c2012,creatinine,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9767,event_level,
+c2012,bun,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9765,event_level,
+c2012,urine,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mL,-,0.9687,event_level,
+c2012,lactate,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.49,event_level,
+c2012,wbc,events_c2012 (built locally),see code/*_build.py / c2012_build.py,10^9/L,-,0.9657,event_level,
+c2012,hgb,events_c2012 (built locally),see code/*_build.py / c2012_build.py,g/dL,-,0.0,event_level,
+c2012,platelet,events_c2012 (built locally),see code/*_build.py / c2012_build.py,10^9/L,-,0.9687,event_level,
+c2012,inr,events_c2012 (built locally),see code/*_build.py / c2012_build.py,-,-,0.0,event_level,
+c2012,aptt,events_c2012 (built locally),see code/*_build.py / c2012_build.py,s,-,0.0,event_level,
+c2012,sodium,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.0,event_level,
+c2012,potassium,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.0,event_level,
+c2012,chloride,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mmol/L,-,0.0,event_level,
+c2012,calcium,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.0,event_level,
+c2012,magnesium,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.0,event_level,
+c2012,phosphate,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.0,event_level,
+c2012,glucose,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.9347,event_level,
+c2012,albumin,events_c2012 (built locally),see code/*_build.py / c2012_build.py,g/dL,-,0.328,event_level,
+c2012,bili,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/dL,-,0.3683,event_level,
+c2012,ast,events_c2012 (built locally),see code/*_build.py / c2012_build.py,U/L,-,0.3748,event_level,
+c2012,alt,events_c2012 (built locally),see code/*_build.py / c2012_build.py,U/L,-,0.3741,event_level,
+c2012,crp,events_c2012 (built locally),see code/*_build.py / c2012_build.py,mg/L,-,0.0,event_level,
+c2012,vaso,events_c2012 (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,not measured in Challenge 2012
+c2012,rrt,events_c2012 (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,not measured in Challenge 2012
+c2012,sedation,events_c2012 (built locally),see code/*_build.py / c2012_build.py,0/1,-,0.0,event_level,not measured in Challenge 2012
+zigong,age,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),years,-,1.0,event_level,"cohort table, not an event"
+zigong,sex,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),M/F,-,1.0,event_level,"cohort table, not an event"
+zigong,weight,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),kg,-,0.0,event_level,not mapped from Zigong source tables
+zigong,height,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),cm,-,0.0,event_level,not mapped from Zigong source tables
+zigong,bmi,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),kg/m2,-,0.0,event_level,not mapped from Zigong source tables
+zigong,hr,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),bpm,-,0.6548,event_level,
+zigong,sbp,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmHg,-,0.6462,event_level,
+zigong,dbp,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmHg,-,0.6462,event_level,
+zigong,map,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmHg,-,0.0,event_level,
+zigong,rr,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),/min,-,0.6545,event_level,
+zigong,temp,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),C,F->C,0.652,event_level,
+zigong,spo2,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),%,-,0.6541,event_level,
+zigong,etco2,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmHg,-,0.0,event_level,
+zigong,gcs_total,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),3-15,-,0.0,event_level,not mapped from Zigong source tables
+zigong,gcs_motor,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),1-6,-,0.0,event_level,not mapped from Zigong source tables
+zigong,gcs_eye,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),1-4,-,0.0,event_level,not mapped from Zigong source tables
+zigong,fio2,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),%,-,0.0,event_level,
+zigong,peep,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),cmH2O,-,0.0,event_level,not mapped from Zigong source tables
+zigong,tv,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mL,-,0.0,event_level,not mapped from Zigong source tables
+zigong,ppeak,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),cmH2O,-,0.0,event_level,not mapped from Zigong source tables
+zigong,pao2,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmHg,-,0.4667,event_level,
+zigong,paco2,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmHg,-,0.4663,event_level,
+zigong,ph,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),-,-,0.0,event_level,not mapped from Zigong source tables
+zigong,be,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmol/L,-,0.0,event_level,not mapped from Zigong source tables
+zigong,creatinine,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.976,event_level,
+zigong,bun,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.976,event_level,
+zigong,urine,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mL,-,0.6502,event_level,
+zigong,lactate,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmol/L,-,0.7545,event_level,
+zigong,wbc,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),10^9/L,-,0.7591,event_level,
+zigong,hgb,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),g/dL,-,0.7591,event_level,
+zigong,platelet,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),10^9/L,-,0.7581,event_level,
+zigong,inr,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),-,-,0.9817,event_level,
+zigong,aptt,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),s,-,0.9792,event_level,
+zigong,sodium,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmol/L,-,0.9749,event_level,
+zigong,potassium,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmol/L,-,0.9749,event_level,
+zigong,chloride,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mmol/L,-,0.4667,event_level,
+zigong,calcium,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.9749,event_level,
+zigong,magnesium,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.862,event_level,
+zigong,phosphate,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.8616,event_level,
+zigong,glucose,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.6728,event_level,
+zigong,albumin,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),g/dL,-,0.9462,event_level,
+zigong,bili,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/dL,-,0.9444,event_level,
+zigong,ast,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),U/L,-,0.9746,event_level,
+zigong,alt,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),U/L,-,0.9459,event_level,
+zigong,crp,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),mg/L,-,0.1294,event_level,
+zigong,vaso,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),0/1,-,0.0,event_level,not mapped from Zigong source tables
+zigong,rrt,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),0/1,-,0.0,event_level,not mapped from Zigong source tables
+zigong,sedation,events_zigong (built locally),dtNursingChart.csv / dtLab.csv (hand-mapped),0/1,-,0.0,event_level,not mapped from Zigong source tables
+amsterdam,age,admissions,agegroup (bins),years,-,1.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,sex,admissions,gender,M/F,-,0.9785,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,weight,not_event_level_on_server,n/a,kg,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,height,not_event_level_on_server,n/a,cm,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,bmi,not_event_level_on_server,n/a,kg/m2,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,hr,numericitems,6640 Hartfrequentie,bpm,-,0.8734,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,sbp,numericitems,6678 Niet invasieve bloeddruk systolisch,mmHg,-,0.3201,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,dbp,numericitems,6680 Niet invasieve bloeddruk diastolisch,mmHg,-,0.3185,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,map,numericitems,6679 Niet invasieve bloeddruk gemiddeld,mmHg,-,0.3193,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,rr,numericitems,7726/8873/8874/9654 adem*,/min,-,0.8026,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,temp,numericitems,16110 Temp Oesophagus,C,F->C,0.0452,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,spo2,numericitems,6709 Saturatie (Monitor),%,-,0.8715,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,etco2,not_event_level_on_server,n/a,mmHg,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,gcs_total,-,-,3-15,-,0.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,gcs_motor,not_event_level_on_server,n/a,1-6,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,gcs_eye,not_event_level_on_server,n/a,1-4,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,fio2,not_event_level_on_server,n/a,%,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,peep,not_event_level_on_server,n/a,cmH2O,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,tv,not_event_level_on_server,n/a,mL,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,ppeak,not_event_level_on_server,n/a,cmH2O,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,pao2,not_event_level_on_server,n/a,mmHg,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,paco2,not_event_level_on_server,n/a,mmHg,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,ph,numericitems,12310 pH (bloed),-,-,0.8264,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,be,not_event_level_on_server,n/a,mmol/L,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,creatinine,numericitems,9941 Kreatinine (bloed),mg/dL,-,0.8619,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,bun,numericitems,9943 Ureum (bloed),mg/dL,-,0.582,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,urine,not_event_level_on_server,n/a,mL,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,lactate,numericitems,10053 Lactaat (bloed),mmol/L,-,0.4965,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,wbc,-,-,10^9/L,-,0.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,hgb,numericitems,6778 Hemoglobine,g/dL,-,0.0399,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,platelet,-,-,10^9/L,-,0.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,inr,-,-,-,-,0.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,aptt,not_event_level_on_server,n/a,s,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,sodium,numericitems,9924 Natrium (bloed),mmol/L,-,0.7971,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,potassium,numericitems,9927 Kalium (bloed),mmol/L,-,0.7939,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,chloride,not_event_level_on_server,n/a,mmol/L,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,calcium,not_event_level_on_server,n/a,mg/dL,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,magnesium,not_event_level_on_server,n/a,mg/dL,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,phosphate,not_event_level_on_server,n/a,mg/dL,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,glucose,numericitems,9947 Glucose (bloed),mg/dL,-,0.8716,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,albumin,numericitems,6801 Albumine chemisch,g/dL,-,0.0345,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,bili,numericitems,6812/9945/9946 Bilirubine,mg/dL,-,0.3863,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,ast,not_event_level_on_server,n/a,U/L,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,alt,not_event_level_on_server,n/a,U/L,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,crp,not_event_level_on_server,n/a,mg/L,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,vaso,not_event_level_on_server,n/a,0/1,-,,not_available,no event-level stream and no prior summary mapping
+amsterdam,rrt,-,-,0/1,-,0.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+amsterdam,sedation,not_event_level_on_server,n/a,0/1,-,,not_available,no event-level stream and no prior summary mapping
+inspire,age,operations,age,years,-,1.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,sex,operations,sex,M/F,-,1.0,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,weight,not_event_level_on_server,n/a,kg,-,,not_available,no event-level stream and no prior summary mapping
+inspire,height,not_event_level_on_server,n/a,cm,-,,not_available,no event-level stream and no prior summary mapping
+inspire,bmi,not_event_level_on_server,n/a,kg/m2,-,,not_available,no event-level stream and no prior summary mapping
+inspire,hr,vitals,item_name=hr,bpm,-,0.9997,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,sbp,vitals,item_name=art_sbp|nibp_sbp,mmHg,-,0.9996,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,dbp,vitals,item_name=art_dbp|nibp_dbp,mmHg,-,0.9996,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,map,vitals,item_name=art_mbp|nibp_mbp,mmHg,-,0.9995,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,rr,vitals,item_name=rr,/min,-,0.9962,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,temp,vitals,item_name=bt,C,F->C,0.9883,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,spo2,vitals,item_name=spo2,%,-,0.9997,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,etco2,not_event_level_on_server,n/a,mmHg,-,,not_available,no event-level stream and no prior summary mapping
+inspire,gcs_total,ward_vitals,item_name=gcs_e/gcs_m/gcs_v,3-15,-,0.071,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,gcs_motor,not_event_level_on_server,n/a,1-6,-,,not_available,no event-level stream and no prior summary mapping
+inspire,gcs_eye,not_event_level_on_server,n/a,1-4,-,,not_available,no event-level stream and no prior summary mapping
+inspire,fio2,not_event_level_on_server,n/a,%,-,,not_available,no event-level stream and no prior summary mapping
+inspire,peep,not_event_level_on_server,n/a,cmH2O,-,,not_available,no event-level stream and no prior summary mapping
+inspire,tv,not_event_level_on_server,n/a,mL,-,,not_available,no event-level stream and no prior summary mapping
+inspire,ppeak,not_event_level_on_server,n/a,cmH2O,-,,not_available,no event-level stream and no prior summary mapping
+inspire,pao2,not_event_level_on_server,n/a,mmHg,-,,not_available,no event-level stream and no prior summary mapping
+inspire,paco2,not_event_level_on_server,n/a,mmHg,-,,not_available,no event-level stream and no prior summary mapping
+inspire,ph,labs,item_name=ph,-,-,0.3615,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,be,not_event_level_on_server,n/a,mmol/L,-,,not_available,no event-level stream and no prior summary mapping
+inspire,creatinine,labs,item_name=creatinine,mg/dL,-,0.399,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,bun,labs,item_name=bun,mg/dL,-,0.3947,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,urine,not_event_level_on_server,n/a,mL,-,,not_available,no event-level stream and no prior summary mapping
+inspire,lactate,labs,item_name=lacate,mmol/L,-,0.3391,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,wbc,labs,item_name=wbc,10^9/L,-,0.4635,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,hgb,labs,item_name=hb,g/dL,-,0.4657,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,platelet,labs,item_name=platelet,10^9/L,-,0.4628,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,inr,labs,item_name=ptinr,-,-,0.2773,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,aptt,not_event_level_on_server,n/a,s,-,,not_available,no event-level stream and no prior summary mapping
+inspire,sodium,labs,item_name=sodium,mmol/L,-,0.4873,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,potassium,labs,item_name=potassium,mmol/L,-,0.4885,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,chloride,not_event_level_on_server,n/a,mmol/L,-,,not_available,no event-level stream and no prior summary mapping
+inspire,calcium,not_event_level_on_server,n/a,mg/dL,-,,not_available,no event-level stream and no prior summary mapping
+inspire,magnesium,not_event_level_on_server,n/a,mg/dL,-,,not_available,no event-level stream and no prior summary mapping
+inspire,phosphate,not_event_level_on_server,n/a,mg/dL,-,,not_available,no event-level stream and no prior summary mapping
+inspire,glucose,labs,item_name=glucose,mg/dL,-,0.4494,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,albumin,labs,item_name=albumin,g/dL,-,0.3885,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,bili,labs,item_name=total_bilirubin,mg/dL,-,0.3559,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,ast,not_event_level_on_server,n/a,U/L,-,,not_available,no event-level stream and no prior summary mapping
+inspire,alt,not_event_level_on_server,n/a,U/L,-,,not_available,no event-level stream and no prior summary mapping
+inspire,crp,not_event_level_on_server,n/a,mg/L,-,,not_available,no event-level stream and no prior summary mapping
+inspire,vaso,not_event_level_on_server,n/a,0/1,-,,not_available,no event-level stream and no prior summary mapping
+inspire,rrt,ward_vitals,item_name=crrt,0/1,-,0.9997,summary_only,event-level stream not available on server; prior 27-var summary extract only
+inspire,sedation,not_event_level_on_server,n/a,0/1,-,,not_available,no event-level stream and no prior summary mapping

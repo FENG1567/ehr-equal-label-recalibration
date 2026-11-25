@@ -1,0 +1,71 @@
+{
+  "assessment_lock_sha256": "3ac72b0d60dc47c81d5fb894f827f573735f32e220f430852281947c10152ffd",
+  "calibration_runner_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/inspire_fixed500_calibration.py",
+  "calibration_runner_sha256": "b1ab8d375ccd74b34ebab28f3a74f070854404ea14bb4c4e4c173c67343b7494",
+  "cohorts": {
+    "inspire_broad_surgery_associated_v4_1": {
+      "adaptation_role_identity_sha256": "e37e4d196bccfdfef714646d948a021c61b23d0ceeea2a7a745fd51b8ddeb082",
+      "all_seven_arms_match_locked_roles": true,
+      "all_seven_arms_share_same_adaptation_and_assessment_identity": true,
+      "assessment_role_identity_sha256": "e7c69aa7adf2e62ccead82468a671170eec468d0d9be59d09464efc96be4ad29",
+      "counts": {
+        "adaptation_events": 24,
+        "adaptation_patients": 500,
+        "assessment_events": 186,
+        "assessment_nonevents": 5027,
+        "assessment_patients": 5213
+      },
+      "fit_diagnostic_rows": 7,
+      "locked_role_table_sha256": "b98088bf81d340fb87ccf8459e72a564bab8f0907b72a07f04a3c56259f942a4",
+      "main_brier_contrasts": 2,
+      "platt_failures": 0,
+      "valid_paired_bootstrap_draws": 1000
+    },
+    "inspire_postop_v4_1": {
+      "adaptation_role_identity_sha256": "019d5c6d1cbcb8fcf9ba1bb5773d67d0ee96cd1750f5e858cb23308f0f02b4c5",
+      "all_seven_arms_match_locked_roles": true,
+      "all_seven_arms_share_same_adaptation_and_assessment_identity": true,
+      "assessment_role_identity_sha256": "f8f4ec9e5f6f69adbb0929665afdc1ef092e4690130b1843f5be100d754f82f4",
+      "counts": {
+        "adaptation_events": 21,
+        "adaptation_patients": 500,
+        "assessment_events": 106,
+        "assessment_nonevents": 3252,
+        "assessment_patients": 3358
+      },
+      "fit_diagnostic_rows": 7,
+      "locked_role_table_sha256": "dda5fd386f8fac5106848f207b01be4dab019f7324fb7bd1c4bce94fa366bf6d",
+      "main_brier_contrasts": 2,
+      "platt_failures": 0,
+      "valid_paired_bootstrap_draws": 1000
+    }
+  },
+  "density_source_probe_refit_calls": 0,
+  "fit_diagnostics": {
+    "all_14_platt_fits_succeeded_without_fallback": true,
+    "analysis_ids": [
+      "conventional_hgb_pattern_only",
+      "conventional_hgb_value_plus_pattern",
+      "conventional_lr_pattern_only",
+      "conventional_lr_value_plus_pattern",
+      "density_augmented",
+      "ordinary_tuned",
+      "original_ordinary_C1"
+    ],
+    "platt_status_values": [
+      "fitted_on_fixed_500_adaptation_only"
+    ],
+    "rows": 14
+  },
+  "gate_manifest_sha256": "97c7aeacacb2af9cfce63086d6dc5b9ce9838292a4197e43d3ec98d7f533c019",
+  "paired_bootstrap": {
+    "draws_requested_and_valid": 1000,
+    "primary_brier_rows": 4,
+    "rows": 52
+  },
+  "patient_ids_emitted": false,
+  "roles_redrawn": false,
+  "schema": "ehr_fm_inspire_fixed500_population_and_fit_metadata_v1",
+  "source_model_fit_calls_in_target_scoring_job": 0,
+  "status": "verified"
+}

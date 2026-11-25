@@ -1,0 +1,10 @@
+{
+  "status": "c21_all_condition_points_complete",
+  "rows": 21,
+  "source_manifest_sha256": "74897f72a3be38bf2ef5a71c244d5db1cd1bfe81e89d7e72198d9162867ad0e1",
+  "metrics_sha256": "3341ba0c224bf26dc66f5f6fce807a02960ed782a765505c4b4ae9166e684d51",
+  "code_sha256": "887c17df87e15dc96002573e29758af48f03c5624acc608bf087e64b4267243a",
+  "helper_sha256": "52333539bbe73367e75c0d001497b8872d2e43fbaef71f1e382d49c02c536841",
+  "source_head_refit": false,
+  "scope": "record-proxy retrospective descriptive point metrics; not independent-patient confirmation"
+}

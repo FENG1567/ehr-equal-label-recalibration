@@ -1,0 +1,14 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+  "scope": "Observed CPU analysis runtime; not a newly tested end-to-end environment",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "scipy": "1.11.4",
+    "sklearn": "1.8.0",
+    "pyarrow": "18.1.0",
+    "matplotlib": "3.6.3",
+    "PIL": "10.2.0"
+  }
+}

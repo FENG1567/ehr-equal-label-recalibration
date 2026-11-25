@@ -1,0 +1,96 @@
+{
+  "scientific_scope": {
+    "row_count": 60,
+    "successful_cells": 60,
+    "conditions": [
+      "main20k_real",
+      "main20k_constant",
+      "abl_const20k_constant"
+    ],
+    "estimands": [
+      "source_transfer",
+      "target_local_nested_cv"
+    ],
+    "variables": [
+      "creatinine",
+      "lactate",
+      "wbc",
+      "hgb",
+      "glucose",
+      "hr",
+      "sbp",
+      "spo2",
+      "bun",
+      "platelet"
+    ],
+    "target_db": "eicu_semantic_v4_2",
+    "all_rows_have_1000_valid_patient_bootstrap_draws": true,
+    "intervals": "marginal patient-cluster percentile intervals",
+    "negative_r2_row_count": 19,
+    "target_identity_by_variable": [
+      {
+        "variable": "creatinine",
+        "population_identity_sha256": "3d58560a09ad2846d93134962c03dad6df1cfcc679a349628abae215db13f0b4",
+        "n_target_rows": 119777,
+        "n_target_patients": 95775
+      },
+      {
+        "variable": "lactate",
+        "population_identity_sha256": "7c1001efcff524e6d3f7fbdd979d6fe003d4553df369d2218eb39f59aeef9fdc",
+        "n_target_rows": 34952,
+        "n_target_patients": 31469
+      },
+      {
+        "variable": "wbc",
+        "population_identity_sha256": "55a7cc90325ef39758b1df893a697d717a119384a52b258ccf3d9ab9cb44336a",
+        "n_target_rows": 115651,
+        "n_target_patients": 93159
+      },
+      {
+        "variable": "hgb",
+        "population_identity_sha256": "2bf9753ae0f473db0e4de004e48acffde2525f4d12d4cfef1382ab6598f42d6f",
+        "n_target_rows": 116806,
+        "n_target_patients": 93909
+      },
+      {
+        "variable": "glucose",
+        "population_identity_sha256": "3d91b9e7d0951249db81d373c4ea248a327350ff61f9287d4b317abcb0ef6b98",
+        "n_target_rows": 119131,
+        "n_target_patients": 95194
+      },
+      {
+        "variable": "hr",
+        "population_identity_sha256": "e6d180b11006bd8f8c4fb6c0f3dc0983ca023768364c3e866b41252517e65e75",
+        "n_target_rows": 128599,
+        "n_target_patients": 101719
+      },
+      {
+        "variable": "sbp",
+        "population_identity_sha256": "4de72b2614c84c00ae580aa6f768f7178192ca1667b76b2e673616301086f754",
+        "n_target_rows": 32623,
+        "n_target_patients": 30382
+      },
+      {
+        "variable": "spo2",
+        "population_identity_sha256": "0891e933a8795a7e41a8170304b2e6305b977818d72aa55b6949be8c5be99730",
+        "n_target_rows": 127504,
+        "n_target_patients": 101042
+      },
+      {
+        "variable": "bun",
+        "population_identity_sha256": "5c47b897fcdd90a50a5bc24fafd14f6e7f2fdd79b23a1db5c9f774fb2abaea62",
+        "n_target_rows": 119387,
+        "n_target_patients": 95450
+      },
+      {
+        "variable": "platelet",
+        "population_identity_sha256": "82929bd0c279ee61d7651ab2503affaa50e0df777a64ff19f57bcc60f67b4a4b",
+        "n_target_rows": 114587,
+        "n_target_patients": 92346
+      }
+    ],
+    "source_reference_rows": 30,
+    "source_mimic_split2_checks": 30,
+    "maximum_source_split2_metric_absolute_difference": 1.4210854715202004e-14
+  }
+}

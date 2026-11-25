@@ -1,0 +1,162 @@
+{
+  "age_sex_standardization": "common-support direct standardization; all source cohorts weighted to equal-weight mean age-sex distribution; cells require >=10 patients per cohort",
+  "age_stratum_slope_ci": "patient-cluster bootstrap; at least 1000 draws; fixed current predictions",
+  "aggregate_only_corrected_cell_audit": {
+    "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/case_mix_domain_audit_corrected_20261123.json",
+    "prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3",
+    "prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+    "sha256": "3f0a19e9e57f788bd4eaf49ae10f29cf1abccd284bbfea0be5dd74738cfbc976"
+  },
+  "analysis_scope": "corrected age-sex standardization finalized from saved 1000-draw results; unchanged age-stratum and selective aggregates reused from the completed v4 diagnostic run; no bootstrap or model refit was performed by this finalizer",
+  "bootstrap_draws": 1000,
+  "clinical_input_availability_verified": false,
+  "clinical_promotion_allowed": false,
+  "cohort_gates": {
+    "eicu": {
+      "analysis_claim_scope": "retrospective_landmark_prediction_measurement_time",
+      "analysis_id": "main20k_real",
+      "bootstrap_cluster_unit": "patient",
+      "clinical_input_availability_verified": false,
+      "clinical_promotion_allowed": false,
+      "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+      "eligibility_table_sha256": "d138fd4bf718f051af3aa39298958dad44ccdf2462b583d554e28d214028f04d",
+      "independent_patient_clustering_verified": true,
+      "input_scope": "retrospective_measurement_time",
+      "n_eligible_24h": 130544,
+      "n_joined": 130544,
+      "n_metadata_only_rows_not_in_prediction_file": 62261,
+      "n_patients": 102957,
+      "n_temporal_verified": 130544,
+      "operational_proxy_status": "explicitly_recorded",
+      "outcome_timing_basis": "operational_proxy",
+      "outcome_timing_evidence": "operational_proxy",
+      "prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3",
+      "prediction_manifest": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/prediction_manifest.json",
+      "prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+      "prediction_scope": "retrospective_landmark_prediction_measurement_time",
+      "ready_for_future24h_clinical_claim": false,
+      "reason": "current_per_cohort_retrospective_landmark_attestation",
+      "retrospective_landmark_prediction_allowed": true,
+      "subject_identity_basis": "source uniquepid"
+    },
+    "mimic": {
+      "analysis_claim_scope": "retrospective_landmark_prediction_measurement_time",
+      "analysis_id": "main20k_real",
+      "bootstrap_cluster_unit": "patient",
+      "clinical_input_availability_verified": false,
+      "clinical_promotion_allowed": false,
+      "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+      "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+      "independent_patient_clustering_verified": true,
+      "input_scope": "retrospective_measurement_time",
+      "n_eligible_24h": 14890,
+      "n_joined": 14890,
+      "n_metadata_only_rows_not_in_prediction_file": 79453,
+      "n_patients": 10848,
+      "n_temporal_verified": 14890,
+      "operational_proxy_status": "not_identified",
+      "outcome_timing_basis": "exact",
+      "outcome_timing_evidence": "exact",
+      "prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3",
+      "prediction_manifest": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/prediction_manifest.json",
+      "prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+      "prediction_scope": "retrospective_landmark_prediction_measurement_time",
+      "ready_for_future24h_clinical_claim": false,
+      "reason": "current_per_cohort_retrospective_landmark_attestation",
+      "retrospective_landmark_prediction_allowed": true,
+      "subject_identity_basis": "source subject_id"
+    }
+  },
+  "common_support_cells": [
+    "18-49|female",
+    "18-49|male",
+    "50-64|female",
+    "50-64|male",
+    "65-74|female",
+    "65-74|male",
+    "75+|female",
+    "75+|male"
+  ],
+  "corrected_saved_standardization": {
+    "analysis_module": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/case_mix_selective.py",
+    "analysis_module_sha256": "e61d4c94e4e251bfcd158d9ae4d7614b2b8e564e4322330f5382a704b3fc5f84",
+    "requested_patient_cluster_draws_per_cohort": 1000,
+    "source_csv_sha256": "40aea1bd9608b9b12c79b35b4e3344fea020459b537fff632aef1467a69d2a58",
+    "source_directory": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/case_mix_selective_primary_v4_1_incomplete_20261123_0440",
+    "source_script": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/recompute_case_mix_standardization.py",
+    "valid_patient_cluster_draws_per_cohort": {
+      "eicu": 1000,
+      "mimic": 1000
+    }
+  },
+  "corrected_standardized_rows": 2,
+  "coverages": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "failed_original_finalization_attempt": {
+    "bootstrap_completion_confirmed": true,
+    "exit_status": 1,
+    "exit_status_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/logs/case_mix_standardization_v4_1_20261123_0440.exit_status",
+    "log_sha256": "a1d85e1b17c649b76b5936bc41131e7e27275c0b9cf398e37266037c792c4169",
+    "reason": "computed CSV was written; provenance serialization failed while hashing the obsolete source path temporal/repair_landmark.py"
+  },
+  "finalizer": {
+    "created_utc": "2026-11-22T20:59:38.984357+00:00",
+    "method": "aggregate-only; copies validated saved outputs and writes provenance",
+    "patient_level_exported": false
+  },
+  "fixed_0.5_threshold_risk_reduction_claim": false,
+  "minimum_patients_per_cell_per_cohort": 10,
+  "normalized_age_sex_cell_counts": {
+    "eicu": {
+      "18-49|female": 8549,
+      "18-49|male": 10470,
+      "50-64|female": 12362,
+      "50-64|male": 17176,
+      "65-74|female": 10445,
+      "65-74|male": 13342,
+      "75+|female": 15695,
+      "75+|male": 14898
+    },
+    "mimic": {
+      "18-49|female": 795,
+      "18-49|male": 990,
+      "50-64|female": 1070,
+      "50-64|male": 1856,
+      "65-74|female": 1040,
+      "65-74|male": 1572,
+      "75+|female": 1694,
+      "75+|male": 1831
+    }
+  },
+  "one_patient_record_selection": "one seeded outcome-blind random eligible stay per patient; this is not described as chronological",
+  "patient_level_exported": false,
+  "prediction_scope": "retrospective landmark prediction at recorded measurement time",
+  "prediction_source": "current v4 core predictions; legacy56m predictions are not accepted by this entry point",
+  "previous_run_manifest_sha256": "27bf2632424e027d681c9171d7710158aa7affc8cea89100f6a9190ece9f02a6",
+  "previous_zero_support_diagnostic": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/case_mix_selective_primary_v4/age_sex_case_mix_standardized.csv",
+    "sha256": "345bb782b79999c203809119954ab2dbfedacf9bc5e548afec4351a7028f671f",
+    "status": "insufficient_common_age_sex_support_before_float_code_normalization"
+  },
+  "reused_aggregate_outputs_from_diagnostic_run": {
+    "age_sex_case_mix_raw.csv": "5dabb5fa13a3e25ba2d497718e5362ae6d89e842e79e149ad90b6b0aafbca8b9",
+    "age_stratum_performance_slopes.csv": "fcd287e11ae9cb65398af0f72bf3e91a8ed18b1505fc66b10484a065a43b8d8e",
+    "selective_prediction.csv": "d04d31417bb6f65b84b47f83d7b24c281e124c67f2b06354260558e204916161"
+  },
+  "seed": 20261122,
+  "selective_rule": "retain highest |p-0.5|; fixed patient count; event and nonevent retention compared with matched-coverage hypergeometric random-rejection reference",
+  "sex_mapping_source": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/code/repair_landmark.py",
+  "sex_mapping_source_sha256": "a3852256bb22536fc192f9310b90aa0db79a57cee468c5c978f2fe76a24f9608",
+  "sex_normalization": "0/0.0=female; 1/1.0=male; source-supported M/F and Male/Female aliases; other nonmissing codes excluded as unknown",
+  "slope_uncertainty": "patient-cluster bootstrap with fixed predictions and fixed common-support weights",
+  "source_sex_semantics": "repair_landmark.py maps MIMIC patients.gender M/F and eICU patient.gender Male/Female or M/F to 1=male, 0=female",
+  "status": "complete",
+  "target_distribution_rule": "equal-weight mean of cohort-specific distributions across common age-sex cells"
+}

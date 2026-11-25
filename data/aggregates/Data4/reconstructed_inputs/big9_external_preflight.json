@@ -1,0 +1,30 @@
+{
+  "big_manifest_sha256": "bb8df14f2a9f7405473f1b0ff7523325f5815ecc4d1133121cbedd4833bd28c1",
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "patient/subject cluster as authorized by recovered reviewed gate",
+  "core_external_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+  "expected_individual_metric_rows": 105,
+  "expected_paired_metric_rows": 84,
+  "full_and_common8_rosters_kept_separate": true,
+  "merged99_manifest_sha256": "d467d4698a2bf8ce0cab994e55cf253a80e9f660566e1cf6b61398d4dfb925f2",
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "brier",
+    "logloss",
+    "calibration_slope",
+    "calibration_intercept",
+    "offset_intercept"
+  ],
+  "pair_flow_rows": 12,
+  "patient_level_data_copied_local": false,
+  "positive_analysis_cells": 15,
+  "recovered_reviewed_gate_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+  "status": "preflight_passed",
+  "target_cohorts": [
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2",
+    "eicu_semantic_v4_2"
+  ],
+  "unique_bootstrap_rosters": 5
+}

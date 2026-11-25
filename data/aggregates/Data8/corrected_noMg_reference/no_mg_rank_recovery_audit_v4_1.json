@@ -1,0 +1,46 @@
+{
+  "analysis_script_sha256": "7bba23b9bafe5add1ea8b7b8c59b5a1af7a19b6c3a243363cbf798281107d636",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed_by_cohort": {
+    "c2012_a_v4_1": 20261124,
+    "c2012_b_v4_1": 20261125,
+    "c2012_c_v4_1": 20261126,
+    "mimic": 20261123
+  },
+  "brier_and_logloss_unchanged_from_preserved_prior_aggregate": true,
+  "corrected_aggregate_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/controls/no_mg/no_mg_aggregate_v4_1.json",
+  "corrected_aggregate_sha256": "42b81883d2fc65ef922f50329514e2955ae3b21d10426b9a8aa9c07d1fa73d38",
+  "gpu_embeddings_sha256": "3ad17dad4c8647fc036ba9e0767a1eaaea00d0d0fe06e128c16574a783a78b19",
+  "gpu_manifest_sha256": "d539cf7d6e034c00ac2329d44993fcb2fafc176af33dddb88513413c3a762187",
+  "limits": [
+    "C2012 resampling unit is RecordID proxy only; person identity remains unverified",
+    "retrospective measurement-time inputs; real-time availability unverified",
+    "Mg harmonization remains uncertain; this is symmetric source/target omission",
+    "no causal interpretation"
+  ],
+  "metric_crosscheck_vs_sklearn": {
+    "case_names": [
+      "perfect",
+      "inverse",
+      "ties_and_zero_weights",
+      "null_constant_score",
+      "cluster_bootstrap_weights"
+    ],
+    "max_absolute_difference_vs_sklearn": 2.7755575615628914e-17,
+    "n_cases": 5,
+    "status": "passed"
+  },
+  "no_gpu_reencoding": true,
+  "no_head_refit": true,
+  "patient_level_rows_or_predictions_copied_local": false,
+  "patient_predictions_server_only_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/controls/no_mg/patient_predictions.npz",
+  "patient_predictions_sha256": "20332c11eaf12e2bb00306f25024f93978b60de4a3dd99caea57b7fbfbea4a12",
+  "preflight_arrays_sha256": "67aa3879910dca3893be43c5373a07d52005b09a784af04aeb7f7670903e9a8c",
+  "preflight_manifest_sha256": "3ff50540ef40720b948d563f4152b05e2bbaaf287eedd6934ad6c0b4438998ee",
+  "prior_aggregate_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/controls/no_mg/no_mg_aggregate.json",
+  "prior_aggregate_sha256": "d1146988eb4a6de29957f266a73fcef891ec0c30116cb99464821a7099b18637",
+  "prior_aggregate_status": "invalid_rankmetrics_preserved_do_not_report",
+  "prior_aggregate_unchanged": true,
+  "rank_order_fix": "score groups sorted descending before AUROC/AP accumulation; tied scores remain grouped",
+  "status": "corrected_rank_metrics_from_saved_predictions"
+}

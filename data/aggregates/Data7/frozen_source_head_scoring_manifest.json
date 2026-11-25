@@ -1,0 +1,144 @@
+{
+  "status": "frozen_density_inspire_scoring_complete",
+  "source_fit_calls": 0,
+  "assessment_metrics_computed": false,
+  "source_freeze_lock_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/density_repair/run_source_20261123_03/freeze_lock.json",
+  "source_freeze_lock_sha256": "fc69bcbe2e6433fe5d6e055e4e288eba9634857eec642822aaf9d5d2b1da5f1d",
+  "source_fitted_probes_sha256": "5ee7919f9610263286d427babe1a7c815adeeb4175991a53194173995563d837",
+  "source_report_sha256": "0f14a2e2027b5f8b0f0ce837cd3f4d4dd5dca3e4dc7417ba8eda525aafdbd686",
+  "source_saved_audit_sha256": "4e3467901d4ac021096a51232e35a165845cab7cb03e36c81eacd42020247c5b",
+  "source_saved_audit_status": null,
+  "targets": [
+    "inspire_postop_v4_1",
+    "inspire_broad_surgery_associated_v4_1"
+  ],
+  "heads": [
+    "original_ordinary_C1",
+    "ordinary_tuned",
+    "density_augmented"
+  ],
+  "input_provenance": [
+    {
+      "db": "inspire_postop_v4_1",
+      "n_stays": 3858,
+      "events": 127,
+      "prediction_file": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/inspire_core_source_reuse_m69_20261123-39444bed8e30c9db/main20k_real.parquet",
+      "prediction_file_sha256": "387fade89e39547d4c42fd55643e53b4a61929b6018b453390bd6aebbee4e7d2",
+      "ordered_prediction_digest": "77a9157cf96fe5f037c1555375d07dd55c50d014408eff49ace3cee15c1935f0",
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_inspire_postop_v4_1_main20k_real_ckpt-0719db57b91b2618_id-f88d98c375d82b9b_mask-3f453e2f4b91e5d9_src-1497f8c288d2_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "1b96cc3207726b2af409813be390a7a9b72e583c886a6ba84b0dadb15439be02",
+      "cache_metadata": {
+        "checkpoint_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+        "clinical_input_availability_verified": false,
+        "db": "inspire_postop_v4_1",
+        "encoder_code_sha256": "59c3f4059662fb9e1d81baf20120c8668a761a926f5cab5ff4e654f7c16c1abc",
+        "encoding_device": "cuda",
+        "encoding_dtype": "float32",
+        "encoding_scope": "all nonempty original sequence rows",
+        "engine_code_sha256": "a725994d9d5dd33d8a2b23ba42afb029c98c5f530658ddda20e76f259a4b9528",
+        "excluded_empty_input_mask_rows": 0,
+        "input_availability_limitation": "Original sequence NPZ is retrospective: raw event storetime was dropped from the processed inputs and negative therapy start times were clipped during preprocessing. Real-time clinical input availability is unverified.",
+        "input_condition": "real",
+        "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+        "input_scope": "retrospective_measurement_time",
+        "model_parameter_dtypes": [
+          "torch.float32"
+        ],
+        "model_tag": "main20k",
+        "python_version": "3.11.16",
+        "row_identity_sha256": "f88d98c375d82b9bf733bd0ea4a5d52eb290d6d6c727448ba0d79eb455185c90",
+        "runtime_identity": {
+          "cuda_compute_capability": [
+            8,
+            6
+          ],
+          "cuda_device": {
+            "index": 0,
+            "name": "NVIDIA RTX A5000"
+          },
+          "encoding_device": "cuda",
+          "encoding_dtype": "float32",
+          "model_parameter_dtypes": [
+            "torch.float32"
+          ],
+          "platform_machine": "x86_64",
+          "python_implementation": "CPython",
+          "python_version": "3.11.16",
+          "torch_cuda_version": "12.8",
+          "torch_num_threads": 8,
+          "torch_version": "2.11.0+cu128"
+        },
+        "runtime_identity_sha256": "edca09b26174895bb81e5a42e19ed422ce290f467b93ddd1c76dd75d3b928322",
+        "source_npz_sha256": "1497f8c288d29cd2ce8c603f5f0013c4230ea24f904685cff9054c03e529044c",
+        "split_sha256": "db68ac8f479d27370d22cd8ffe9761b58f4fdcddff4d921980872058fab662c9",
+        "torch_num_threads": 8,
+        "torch_version": "2.11.0+cu128"
+      },
+      "ordinary_C1_vs_engine_main_max_abs_probability": 0.0
+    },
+    {
+      "db": "inspire_broad_surgery_associated_v4_1",
+      "n_stays": 5713,
+      "events": 210,
+      "prediction_file": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/inspire_core_source_reuse_m69_20261123-39444bed8e30c9db/main20k_real.parquet",
+      "prediction_file_sha256": "387fade89e39547d4c42fd55643e53b4a61929b6018b453390bd6aebbee4e7d2",
+      "ordered_prediction_digest": "7858d1bcfdae206944ff21add627dee9eaaaf9ee61da2a1edbf32a4e9fdc3256",
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_inspire_broad_surgery_associated_v4_1_main20k_real_ckpt-0719db57b91b2618_id-89873627b2fdb7bc_mask-3f453e2f4b91e5d9_src-73a495fb7d56_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "069debfa4f19dac376f2cad7ed4f8711f304a0b770db4783d96dec9300d128a0",
+      "cache_metadata": {
+        "checkpoint_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+        "clinical_input_availability_verified": false,
+        "db": "inspire_broad_surgery_associated_v4_1",
+        "encoder_code_sha256": "59c3f4059662fb9e1d81baf20120c8668a761a926f5cab5ff4e654f7c16c1abc",
+        "encoding_device": "cuda",
+        "encoding_dtype": "float32",
+        "encoding_scope": "all nonempty original sequence rows",
+        "engine_code_sha256": "a725994d9d5dd33d8a2b23ba42afb029c98c5f530658ddda20e76f259a4b9528",
+        "excluded_empty_input_mask_rows": 0,
+        "input_availability_limitation": "Original sequence NPZ is retrospective: raw event storetime was dropped from the processed inputs and negative therapy start times were clipped during preprocessing. Real-time clinical input availability is unverified.",
+        "input_condition": "real",
+        "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+        "input_scope": "retrospective_measurement_time",
+        "model_parameter_dtypes": [
+          "torch.float32"
+        ],
+        "model_tag": "main20k",
+        "python_version": "3.11.16",
+        "row_identity_sha256": "89873627b2fdb7bcb829a37fb8a2dfc375d55458566d71614eeb5793f3cbf681",
+        "runtime_identity": {
+          "cuda_compute_capability": [
+            8,
+            6
+          ],
+          "cuda_device": {
+            "index": 0,
+            "name": "NVIDIA RTX A5000"
+          },
+          "encoding_device": "cuda",
+          "encoding_dtype": "float32",
+          "model_parameter_dtypes": [
+            "torch.float32"
+          ],
+          "platform_machine": "x86_64",
+          "python_implementation": "CPython",
+          "python_version": "3.11.16",
+          "torch_cuda_version": "12.8",
+          "torch_num_threads": 8,
+          "torch_version": "2.11.0+cu128"
+        },
+        "runtime_identity_sha256": "edca09b26174895bb81e5a42e19ed422ce290f467b93ddd1c76dd75d3b928322",
+        "source_npz_sha256": "73a495fb7d56a93ba68fcb7c83e6457dcf71d79246d7d79030b61e8c71f0af13",
+        "split_sha256": "33fadd9d626035f42febd849d566ec77c4070dd2e5ff83cf6ff5aa3c3e4b9732",
+        "torch_num_threads": 8,
+        "torch_version": "2.11.0+cu128"
+      },
+      "ordinary_C1_vs_engine_main_max_abs_probability": 0.0
+    }
+  ],
+  "prediction_file": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/density_repair/inspire_frozen_scoring_v4_2/frozen_density_inspire_predictions.parquet",
+  "prediction_file_sha256": "347a21e0a79c37d290fccf1f07afdd09a8de4cd8c8094f078f4ad48dc6af3d8a",
+  "output_rows": 28713,
+  "code_sha256": "e634d29b179aac6553ca27349bb1d8e051ad0568ae562ab8dd99a722f9aa60ca",
+  "clinical_input_availability_verified": false,
+  "note": "All fixed-role rows scored; downstream headline metrics must use assessment only; no target outcome tuning."
+}

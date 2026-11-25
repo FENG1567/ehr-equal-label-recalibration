@@ -1,0 +1,13 @@
+model,C,split1_n,split1_events,split1_brier,solver,n_iter,converged,max_iter,dtype,convergence_warning
+icu_fm,0.001,7407,509,0.05427127156784284,newton-cholesky,6,True,200,float64,False
+icu_fm,0.01,7407,509,0.05212354202494644,newton-cholesky,7,True,200,float64,False
+icu_fm,0.1,7407,509,0.051238527067219534,newton-cholesky,7,True,200,float64,False
+icu_fm,1.0,7407,509,0.05131954711117257,newton-cholesky,7,True,200,float64,False
+icu_fm,10.0,7407,509,0.051384187652638934,newton-cholesky,7,True,200,float64,False
+icu_fm,100.0,7407,509,0.05139297529503196,newton-cholesky,7,True,200,float64,False
+icu_vp_lr,0.001,7407,509,0.04834915303994407,newton-cholesky,7,True,200,float64,False
+icu_vp_lr,0.01,7407,509,0.048154686229919114,newton-cholesky,7,True,200,float64,False
+icu_vp_lr,0.1,7407,509,0.04826427751587543,newton-cholesky,7,True,200,float64,False
+icu_vp_lr,1.0,7407,509,0.0484381153884924,newton-cholesky,9,True,200,float64,False
+icu_vp_lr,10.0,7407,509,0.04851880487737919,newton-cholesky,11,True,200,float64,False
+icu_vp_lr,100.0,7407,509,0.04852640704890234,newton-cholesky,12,True,200,float64,False

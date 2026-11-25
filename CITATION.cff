@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and this version of its reproducibility materials."
+title: "Residual Differences in In-Hospital Mortality Prediction After Recalibrating Transferred EHR Models With the Same Local Labels"
+type: software
+version: 1.0.0
+date-released: 2026-11-25
+repository-code: https://github.com/FENG1567/ehr-equal-label-recalibration
+url: https://github.com/FENG1567/ehr-equal-label-recalibration/tree/v1.0.0
+authors:
+  - family-names: Feng
+    given-names: Shuo
+  - family-names: Shi
+    given-names: Chao
+  - family-names: Liu
+    given-names: Tianming
+  - family-names: Ding
+    given-names: Haoran
+  - family-names: Hang
+    given-names: Fenghe
+  - family-names: Huang
+    given-names: Zhenghao
+  - family-names: Liu
+    given-names: Liwei
+license: MIT
+abstract: "Project software is MIT licensed; authors' aggregate results and displays are CC BY 4.0. Database and third-party rights remain separate."

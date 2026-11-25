@@ -1,0 +1,743 @@
+{
+  "main_tables": [
+    {
+      "number": "1",
+      "title": "Primary-cohort performance and calibration before updating",
+      "columns": [
+        "Cohort and endpoint",
+        "Stays/patients/deaths",
+        "AUROC (95% CI)",
+        "Brier score (95% CI)",
+        "Calibration slope (95% CI)",
+        "Offset intercept (95% CI)"
+      ],
+      "rows": [
+        [
+          "MIMIC test — hospital death",
+          "14890/10848/1675",
+          "0.807 (0.796–0.818)",
+          "0.0838 (0.0797–0.0875)",
+          "0.980 (0.931–1.031)",
+          "0.025 (-0.044–0.089)"
+        ],
+        [
+          "Repaired eICU — hospital death",
+          "130544/102957/11943",
+          "0.702 (0.697–0.707)",
+          "0.0862 (0.0849–0.0875)",
+          "0.498 (0.483–0.511)",
+          "-0.373 (-0.399–-0.345)"
+        ],
+        [
+          "NWICU — hospital death",
+          "19972/17385/2226",
+          "0.694 (0.682–0.706)",
+          "0.0966 (0.0935–0.0996)",
+          "0.427 (0.386–0.470)",
+          "-0.119 (-0.174–-0.067)"
+        ]
+      ],
+      "legend": "Counts are stays/patients/deaths. Estimates describe the frozen historical FM readout; AUROC, Brier score, calibration slope and fixed-slope offset intercept have marginal 95% patient-cluster percentile intervals. MIMIC performance uses source split 2. External baseline rows use all eligible stays, whereas Table 2 uses the patient-separated recalibration assessment subsets."
+    },
+    {
+      "number": "2",
+      "title": "Each model’s probability error before and after shared-label recalibration",
+      "columns": [
+        "Cohort",
+        "Labels",
+        "Model",
+        "Events\nP05–P95",
+        "Platt failures /\nfallbacks",
+        "Brier mean\nRaw → Platt",
+        "Log-loss mean\nRaw → Platt"
+      ],
+      "rows": [
+        [
+          "eICU",
+          "50",
+          "FM",
+          "1.0–8.0",
+          "3/3",
+          "0.08638 → 0.08388",
+          "0.30757 → 0.32415"
+        ],
+        [
+          "eICU",
+          "50",
+          "V+P LR",
+          "1.0–8.0",
+          "3/3",
+          "0.07559 → 0.08129",
+          "0.27537 → 0.32464"
+        ],
+        [
+          "eICU",
+          "500",
+          "FM",
+          "36.0–56.0",
+          "0/0",
+          "0.08638 → 0.07884",
+          "0.30757 → 0.28506"
+        ],
+        [
+          "eICU",
+          "500",
+          "V+P LR",
+          "36.0–56.0",
+          "0/0",
+          "0.07559 → 0.07588",
+          "0.27537 → 0.27572"
+        ],
+        [
+          "NWICU",
+          "50",
+          "FM",
+          "2.0–9.0",
+          "1/1",
+          "0.09637 → 0.09770",
+          "0.35140 → 0.35435"
+        ],
+        [
+          "NWICU",
+          "50",
+          "V+P LR",
+          "2.0–9.0",
+          "1/1",
+          "0.09144 → 0.09707",
+          "0.31679 → 0.35320"
+        ],
+        [
+          "NWICU",
+          "500",
+          "FM",
+          "45.0–69.0",
+          "0/0",
+          "0.09637 → 0.09372",
+          "0.35140 → 0.33043"
+        ],
+        [
+          "NWICU",
+          "500",
+          "V+P LR",
+          "45.0–69.0",
+          "0/0",
+          "0.09144 → 0.09146",
+          "0.31679 → 0.31719"
+        ]
+      ],
+      "legend": "Arrows show stay-weighted unupdated → Platt mean losses on the same assessment roster: 65,157 stays/51,479 patients/5,979 deaths in repaired eICU and 10,080/8,693/1,107 in Northwestern ICU. Every updated cell includes all 200 attempts. Failed fits contribute Jeffreys prevalence fallback predictions. Event P05–P95 is the empirical central 90% range across recalibration samples, not a confidence interval. Complete 50- and 500-patient results and loss ranges are in Supplementary Table 2A–D."
+    }
+  ],
+  "supplementary_tables": [
+    {
+      "number": "1",
+      "title": "Supplementary clinical and sequence characteristics of all eligible stays",
+      "columns": [
+        "Measure",
+        "MIMIC (eligible stays n=73936)",
+        "eICU (eligible stays n=130544)",
+        "NWICU (eligible stays n=19972)"
+      ],
+      "rows": [
+        [
+          "Eligible patients",
+          "53964",
+          "102957",
+          "17385"
+        ],
+        [
+          "Deaths/events (y=1; all eligible stays)",
+          "8143",
+          "11943",
+          "2226"
+        ],
+        [
+          "Age median (IQR), source units",
+          "67.0 (55.0–77.0)",
+          "66.0 (54.0–76.0)",
+          "66.0 (54.0–75.0)"
+        ],
+        [
+          "Age missing; top-coded at source threshold",
+          "0; 91 years: 3105",
+          "0; 90 years: 4538",
+          "0; 91 years: 609"
+        ],
+        [
+          "Sex female/male/unknown (stay counts)",
+          "31946/41990/0",
+          "59650/70872/22",
+          "8662/11310/0"
+        ],
+        [
+          "Repeat patients; extra stays after first",
+          "11785; 19972",
+          "19053; 27587",
+          "1969; 2587"
+        ],
+        [
+          "Sequence length L median (IQR)",
+          "128.0 (128.0–128.0)",
+          "99.0 (85.0–128.0)",
+          "128.0 (49.0–128.0)"
+        ],
+        [
+          "Total sequence tokens; mean per stay",
+          "9441990; 127.70",
+          "13109296; 100.42",
+          "1894077; 94.84"
+        ],
+        [
+          "Stays with L ≥ 128",
+          "73081/73936",
+          "36478/130544",
+          "10337/19972"
+        ],
+        [
+          "MIMIC frozen source split 2 (stays/patients)",
+          "14890/10848",
+          "—",
+          "—"
+        ]
+      ],
+      "legend": "All summaries use the exact eligible-stay denominator shown in each cohort header. Deaths are the recorded binary outcome count. Age is in source units and remains top-coded (MIMIC/NWICU 91; eICU 90); top-coded values are not exact ages. Sex counts are female/male/unknown with missing retained as unknown. Repeat patients have more than one eligible stay; extra stays are counted after each patient's first. Sequence length L is the frozen token count; L ≥ 128 is the cap count. MIMIC's full eligible population has 73936 stays and 53964 patients; its distinct frozen split-2 test has 14890 stays and 10848 patients and is not the all-eligible clinical denominator.",
+      "previous_display_number": "3"
+    },
+    {
+      "number": "2A",
+      "title": "Complete calibration results: eICU, 50 labels",
+      "columns": [
+        "Model",
+        "Update",
+        "Attempts /\nfailed / fallback",
+        "Events\nP05–P95",
+        "Brier mean\n(P05–P95)",
+        "Log loss mean\n(P05–P95)"
+      ],
+      "rows": [
+        [
+          "FM",
+          "No update",
+          "0/0/0",
+          "1.0–8.0",
+          "0.08638 (0.08638–0.08638)",
+          "0.30757 (0.30757–0.30757)"
+        ],
+        [
+          "FM",
+          "Intercept-only",
+          "200/3/3",
+          "1.0–8.0",
+          "0.08507 (0.08084–0.09631)",
+          "0.31643 (0.30284–0.36712)"
+        ],
+        [
+          "FM",
+          "Platt",
+          "200/3/3",
+          "1.0–8.0",
+          "0.08388 (0.07869–0.09799)",
+          "0.32415 (0.28498–0.41893)"
+        ],
+        [
+          "V+P LR",
+          "No update",
+          "0/0/0",
+          "1.0–8.0",
+          "0.07559 (0.07559–0.07559)",
+          "0.27537 (0.27537–0.27537)"
+        ],
+        [
+          "V+P LR",
+          "Intercept-only",
+          "200/3/3",
+          "1.0–8.0",
+          "0.07784 (0.07538–0.08472)",
+          "0.28768 (0.27535–0.33378)"
+        ],
+        [
+          "V+P LR",
+          "Platt",
+          "200/3/3",
+          "1.0–8.0",
+          "0.08129 (0.07563–0.09288)",
+          "0.32464 (0.27525–0.43064)"
+        ]
+      ],
+      "legend": "Four cohort-budget blocks retain every unupdated, intercept-only and Platt cell for FM and V+P LR. Each fitted-update cell includes all 200 planned attempts, with failed fits assigned the prespecified Jeffreys prevalence fallback. Attempts/failed/fallback reports the corresponding counts. No-update rows require no calibration fit and use the same assessment rosters. Events and loss P05–P95 are empirical central 90% ranges across adaptation draws, not confidence intervals. Losses are stay-weighted. These full results underlie the compact main Table 2.",
+      "previous_display_number": "6A"
+    },
+    {
+      "number": "2B",
+      "title": "Complete calibration results: eICU, 500 labels",
+      "columns": [
+        "Model",
+        "Update",
+        "Attempts /\nfailed / fallback",
+        "Events\nP05–P95",
+        "Brier mean\n(P05–P95)",
+        "Log loss mean\n(P05–P95)"
+      ],
+      "rows": [
+        [
+          "FM",
+          "No update",
+          "0/0/0",
+          "36.0–56.0",
+          "0.08638 (0.08638–0.08638)",
+          "0.30757 (0.30757–0.30757)"
+        ],
+        [
+          "FM",
+          "Intercept-only",
+          "200/0/0",
+          "36.0–56.0",
+          "0.08304 (0.08115–0.08589)",
+          "0.30390 (0.30274–0.30734)"
+        ],
+        [
+          "FM",
+          "Platt",
+          "200/0/0",
+          "36.0–56.0",
+          "0.07884 (0.07837–0.08008)",
+          "0.28506 (0.28296–0.28935)"
+        ],
+        [
+          "V+P LR",
+          "No update",
+          "0/0/0",
+          "36.0–56.0",
+          "0.07559 (0.07559–0.07559)",
+          "0.27537 (0.27537–0.27537)"
+        ],
+        [
+          "V+P LR",
+          "Intercept-only",
+          "200/0/0",
+          "36.0–56.0",
+          "0.07579 (0.07538–0.07676)",
+          "0.27629 (0.27530–0.27907)"
+        ],
+        [
+          "V+P LR",
+          "Platt",
+          "200/0/0",
+          "36.0–56.0",
+          "0.07588 (0.07533–0.07727)",
+          "0.27572 (0.27354–0.28092)"
+        ]
+      ],
+      "legend": "Four cohort-budget blocks retain every unupdated, intercept-only and Platt cell for FM and V+P LR. Each fitted-update cell includes all 200 planned attempts, with failed fits assigned the prespecified Jeffreys prevalence fallback. Attempts/failed/fallback reports the corresponding counts. No-update rows require no calibration fit and use the same assessment rosters. Events and loss P05–P95 are empirical central 90% ranges across adaptation draws, not confidence intervals. Losses are stay-weighted. These full results underlie the compact main Table 2.",
+      "previous_display_number": "6B"
+    },
+    {
+      "number": "2C",
+      "title": "Complete calibration results: NWICU, 50 labels",
+      "columns": [
+        "Model",
+        "Update",
+        "Attempts /\nfailed / fallback",
+        "Events\nP05–P95",
+        "Brier mean\n(P05–P95)",
+        "Log loss mean\n(P05–P95)"
+      ],
+      "rows": [
+        [
+          "FM",
+          "No update",
+          "0/0/0",
+          "2.0–9.0",
+          "0.09637 (0.09637–0.09637)",
+          "0.35140 (0.35140–0.35140)"
+        ],
+        [
+          "FM",
+          "Intercept-only",
+          "200/1/1",
+          "2.0–9.0",
+          "0.09831 (0.09494–0.10722)",
+          "0.36278 (0.35050–0.39426)"
+        ],
+        [
+          "FM",
+          "Platt",
+          "200/1/1",
+          "2.0–9.0",
+          "0.09770 (0.09332–0.10626)",
+          "0.35435 (0.32999–0.40595)"
+        ],
+        [
+          "V+P LR",
+          "No update",
+          "0/0/0",
+          "2.0–9.0",
+          "0.09144 (0.09144–0.09144)",
+          "0.31679 (0.31679–0.31679)"
+        ],
+        [
+          "V+P LR",
+          "Intercept-only",
+          "200/1/1",
+          "2.0–9.0",
+          "0.09320 (0.09075–0.09976)",
+          "0.32537 (0.31457–0.35772)"
+        ],
+        [
+          "V+P LR",
+          "Platt",
+          "200/1/1",
+          "2.0–9.0",
+          "0.09707 (0.09097–0.10986)",
+          "0.35320 (0.31537–0.41426)"
+        ]
+      ],
+      "legend": "Four cohort-budget blocks retain every unupdated, intercept-only and Platt cell for FM and V+P LR. Each fitted-update cell includes all 200 planned attempts, with failed fits assigned the prespecified Jeffreys prevalence fallback. Attempts/failed/fallback reports the corresponding counts. No-update rows require no calibration fit and use the same assessment rosters. Events and loss P05–P95 are empirical central 90% ranges across adaptation draws, not confidence intervals. Losses are stay-weighted. These full results underlie the compact main Table 2.",
+      "previous_display_number": "6C"
+    },
+    {
+      "number": "2D",
+      "title": "Complete calibration results: NWICU, 500 labels",
+      "columns": [
+        "Model",
+        "Update",
+        "Attempts /\nfailed / fallback",
+        "Events\nP05–P95",
+        "Brier mean\n(P05–P95)",
+        "Log loss mean\n(P05–P95)"
+      ],
+      "rows": [
+        [
+          "FM",
+          "No update",
+          "0/0/0",
+          "45.0–69.0",
+          "0.09637 (0.09637–0.09637)",
+          "0.35140 (0.35140–0.35140)"
+        ],
+        [
+          "FM",
+          "Intercept-only",
+          "200/0/0",
+          "45.0–69.0",
+          "0.09631 (0.09493–0.09878)",
+          "0.35210 (0.35048–0.35661)"
+        ],
+        [
+          "FM",
+          "Platt",
+          "200/0/0",
+          "45.0–69.0",
+          "0.09372 (0.09304–0.09487)",
+          "0.33043 (0.32774–0.33627)"
+        ],
+        [
+          "V+P LR",
+          "No update",
+          "0/0/0",
+          "45.0–69.0",
+          "0.09144 (0.09144–0.09144)",
+          "0.31679 (0.31679–0.31679)"
+        ],
+        [
+          "V+P LR",
+          "Intercept-only",
+          "200/0/0",
+          "45.0–69.0",
+          "0.09110 (0.09075–0.09202)",
+          "0.31573 (0.31452–0.31904)"
+        ],
+        [
+          "V+P LR",
+          "Platt",
+          "200/0/0",
+          "45.0–69.0",
+          "0.09146 (0.09078–0.09312)",
+          "0.31719 (0.31460–0.32207)"
+        ]
+      ],
+      "legend": "Four cohort-budget blocks retain every unupdated, intercept-only and Platt cell for FM and V+P LR. Each fitted-update cell includes all 200 planned attempts, with failed fits assigned the prespecified Jeffreys prevalence fallback. Attempts/failed/fallback reports the corresponding counts. No-update rows require no calibration fit and use the same assessment rosters. Events and loss P05–P95 are empirical central 90% ranges across adaptation draws, not confidence intervals. Losses are stay-weighted. These full results underlie the compact main Table 2.",
+      "previous_display_number": "6D"
+    },
+    {
+      "number": "3",
+      "title": "Equal-label calibration of auditable source-only encoders against quantized-token summaries",
+      "columns": [
+        "Cohort",
+        "Seed",
+        "Labels",
+        "FM Brier",
+        "Token LR Brier",
+        "FM minus LR Brier (95% CI)",
+        "FM minus LR log loss (95% CI)"
+      ],
+      "rows": [
+        [
+          "EICU",
+          "20261123",
+          "500",
+          "0.079862",
+          "0.080431",
+          "-0.0005698 (-0.0009006, -0.0002650)",
+          "-0.0043502 (-0.0059051, -0.0028591)"
+        ],
+        [
+          "EICU",
+          "20261124",
+          "500",
+          "0.079410",
+          "0.080431",
+          "-0.0010215 (-0.0013707, -0.0006377)",
+          "-0.0068937 (-0.0083014, -0.0052621)"
+        ],
+        [
+          "EICU",
+          "20261125",
+          "500",
+          "0.080748",
+          "0.080431",
+          "+0.0003160 (+0.0000003, +0.0006143)",
+          "-0.0009337 (-0.0022789, +0.0005192)"
+        ],
+        [
+          "EICU",
+          "20261123",
+          "2000",
+          "0.079519",
+          "0.080007",
+          "-0.0004880 (-0.0008294, -0.0001689)",
+          "-0.0039832 (-0.0055912, -0.0024393)"
+        ],
+        [
+          "EICU",
+          "20261124",
+          "2000",
+          "0.079007",
+          "0.080007",
+          "-0.0010003 (-0.0013646, -0.0006012)",
+          "-0.0067716 (-0.0082212, -0.0050900)"
+        ],
+        [
+          "EICU",
+          "20261125",
+          "2000",
+          "0.080418",
+          "0.080007",
+          "+0.0004107 (+0.0000837, +0.0007250)",
+          "-0.0006689 (-0.0020675, +0.0008483)"
+        ],
+        [
+          "NWICU",
+          "20261123",
+          "500",
+          "0.091752",
+          "0.088467",
+          "+0.0032852 (+0.0019744, +0.0049108)",
+          "+0.0089580 (+0.0040311, +0.0141415)"
+        ],
+        [
+          "NWICU",
+          "20261124",
+          "500",
+          "0.091917",
+          "0.088467",
+          "+0.0034503 (+0.0021104, +0.0049698)",
+          "+0.0101382 (+0.0051734, +0.0152248)"
+        ],
+        [
+          "NWICU",
+          "20261125",
+          "500",
+          "0.092973",
+          "0.088467",
+          "+0.0045059 (+0.0030909, +0.0059389)",
+          "+0.0145750 (+0.0096137, +0.0193125)"
+        ],
+        [
+          "NWICU",
+          "20261123",
+          "2000",
+          "0.091384",
+          "0.088114",
+          "+0.0032703 (+0.0019668, +0.0048818)",
+          "+0.0088149 (+0.0039146, +0.0139649)"
+        ],
+        [
+          "NWICU",
+          "20261124",
+          "2000",
+          "0.091521",
+          "0.088114",
+          "+0.0034068 (+0.0020777, +0.0049386)",
+          "+0.0097995 (+0.0048684, +0.0148217)"
+        ],
+        [
+          "NWICU",
+          "20261125",
+          "2000",
+          "0.092622",
+          "0.088114",
+          "+0.0045075 (+0.0030993, +0.0059289)",
+          "+0.0143247 (+0.0094392, +0.0190141)"
+        ]
+      ],
+      "legend": "Each cell includes all 200 realized updates, including Jeffreys fallback predictions. Differences are mean per-stay FM loss minus comparator loss; positive values favor the comparator. Intervals use 500 shared assessment-patient cluster draws with stay weighting and condition on the fixed models and realized fits. The comparator uses the exact quantized tokens and uses six bin-based summaries per variable, distinct from the primary nine-feature V+P summary. All raw losses,2000/500-label cells and six fallback attempts among 3200 fits are retained in Supplementary Data 22. Seed ranges are not confidence intervals.",
+      "previous_display_number": "5"
+    },
+    {
+      "number": "4",
+      "title": "Calendar-separated MIMIC assessment with restricted H24 recorded-time inputs",
+      "columns": [
+        "Seed",
+        "Predictor",
+        "AUROC",
+        "Raw Brier",
+        "Updated Brier",
+        "Raw log loss",
+        "Updated log loss"
+      ],
+      "rows": [
+        [
+          "20261123",
+          "Numeric pretrained",
+          "0.8002",
+          "0.091648",
+          "0.091525",
+          "0.308528",
+          "0.310893"
+        ],
+        [
+          "20261123",
+          "Random encoder",
+          "0.7924",
+          "0.091916",
+          "0.092345",
+          "0.310664",
+          "0.312810"
+        ],
+        [
+          "20261123",
+          "Continuous summary LR",
+          "0.7870",
+          "0.094038",
+          "0.093953",
+          "0.329140",
+          "0.322437"
+        ],
+        [
+          "20261124",
+          "Numeric pretrained",
+          "0.8013",
+          "0.090932",
+          "0.091777",
+          "0.306197",
+          "0.309352"
+        ],
+        [
+          "20261124",
+          "Random encoder",
+          "0.7840",
+          "0.093628",
+          "0.093570",
+          "0.321776",
+          "0.318326"
+        ],
+        [
+          "20261124",
+          "Continuous summary LR",
+          "0.7870",
+          "0.094038",
+          "0.093953",
+          "0.329140",
+          "0.322437"
+        ],
+        [
+          "20261125",
+          "Numeric pretrained",
+          "0.8020",
+          "0.091359",
+          "0.091659",
+          "0.308202",
+          "0.309072"
+        ],
+        [
+          "20261125",
+          "Random encoder",
+          "0.7968",
+          "0.092206",
+          "0.092034",
+          "0.313423",
+          "0.312017"
+        ],
+        [
+          "20261125",
+          "Continuous summary LR",
+          "0.7870",
+          "0.094038",
+          "0.093953",
+          "0.329140",
+          "0.322437"
+        ]
+      ],
+      "legend": "Later assessment includes 12,872 distinct patients and 1,588 deaths; one stay per patient. Each predictor uses the same separate 500-patient adaptation sample with 43 deaths. Entries are point estimates, not across-seed confidence intervals. All patient-bootstrap intervals and early-holdout findings are in Supplementary Data 20. Input scope differs from the full primary comparison. System store time is an availability proxy.",
+      "previous_display_number": "4"
+    },
+    {
+      "number": "5",
+      "title": "Exploratory SICdb case-period mortality proxy",
+      "columns": [
+        "Cohort and endpoint",
+        "Stays/patients/events",
+        "AUROC (95% CI)",
+        "Brier score (95% CI)",
+        "Calibration slope (95% CI)",
+        "Offset intercept (95% CI)"
+      ],
+      "rows": [
+        [
+          "SICdb — exploratory case-period mortality proxy",
+          "6774/6152/402",
+          "0.814 (0.793–0.835)",
+          "0.0614 (0.0578–0.0648)",
+          "0.971 (0.885–1.063)",
+          "-1.115 (-1.223–-1.007)"
+        ]
+      ],
+      "legend": "SICdb is shown as an exploratory case-period mortality proxy; its available fields do not verify ICU death or continuous ICU occupancy through hour 24. Estimates and denominators are preserved from the cohort summary.",
+      "previous_display_number": "1"
+    },
+    {
+      "number": "6",
+      "title": "Point-only log loss across included cohorts",
+      "columns": [
+        "Cohort and endpoint",
+        "Stays/patients/events",
+        "Log loss (point only)"
+      ],
+      "rows": [
+        [
+          "MIMIC test — hospital death",
+          "14890/10848/1675",
+          "0.2850"
+        ],
+        [
+          "Repaired eICU — hospital death",
+          "130544/102957/11943",
+          "0.3070"
+        ],
+        [
+          "NWICU — hospital death",
+          "19972/17385/2226",
+          "0.3537"
+        ],
+        [
+          "SICdb — exploratory case-period mortality proxy",
+          "6774/6152/402",
+          "0.2250"
+        ]
+      ],
+      "legend": "Log loss is shown as a point estimate; no interval was available in the cohort-performance summary.",
+      "previous_display_number": "2"
+    }
+  ]
+}

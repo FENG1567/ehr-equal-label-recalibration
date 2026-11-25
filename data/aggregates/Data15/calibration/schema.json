@@ -1,0 +1,862 @@
+{
+  "calibration_curve_points.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "object",
+        "name": "curve_type"
+      },
+      {
+        "dtype": "int64",
+        "name": "point_index"
+      },
+      {
+        "dtype": "float64",
+        "name": "predicted_probability"
+      },
+      {
+        "dtype": "float64",
+        "name": "smoothed_observed_risk"
+      },
+      {
+        "dtype": "float64",
+        "name": "ci95_lower"
+      },
+      {
+        "dtype": "float64",
+        "name": "ci95_upper"
+      },
+      {
+        "dtype": "float64",
+        "name": "risk_support_low"
+      },
+      {
+        "dtype": "float64",
+        "name": "risk_support_high"
+      },
+      {
+        "dtype": "int64",
+        "name": "smoother_predictor_df"
+      },
+      {
+        "dtype": "int64",
+        "name": "smoother_coefficient_count"
+      },
+      {
+        "dtype": "float64",
+        "name": "knot_logit_q10"
+      },
+      {
+        "dtype": "float64",
+        "name": "knot_logit_q50"
+      },
+      {
+        "dtype": "float64",
+        "name": "knot_logit_q90"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_requested"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_valid"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_invalid"
+      },
+      {
+        "dtype": "object",
+        "name": "curve_fit_status"
+      }
+    ],
+    "description": "Smooth risk curves and pointwise patient-cluster intervals for raw predictions and the fixed 500-label Platt repeat-0 fit.",
+    "rows": 488,
+    "sha256": "1bf903f9aca294c5616ad96a147bc370bf6e4d323e34450d76b0e8bc7ffdc090"
+  },
+  "calibration_risk_bins.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "int64",
+        "name": "bin"
+      },
+      {
+        "dtype": "int64",
+        "name": "n_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "events"
+      },
+      {
+        "dtype": "float64",
+        "name": "mean_predicted"
+      },
+      {
+        "dtype": "float64",
+        "name": "observed"
+      }
+    ],
+    "description": "Empirical score-bin support, event counts, mean predictions and observed event fractions underlying the smooth curves.",
+    "rows": 80,
+    "sha256": "170d12f3de7b2bf05199830d861a88d7102b20ff96d5cfb401eca9d528eed85a"
+  },
+  "calibration_risk_summary.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "object",
+        "name": "curve_status"
+      },
+      {
+        "dtype": "int64",
+        "name": "n_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "n_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "events"
+      },
+      {
+        "dtype": "int64",
+        "name": "nonevents"
+      },
+      {
+        "dtype": "float64",
+        "name": "mean_predicted_probability"
+      },
+      {
+        "dtype": "float64",
+        "name": "observed_event_rate"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss"
+      },
+      {
+        "dtype": "float64",
+        "name": "p_min"
+      },
+      {
+        "dtype": "float64",
+        "name": "p01"
+      },
+      {
+        "dtype": "float64",
+        "name": "p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "p25"
+      },
+      {
+        "dtype": "float64",
+        "name": "p50"
+      },
+      {
+        "dtype": "float64",
+        "name": "p75"
+      },
+      {
+        "dtype": "float64",
+        "name": "p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "p99"
+      },
+      {
+        "dtype": "float64",
+        "name": "p_max"
+      },
+      {
+        "dtype": "int64",
+        "name": "smoother_predictor_df"
+      },
+      {
+        "dtype": "int64",
+        "name": "smoother_coefficient_count"
+      },
+      {
+        "dtype": "object",
+        "name": "smoother_coefficients"
+      },
+      {
+        "dtype": "object",
+        "name": "knots_logit"
+      },
+      {
+        "dtype": "object",
+        "name": "probability_support"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_requested"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_valid"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_invalid"
+      },
+      {
+        "dtype": "object",
+        "name": "bootstrap_failures"
+      },
+      {
+        "dtype": "bool",
+        "name": "fixed_calibrator_fallback"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_scope"
+      },
+      {
+        "dtype": "int64",
+        "name": "fixed_calibrator_budget"
+      },
+      {
+        "dtype": "int64",
+        "name": "fixed_calibrator_repeat"
+      },
+      {
+        "dtype": "bool",
+        "name": "platt_fit_ok"
+      },
+      {
+        "dtype": "object",
+        "name": "platt_fit_status"
+      },
+      {
+        "dtype": "object",
+        "name": "global_sampling_plan_sha256"
+      }
+    ],
+    "description": "Risk distribution, mean predicted and observed risks, Brier/logloss, curve status and fixed-fit provenance per model/cohort.",
+    "rows": 8,
+    "sha256": "9f87b9749af7620df9664db0ea3c50e4c4c620c7f5101f9bb54c1e922b47dd27"
+  },
+  "global_50_500_summary.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "int64",
+        "name": "attempts"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_successes"
+      },
+      {
+        "dtype": "int64",
+        "name": "fallback_count"
+      },
+      {
+        "dtype": "float64",
+        "name": "events_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "events_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_mean"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_mean"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_attempts"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failures"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failure_rate"
+      }
+    ],
+    "description": "Complete 200-draw results at 50 and 500 labels, both proper scores, adaptation event P05/P95 and failed-fit/fallback counts.",
+    "rows": 40,
+    "sha256": "0391dd737bf30e805597da5ab7873032e98a1e6a63e21503016e8e83f87965c2"
+  },
+  "global_recalibration_repeat_scores.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "int64",
+        "name": "repeat"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "int64",
+        "name": "events"
+      },
+      {
+        "dtype": "int64",
+        "name": "nonevents"
+      },
+      {
+        "dtype": "bool",
+        "name": "fit_ok"
+      },
+      {
+        "dtype": "object",
+        "name": "fit_status"
+      },
+      {
+        "dtype": "bool",
+        "name": "fallback_used"
+      },
+      {
+        "dtype": "float64",
+        "name": "fallback_probability"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_patient_weighted"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_patient_weighted"
+      },
+      {
+        "dtype": "float64",
+        "name": "mean_predicted_probability"
+      },
+      {
+        "dtype": "float64",
+        "name": "observed_event_rate"
+      }
+    ],
+    "description": "All 200 repeat-level raw, prevalence, Jeffreys, intercept and Platt results for each available budget; Brier/logloss and patient-weighted sensitivity.",
+    "rows": 16000,
+    "sha256": "dd595b631e5b319682d76f33e86520fcb0471af588db6e438ba8539e0b7b4f8a"
+  },
+  "hgbt_supplementary_calibration_v4.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "db"
+      },
+      {
+        "dtype": "object",
+        "name": "status"
+      },
+      {
+        "dtype": "object",
+        "name": "cohort_status"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_eligible_stays"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_index_patients"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_adaptation_patients"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_assessment_patients"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_assessment_stays"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_assessment_events"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_assessment_nonevents"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_precision_feasibility_200_events_200_nonevents"
+      },
+      {
+        "dtype": "object",
+        "name": "primary_budget_500_feasible_for_confirmation"
+      },
+      {
+        "dtype": "object",
+        "name": "primary_budget_feasibility_is_performance_blind"
+      },
+      {
+        "dtype": "float64",
+        "name": "patient_overlap"
+      },
+      {
+        "dtype": "object",
+        "name": "bootstrap_cluster_unit"
+      },
+      {
+        "dtype": "object",
+        "name": "independent_patient_clustering_verified"
+      },
+      {
+        "dtype": "object",
+        "name": "one_random_index_stay_per_adaptation_patient"
+      },
+      {
+        "dtype": "object",
+        "name": "index_stay_selection_uses_outcome"
+      },
+      {
+        "dtype": "object",
+        "name": "stratified_by_patient_any_event"
+      },
+      {
+        "dtype": "object",
+        "name": "patient_pool_split_uses_outcomes"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_weighting"
+      },
+      {
+        "dtype": "object",
+        "name": "repeat_uncertainty_scope"
+      },
+      {
+        "dtype": "object",
+        "name": "bootstrap_uncertainty_scope"
+      },
+      {
+        "dtype": "object",
+        "name": "fixed_population_identity_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "adaptation_index_patient_stay_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "adaptation_patient_set_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_population_identity_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_patient_set_sha256"
+      },
+      {
+        "dtype": "float64",
+        "name": "seed"
+      },
+      {
+        "dtype": "float64",
+        "name": "repeats"
+      },
+      {
+        "dtype": "object",
+        "name": "budgets"
+      },
+      {
+        "dtype": "object",
+        "name": "sampling_plan_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "analysis_id"
+      },
+      {
+        "dtype": "object",
+        "name": "model_tag"
+      },
+      {
+        "dtype": "bool",
+        "name": "reused_original_eicu_sampling_plan"
+      },
+      {
+        "dtype": "bool",
+        "name": "cross_version_curve_comparison_allowed"
+      },
+      {
+        "dtype": "float64",
+        "name": "budget"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_repeats"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_valid_repeats"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_budget_patients"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_budget_stays"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_zero_class_draws"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_one_class_draws"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_mixed_class_draws"
+      },
+      {
+        "dtype": "float64",
+        "name": "events_min"
+      },
+      {
+        "dtype": "float64",
+        "name": "events_median"
+      },
+      {
+        "dtype": "float64",
+        "name": "events_max"
+      },
+      {
+        "dtype": "float64",
+        "name": "nonevents_min"
+      },
+      {
+        "dtype": "float64",
+        "name": "nonevents_median"
+      },
+      {
+        "dtype": "float64",
+        "name": "nonevents_max"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_mean"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "brier_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_mean"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "logloss_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "negative_bss_rate_descriptive"
+      },
+      {
+        "dtype": "float64",
+        "name": "fit_failure_rate"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_fit_fail"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_fit_success"
+      },
+      {
+        "dtype": "float64",
+        "name": "n_fit_attempts"
+      },
+      {
+        "dtype": "object",
+        "name": "fit_failure_reasons"
+      },
+      {
+        "dtype": "object",
+        "name": "conditional_on_assessment_patients"
+      },
+      {
+        "dtype": "object",
+        "name": "assessment_prevalence_bss_is_deployable_reference"
+      },
+      {
+        "dtype": "object",
+        "name": "source_version"
+      },
+      {
+        "dtype": "object",
+        "name": "source_archive_method"
+      },
+      {
+        "dtype": "object",
+        "name": "source_artifact_path_internal"
+      },
+      {
+        "dtype": "object",
+        "name": "source_artifact_sha256"
+      },
+      {
+        "dtype": "object",
+        "name": "source_endpoint_scope"
+      },
+      {
+        "dtype": "object",
+        "name": "supplement_scope"
+      }
+    ],
+    "description": "Verified v4 pooled eICU/NWICU HGBT calibration summaries across 200 adaptation draws; offset is displayed as intercept and preserved in source_archive_method. Historical aggregate only, not recomputed on repaired-v5 scores or site-level.",
+    "rows": 56,
+    "sha256": "4bb0f999ddc63a076910bd2578ac9c86f4c7fab1415d8e3739afa57f32533029"
+  },
+  "paired_loss_gap_bootstrap.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "object",
+        "name": "metric"
+      },
+      {
+        "dtype": "object",
+        "name": "contrast"
+      },
+      {
+        "dtype": "object",
+        "name": "weighting"
+      },
+      {
+        "dtype": "float64",
+        "name": "estimate"
+      },
+      {
+        "dtype": "float64",
+        "name": "bootstrap_ci_95_lower"
+      },
+      {
+        "dtype": "float64",
+        "name": "bootstrap_ci_95_upper"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_requested"
+      },
+      {
+        "dtype": "int64",
+        "name": "bootstrap_valid"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_stays"
+      },
+      {
+        "dtype": "int64",
+        "name": "assessment_patients"
+      },
+      {
+        "dtype": "int64",
+        "name": "adaptation_draws"
+      },
+      {
+        "dtype": "float64",
+        "name": "adaptation_draw_p05"
+      },
+      {
+        "dtype": "float64",
+        "name": "adaptation_draw_p95"
+      },
+      {
+        "dtype": "float64",
+        "name": "adaptation_draw_mean"
+      },
+      {
+        "dtype": "object",
+        "name": "interval_scope"
+      }
+    ],
+    "description": "Raw gap, Platt gap, and post-gap minus raw-gap for Brier/logloss using saved per-stay means across all 200 fits; 1000 paired patient-cluster bootstraps and patient-weighted sensitivity.",
+    "rows": 96,
+    "sha256": "c9ca9e88adb69bc6b381fa30c0c3ae00b32a1d08e81e3e0b8c30245777ea4037"
+  },
+  "per_stay_repeat_mean_parity.csv": {
+    "columns": [
+      {
+        "dtype": "object",
+        "name": "cohort"
+      },
+      {
+        "dtype": "object",
+        "name": "model"
+      },
+      {
+        "dtype": "object",
+        "name": "model_id"
+      },
+      {
+        "dtype": "int64",
+        "name": "budget"
+      },
+      {
+        "dtype": "object",
+        "name": "method"
+      },
+      {
+        "dtype": "object",
+        "name": "metric"
+      },
+      {
+        "dtype": "bool",
+        "name": "parity_ok"
+      },
+      {
+        "dtype": "float64",
+        "name": "max_abs_difference"
+      }
+    ],
+    "description": "Parity checks that saved fit parameters recreate each server-only per-stay mean-loss array across 200 fits.",
+    "rows": 64,
+    "sha256": "55f258add5b2061271d517c918d0f3f1a2160a11f162127fa4e3388a6f5273e9"
+  }
+}

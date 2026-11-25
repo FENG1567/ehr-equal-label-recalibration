@@ -1,0 +1,78 @@
+{
+  "status": "complete_aggregate_only_eligible_clinical_summary",
+  "run_id": "eligible_clinical_20261123T172226Z_3852910",
+  "completed_utc": "2026-11-23T17:22:26.956034+00:00",
+  "runtime": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4"
+  },
+  "input_hashes_sha256": {
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/mimic.parquet": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/seq_mimic.npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eicu_semantic_v4_2.parquet": "fb14b4a31c924b123923df0ed76d1c3c87c8495b230fa5c8584b67a974b180a8",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/seq_eicu_semantic_v4_2.npz": "e44507da41b045b23b2242dfb2de760b9956a961bf12522c3d55c001633da4e9",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/nwicu_discharge_v4_1.parquet": "6d3176b44c203fba6f2d14595668e66bd2cedd44558b59590fa55277f8b74eaf",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/seq_nwicu.npz": "c654c70a17019bb12cfd57645257786ac303d1acd7fa33ba7db342eb4b336560",
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/split_mimic.npy": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a"
+  },
+  "expected_input_hashes_sha256": {
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/mimic.parquet": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eicu_semantic_v4_2.parquet": "fb14b4a31c924b123923df0ed76d1c3c87c8495b230fa5c8584b67a974b180a8",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/nwicu_discharge_v4_1.parquet": "6d3176b44c203fba6f2d14595668e66bd2cedd44558b59590fa55277f8b74eaf",
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/seq_mimic.npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/seq_eicu_semantic_v4_2.npz": "e44507da41b045b23b2242dfb2de760b9956a961bf12522c3d55c001633da4e9",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/seq_nwicu.npz": "c654c70a17019bb12cfd57645257786ac303d1acd7fa33ba7db342eb4b336560"
+  },
+  "cohorts": {
+    "mimic": {
+      "n_gate_rows": 94343,
+      "n_sequence_rows": 94343,
+      "key_binding": "strict_db_stay_subject_one_to_one_full_coverage",
+      "eligible_stays": 73936,
+      "eligible_patients": 53964,
+      "eligible_event_y1": 8143,
+      "selected_y_column": "y_mort"
+    },
+    "eicu": {
+      "n_gate_rows": 192805,
+      "n_sequence_rows": 192805,
+      "key_binding": "strict_db_stay_subject_one_to_one_full_coverage",
+      "eligible_stays": 130544,
+      "eligible_patients": 102957,
+      "eligible_event_y1": 11943,
+      "selected_y_column": "y_mort"
+    },
+    "nwicu": {
+      "n_gate_rows": 27114,
+      "n_sequence_rows": 27114,
+      "key_binding": "strict_db_stay_subject_one_to_one_full_coverage",
+      "eligible_stays": 19972,
+      "eligible_patients": 17385,
+      "eligible_event_y1": 2226,
+      "selected_y_column": "y_mort"
+    }
+  },
+  "mimic_source_split2": {
+    "rows": 14890,
+    "patients": 10848,
+    "split_sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "expected_split_sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "binding": "eligible gate keys projected through strict db/stay/subject NPZ alignment, then intersected with split_mimic.npy indexed by seq_mimic.npz row order",
+    "performance_denominator": false
+  },
+  "denominator_definitions": {
+    "eligible": "rows where reviewed gate eligible_24h is true",
+    "source_split2": "eligible MIMIC rows where the frozen split vector equals 2; patients are distinct eligible subject IDs",
+    "events": "selected eligible y value equals 1; selected y must be complete binary 0/1",
+    "sex": "stay counts over all eligible stays, with missing retained as unknown",
+    "repeat_patients": "eligible patients with more than one eligible stay",
+    "token_cap128": "eligible rows with NPZ L >= 128 divided by eligible stay count",
+    "severity": "not provided; no validated derived table was available"
+  },
+  "output_sha256": {
+    "clinical_summary.csv": "bb0254eb8d2c775366a06d7dd4a45fd69e617bd569ecc9784fd11f2beb544e16",
+    "README.md": "d00023c3d0ffc5562a589edf053472803d3930cdfc24cc73818c9afdd7cc256f"
+  },
+  "privacy": "Aggregate-only; no patient-level rows or raw identifiers in outputs."
+}

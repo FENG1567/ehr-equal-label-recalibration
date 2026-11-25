@@ -1,0 +1,11 @@
+db,split,n_sequence_rows,n_raw_unit_matched,n_h24_unit_at_risk,n_explicit_unit_status,n_unknown_or_unrecognized_unit_status,n_explicit_hospital_status,n_unknown_or_unrecognized_hospital_status,n_invalid_or_missing_unit_offset,n_invalid_or_missing_admin_offset,n_unknown_admin_offset,n_unit_expired_hospital_alive_conflict,n_admin_hospital_admit_after_h24_retained,n_admin_hospital_admit_after_h24_unknown_retained,n_model_eligible,n_unit_deaths,n_alive_unit_exits,stage,source_vocabulary_count,target_vocabulary_count,ordered_source_target_vocabulary_match,status,n_stays,n_patients,n_no_admin_after_h24,n_admin_after_h24,n_admin_after_h24_unknown,n_label_eligible_before,n_rows_without_cache,selection_rule,role,n_no_admin_sensitivity_excluded
+eicu,0,134913.0,134913.0,92370.0,134899.0,14.0,133753.0,1160.0,0.0,0.0,0.0,103.0,99.0,0.0,92299.0,4767.0,87532.0,,,,,,,,,,,,,,,
+eicu,1,19350.0,19350.0,13274.0,19348.0,2.0,19192.0,158.0,0.0,0.0,0.0,20.0,14.0,0.0,13259.0,689.0,12570.0,,,,,,,,,,,,,,,
+eicu,2,38542.0,38542.0,26256.0,38538.0,4.0,38171.0,371.0,0.0,0.0,0.0,38.0,37.0,0.0,26234.0,1339.0,24895.0,,,,,,,,,,,,,,,
+eicu,all,,,,,,,,,,,,,,,,,ordered_variable_vocabulary_check,48.0,48.0,True,passed,,,,,,,,,,
+eicu,all,,,,,,,,,,,,,,,6795.0,124997.0,endpoint_label_roster_before_cache,,,,,131792.0,103858.0,131642.0,150.0,0.0,,,,,
+eicu,all,,,,,,,,,,,,,,131792.0,,,frozen_cache_intersection,,,,,,103858.0,131642.0,150.0,0.0,131792.0,0.0,,,
+eicu,all,,,,,,,,,,,,,,130536.0,6749.0,123787.0,common_historical_FM_LR_prediction_roster,,,,,,102953.0,130387.0,149.0,0.0,,,,,
+eicu,all,,,,,,,,,,,,,,,5783.0,97170.0,one_index_unit_episode_per_common_patient,,,,,102953.0,102953.0,102831.0,122.0,0.0,,,"minimum numeric stay_id within patient, selected before outcomes and without filtering on administrative flag",,
+eicu,all,,,,,,,,,,,,,,,25.0,475.0,one_index_patient_adaptation_role,,,,,500.0,500.0,500.0,0.0,0.0,,,,adaptation,0.0
+eicu,all,,,,,,,,,,,,,,,5758.0,96695.0,one_index_patient_assessment_role,,,,,102453.0,102453.0,102331.0,122.0,0.0,,,,assessment,122.0

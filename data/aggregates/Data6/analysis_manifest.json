@@ -1,0 +1,154 @@
+{
+  "bootstrap_replicates": 1000,
+  "clinical_input_availability_verified": false,
+  "clinical_promotion_allowed": false,
+  "created_utc": "2026-11-23T00:13:06Z",
+  "elapsed_seconds": 133.33,
+  "estimand": "Paired metric difference B minus A on exact original-heldout stay intersections; patients are resampled with all their stays retained.",
+  "identity_bridge": {
+    "cross_version_alias_interpretation": "same original heldout patients established by exact stay, patient, source-row, split and label tuples; only cohort alias and verified eligibility container differ",
+    "original_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+    "source_gate_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/status_consistent_v4_1/landmark_v4_1/eligibility_manifest.json",
+    "source_gate_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+    "source_mimic_sequence_npz_sha256": null,
+    "source_run_mimic_probability_bridge": {
+      "main20k_common8_mask": {
+        "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+        "n_stays": 14890,
+        "original_prediction_file_sha256": "91c97399b2d46bfd8ca142b7c63c76fc8e7fa49e12f8295cd0b9b9f373e0716f",
+        "probabilities_bitwise_equal_to_original": true,
+        "reused_prediction_file_sha256": "1afb634806c290e4d1f52357184c30f62384f8c0430c090a6c51dc6c8dab1097"
+      },
+      "main20k_constant": {
+        "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+        "n_stays": 14890,
+        "original_prediction_file_sha256": "e700e8ecfa5ae03c0f65fbfb0fdaa7d2b33f378b8c9b4010efe694e02a6172b6",
+        "probabilities_bitwise_equal_to_original": true,
+        "reused_prediction_file_sha256": "8fe96fb865ac5be405071576d7e93b7289558e891d4797842b04a23f696de3cb"
+      },
+      "main20k_no_h0_therapy": {
+        "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+        "n_stays": 14890,
+        "original_prediction_file_sha256": "6f054f6d1ffa374147e1e2d8563b89f71cc24b2f82511a21c05ef86f6c934d8a",
+        "probabilities_bitwise_equal_to_original": true,
+        "reused_prediction_file_sha256": "f1e08154a5441aefe186dfeb6f44032825d1f1770dd520ad98814c8fe8cde617"
+      },
+      "main20k_real": {
+        "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+        "n_stays": 14890,
+        "original_prediction_file_sha256": "3d150f451c05d87b914dc91239cc91c29d0f7f8de1a85e012538874c15293bd3",
+        "probabilities_bitwise_equal_to_original": true,
+        "reused_prediction_file_sha256": "b854f8ab24a08924c5e900a275192344e4f579007cdc27040cd1b529005d0981"
+      }
+    },
+    "target_alias_identity_to_original_mimic": {
+      "mimic_available_by24_fixedselection_v4_1": {
+        "main20k_common8_mask": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "ca04dfd6cd0041ffe6efe4c5966a7d2cd18b6d1b06aba701b26edad3cff4347e",
+          "target_prediction_file_sha256": "1afb634806c290e4d1f52357184c30f62384f8c0430c090a6c51dc6c8dab1097"
+        },
+        "main20k_constant": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "fabd2fe3cf88af47246586cdd2763387edd543762b1c70b149f942e0702fbccb",
+          "target_prediction_file_sha256": "8fe96fb865ac5be405071576d7e93b7289558e891d4797842b04a23f696de3cb"
+        },
+        "main20k_no_h0_therapy": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "65ce378f6dce13603d2f22a248139db4dea064932817e4c3f5be979b100aef2a",
+          "target_prediction_file_sha256": "f1e08154a5441aefe186dfeb6f44032825d1f1770dd520ad98814c8fe8cde617"
+        },
+        "main20k_real": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "04b7472066eaeb28c2833112d0d140a5b2a3f9837af4d0278333540240ad8a52",
+          "target_prediction_file_sha256": "b854f8ab24a08924c5e900a275192344e4f579007cdc27040cd1b529005d0981"
+        }
+      },
+      "mimic_available_by24_v4_1": {
+        "main20k_common8_mask": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "9deb6c1973b1dbbe1d12bf8a86bebf2aead004878ed8f9a174a6c0546f24ff41",
+          "target_prediction_file_sha256": "1afb634806c290e4d1f52357184c30f62384f8c0430c090a6c51dc6c8dab1097"
+        },
+        "main20k_constant": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "71761a5655857e9de616b51d4da3f469b37f9052ef6f710c60af53bfa576f0bc",
+          "target_prediction_file_sha256": "8fe96fb865ac5be405071576d7e93b7289558e891d4797842b04a23f696de3cb"
+        },
+        "main20k_no_h0_therapy": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "7f13e32462642f6bfad558ffca663e82fba4ba48694ce69dd2ca8947ced62f37",
+          "target_prediction_file_sha256": "f1e08154a5441aefe186dfeb6f44032825d1f1770dd520ad98814c8fe8cde617"
+        },
+        "main20k_real": {
+          "exact_original_heldout_stay_subject_row_split_label_identity": true,
+          "identity_sha256": "0257e26c826649e500165c7a4831c356e6f0864782884aab6c1c70a4762d8f6d",
+          "n_stays": 14890,
+          "target_ordered_row_digest_sha256": "eb0a755218485bd4546299aa367295619d1cef84fd5cdf2aa00c7755b565f4cd",
+          "target_prediction_file_sha256": "b854f8ab24a08924c5e900a275192344e4f579007cdc27040cd1b529005d0981"
+        }
+      }
+    },
+    "target_gate_container_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/eligibility_manifest.json",
+    "target_gate_container_sha256": "4a8c73898cf770a98ece8a6bc6d79185f1b8dfb82c70fd90c751fbb17001e9ea"
+  },
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "brier",
+    "logloss",
+    "calibration_slope",
+    "calibration_intercept",
+    "offset_intercept"
+  ],
+  "new_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/availability_main_source_reuse_m69_20261123-3c067fe1960b32af/prediction_manifest.json",
+  "new_prediction_manifest_sha256": "f63317f35c89f08dc69a17e6cca12f6f86c30e9f394b92187aa8e0f9102d403f",
+  "new_prediction_run_id": "availability_main_source_reuse_m69_20261123",
+  "original_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/prediction_manifest.json",
+  "original_prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+  "original_prediction_run_id": "status_consistent_primary_core_fix2",
+  "paired_flow_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_metrics/results/paired_availability_source_v1/paired_availability_sample_flow.csv",
+  "paired_flow_rows": 6,
+  "paired_flow_sha256": "22f7ae6ebc57e641af58c9593a95a14cb6d34531eb3c1f527dfa3da0d6763a6c",
+  "paired_metric_rows": 42,
+  "paired_metrics_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_metrics/results/paired_availability_source_v1/paired_availability_metrics.csv",
+  "paired_metrics_sha256": "04191ffba9c3bba3fea66b739d74837a580e78f198060ecae0db9badd2ac985b",
+  "patient_level_exported_to_local": false,
+  "refit_or_reencode_performed": false,
+  "schema": "ehr_fm_availability_source_paired_metrics_v1",
+  "scope_notes": [
+    "All predictions are retrospective measurement-time scores; clinical-time availability is unverified.",
+    "Fixedselection comparisons are conditional on the original token-key selection and do not isolate a pure store-time effect.",
+    "Cross-version cohort aliases are linked only after exact stay, subject, source-row, split, and label identity checks."
+  ],
+  "source_eligibility_paths": {
+    "mimic": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/status_consistent_v4_1/landmark_v4_1",
+    "mimic_available_by24_fixedselection_v4_1": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1",
+    "mimic_available_by24_v4_1": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1"
+  },
+  "source_reuse_completion_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/availability_main_source_reuse_m69_20261123-3c067fe1960b32af/target_source_probe_reuse_completion.json",
+  "source_reuse_completion_sha256": "49b07f0eb20b5fd89f7099d345eec07e7376c7458a6f46b85abb6a6da1aa44b5",
+  "source_score_pairs": [
+    "fullreal_minus_originalreal",
+    "fixedreal_minus_originalreal",
+    "fullreal_minus_fullconstant",
+    "fixedreal_minus_fixedconstant",
+    "fullcommon8_minus_fullreal",
+    "fixedcommon8_minus_fixedreal"
+  ],
+  "status": "complete"
+}

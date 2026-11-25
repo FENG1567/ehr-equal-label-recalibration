@@ -1,0 +1,72 @@
+{
+  "big_completion_sha256": "78a94f936e37de6c6c28db679a3bbd92b6c50284badad6e0bac2b5e229fb95ef",
+  "big_manifest_sha256": "bb8df14f2a9f7405473f1b0ff7523325f5815ecc4d1133121cbedd4833bd28c1",
+  "big_metrics_input_scopes": {
+    "big_model_pretraining_exposure": "historical exposure is not established absent; eICU native split=2 does not prove no prior exposure",
+    "clinical_input_availability_verified": false,
+    "inference": "descriptive and conditional on frozen encoders and source-fitted probes; no causal or scaling-law claim",
+    "targets": "reviewed recovered external primary eligible rows; retrospective measurement-time readout"
+  },
+  "big_run_id": "big9_source_reuse_merged99_20261123",
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "patient/subject cluster as authorized by recovered reviewed gate",
+  "calibration": "paired_metrics_v4 calibration parameters; slope penalty 1e-6, unpenalized intercept, fixed-slope offset intercept",
+  "confidence_intervals": "percentile 95% from 1,000 shared patient/subject-cluster weights on each exact prediction roster; invalid optimizer/class draws retained and counted",
+  "contrasts_right_minus_left": {
+    "big50m_full_common8_mask_minus_big50m_full_real": {
+      "left": "big50m_full_real",
+      "right": "big50m_full_common8_mask"
+    },
+    "big50m_full_common8_mask_minus_main20k_common8_mask": {
+      "left": "main20k_common8_mask",
+      "right": "big50m_full_common8_mask"
+    },
+    "big50m_full_real_minus_big50m_real": {
+      "left": "big50m_real",
+      "right": "big50m_full_real"
+    },
+    "big50m_real_minus_main20k_real": {
+      "left": "main20k_real",
+      "right": "big50m_real"
+    }
+  },
+  "core_external_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+  "core_external_run_id": "recovered_external_primary_v4_2_resume3",
+  "expected_individual_metric_rows": 105,
+  "expected_paired_metric_rows": 84,
+  "full_and_common8_rosters_kept_separate": true,
+  "marginal_population_rule": "each individual arm uses its full positive prediction roster; common8 and exact pair intersections have separate bootstrap rosters",
+  "merged99_manifest_sha256": "d467d4698a2bf8ce0cab994e55cf253a80e9f660566e1cf6b61398d4dfb925f2",
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "brier",
+    "logloss",
+    "calibration_slope",
+    "calibration_intercept",
+    "offset_intercept"
+  ],
+  "metrics_csv_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_big_metrics/big9_bb8df14f2a_4a52de662b_metrics.csv",
+  "metrics_csv_sha256": "c50e4724de13d51ca9893e1740ca40ccf8eb8eb69659a8b0b7519d25845d6608",
+  "no_source_fitting_or_reencoding": true,
+  "pair_flow_csv_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_big_metrics/big9_bb8df14f2a_4a52de662b_pair_flow.csv",
+  "pair_flow_csv_sha256": "be6b3421858df370c0280d8da4f396d9839faaeb705ad52a1b645467e16bd950",
+  "pair_flow_rows": 12,
+  "patient_level_data_copied_local": false,
+  "positive_analysis_cells": 15,
+  "ranking_helper": "reviewed semantic_contrast weighted score-group helper; tied/zero-weight cross-check against sklearn and paired_metrics_v4 passed",
+  "recovered_reviewed_gate_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+  "source_probe_origins": {
+    "big": "big_readout_frozen20_v4_2",
+    "core_external": [
+      "recovered_external_primary_v4_2_vocabfix1"
+    ]
+  },
+  "status": "complete",
+  "target_cohorts": [
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2",
+    "eicu_semantic_v4_2"
+  ],
+  "unique_bootstrap_rosters": 5
+}

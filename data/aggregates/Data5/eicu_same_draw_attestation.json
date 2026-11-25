@@ -1,0 +1,67 @@
+{
+  "attestation_note": "The r2 evaluated plan encoded the cohort alias in patient/stay digests. The canonical repaired plan is regenerated from the same repaired predictions with db=eicu; exact row identity plus matching draw-index hashes binds the executed r2 indices to the canonical plan, and both canonical digests are compared with the filtered original eICU raw rows.",
+  "canonical_repaired_sampling_plan_sha256": "da67bcd21d23b4e92dd68519e345b65e47da8e8c1dcc2036134f1dc5becf3ac9",
+  "cross_version_curve_comparison_allowed": true,
+  "draw_key_sets_equal_expected_800": {
+    "canonical_repaired": true,
+    "executed_r2_alias": true,
+    "original": true
+  },
+  "duplicate_keys": {
+    "canonical_repaired": 0,
+    "executed_r2_alias": 0,
+    "original": 0
+  },
+  "eicu_evaluation_complete_in_r2": true,
+  "executed_alias_vs_canonical_hash_mismatches": {
+    "draw_index_sha256": 0,
+    "patient_index_stay_sha256": 800
+  },
+  "executed_r2_alias_sampling_plan_sha256": "a0096199fa3e982ae3623b44300630f28a6ba4e653b89c2b41b918694077c032",
+  "executed_r2_analysis_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/recovered_transport_v4_2_20261123_reuse_r2/transport_analysis_manifest.json",
+  "executed_r2_analysis_manifest_sha256": "fdd84f12ee3fdb9213fd6647ba5f50742604ec148261b7199f4f3ade4efe52ea",
+  "executed_r2_plan_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/recovered_transport_v4_2_20261123_reuse_r2/sampling_plans/eicu_semantic_v4_2.json",
+  "executed_r2_plan_sha256": "594f9e6bbbe1c282e03d86de21e47229e5c7afa134a8aed226785b4c2589e660",
+  "expected_draw_keys": 800,
+  "identity_check": {
+    "exact_stay_subject_row_split_label_identity": true,
+    "identity_mismatches_by_field": {
+      "rows": 0,
+      "split": 0,
+      "subject": 0,
+      "y": 0
+    },
+    "n_original_patients": 102957,
+    "n_original_stays": 130544,
+    "n_repaired_patients": 102957,
+    "n_repaired_stays": 130544,
+    "original_only_stays": 0,
+    "patient_set_sha256_equal": true,
+    "repaired_only_stays": 0,
+    "row_identity_sha256_original": "86429548b13fc1bb9efde4598c8de11af3f1d2120b14b8b0b54f87d9625c41df",
+    "row_identity_sha256_repaired": "86429548b13fc1bb9efde4598c8de11af3f1d2120b14b8b0b54f87d9625c41df"
+  },
+  "missing_hash_rows": {
+    "canonical_repaired": 0,
+    "executed_r2_alias": 0,
+    "original": 0
+  },
+  "n_canonical_repaired_plan_draws": 800,
+  "n_executed_r2_plan_draws": 800,
+  "n_original_filtered_draw_rows": 800,
+  "n_original_unique_keys": 800,
+  "old_other_database_raw_budget_rows_excluded": 800,
+  "original_draw_method_filter": "db=eicu AND method=raw AND budget in [50,200,500,2000]",
+  "original_draws_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/robustness/results/primary_status_consistent_shared_calibration_20261123/main20k_real/recalibration_draws.csv",
+  "original_draws_sha256": "472f48a032b572a0221d502df9344e8ada2218a02dad0c67f13e0ab23af976b9",
+  "original_plan_manifest_sha256": "fbf4da652693cde3e1f399cb6c19bc2f4796036c10c9edfb38de9802a57ad088",
+  "original_plan_sampling_plan_sha256": "da67bcd21d23b4e92dd68519e345b65e47da8e8c1dcc2036134f1dc5becf3ac9",
+  "original_vs_canonical_repaired_hash_mismatches": {
+    "draw_index_sha256": 0,
+    "patient_index_stay_sha256": 0
+  },
+  "patient_level_exported_to_local": false,
+  "plan_field_mismatches": [],
+  "schema": "repaired_eicu_original_draw_hash_attestation_v1",
+  "status": "exact_original_draw_hashes_attested"
+}

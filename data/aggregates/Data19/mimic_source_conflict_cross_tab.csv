@@ -1,0 +1,10 @@
+db,stage,split,hospital_expire_flag_raw,deathtime_parse_status,n_stays,n_source_conflicts,conflict_definition,n_duplicate_death_episode_groups,n_duplicate_death_episode_candidate_rows,n_unassigned_duplicate_death_episode_candidates,assignment_rule
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,0,0,missing,58147.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,0,1,missing,7.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,0,1,valid,7890.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,1,0,missing,8271.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,1,1,missing,2.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,1,1,valid,1102.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,2,0,missing,16602.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,raw_hospital_expire_flag_by_deathtime_parse_status,2,1,valid,2322.0,0.0,hospital_expire_flag == 0 with a valid parsed deathtime,,,,
+mimic,death_episode_assignment,all,,,,,,0.0,0.0,0.0,"at most one eligible index ICU episode per admission/deathtime; exact exit equality is retained and preferred, then latest intime, earliest outtime, and lexical stay_id"

@@ -1,0 +1,6 @@
+db,split,n_sequence_rows,n_raw_icu_matched,n_admission_rows_for_conflict_audit,n_hospital_expire_flag_zero_with_deathtime_conflict,n_hospital_expire_flag_missing,n_deathtime_genuinely_missing,n_deathtime_unparsable,n_deathtime_valid,n_death_episode_assignments,n_duplicate_death_episode_candidate_rows,n_unassigned_duplicate_death_episode_candidates,n_deathtime_equal_icu_exit,n_h24_icu_at_risk,n_known_unit_death_label,n_model_eligible,n_icu_deaths,n_known_surviving_icu_exit,stage,n_unique_patients_split0,n_unique_patients_split1,n_unique_patients_split2,n_patient_overlap_split0_x_split1,n_patient_overlap_split0_x_split2,n_patient_overlap_split1_x_split2,status,n_label_eligible_before,n_rows_without_cache
+mimic,0,66044.0,66044.0,66044.0,0.0,0.0,58154.0,0.0,7890.0,3783.0,0.0,0.0,17.0,52148.0,64662.0,52141.0,3783.0,48358.0,,,,,,,,,,
+mimic,1,9375.0,9375.0,9375.0,0.0,0.0,8273.0,0.0,1102.0,509.0,0.0,0.0,4.0,7409.0,9166.0,7407.0,509.0,6898.0,,,,,,,,,,
+mimic,2,18924.0,18924.0,18924.0,0.0,0.0,16602.0,0.0,2322.0,1091.0,0.0,0.0,7.0,15015.0,18537.0,15015.0,1091.0,13924.0,,,,,,,,,,
+mimic,all,,,,,,,,,,,,,,,,,,source_patient_split_disjointness,45753.0,6536.0,13073.0,0.0,0.0,0.0,passed,,
+mimic,all,,,,,,,,,,,,,,,74563.0,,,frozen_cache_intersection,,,,,,,,74563.0,0.0

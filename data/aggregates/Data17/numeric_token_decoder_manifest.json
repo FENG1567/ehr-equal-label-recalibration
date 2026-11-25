@@ -1,0 +1,1457 @@
+{
+  "analysis_id": "main20k_real",
+  "cache_attestation_by_db": {
+    "eicu_semantic_v4_2": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "condition_specific_input_mask_hashes_differ": true,
+      "constant": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_constant_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-f429602d9cd2ae8d_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "b7b2b84a8eeb0685af80be241af25dc698af35c67b4e5564d9abed9a2de6e31b",
+        "db": "eicu_semantic_v4_2",
+        "input_condition": "constant",
+        "input_mask_sha256": "f429602d9cd2ae8d167923694fa66fc4d2ed10a1666d4885cc2102acf52f8d1d",
+        "key": [
+          "eicu_semantic_v4_2",
+          "main20k",
+          "constant"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "real": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_real_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-3f453e2f4b91e5d9_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+        "db": "eicu_semantic_v4_2",
+        "input_condition": "real",
+        "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+        "key": [
+          "eicu_semantic_v4_2",
+          "main20k",
+          "real"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "same_sequence_checkpoint_encoder_ordered_identity": true,
+      "status": "verified_real_constant_cache_pair"
+    },
+    "mimic": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "condition_specific_input_mask_hashes_differ": true,
+      "constant": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_mimic_main20k_constant_ckpt-0719db57b91b2618_id-009c81e89cf7b3ad_mask-f429602d9cd2ae8d_src-9bd20bf1394a_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "eb840caf5833842f2527698d8198e867969205c7a1bae3538f6b160b82185199",
+        "db": "mimic",
+        "input_condition": "constant",
+        "input_mask_sha256": "f429602d9cd2ae8d167923694fa66fc4d2ed10a1666d4885cc2102acf52f8d1d",
+        "key": [
+          "mimic",
+          "main20k",
+          "constant"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "009c81e89cf7b3ad50f067da2e650546a39672eef3165c72e6676cd92f903f87",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "real": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_mimic_main20k_real_ckpt-0719db57b91b2618_id-009c81e89cf7b3ad_mask-3f453e2f4b91e5d9_src-9bd20bf1394a_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "664e673209fcf06e77deaf5de53704c5958be50d7a069a9eb09baf13bb0ad76e",
+        "db": "mimic",
+        "input_condition": "real",
+        "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+        "key": [
+          "mimic",
+          "main20k",
+          "real"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "009c81e89cf7b3ad50f067da2e650546a39672eef3165c72e6676cd92f903f87",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "same_sequence_checkpoint_encoder_ordered_identity": true,
+      "status": "verified_real_constant_cache_pair"
+    }
+  },
+  "created_utc": "2026-11-23T18:50:26Z",
+  "embedding_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_recovered_v4_2_merged41_b2eec1f7aca1.json",
+  "embedding_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+  "metrics_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/decoding/direct_token_summary_decoder8_recovery_20261124T022533Z_639819/numeric_token_decoder_metrics.csv",
+  "metrics_csv_sha256": "89762ef180bd20617e23de79c7a77bc4b2cb2eff33159dac5d9a6224bd88e791",
+  "mimic_to_eicu_frozen_source_transfer": "MIMIC split0/1-fitted heads, with alpha fixed before target scoring, are scored on the shared finite-label eICU roster; no eICU fitting or selection is used",
+  "paired_contrasts_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/decoding/direct_token_summary_decoder8_recovery_20261124T022533Z_639819/numeric_token_decoder_paired_contrasts.csv",
+  "paired_contrasts_csv_sha256": "2f5e4f2c3a61795038d79d843ee5248e93b48382a3a9fc78d9d280ba4cb2171f",
+  "patient_level_predictions_exported": false,
+  "run_id": "decoder8_recovery_20261124T022533Z_639819",
+  "schema": "ehr_fm_v5_direct_token_numeric_decoder_1",
+  "source_alpha_grid": [
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "source_alphas_by_variable": {
+    "direct_token_summary_90": {
+      "bun": 10.0,
+      "creatinine": 100.0,
+      "glucose": 1.0,
+      "hgb": 1.0,
+      "hr": 1.0,
+      "lactate": 1.0,
+      "platelet": 100.0,
+      "sbp": 10.0,
+      "spo2": 100.0,
+      "wbc": 100.0
+    },
+    "main20k_real": {
+      "bun": 1.0,
+      "creatinine": 1.0,
+      "glucose": 1.0,
+      "hgb": 10.0,
+      "hr": 1.0,
+      "lactate": 1.0,
+      "platelet": 1.0,
+      "sbp": 1.0,
+      "spo2": 1.0,
+      "wbc": 1.0
+    }
+  },
+  "source_db": "mimic",
+  "source_fit": "main20k_real reuses frozen MIMIC split1 alpha and refits on split0; direct token summary selects alpha on MIMIC split1 and refits scaler/Ridge on split0",
+  "source_fit_by_variable": {
+    "bun": {
+      "direct_token_summary_source_alpha": 10.0,
+      "direct_token_summary_source_validation_mse": 167.39736892657652,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10570,
+      "source_test_rows": 13222,
+      "source_train_patients": 36670,
+      "source_train_rows": 45808,
+      "source_validation_patients": 5237,
+      "source_validation_rows": 6517,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 19090,
+            "test_rows": 23878,
+            "train_patient_count": 76360,
+            "train_rows": 95509
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 19090,
+            "test_rows": 23878,
+            "train_patient_count": 76360,
+            "train_rows": 95509
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 19090,
+            "test_rows": 23877,
+            "train_patient_count": 76360,
+            "train_rows": 95510
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 19090,
+            "test_rows": 23877,
+            "train_patient_count": 76360,
+            "train_rows": 95510
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 19090,
+            "test_rows": 23877,
+            "train_patient_count": 76360,
+            "train_rows": 95510
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "creatinine": {
+      "direct_token_summary_source_alpha": 100.0,
+      "direct_token_summary_source_validation_mse": 1.2702888066275089,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10571,
+      "source_test_rows": 13224,
+      "source_train_patients": 36673,
+      "source_train_rows": 45808,
+      "source_validation_patients": 5240,
+      "source_validation_rows": 6523,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            100.0,
+            100.0,
+            10.0,
+            10.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 19155,
+            "test_rows": 23956,
+            "train_patient_count": 76620,
+            "train_rows": 95821
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 19155,
+            "test_rows": 23956,
+            "train_patient_count": 76620,
+            "train_rows": 95821
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 19155,
+            "test_rows": 23955,
+            "train_patient_count": 76620,
+            "train_rows": 95822
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 19155,
+            "test_rows": 23955,
+            "train_patient_count": 76620,
+            "train_rows": 95822
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 19155,
+            "test_rows": 23955,
+            "train_patient_count": 76620,
+            "train_rows": 95822
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "glucose": {
+      "direct_token_summary_source_alpha": 1.0,
+      "direct_token_summary_source_validation_mse": 1291.9000126778315,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10520,
+      "source_test_rows": 13168,
+      "source_train_patients": 36521,
+      "source_train_rows": 45624,
+      "source_validation_patients": 5221,
+      "source_validation_rows": 6494,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            10.0,
+            10.0,
+            1.0,
+            1.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 19039,
+            "test_rows": 23827,
+            "train_patient_count": 76155,
+            "train_rows": 95304
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 19038,
+            "test_rows": 23826,
+            "train_patient_count": 76156,
+            "train_rows": 95305
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 19039,
+            "test_rows": 23826,
+            "train_patient_count": 76155,
+            "train_rows": 95305
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 19039,
+            "test_rows": 23826,
+            "train_patient_count": 76155,
+            "train_rows": 95305
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 19039,
+            "test_rows": 23826,
+            "train_patient_count": 76155,
+            "train_rows": 95305
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "hgb": {
+      "direct_token_summary_source_alpha": 1.0,
+      "direct_token_summary_source_validation_mse": 1.1443826142185565,
+      "main20k_real_source_alpha": 10.0,
+      "source_test_patients": 10515,
+      "source_test_rows": 13139,
+      "source_train_patients": 36536,
+      "source_train_rows": 45594,
+      "source_validation_patients": 5223,
+      "source_validation_rows": 6487,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            1.0,
+            10.0,
+            1.0,
+            1.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 18782,
+            "test_rows": 23362,
+            "train_patient_count": 75127,
+            "train_rows": 93444
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 18781,
+            "test_rows": 23361,
+            "train_patient_count": 75128,
+            "train_rows": 93445
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 18782,
+            "test_rows": 23361,
+            "train_patient_count": 75127,
+            "train_rows": 93445
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 18782,
+            "test_rows": 23361,
+            "train_patient_count": 75127,
+            "train_rows": 93445
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 18782,
+            "test_rows": 23361,
+            "train_patient_count": 75127,
+            "train_rows": 93445
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "hr": {
+      "direct_token_summary_source_alpha": 1.0,
+      "direct_token_summary_source_validation_mse": 14.607659313955356,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10834,
+      "source_test_rows": 14872,
+      "source_train_patients": 37695,
+      "source_train_rows": 51671,
+      "source_validation_patients": 5386,
+      "source_validation_rows": 7323,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 20344,
+            "test_rows": 25720,
+            "train_patient_count": 81375,
+            "train_rows": 102879
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 20344,
+            "test_rows": 25720,
+            "train_patient_count": 81375,
+            "train_rows": 102879
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 20344,
+            "test_rows": 25720,
+            "train_patient_count": 81375,
+            "train_rows": 102879
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 20344,
+            "test_rows": 25720,
+            "train_patient_count": 81375,
+            "train_rows": 102879
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 20343,
+            "test_rows": 25719,
+            "train_patient_count": 81376,
+            "train_rows": 102880
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "lactate": {
+      "direct_token_summary_source_alpha": 1.0,
+      "direct_token_summary_source_validation_mse": 1.2418201654735646,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 6734,
+      "source_test_rows": 7848,
+      "source_train_patients": 23466,
+      "source_train_rows": 27382,
+      "source_validation_patients": 3324,
+      "source_validation_rows": 3877,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            100.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 6294,
+            "test_rows": 6991,
+            "train_patient_count": 25175,
+            "train_rows": 27961
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 6294,
+            "test_rows": 6991,
+            "train_patient_count": 25175,
+            "train_rows": 27961
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 6293,
+            "test_rows": 6990,
+            "train_patient_count": 25176,
+            "train_rows": 27962
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 6294,
+            "test_rows": 6990,
+            "train_patient_count": 25175,
+            "train_rows": 27962
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 6294,
+            "test_rows": 6990,
+            "train_patient_count": 25175,
+            "train_rows": 27962
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "platelet": {
+      "direct_token_summary_source_alpha": 100.0,
+      "direct_token_summary_source_validation_mse": 3600.8527449312714,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10516,
+      "source_test_rows": 13142,
+      "source_train_patients": 36541,
+      "source_train_rows": 45605,
+      "source_validation_patients": 5223,
+      "source_validation_rows": 6487,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 18469,
+            "test_rows": 22918,
+            "train_patient_count": 73877,
+            "train_rows": 91669
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 18470,
+            "test_rows": 22918,
+            "train_patient_count": 73876,
+            "train_rows": 91669
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 18469,
+            "test_rows": 22917,
+            "train_patient_count": 73877,
+            "train_rows": 91670
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 18469,
+            "test_rows": 22917,
+            "train_patient_count": 73877,
+            "train_rows": 91670
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 18469,
+            "test_rows": 22917,
+            "train_patient_count": 73877,
+            "train_rows": 91670
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "sbp": {
+      "direct_token_summary_source_alpha": 10.0,
+      "direct_token_summary_source_validation_mse": 21.13995395547403,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10806,
+      "source_test_rows": 14814,
+      "source_train_patients": 37575,
+      "source_train_rows": 51460,
+      "source_validation_patients": 5371,
+      "source_validation_rows": 7302,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 6076,
+            "test_rows": 6525,
+            "train_patient_count": 24306,
+            "train_rows": 26098
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 6077,
+            "test_rows": 6525,
+            "train_patient_count": 24305,
+            "train_rows": 26098
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 6077,
+            "test_rows": 6525,
+            "train_patient_count": 24305,
+            "train_rows": 26098
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 6076,
+            "test_rows": 6524,
+            "train_patient_count": 24306,
+            "train_rows": 26099
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 6076,
+            "test_rows": 6524,
+            "train_patient_count": 24306,
+            "train_rows": 26099
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "spo2": {
+      "direct_token_summary_source_alpha": 100.0,
+      "direct_token_summary_source_validation_mse": 0.6102967523058705,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10832,
+      "source_test_rows": 14866,
+      "source_train_patients": 37688,
+      "source_train_rows": 51658,
+      "source_validation_patients": 5386,
+      "source_validation_rows": 7323,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 20208,
+            "test_rows": 25501,
+            "train_patient_count": 80834,
+            "train_rows": 102003
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 20208,
+            "test_rows": 25501,
+            "train_patient_count": 80834,
+            "train_rows": 102003
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 20209,
+            "test_rows": 25501,
+            "train_patient_count": 80833,
+            "train_rows": 102003
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 20209,
+            "test_rows": 25501,
+            "train_patient_count": 80833,
+            "train_rows": 102003
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 20208,
+            "test_rows": 25500,
+            "train_patient_count": 80834,
+            "train_rows": 102004
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    },
+    "wbc": {
+      "direct_token_summary_source_alpha": 100.0,
+      "direct_token_summary_source_validation_mse": 37.33836595117615,
+      "main20k_real_source_alpha": 1.0,
+      "source_test_patients": 10515,
+      "source_test_rows": 13138,
+      "source_train_patients": 36533,
+      "source_train_rows": 45592,
+      "source_validation_patients": 5222,
+      "source_validation_rows": 6488,
+      "target_local_fold_provenance": {
+        "alpha_by_outer_fold": {
+          "direct_token_summary_90": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "main20k_real": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fold_population": [
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 0,
+            "test_patient_count": 18632,
+            "test_rows": 23131,
+            "train_patient_count": 74527,
+            "train_rows": 92520
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 1,
+            "test_patient_count": 18631,
+            "test_rows": 23130,
+            "train_patient_count": 74528,
+            "train_rows": 92521
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 2,
+            "test_patient_count": 18632,
+            "test_rows": 23130,
+            "train_patient_count": 74527,
+            "train_rows": 92521
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 3,
+            "test_patient_count": 18632,
+            "test_rows": 23130,
+            "train_patient_count": 74527,
+            "train_rows": 92521
+          },
+          {
+            "inner_fold_count": 3,
+            "outer_fold": 4,
+            "test_patient_count": 18632,
+            "test_rows": 23130,
+            "train_patient_count": 74527,
+            "train_rows": 92521
+          }
+        ],
+        "inner_folds": 3,
+        "outer_folds": 5,
+        "same_outer_and_inner_patient_group_splits_for_both_feature_arms": true
+      }
+    }
+  },
+  "source_fm_numeric_runtime": {
+    "blas_pools_observed_during_fit_and_source_prediction": [
+      {
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "user_api": "blas"
+      },
+      {
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "libgomp",
+        "user_api": "openmp"
+      }
+    ],
+    "blas_threads_requested": 8,
+    "cpu_quota_percent": 200,
+    "global_cpu_threads": 2,
+    "process_thread_defaults_preserved": {
+      "MKL_NUM_THREADS": "2",
+      "NUMEXPR_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2"
+    },
+    "scope": "main20k_real fixed-alpha MIMIC source Ridge fit (including scaler fit), MIMIC split-2 prediction, and eICU transfer prediction (including scaler transforms)"
+  },
+  "source_internal_test": "MIMIC split2 is the source-internal test partition; source heads are selected/fitted using MIMIC split0/1 only",
+  "source_reference_identity_validation": [
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 13224,
+      "n_source_train_patients": 36673,
+      "n_source_train_rows": 45808,
+      "n_source_validation_patients": 5240,
+      "n_source_validation_rows": 6523,
+      "population_identity_sha256": "bd083b815d84473c1fa4db818fd2d952a0ebf192fdc4c0ea88207086824c9296",
+      "source_train_population_identity_sha256": "ff23d63dcd83cf73d55d6278c4eec81c1861d091accfcc7c924eb08965660db7",
+      "source_validation_population_identity_sha256": "0d6120af7c28dbe94aed72af1b17973a3e975aff4b26d66b6b14ea88cad3b1da",
+      "variable": "creatinine"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 7848,
+      "n_source_train_patients": 23466,
+      "n_source_train_rows": 27382,
+      "n_source_validation_patients": 3324,
+      "n_source_validation_rows": 3877,
+      "population_identity_sha256": "bcea3b087959344a6ca84dabbb18eb9d0ad034d51b6459466067248591e98729",
+      "source_train_population_identity_sha256": "bac33a17decf50707efd2614417887dc1cc28438381c97e9c0c784933a0febae",
+      "source_validation_population_identity_sha256": "563a6024d9804af521714eaf6bdf88273ac5c798c294dd5f5f8ec466033d7244",
+      "variable": "lactate"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 13138,
+      "n_source_train_patients": 36533,
+      "n_source_train_rows": 45592,
+      "n_source_validation_patients": 5222,
+      "n_source_validation_rows": 6488,
+      "population_identity_sha256": "ebe4196d78abe617c76e9119fe2ea6542ffcd84147aaf7bf69f9e5ae71724ba9",
+      "source_train_population_identity_sha256": "116151bc7a4c9ef487d7ce506bc205ce37a5ca377cb554e02aa85b60dd759a5f",
+      "source_validation_population_identity_sha256": "c5d8c1e8a9fbc20818b2cd7fad858b514c7c19cf7cc140e5e5a7b5c8627bb20a",
+      "variable": "wbc"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 13139,
+      "n_source_train_patients": 36536,
+      "n_source_train_rows": 45594,
+      "n_source_validation_patients": 5223,
+      "n_source_validation_rows": 6487,
+      "population_identity_sha256": "6a52e65d9abb99308929a88f8c38cb77b45ff17708a375383fea9611195cd145",
+      "source_train_population_identity_sha256": "95b74baf3ff67fb9348bc69c2acbf62999376d1624fbe6a36eb672284f465a60",
+      "source_validation_population_identity_sha256": "9d33ee61c14e4a7c8624b5af3658aef1bff0b586f08caf3d5fa65bcebaf82cfc",
+      "variable": "hgb"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 13168,
+      "n_source_train_patients": 36521,
+      "n_source_train_rows": 45624,
+      "n_source_validation_patients": 5221,
+      "n_source_validation_rows": 6494,
+      "population_identity_sha256": "801d64d06cb7358398f8509d3ce8c7f5d33eaf0cb3f68de15169f7f15ad4cdc7",
+      "source_train_population_identity_sha256": "5e44e85486716591aa96dc41964831b7fbb71a593f8b52a98330702c0d60e1d2",
+      "source_validation_population_identity_sha256": "e83fa343e8ca83c6146b04465a589534eb60b5efc8d3b0a8f9ac9328d210266e",
+      "variable": "glucose"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 14872,
+      "n_source_train_patients": 37695,
+      "n_source_train_rows": 51671,
+      "n_source_validation_patients": 5386,
+      "n_source_validation_rows": 7323,
+      "population_identity_sha256": "25ff302d1fa3cbce95557c0d840287b3f7cbe6702fdd7dca54c72c969981e82e",
+      "source_train_population_identity_sha256": "37949abaacb92b846e9f584b422c548f0d30018b917a5e05119751793d5e0bf0",
+      "source_validation_population_identity_sha256": "1a3debb2d71bbe060eac0e105847cad47e6f2fb99818bc3bd69bd129d19f51ed",
+      "variable": "hr"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 14814,
+      "n_source_train_patients": 37575,
+      "n_source_train_rows": 51460,
+      "n_source_validation_patients": 5371,
+      "n_source_validation_rows": 7302,
+      "population_identity_sha256": "7ac2f8431ad8221b13a322710aa1435da765c38ea9b2d86b57c427f259a0e810",
+      "source_train_population_identity_sha256": "84185b7bc1e29be79cc176ec4fe003ab36c46e16501086d43b850015fe94eeb5",
+      "source_validation_population_identity_sha256": "72883d6807735c3ada65c76189ec899a7a8599e3fdb183416116cbc261c6296a",
+      "variable": "sbp"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 14866,
+      "n_source_train_patients": 37688,
+      "n_source_train_rows": 51658,
+      "n_source_validation_patients": 5386,
+      "n_source_validation_rows": 7323,
+      "population_identity_sha256": "050bb605233d928696d933fda05b8f9b4863b6bc487d944e3c37e8d8ddb50b97",
+      "source_train_population_identity_sha256": "6dea148008428d8cd82779e4c6708a3c3424003a79c4942b0f0587879af12c52",
+      "source_validation_population_identity_sha256": "1a3debb2d71bbe060eac0e105847cad47e6f2fb99818bc3bd69bd129d19f51ed",
+      "variable": "spo2"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 13222,
+      "n_source_train_patients": 36670,
+      "n_source_train_rows": 45808,
+      "n_source_validation_patients": 5237,
+      "n_source_validation_rows": 6517,
+      "population_identity_sha256": "21faf1ff095c214fcd9e43f916d96bf996dd3d8cab22e8d1237862a792d8a9e0",
+      "source_train_population_identity_sha256": "6227b3a0243b0d7b5f29b42c5bfe4542c2deddac1bdd6f12f7481b0aac8a437b",
+      "source_validation_population_identity_sha256": "d4d4439531ad01be639c45781c962d480ac68e75c5bd9c8ce4aced28587e3d03",
+      "variable": "bun"
+    },
+    {
+      "analysis_id": "main20k_real",
+      "n_source_test_rows": 13142,
+      "n_source_train_patients": 36541,
+      "n_source_train_rows": 45605,
+      "n_source_validation_patients": 5223,
+      "n_source_validation_rows": 6487,
+      "population_identity_sha256": "f76ebe63162e74a5cc8b21b167674beb349a6a8d351aefdf08c1e39f62407b15",
+      "source_train_population_identity_sha256": "dee036c9a02bbc377e2dd34f03d9d899873bf8ef012223eec568732e24732c10",
+      "source_validation_population_identity_sha256": "99429f979cc6417143e637bce81933ed058b83695dc666e343e4d0866384a3e0",
+      "variable": "platelet"
+    }
+  ],
+  "source_reference_summary_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding/results/primary_status_consistent_20261123/numeric_decoding_summary.csv",
+  "source_reference_summary_sha256": "0ff14db563f0832740cb38c2b4722182ef11b3b2c583031e83ebac33c8014cae",
+  "source_roster_provenance": {
+    "cache_attestation": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "condition_specific_input_mask_hashes_differ": true,
+      "constant": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_mimic_main20k_constant_ckpt-0719db57b91b2618_id-009c81e89cf7b3ad_mask-f429602d9cd2ae8d_src-9bd20bf1394a_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "eb840caf5833842f2527698d8198e867969205c7a1bae3538f6b160b82185199",
+        "db": "mimic",
+        "input_condition": "constant",
+        "input_mask_sha256": "f429602d9cd2ae8d167923694fa66fc4d2ed10a1666d4885cc2102acf52f8d1d",
+        "key": [
+          "mimic",
+          "main20k",
+          "constant"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "009c81e89cf7b3ad50f067da2e650546a39672eef3165c72e6676cd92f903f87",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "real": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_mimic_main20k_real_ckpt-0719db57b91b2618_id-009c81e89cf7b3ad_mask-3f453e2f4b91e5d9_src-9bd20bf1394a_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "664e673209fcf06e77deaf5de53704c5958be50d7a069a9eb09baf13bb0ad76e",
+        "db": "mimic",
+        "input_condition": "real",
+        "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+        "key": [
+          "mimic",
+          "main20k",
+          "real"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "009c81e89cf7b3ad50f067da2e650546a39672eef3165c72e6676cd92f903f87",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "same_sequence_checkpoint_encoder_ordered_identity": true,
+      "status": "verified_real_constant_cache_pair"
+    },
+    "cache_rows": 94343,
+    "cache_sha256": "664e673209fcf06e77deaf5de53704c5958be50d7a069a9eb09baf13bb0ad76e",
+    "common_population_identity_sha256": "b66f897034dbbd6f7987af900b485f7f4a6c15c6f5266fd3e2a88edab0256810",
+    "common_population_rows": 73936,
+    "eligibility": {
+      "eligibility_evidence": "exact",
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "eligibility_status": "exact_timestamp_metadata",
+      "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f"
+    },
+    "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/seq_mimic.npz",
+    "sequence_sha256": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "split_sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/tab_mimic.parquet",
+    "tabular_sha256": "30832088327eabb435b6f25fc32f0d15462211d3559997284c844fc9ff5c4318"
+  },
+  "source_test_metric_reproduction": [
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 0.7778300463139249,
+      "mae_reference": 0.7778300463139249,
+      "r2_absolute_difference": 2.7755575615628914e-17,
+      "r2_observed": 0.20779572976520444,
+      "r2_reference": 0.2077957297652044,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 1.3465515563551425,
+      "rmse_reference": 1.3465515563551425,
+      "status": "matched",
+      "variable": "creatinine"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 0.8364178437654981,
+      "mae_reference": 0.8364178437654981,
+      "r2_absolute_difference": 5.551115123125783e-17,
+      "r2_observed": 0.26566907690352304,
+      "r2_reference": 0.265669076903523,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 1.2359381976032728,
+      "rmse_reference": 1.2359381976032728,
+      "status": "matched",
+      "variable": "lactate"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 4.311219913007459,
+      "mae_reference": 4.311219913007459,
+      "r2_absolute_difference": 5.551115123125783e-17,
+      "r2_observed": 0.09777526985565066,
+      "r2_reference": 0.0977752698556506,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 7.337241134076894,
+      "rmse_reference": 7.337241134076894,
+      "status": "matched",
+      "variable": "wbc"
+    },
+    {
+      "alpha": 10.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 1.4099204070123288,
+      "mae_reference": 1.4099204070123288,
+      "r2_absolute_difference": 5.551115123125783e-17,
+      "r2_observed": 0.26311954311222596,
+      "r2_reference": 0.2631195431122259,
+      "rmse_absolute_difference": 2.220446049250313e-16,
+      "rmse_observed": 1.7726808765642281,
+      "rmse_reference": 1.772680876564228,
+      "status": "matched",
+      "variable": "hgb"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 34.149016655179565,
+      "mae_reference": 34.149016655179565,
+      "r2_absolute_difference": 5.551115123125783e-17,
+      "r2_observed": 0.12686431332662584,
+      "r2_reference": 0.1268643133266258,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 49.16454137356556,
+      "rmse_reference": 49.16454137356556,
+      "status": "matched",
+      "variable": "glucose"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 6.688308330249552,
+      "mae_reference": 6.688308330249552,
+      "r2_absolute_difference": 0.0,
+      "r2_observed": 0.6913471872020647,
+      "r2_reference": 0.6913471872020647,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 8.784901365381694,
+      "rmse_reference": 8.784901365381694,
+      "status": "matched",
+      "variable": "hr"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 6.068145390762956,
+      "mae_reference": 6.068145390762956,
+      "r2_absolute_difference": 0.0,
+      "r2_observed": 0.7469396705895264,
+      "r2_reference": 0.7469396705895264,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 7.959982684094144,
+      "rmse_reference": 7.959982684094144,
+      "status": "matched",
+      "variable": "sbp"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 0.8674473206935682,
+      "mae_reference": 0.8674473206935682,
+      "r2_absolute_difference": 0.0,
+      "r2_observed": 0.6364828459067071,
+      "r2_reference": 0.6364828459067071,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 1.201682746796398,
+      "rmse_reference": 1.201682746796398,
+      "status": "matched",
+      "variable": "spo2"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 12.202780841722968,
+      "mae_reference": 12.202780841722968,
+      "r2_absolute_difference": 5.551115123125783e-17,
+      "r2_observed": 0.30482773495406335,
+      "r2_reference": 0.3048277349540633,
+      "rmse_absolute_difference": 0.0,
+      "rmse_observed": 18.22312966801204,
+      "rmse_reference": 18.22312966801204,
+      "status": "matched",
+      "variable": "bun"
+    },
+    {
+      "alpha": 1.0,
+      "analysis_id": "main20k_real",
+      "mae_absolute_difference": 0.0,
+      "mae_observed": 70.19310598745737,
+      "mae_reference": 70.19310598745737,
+      "r2_absolute_difference": 5.551115123125783e-17,
+      "r2_observed": 0.11669811436662836,
+      "r2_reference": 0.1166981143666283,
+      "rmse_absolute_difference": 1.4210854715202004e-14,
+      "rmse_observed": 97.96228959306059,
+      "rmse_reference": 97.9622895930606,
+      "status": "matched",
+      "variable": "platelet"
+    }
+  ],
+  "status": "complete",
+  "target_db": "eicu_semantic_v4_2",
+  "target_local_fit": "5 outer / 3 inner patient-group Ridge CV; the same outer and inner group folds are used for main20k_real and direct token summary",
+  "target_roster_provenance": {
+    "cache_attestation": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "condition_specific_input_mask_hashes_differ": true,
+      "constant": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_constant_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-f429602d9cd2ae8d_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "b7b2b84a8eeb0685af80be241af25dc698af35c67b4e5564d9abed9a2de6e31b",
+        "db": "eicu_semantic_v4_2",
+        "input_condition": "constant",
+        "input_mask_sha256": "f429602d9cd2ae8d167923694fa66fc4d2ed10a1666d4885cc2102acf52f8d1d",
+        "key": [
+          "eicu_semantic_v4_2",
+          "main20k",
+          "constant"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "real": {
+        "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+        "audit_anchor_sources": {
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+          "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+        },
+        "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_real_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-3f453e2f4b91e5d9_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+        "cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+        "db": "eicu_semantic_v4_2",
+        "input_condition": "real",
+        "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+        "key": [
+          "eicu_semantic_v4_2",
+          "main20k",
+          "real"
+        ],
+        "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+        "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+        "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+        "model_tag": "main20k",
+        "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+        "status": "verified_frozen_v4_cache_archive"
+      },
+      "same_sequence_checkpoint_encoder_ordered_identity": true,
+      "status": "verified_real_constant_cache_pair"
+    },
+    "cache_rows": 192805,
+    "cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+    "common_population_identity_sha256": "af68569bf76051f30217be68a93106746ec48c950363bb0b518090cdc0e0f04f",
+    "common_population_rows": 130544,
+    "eligibility": {
+      "eligibility_evidence": "operational_proxy",
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "eligibility_status": "analysis_scope_defined",
+      "eligibility_table_sha256": "fb14b4a31c924b123923df0ed76d1c3c87c8495b230fa5c8584b67a974b180a8"
+    },
+    "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/seq_eicu_semantic_v4_2.npz",
+    "sequence_sha256": "e44507da41b045b23b2242dfb2de760b9956a961bf12522c3d55c001633da4e9",
+    "split_sha256": "1daef296060d67b354a9a28b747b8bb22c7cff7f5d57834d98c7235ea21db482",
+    "tabular_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/tab_eicu_semantic_v4_2.parquet",
+    "tabular_sha256": "4e774ede799d5101c7297cfdbef049a24570fd48e1b69bb88d6f702acca1c577"
+  },
+  "target_variables": [
+    "creatinine",
+    "lactate",
+    "wbc",
+    "hgb",
+    "glucose",
+    "hr",
+    "sbp",
+    "spo2",
+    "bun",
+    "platelet"
+  ],
+  "token_feature_definition": {
+    "eicu_semantic_v4_2": {
+      "feature_names_per_variable": [
+        "observed",
+        "count_per_128",
+        "mean_bin_per_10",
+        "min_bin_per_10",
+        "max_bin_per_10",
+        "last_bin_per_10",
+        "first_hour_per_23",
+        "last_hour_per_23",
+        "mean_hour_per_23"
+      ],
+      "input_scope": "V/B/H token-summary for the same retained [0,24) sequence used by main20k_real",
+      "n_features": 90,
+      "n_variables": 10,
+      "target_values_used_to_construct_features": false,
+      "variable_names": [
+        "creatinine",
+        "lactate",
+        "wbc",
+        "hgb",
+        "glucose",
+        "hr",
+        "sbp",
+        "spo2",
+        "bun",
+        "platelet"
+      ],
+      "variable_token_ids_1_based": {
+        "bun": 26,
+        "creatinine": 25,
+        "glucose": 40,
+        "hgb": 30,
+        "hr": 6,
+        "lactate": 28,
+        "platelet": 31,
+        "sbp": 7,
+        "spo2": 12,
+        "wbc": 29
+      },
+      "visible_definition": "target variable occurs at least once in retained main20k V/B/H tokens for that stay",
+      "visible_is_measurement_retention_proof": false
+    },
+    "mimic": {
+      "feature_names_per_variable": [
+        "observed",
+        "count_per_128",
+        "mean_bin_per_10",
+        "min_bin_per_10",
+        "max_bin_per_10",
+        "last_bin_per_10",
+        "first_hour_per_23",
+        "last_hour_per_23",
+        "mean_hour_per_23"
+      ],
+      "input_scope": "V/B/H token-summary for the same retained [0,24) sequence used by main20k_real",
+      "n_features": 90,
+      "n_variables": 10,
+      "target_values_used_to_construct_features": false,
+      "variable_names": [
+        "creatinine",
+        "lactate",
+        "wbc",
+        "hgb",
+        "glucose",
+        "hr",
+        "sbp",
+        "spo2",
+        "bun",
+        "platelet"
+      ],
+      "variable_token_ids_1_based": {
+        "bun": 26,
+        "creatinine": 25,
+        "glucose": 40,
+        "hgb": 30,
+        "hr": 6,
+        "lactate": 28,
+        "platelet": 31,
+        "sbp": 7,
+        "spo2": 12,
+        "wbc": 29
+      },
+      "visible_definition": "target variable occurs at least once in retained main20k V/B/H tokens for that stay",
+      "visible_is_measurement_retention_proof": false
+    }
+  },
+  "token_vocabulary_path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/meta_mimic.json",
+  "token_vocabulary_sha256": "97187dfb2b651bc15e16509732696ef2bbc709e596c64c364065c75657b51e73",
+  "uncertainty": "1000 patient-cluster draws; paired direct-minus-FM RMSE, MAE, and R2 contrasts use shared draws within each roster and visibility stratum",
+  "visibility_strata": {
+    "fit_scope": "all finite target rows; visibility is applied after source or shared-fold OOF predictions are generated",
+    "measurement_retention_proof": false,
+    "not_visible": "decoded target variable does not occur in retained V/B/H tokens for that stay",
+    "visible": "decoded target variable occurs at least once in retained V/B/H tokens for that stay"
+  }
+}

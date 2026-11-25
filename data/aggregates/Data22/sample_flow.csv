@@ -1,0 +1,3 @@
+dataset,n_stays,n_patients,adapt_pool_patients,assessment_stays,assessment_patients,assessment_events
+eicu,130544,102957,51478,65220,51479,5979
+nwicu,19972,17385,8692,10003,8693,1072

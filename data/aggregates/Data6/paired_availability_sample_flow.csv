@@ -1,0 +1,7 @@
+db,endpoint,n_a,n_b,n_paired,n_excluded_a,n_excluded_b,n_patients_paired,paired_identity_labels_verified,pair_id,analysis_label_a,analysis_label_b,population_alias,cross_version_alias_rekeyed_to_original_mimic,exact_intersection_used
+mimic,hospital,14890,14890,14890,0,0,10848,True,fullreal_minus_originalreal,originalreal,fullreal,mimic_available_by24_v4_1,True,True
+mimic,hospital,14890,14890,14890,0,0,10848,True,fixedreal_minus_originalreal,originalreal,fixedreal,mimic_available_by24_fixedselection_v4_1,True,True
+mimic_available_by24_v4_1,hospital,14890,14890,14890,0,0,10848,True,fullreal_minus_fullconstant,fullconstant,fullreal,mimic_available_by24_v4_1,False,True
+mimic_available_by24_fixedselection_v4_1,hospital,14890,14890,14890,0,0,10848,True,fixedreal_minus_fixedconstant,fixedconstant,fixedreal,mimic_available_by24_fixedselection_v4_1,False,True
+mimic_available_by24_v4_1,hospital,14890,14890,14890,0,0,10848,True,fullcommon8_minus_fullreal,fullreal,fullcommon8,mimic_available_by24_v4_1,False,True
+mimic_available_by24_fixedselection_v4_1,hospital,14890,14890,14890,0,0,10848,True,fixedcommon8_minus_fixedreal,fixedreal,fixedcommon8,mimic_available_by24_fixedselection_v4_1,False,True

@@ -1,0 +1,14 @@
+{
+  "checked_before_external_prediction_frames": true,
+  "historical_head_C": 1.0,
+  "historical_head_class_weight": null,
+  "historical_head_random_state": 20261122,
+  "historical_probe_sha256": "25b6c9015cf73d5e0156b76197cf1101d6f6e4649407b3ba15b48b2f90a00707",
+  "max_abs_probability_difference": 0.0,
+  "source_train_identity_sha256": "c6a12007040d7d3cee1ae0be209b54e2f7069ce0b904195c1aeae3614d461865",
+  "source_train_label_sha256": "bdf9deb2d966aa7298c75f90e65f8e93a8f6c11d9346513a9299c217d87378b8",
+  "source_train_patients": 37725,
+  "source_train_rows": 51714,
+  "status": "passed",
+  "tolerance": 2e-06
+}

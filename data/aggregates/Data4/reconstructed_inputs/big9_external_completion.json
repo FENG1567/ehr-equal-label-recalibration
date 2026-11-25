@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "input_manifests": {
+    "big9_prediction_sha256": "bb8df14f2a9f7405473f1b0ff7523325f5815ecc4d1133121cbedd4833bd28c1",
+    "reviewed_core_external_prediction_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+    "recovered_reviewed_gate_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+    "merged99_embedding_manifest_sha256": "d467d4698a2bf8ce0cab994e55cf253a80e9f660566e1cf6b61398d4dfb925f2"
+  },
+  "source_probe_origins": {
+    "big": "big_readout_frozen20_v4_2",
+    "core_external": [
+      "recovered_external_primary_v4_2_vocabfix1"
+    ],
+    "source_probe_fit_calls": 0
+  },
+  "actual_grid": {
+    "positive_analysis_cells": 15,
+    "individual_metric_rows": 105,
+    "paired_contrast_metric_rows": 84,
+    "metric_rows": 189,
+    "paired_flow_rows": 12,
+    "bootstrap_population_roster_rows": 5,
+    "flow_rows": 17,
+    "bootstrap_replicates": 1000,
+    "full_and_common8_rosters_separate": true
+  },
+  "invalid_draw_audit": {
+    "one_class_draws": 0,
+    "metric_rows_with_invalid_bootstrap_draws": 26,
+    "calibration_metric_rows_with_invalid_draws": 26,
+    "individual_calibration_optimizer_failure_draws": 10,
+    "affected_individual_arms": "eicu_semantic_v4_2/big50m_full_common8_mask=1; eicu_semantic_v4_2/main20k_real=2; nwicu_discharge_v4_1/big50m_full_real=2; nwicu_discharge_v4_1/big50m_real=3; nwicu_discharge_v4_1/main20k_real=1; nwicu_discharge_v4_1/main20k_common8_mask=1; ",
+    "invalid_optimizer_draws_retained": true
+  },
+  "outputs": {
+    "metrics_csv": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_big_metrics/big9_bb8df14f2a_4a52de662b_metrics.csv",
+      "sha256": "c50e4724de13d51ca9893e1740ca40ccf8eb8eb69659a8b0b7519d25845d6608"
+    },
+    "pair_flow_csv": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_big_metrics/big9_bb8df14f2a_4a52de662b_pair_flow.csv",
+      "sha256": "be6b3421858df370c0280d8da4f396d9839faaeb705ad52a1b645467e16bd950"
+    },
+    "protocol_json": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_big_metrics/big9_bb8df14f2a_4a52de662b_protocol.json",
+      "sha256": "34b0302dde9fb7ad8aeda8c64ac06aca7c9230a75f64c40935897bc62f46f2de"
+    },
+    "progress_json": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/c_big_metrics/big9_external_progress.json",
+      "sha256": "8489549033e670890e9aca86d2f9d0433d43f9357ff8ed123008b1c77b7631aa"
+    }
+  },
+  "patient_level_rows_or_predictions_copied_local": false
+}

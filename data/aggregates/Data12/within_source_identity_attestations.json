@@ -1,0 +1,127 @@
+{
+  "cohorts": {
+    "eicu_semantic_v4_2": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "eligibility_table_sha256": "fb14b4a31c924b123923df0ed76d1c3c87c8495b230fa5c8584b67a974b180a8",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/recovered_data_review_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "e44507da41b045b23b2242dfb2de760b9956a961bf12522c3d55c001633da4e9",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/seq_eicu_semantic_v4_2.npz",
+      "subject_identity_basis": {
+        "basis": "Original eICU uniquepid patient key. The repaired sequence preserves all original ordered subjects, labels and splits; only input semantics changed.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    },
+    "inspire_broad_surgery_associated_v4_1": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/inspire_exploratory_locked_v4_1/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "97c7aeacacb2af9cfce63086d6dc5b9ce9838292a4197e43d3ec98d7f533c019",
+      "eligibility_table_sha256": "b98088bf81d340fb87ccf8459e72a564bab8f0907b72a07f04a3c56259f942a4",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/inspire_scope_record_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "73a495fb7d56a93ba68fcb7c83e6457dcf71d79246d7d79030b61e8c71f0af13",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/seq_inspire_broad_surgery_associated_v4_1.npz",
+      "subject_identity_basis": {
+        "basis": "Released INSPIRE subject_id linked to the reviewed index admission/ICU episode; one selected episode per subject within each fixed-role scope. The two scopes overlap.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    },
+    "inspire_postop_v4_1": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/inspire_exploratory_locked_v4_1/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "97c7aeacacb2af9cfce63086d6dc5b9ce9838292a4197e43d3ec98d7f533c019",
+      "eligibility_table_sha256": "dda5fd386f8fac5106848f207b01be4dab019f7324fb7bd1c4bce94fa366bf6d",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/inspire_scope_record_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "1497f8c288d29cd2ce8c603f5f0013c4230ea24f904685cff9054c03e529044c",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/inspire/normalized/v4/seq_inspire_postop_v4_1.npz",
+      "subject_identity_basis": {
+        "basis": "Released INSPIRE subject_id linked to the reviewed index admission/ICU episode; one selected episode per subject within each fixed-role scope. The two scopes overlap.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    },
+    "mimic_available_by24_fixedselection_v4_1": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "4a8c73898cf770a98ece8a6bc6d79185f1b8dfb82c70fd90c751fbb17001e9ea",
+      "eligibility_table_sha256": "2760c4ff3cdb947bb60014ce41369f23d0a8fe62fc88924185606c73258eddd5",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/availability_controls_scope_record_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "d25d245fbaadc2c8ce0068afab87b72e95e151293308c2945791ef09c4c9ccd1",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/seq_mimic_available_by24_fixedselection_v4_1.npz",
+      "subject_identity_basis": {
+        "basis": "Exact unchanged original MIMIC subject_id array and patient-group split, independently verified across all 94343 rows; fixed-selection retrospective perturbation on split2 only.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    },
+    "mimic_available_by24_v4_1": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/availability_testonly_reviewed_v4_1/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "4a8c73898cf770a98ece8a6bc6d79185f1b8dfb82c70fd90c751fbb17001e9ea",
+      "eligibility_table_sha256": "f0dc6501bc18eb36f556171009611bdb6da8ec3ea3b6fb6d18c17b4acc856444",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/availability_controls_scope_record_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "078446262d0bc5f424f203c7fd2f195e0e4108917840c122ec88c7e51ebcc67b",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_v4_1/seq_mimic_available_by24_v4_1.npz",
+      "subject_identity_basis": {
+        "basis": "Exact unchanged original MIMIC subject_id array and patient-group split, independently verified across all 94343 rows; new authorization is split2 only.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    },
+    "nwicu_discharge_v4_1": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "eligibility_table_sha256": "6d3176b44c203fba6f2d14595668e66bd2cedd44558b59590fa55277f8b74eaf",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/recovered_data_review_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "c654c70a17019bb12cfd57645257786ac303d1acd7fa33ba7db342eb4b336560",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/seq_nwicu.npz",
+      "subject_identity_basis": {
+        "basis": "NWICU raw subject_id, joined to patients/admissions/ICU metadata and replayed against unchanged sequence subjects.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    },
+    "sicdb_zero_offset_v4_2": {
+      "eligibility_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json",
+      "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "eligibility_table_sha256": "f3aad6e52ccf301ee084465a44727b6616cf65bde96edd5cab5dd0b9f9358ff5",
+      "scope_record_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/recovered_data_review_20261123.md",
+      "metadata_relation": "explicit identity supplement; original gate and prediction bytes untouched",
+      "sequence_npz_sha256": "3280df68390f78028d822d0b97f892aefda37dadc0ec176a23dc355b0109d59b",
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/sicdb_zero_offset_v4_2/seq_sicdb_zero_offset_v4_2.npz",
+      "subject_identity_basis": {
+        "basis": "SICdb Cases.PatientID, explicitly compared elementwise to sequence subject in the reviewed preparation; CaseID is the stay key.",
+        "cross_scope_patient_independence_verified": false,
+        "cross_source_patient_independence_verified": false,
+        "identifier_scope": "within this original data source",
+        "patient_disjoint_claim_allowed": true,
+        "resampling_unit": "patient"
+      }
+    }
+  },
+  "forbidden_inference": "C2012 RecordID is a record_id_proxy. Explicit false identity attestations remain final.",
+  "schema": "ehr_fm_v4_2_explicit_subject_identity_attestations",
+  "scope": "patient-cluster uncertainty and patient-disjoint splits within each source; not cross-source or cross-scope independence",
+  "status": "root_accepted_within_source_patient_keys_only"
+}

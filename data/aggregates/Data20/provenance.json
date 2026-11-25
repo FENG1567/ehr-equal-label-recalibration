@@ -1,0 +1,47 @@
+{
+  "analysis": "restricted-input calendar-separated retrospective validation",
+  "database": "MIMIC-IV3.1",
+  "input_sources": [
+    "H24-stored chart measurements",
+    "complete H24-stored GCS",
+    "H24-stored urine output"
+  ],
+  "excluded_input_sources": [
+    "laboratory events",
+    "inputevents",
+    "procedureevents",
+    "static demographics without store times"
+  ],
+  "record_system_timestamp_proxy": true,
+  "bedside_availability_verified": false,
+  "prospective_benefit_established": false,
+  "patient_n": 33162,
+  "pretraining_member_n": 13871,
+  "parameter_n": 409099,
+  "seeds": [
+    20261123,
+    20261124,
+    20261125
+  ],
+  "epochs": 2,
+  "partition_counts": {
+    "early_split0": 13914,
+    "early_split1": 1972,
+    "early_split2": 3904,
+    "late_adapt": 500,
+    "late_test": 12872
+  },
+  "patient_roles_disjoint": true,
+  "source_anchor_years_match_primary_eligibility": true,
+  "pretraining_member_sha256": "8753ad8a2e75542ebebd541faa126f3571d42b812d5980100d929cb6cc9de0d5",
+  "token_sha256": "d44ff5e6b53ca22d1f4adaa25158c2294da24d466feb1bd6f29deaae3c5f7eff",
+  "source_only_bins_sha256": "315eb3313781b0dca8ea6e39b57ffc795cbfe925adc0bcadc830b7727157b48f",
+  "source_patient_metadata_sha256": "4c7507de7ecad8c5ba7647ea4d26018e88ff6672c5fc22ab59c2a5697d687cdd",
+  "calendar_rule": "Conservative patient-specific date-shift envelopes; early admission/discharge upper bounds before2017, later ICU admission lower bounds from2017; uncertain periods excluded",
+  "source_data_sha256": {
+    "patient_bootstrap_v7.csv": "931c392a3073325cb02c0fb6e1eb848a548323bc5c08e054223c96cc8b56ff29",
+    "decision_curve_v7.csv": "d407694b6495a267a899fb949314c15d330d7861321f92b09284c175e23be480",
+    "paired_model_bootstrap_v7.csv": "26485e8bf0d854e98344f721b2b468970b21bb5707088e1da0e65f9e244d9ca8",
+    "metrics_v7.csv": "5d6a83d458cdcc0e29e3dc1eb24baa8211f49f0356e40b510bd6040c8fad89b2"
+  }
+}

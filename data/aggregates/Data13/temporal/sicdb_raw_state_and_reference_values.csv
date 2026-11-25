@@ -1,0 +1,7 @@
+field,raw_value,n
+DischargeState,2202,24275.0
+DischargeState,2212,2149.0
+DischargeState,2215,926.0
+reference_definition,lebend | DischargeState |  |  |  |  | ,
+reference_definition,Unknown | DischargeState |  |  |  |  | ,
+reference_definition,verstorben | DischargeState |  |  |  |  | ,

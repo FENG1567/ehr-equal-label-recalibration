@@ -1,0 +1,155 @@
+{
+  "cache_pair_attestation": {
+    "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+    "condition_specific_input_mask_hashes_differ": true,
+    "constant": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "audit_anchor_sources": {
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+      },
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_constant_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-f429602d9cd2ae8d_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "b7b2b84a8eeb0685af80be241af25dc698af35c67b4e5564d9abed9a2de6e31b",
+      "db": "eicu_semantic_v4_2",
+      "input_condition": "constant",
+      "input_mask_sha256": "f429602d9cd2ae8d167923694fa66fc4d2ed10a1666d4885cc2102acf52f8d1d",
+      "key": [
+        "eicu_semantic_v4_2",
+        "main20k",
+        "constant"
+      ],
+      "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+      "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+      "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+      "model_tag": "main20k",
+      "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+      "status": "verified_frozen_v4_cache_archive"
+    },
+    "real": {
+      "attestation_scope": "frozen merged-manifest/cache-audit bytes; not historical pretraining membership",
+      "audit_anchor_sources": {
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/big_readout/run_big_readout_frozen20.py": "3ed5d90ae466fb55347877f56db3644803628df2f9498a6cb8c74f9028e9ece0",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/audit_numeric_decoding_release.py": "73bae834897be9a2bd726abf734d6b4e4f6f475f7931544eeafa123d18c856ad",
+        "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/decoding_repaired/release_audit/numeric_decoding_release_audit.json": "28c849b82cf538985e483b51378efb0e51a1212415e0427cd719f6513c1a0b5c"
+      },
+      "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_real_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-3f453e2f4b91e5d9_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+      "cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+      "db": "eicu_semantic_v4_2",
+      "input_condition": "real",
+      "input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+      "key": [
+        "eicu_semantic_v4_2",
+        "main20k",
+        "real"
+      ],
+      "merge_audit_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_merge_audit_recovered_v4_2_b2eec1f7aca1.json",
+      "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+      "merged_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+      "model_tag": "main20k",
+      "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+      "status": "verified_frozen_v4_cache_archive"
+    },
+    "same_sequence_checkpoint_encoder_ordered_identity": true,
+    "status": "verified_real_constant_cache_pair"
+  },
+  "cohort": "eicu_semantic_v4_2",
+  "constant_cache_provenance": {
+    "cache_pair_attestation": {
+      "condition_specific_input_mask_hashes_differ": true,
+      "constant_cache_sha256": "b7b2b84a8eeb0685af80be241af25dc698af35c67b4e5564d9abed9a2de6e31b",
+      "constant_input_mask_sha256": "f429602d9cd2ae8d167923694fa66fc4d2ed10a1666d4885cc2102acf52f8d1d",
+      "merge_audit_sha256": "ba792d7c600c134bbaa79deebba123183217b4bf474a5102c7100ac65f09740d",
+      "real_cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+      "real_input_mask_sha256": "3f453e2f4b91e5d9ec42871d91461861c3ba583797b64479ff1384150ca01421",
+      "shared_checkpoint_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+      "shared_encoder_code_sha256": "59c3f4059662fb9e1d81baf20120c8668a761a926f5cab5ff4e654f7c16c1abc"
+    },
+    "cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_eicu_semantic_v4_2_main20k_constant_ckpt-0719db57b91b2618_id-b01139f6cab6e963_mask-f429602d9cd2ae8d_src-e44507da41b0_enc-59c3f4059662_rt-edca09b26174.npz",
+    "cache_sha256": "b7b2b84a8eeb0685af80be241af25dc698af35c67b4e5564d9abed9a2de6e31b",
+    "checkpoint_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+    "encoder_code_sha256": "59c3f4059662fb9e1d81baf20120c8668a761a926f5cab5ff4e654f7c16c1abc",
+    "input_condition": "constant",
+    "model_tag": "main20k",
+    "reencoded_by_this_gpu_control": false,
+    "row_identity_sha256": "b01139f6cab6e963ddbea29574d5517d10b854c095981a86fff615fc75371be5",
+    "same_rows_stays_subjects_as_real_cache": true,
+    "source_npz_sha256": "e44507da41b045b23b2242dfb2de760b9956a961bf12522c3d55c001633da4e9",
+    "status": "verified_existing_cache"
+  },
+  "constant_cache_sha256": "b7b2b84a8eeb0685af80be241af25dc698af35c67b4e5564d9abed9a2de6e31b",
+  "created_utc": "2026-11-23T18:09:20Z",
+  "embedding_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+  "fixed_head": "historical frozen MIMIC main20k C=1 source scaler and logistic probe",
+  "gpu_embedding_archive_sha256": "92edb965f6b8c074997d4bc2ca077055460d85b70271a2fb8fb2fe8376a5fe83",
+  "gpu_manifest_sha256": "4df185c3db9eb5dce9e5e3774bf1162a9abe08f647dc8626573864e025f6213d",
+  "historical_source_probe_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/source_probes/main20k_real_39321cc8e6e2ad96c18d.pkl",
+  "historical_source_probe_sha256": "25b6c9015cf73d5e0156b76197cf1101d6f6e4649407b3ba15b48b2f90a00707",
+  "metrics_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/controls/representation_controls_v5rc_20261123T175424Z_4058026/scores/fixed_head_control_metrics.csv",
+  "metrics_csv_sha256": "132d599379d250e15d6efc042488514ed55eb4954602dcbfece2fe9e84758f13",
+  "n_patients": 102957,
+  "n_stays": 130544,
+  "observed_runtime_parity_report_sha256": "f6bf7d2e44dcc2d83a99323841a6804ead7a30cb734fc52d3cc32b854667a731",
+  "observed_runtime_probability_parity": {
+    "atol": 2e-06,
+    "max_abs_difference": 9.43689570931383e-16,
+    "reference_probability_source": "frozen v4 main20k_real scores on the full reviewed roster",
+    "roster_identity_sha256": "69273a457af057480ea2533ca2a73aa2c182e66190e1545319b6a327265ca8fa",
+    "rtol": 1e-05,
+    "within_tolerance": true
+  },
+  "paired_contrasts_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/controls/representation_controls_v5rc_20261123T175424Z_4058026/scores/fixed_head_control_paired_contrasts.csv",
+  "paired_contrasts_csv_sha256": "b0b7a8cf5f0e22bf338f8d393a9163c75641c08512a9f1202e6e713c47aa89ae",
+  "patient_level_predictions_exported": false,
+  "real_cache_sha256": "c07d4a5ca34ec98e6d99166172aa1d047571219354e232c7cbf2040dfb643e0a",
+  "reviewed_roster_identity_sha256": "69273a457af057480ea2533ca2a73aa2c182e66190e1545319b6a327265ca8fa",
+  "run_id": "v5rc_20261123T175424Z_4058026",
+  "scope": "repaired eICU reviewed main20k_real roster",
+  "status": "complete",
+  "transformations": {
+    "distinct_patient_donor": {
+      "active_tokens": 16939432,
+      "changed_token_fraction": 0.8673909491180106,
+      "changed_tokens": 14693110,
+      "donor_assignment": "one uniform distinct patient per target patient-variable; donor B bins sampled with replacement",
+      "donor_candidates_max": 135702,
+      "donor_candidates_median": 118819.0,
+      "donor_candidates_min": 2044,
+      "donor_coverage_fraction": 1.0,
+      "donor_status_used": false,
+      "interpretation_limit": "breaks temporal and joint physiology; bins can be marginally valid while combinations are out of distribution",
+      "no_other_donor_groups": 0,
+      "outcome_used_for_donor_assignment": false,
+      "preserved": "V, H, L, padding positions, and variable-specific observed B-bin support",
+      "seed": 2026112302,
+      "self_donor_groups": 0,
+      "target_subject_variable_groups": 2630667,
+      "unique_donor_subjects": 137386
+    },
+    "within_variable_shuffle": {
+      "active_tokens": 16939432,
+      "changed_token_fraction": 0.5299521849374879,
+      "changed_tokens": 8977089,
+      "preserved": "V, H, L, padding positions, and each stay-variable B-bin multiset",
+      "seed": 2026112301
+    }
+  },
+  "transport_provenance": {
+    "baseline_prediction_file_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/predictions/recovered_frozen_baseline_predictions.parquet",
+    "baseline_prediction_file_sha256": "d5539dca2804d8077bdb8677b02cd9aa48f1e191236d1904e36b3697fa5e0cd8",
+    "baseline_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/baseline_prediction_manifest.json",
+    "baseline_prediction_manifest_sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492",
+    "clinical_input_availability_verified": false,
+    "clinical_promotion_allowed": false,
+    "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+    "fm_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json",
+    "fm_prediction_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+    "identity_scope": "within-source patient clustering only; cross-source and cross-scope independence unverified",
+    "patient_level_exported_to_local": false,
+    "source_model_bundle_sha256": "e9a09363585f082a92e21628979830e47f35221584d3a9d60a267ae4b782b0b6",
+    "source_reproduction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json",
+    "source_reproduction_manifest_sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262",
+    "subject_identity_attestation_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+    "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+  }
+}

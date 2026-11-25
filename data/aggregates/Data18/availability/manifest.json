@@ -1,0 +1,107 @@
+{
+  "aggregation_definitions": {
+    "fixed_selection_removed_tokens": "sum(fixed_selection_removed_keys); source: cached token-position audit.",
+    "fixed_selection_retained_bin_changed_tokens": "sum(fixed_selection_bins_changed), denominator is retained tokens.",
+    "fixed_selection_retained_tokens": "sum(fixed_selection_retained_keys); source: cached token-position audit.",
+    "full_rebuild_sampled_key_changes": "old/full overlap and old-only/full-only (V,H) keys; order and stay flags from cached per-stay audit.",
+    "patient_denominator": "unique NPZ subject within each row scope.",
+    "stay_denominator": "unique stay_id rows within each row scope.",
+    "token_denominator": "sum of cached old_sequence_tokens within each row scope."
+  },
+  "cached_full_sequence_reconciliation": {
+    "cached_summary_reconciliation": "passed_exactly",
+    "per_stay_changed_stays": {
+      "stays_with_changed_sampled_key_sets": 86304,
+      "stays_with_changed_sampled_keys_including_order": 86304,
+      "stays_with_sampled_key_order_changed": 86304
+    },
+    "per_stay_sums": {
+      "fixed_selection_bins_changed": 8098,
+      "fixed_selection_bins_equal": 11416537,
+      "fixed_selection_old_keys": 11699353,
+      "fixed_selection_removed_keys": 274718,
+      "fixed_selection_retained_keys": 11424635,
+      "full_rebuild_sequence_tokens": 11688628,
+      "full_vh_keys_only": 4223476,
+      "old_full_overlap_bins_changed": 4796,
+      "old_full_overlap_bins_equal": 7460356,
+      "old_full_vh_overlap": 7465152,
+      "old_sequence_tokens": 11699353,
+      "old_vh_keys_only": 4234201
+    }
+  },
+  "completed_utc": "2026-11-23T17:23:33.848965+00:00",
+  "eligibility": {
+    "clinical_input_availability_verified": false,
+    "eligible_column": "eligible_24h",
+    "gate_version": "recovered_reviewed_v4_2",
+    "mask_limit": "Eligibility mask is applied only after all-sequence cached totals reconcile exactly to the historical report.",
+    "patient_identity_join": "sequence NPZ stay_id+subject exactly equals gate order; all 94,343 rows required",
+    "selected_labels_column": "y_mort",
+    "selected_labels_complete_binary": true,
+    "selected_rows": 73936
+  },
+  "estimand": "Composite retained-token/fixed-bin/full-rebuild sampled-key audit proxy derived from the persisted v4 audit; not a direct per-variable late-store attribution.",
+  "expected_full_cache_checks": {
+    "fixed_selection_bins_changed": 8098,
+    "gate_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+    "gate_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+    "n_eligible": 73936,
+    "n_sequence_rows": 94343,
+    "old_active_keys": 11699353,
+    "old_full_common_keys": 7465152,
+    "retained_original_token_keys": 11424635,
+    "sequence_sha256": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "stays_sampled_keys_changed": 86304
+  },
+  "input_hashes_sha256": {
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/seq_mimic.npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "/data/admin/fengshuo/ehr_fm_20261102/data/processed/split_mimic.npy": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/RUN_COMPLETE.json": "9101d9ac1e92d4ad0ed673ec87b26eaae4718c5cb2320a2fd4a3703e2f1848cf",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/audits/audit_addendum.json": "bfb730497d9fb313434e43128a98bcd2621217b72559a93ea2a925c9acbb7166",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/audits/audit_addendum_per_stay.parquet": "664721324b5cda8560827277c44ec2a60698accebdeceb795d9f98402da58e28",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/availability_repair/dataset/mimic_available_by24_fixedselection_v4_1/dataset_manifest.json": "48e5f65f78a69a0ed4e105381ab55ab431b257844f1e425dd5e18fff0b641aed",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+    "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/mimic.parquet": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f"
+  },
+  "interpretation_limits": [
+    "Historical Data6 raw_record_time counts are candidate records and are not counted or described here as retained tokens.",
+    "The availability measure is a composite proxy based on persisted fixed-selection retained-token and frozen-bin audit fields; it does not directly attribute every late-store event category.",
+    "This audit does not establish bedside availability or prospective clinical input availability.",
+    "Old-versus-full-rebuild sampled-key drift is retained as a separate sampling/rebuild change and must not be described as a pure clinical-availability effect.",
+    "No raw event table was read, no bins were recomputed, and no patient-level rows or identifiers are written to R5 output."
+  ],
+  "output": {
+    "aggregate_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/availability/v5_availability_eligible_20261123T172333Z_3860102/availability_eligible_aggregate.csv",
+    "aggregate_csv_sha256": "45a149b9464ffa262d52518377d8eab0de5ddf2dd43fe4cefeb85e7480377c1a"
+  },
+  "per_stay_current_sha256": "664721324b5cda8560827277c44ec2a60698accebdeceb795d9f98402da58e28",
+  "per_stay_hash_binding": "verified_existing_manifest_hash",
+  "resource_evidence": {
+    "cgroup_v2_directory": "/sys/fs/cgroup/ehrv5.slice/ehrv5-availability-eligible-r2-20261123T172323Z-3860057.service",
+    "cpu_max": "200000 100000",
+    "memory_max": "12884901888",
+    "memory_swap_max": "0",
+    "proc_self_cgroup": "0::/ehrv5.slice/ehrv5-availability-eligible-r2-20261123T172323Z-3860057.service"
+  },
+  "run_id": "v5_availability_eligible_20261123T172333Z_3860102",
+  "scope": "MIMIC; all-sequence rows and reviewed recovered_reviewed_v4_2 eligible_24h rows; counts stratified by frozen split 0/1/2.",
+  "split": {
+    "binding": "explicit_frozen_split_sha256",
+    "counts_all_sequence": {
+      "0": 66044,
+      "1": 9375,
+      "2": 18924
+    },
+    "expected_sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "gate_manifest_split_npy_sha256": null,
+    "patient_disjoint": true,
+    "sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "values": [
+      0,
+      1,
+      2
+    ]
+  },
+  "status": "complete_cached_availability_eligible_aggregate_only"
+}

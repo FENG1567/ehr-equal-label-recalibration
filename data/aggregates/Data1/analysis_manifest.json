@@ -1,0 +1,853 @@
+{
+  "analysis_ids": [
+    "main20k_real",
+    "main20k_constant",
+    "main20k_common8_mask",
+    "main20k_no_h0_therapy",
+    "abl_const20k_real",
+    "abl_const20k_constant",
+    "common20k_common8_mask"
+  ],
+  "base_seed": 20261122,
+  "bootstrap_replicates": 1000,
+  "combined_grid": {
+    "metric_rows": 588,
+    "mimic_metric_rows_reused": 147,
+    "new_cohort_metric_rows_computed": 441,
+    "pair_flow_rows": 84
+  },
+  "cross_source_patient_independence_claimed": false,
+  "eligibility_manifest": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json",
+    "sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f"
+  },
+  "embedding_manifest_snapshot": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code_snapshots/embedding_manifest_recovered_v4_2_merged41_b2eec1f7aca1.json",
+    "sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe"
+  },
+  "external_grid": {
+    "bootstrap_draws_per_pair": 1000,
+    "calibration_convergence_failures_preserved": true,
+    "estimated_metric_evaluation_saving_factor": 4.064516129032258,
+    "grouped_metric_evaluations_per_draw": 31,
+    "invalid_bootstrap_counts_preserved_in_rows": true,
+    "metric_rows": 441,
+    "pair_flow_rows": 63,
+    "pairs_per_cohort": 21,
+    "pairwise_metric_evaluations_per_draw": 126,
+    "roster_group_count": 5,
+    "roster_groups": [
+      {
+        "completed_draws": 1000,
+        "condition_ids": [
+          "abl_const20k_constant",
+          "abl_const20k_real",
+          "main20k_constant",
+          "main20k_no_h0_therapy",
+          "main20k_real"
+        ],
+        "conditions_scored_per_draw": 5,
+        "db": "eicu_semantic_v4_2",
+        "endpoint": "hospital",
+        "ordered_population_digest_sha256": "86429548b13fc1bb9efde4598c8de11af3f1d2120b14b8b0b54f87d9625c41df",
+        "pair_count": 10,
+        "pairs": [
+          [
+            "abl_const20k_constant",
+            "abl_const20k_real"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_constant"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_real"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_constant"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_real"
+          ],
+          [
+            "main20k_constant",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "main20k_constant",
+            "main20k_real"
+          ],
+          [
+            "main20k_no_h0_therapy",
+            "main20k_real"
+          ]
+        ],
+        "patients": 102957,
+        "seed": 1750243141,
+        "stays": 130544,
+        "valid_bootstrap_draws_by_condition_metric": {
+          "abl_const20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 996,
+            "calibration_slope": 996,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "abl_const20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_no_h0_therapy": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 996,
+            "calibration_slope": 996,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          }
+        }
+      },
+      {
+        "completed_draws": 1000,
+        "condition_ids": [
+          "abl_const20k_constant",
+          "abl_const20k_real",
+          "common20k_common8_mask",
+          "main20k_common8_mask",
+          "main20k_constant",
+          "main20k_no_h0_therapy",
+          "main20k_real"
+        ],
+        "conditions_scored_per_draw": 7,
+        "db": "eicu_semantic_v4_2",
+        "endpoint": "hospital",
+        "ordered_population_digest_sha256": "2206f99e3f55f8cfe85185a07d9736188631fa2d9e781d81b6fa2926f1e85f4e",
+        "pair_count": 11,
+        "pairs": [
+          [
+            "abl_const20k_constant",
+            "common20k_common8_mask"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_common8_mask"
+          ],
+          [
+            "abl_const20k_real",
+            "common20k_common8_mask"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_common8_mask"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_common8_mask"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_constant"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_real"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_constant"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_real"
+          ]
+        ],
+        "patients": 102934,
+        "seed": 1340743186,
+        "stays": 130510,
+        "valid_bootstrap_draws_by_condition_metric": {
+          "abl_const20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 999,
+            "calibration_slope": 999,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "abl_const20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 997,
+            "calibration_slope": 997,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "common20k_common8_mask": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 988,
+            "calibration_slope": 988,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_common8_mask": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 999,
+            "calibration_slope": 999,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_no_h0_therapy": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 995,
+            "calibration_slope": 995,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          }
+        }
+      },
+      {
+        "completed_draws": 1000,
+        "condition_ids": [
+          "abl_const20k_constant",
+          "abl_const20k_real",
+          "main20k_constant",
+          "main20k_no_h0_therapy",
+          "main20k_real"
+        ],
+        "conditions_scored_per_draw": 5,
+        "db": "nwicu_discharge_v4_1",
+        "endpoint": "hospital",
+        "ordered_population_digest_sha256": "11a813a25fbe3e8244690f8a675cdb4a7f385678db8a776905d21ab1e78d8af2",
+        "pair_count": 10,
+        "pairs": [
+          [
+            "abl_const20k_constant",
+            "abl_const20k_real"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_constant"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_real"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_constant"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_real"
+          ],
+          [
+            "main20k_constant",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "main20k_constant",
+            "main20k_real"
+          ],
+          [
+            "main20k_no_h0_therapy",
+            "main20k_real"
+          ]
+        ],
+        "patients": 17385,
+        "seed": 2788331720,
+        "stays": 19972,
+        "valid_bootstrap_draws_by_condition_metric": {
+          "abl_const20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "abl_const20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 999,
+            "calibration_slope": 999,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_no_h0_therapy": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 999,
+            "calibration_slope": 999,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          }
+        }
+      },
+      {
+        "completed_draws": 1000,
+        "condition_ids": [
+          "abl_const20k_constant",
+          "abl_const20k_real",
+          "common20k_common8_mask",
+          "main20k_common8_mask",
+          "main20k_constant",
+          "main20k_no_h0_therapy",
+          "main20k_real"
+        ],
+        "conditions_scored_per_draw": 7,
+        "db": "nwicu_discharge_v4_1",
+        "endpoint": "hospital",
+        "ordered_population_digest_sha256": "539bb39c36d3a5a9028b3336558e386d940e53dbe3c46f73afa22fbeb86d5ab2",
+        "pair_count": 11,
+        "pairs": [
+          [
+            "abl_const20k_constant",
+            "common20k_common8_mask"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_common8_mask"
+          ],
+          [
+            "abl_const20k_real",
+            "common20k_common8_mask"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_common8_mask"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_common8_mask"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_constant"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_real"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_constant"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_real"
+          ]
+        ],
+        "patients": 17361,
+        "seed": 3466155497,
+        "stays": 19945,
+        "valid_bootstrap_draws_by_condition_metric": {
+          "abl_const20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "abl_const20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "common20k_common8_mask": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_common8_mask": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_no_h0_therapy": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          }
+        }
+      },
+      {
+        "completed_draws": 1000,
+        "condition_ids": [
+          "abl_const20k_constant",
+          "abl_const20k_real",
+          "common20k_common8_mask",
+          "main20k_common8_mask",
+          "main20k_constant",
+          "main20k_no_h0_therapy",
+          "main20k_real"
+        ],
+        "conditions_scored_per_draw": 7,
+        "db": "sicdb_zero_offset_v4_2",
+        "endpoint": "icu",
+        "ordered_population_digest_sha256": "2dfd986577bde3b272a51ac17b3e2b0f9b4d22d011fe93bebb7ea387aee4c1b3",
+        "pair_count": 21,
+        "pairs": [
+          [
+            "abl_const20k_constant",
+            "abl_const20k_real"
+          ],
+          [
+            "abl_const20k_constant",
+            "common20k_common8_mask"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_common8_mask"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_constant"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "abl_const20k_constant",
+            "main20k_real"
+          ],
+          [
+            "abl_const20k_real",
+            "common20k_common8_mask"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_common8_mask"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_constant"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "abl_const20k_real",
+            "main20k_real"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_common8_mask"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_constant"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "common20k_common8_mask",
+            "main20k_real"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_constant"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "main20k_common8_mask",
+            "main20k_real"
+          ],
+          [
+            "main20k_constant",
+            "main20k_no_h0_therapy"
+          ],
+          [
+            "main20k_constant",
+            "main20k_real"
+          ],
+          [
+            "main20k_no_h0_therapy",
+            "main20k_real"
+          ]
+        ],
+        "patients": 6152,
+        "seed": 4088076829,
+        "stays": 6774,
+        "valid_bootstrap_draws_by_condition_metric": {
+          "abl_const20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "abl_const20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "common20k_common8_mask": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 998,
+            "calibration_slope": 998,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_common8_mask": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 999,
+            "calibration_slope": 999,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_constant": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_no_h0_therapy": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 1000,
+            "calibration_slope": 1000,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          },
+          "main20k_real": {
+            "auroc": 1000,
+            "average_precision": 1000,
+            "brier": 1000,
+            "calibration_intercept": 999,
+            "calibration_slope": 999,
+            "logloss": 1000,
+            "offset_intercept": 1000
+          }
+        }
+      }
+    ],
+    "shared_patient_weights_within_each_exact_roster_group": true
+  },
+  "external_seed_protocol": "derive_seed(base_seed, db, exact_ordered_population_digest); one patient draw vector is shared across every condition in that exact pair-intersection roster",
+  "inference_scope": "conditional on the completed frozen prediction outputs and fitted source probes",
+  "mimic_reuse": {
+    "core_context": {
+      "analysis_ids": [
+        "main20k_real",
+        "main20k_constant",
+        "main20k_common8_mask",
+        "main20k_no_h0_therapy",
+        "abl_const20k_real",
+        "abl_const20k_constant",
+        "common20k_common8_mask"
+      ],
+      "base_seed": 20261122,
+      "bootstrap_replicates": 1000,
+      "eligibility_dir": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/status_consistent_v4_1/landmark_v4_1",
+      "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+      "paired_metrics_code": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code/paired_metrics_v4.py",
+      "paired_metrics_code_sha256": "52333539bbe73367e75c0d001497b8872d2e43fbaef71f1e382d49c02c536841",
+      "prediction_manifest": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/status_consistent_primary_core_fix2-7da980ffcbd8f00b/prediction_manifest.json",
+      "prediction_manifest_sha256": "b2818a3443c8cf5fe34ef500beb79f3874c2729fa59c0397433d40be29d56971",
+      "run_id": "status_consistent_primary_core_fix2"
+    },
+    "core_metrics_sha256": "6ef72cb3ca399a1e96ec6f1d13e9ca3243e30fcb635c8af642c61a71711d9c37",
+    "core_pair_flow_sha256": "cbe7ec12d253064bc1c9c8d183be7190b203881ffa89da5ed6c6a96a700090d6",
+    "historical_seed_protocol": "retained completed core pair-specific derived_seed(base, db, endpoint, analysis_a, analysis_b) values unchanged",
+    "mimic_pair_count": 21,
+    "mimic_parity": [
+      {
+        "analysis_id": "main20k_real",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "2132e5164b70970fd3b34d619152daa905a6d2aa3ce3f87d99f7cf7a23708411"
+      },
+      {
+        "analysis_id": "main20k_constant",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "61653ea2a60398cff65cc775294a4aea34be9231687e91df3f34cdb10d47383f"
+      },
+      {
+        "analysis_id": "main20k_common8_mask",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "06c861248f3099e5eb2ad8b82c4682340fe92ee2ed06ca49cfde4001552917f2"
+      },
+      {
+        "analysis_id": "main20k_no_h0_therapy",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "2c59515bcfca2789dc738664f0bea660f24a4481dd7308c36af5569ecace4759"
+      },
+      {
+        "analysis_id": "abl_const20k_real",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "87b6a70e4977dca6c9e2bcac222b9af041943e6dc2081f379c7a1ccc55ce3b4d"
+      },
+      {
+        "analysis_id": "abl_const20k_constant",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "072a975f387021f962103a323cbdf0588b3aabe386f294cf370ab915e10cdebb"
+      },
+      {
+        "analysis_id": "common20k_common8_mask",
+        "eligibility_manifest_digest_compared": false,
+        "identity_and_labels_equal": true,
+        "n_predictions": 14890,
+        "predictions_exact": true,
+        "row_identity_prediction_sha256": "8e1a6e17cd9f749889ecdcb1d1c5932f645623a46d6fac1e288939178727dbc6"
+      }
+    ],
+    "reused_metric_rows": 147,
+    "reused_pair_flow_rows": 21
+  },
+  "new_cohorts": [
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2",
+    "eicu_semantic_v4_2"
+  ],
+  "paired_metrics_code": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/code/paired_metrics_v4.py",
+    "sha256": "52333539bbe73367e75c0d001497b8872d2e43fbaef71f1e382d49c02c536841"
+  },
+  "patient_level_rows_or_ids_exported": false,
+  "population_counts": {
+    "eicu_semantic_v4_2": {
+      "endpoint": "hospital",
+      "events": 11943,
+      "patients": 102957,
+      "status": "saved_prediction_population_verified",
+      "stays": 130544
+    },
+    "nwicu_discharge_v4_1": {
+      "endpoint": "hospital",
+      "events": 2226,
+      "patients": 17385,
+      "status": "saved_prediction_population_verified",
+      "stays": 19972
+    },
+    "sicdb_zero_offset_v4_2": {
+      "endpoint": "icu",
+      "events": 402,
+      "patients": 6152,
+      "status": "saved_prediction_population_verified",
+      "stays": 6774
+    }
+  },
+  "prediction_manifest": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json",
+    "sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340"
+  },
+  "progress_checkpoint": {
+    "interval": 100,
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/recovered_metrics/results/recovered_metrics_20261123_065632/bootstrap_checkpoint.npz",
+    "path_includes_aggregate_samples_only": true
+  },
+  "sourcehash_schema": "cohorts[db].sourcehashes.sequence_npz; validated exactly",
+  "status": "complete",
+  "within_source_identity_basis": {
+    "eicu_semantic_v4_2": {
+      "basis": "Original eICU uniquepid patient key. The repaired sequence preserves all original ordered subjects, labels and splits; only input semantics changed.",
+      "cross_scope_patient_independence_verified": false,
+      "cross_source_patient_independence_verified": false,
+      "identifier_scope": "within this original data source",
+      "patient_disjoint_claim_allowed": true,
+      "resampling_unit": "patient"
+    },
+    "nwicu_discharge_v4_1": {
+      "basis": "NWICU raw subject_id, joined to patients/admissions/ICU metadata and replayed against unchanged sequence subjects.",
+      "cross_scope_patient_independence_verified": false,
+      "cross_source_patient_independence_verified": false,
+      "identifier_scope": "within this original data source",
+      "patient_disjoint_claim_allowed": true,
+      "resampling_unit": "patient"
+    },
+    "sicdb_zero_offset_v4_2": {
+      "basis": "SICdb Cases.PatientID, explicitly compared elementwise to sequence subject in the reviewed preparation; CaseID is the stay key.",
+      "cross_scope_patient_independence_verified": false,
+      "cross_source_patient_independence_verified": false,
+      "identifier_scope": "within this original data source",
+      "patient_disjoint_claim_allowed": true,
+      "resampling_unit": "patient"
+    }
+  },
+  "within_source_patient_identity_sidecar": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+    "sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+  },
+  "wrapper_sha256": "9f68d7aecf7723eb321d2b2b65842b0bb4fb89f7771a4197772874fed34a5cc4"
+}

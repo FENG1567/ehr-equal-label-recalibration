@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "analysis": "auditable_clean_pretraining_equal_label_calibration",
+  "seeds": [
+    20261123,
+    20261124,
+    20261125
+  ],
+  "budgets": [
+    500,
+    2000
+  ],
+  "repetitions": 200,
+  "baseline_C": 0.001,
+  "baseline_validation_brier_grid": {
+    "0.001": 0.0750895771289703,
+    "0.01": 0.07510815713243778,
+    "0.1": 0.0751844587569016,
+    "1.0": 0.07519395128180523,
+    "10.0": 0.07522508964336332,
+    "100.0": 0.07525190788773517
+  },
+  "baseline_parameter_sha256": "97f74c16f53ca3781e07be2dc64d1772faacd4fca53a5f0681f01d8c47275881",
+  "baseline_features": "same retained quantized tokens; mean/min/max/std bin,count,mean hour; absent variable zero",
+  "original_preparation_sha256": "61dc8b2cfc09d08a26dcbbf506d302d2307ea8965dd641479e288fed42a8d59f",
+  "original_evaluation_sha256": "a35b65fefac6af2a47c3e5e7086e9402f8b2012f610a60d46706ff40eca25c4a",
+  "original_training_sha256": "11c5bcc8629e374423073b3779f8a2e636ca6b466cf854fb90341778f30fa35e",
+  "original_readouts_sha256": "bde63c054e1ac98ce5334d47c868d0e82c9885f08fada2e116ab5d6548360ad8",
+  "pretraining_member_n": 20000,
+  "pretraining_member_sha256": "3934bbc6d3953a15e859a988b432b0f60c9393a3ae2e2dbf2401af86ac90a8c5",
+  "source_only_bins_sha256": "f4ac46fda73dbd85b44a8f3b0f4a7ba6adc17fe46d27f29f3b14a9fdc337af55",
+  "protocol_sha256": "c54010cd5fe6c5c5c07272842a36f4abe42263407e91ea11e6ec0106a2404b4c",
+  "script_sha256": "15432afbf4c427affb73af337e7eddc32b8e4c47b2900cee88695c2581627280",
+  "helper_sha256": "966629123d4d5269f1e28061deb4e98826d2a806bbee9b69c149141e9b3cf662",
+  "patient_roles_disjoint": true,
+  "patient_predictions_exported": false,
+  "bootstrap": "500 shared assessment-patient cluster draws; stay weighted; conditional on frozen models and 200 realized fits",
+  "loss_estimand": "mean per-stay loss across fits, not loss from averaged probabilities",
+  "external_availability_verified": false,
+  "prospective_benefit_established": false,
+  "private_plan_hashes": {
+    "eicu_plans_500.npz": "10da65eaa3267350a3401af0c77ed96195c2cd8b0feac8ff0251ca2ed9bc9f59",
+    "eicu_plans_2000.npz": "c009f6f9e531dac0d2ec4746ff52edf7615b3f40c47e6ab8ae4d35f490b508b8",
+    "nwicu_plans_500.npz": "c10647f3df7f34c427297690ca13502bfb7a4ec413f12840d61a8da6c2e22d5b",
+    "nwicu_plans_2000.npz": "4ea990a09a1ae151fd3a2c862877efd643d6e287b3e232e48b0437e0ad004372"
+  },
+  "source_data_hashes": {
+    "fit_support.csv": "acc33376809374edd3bb6d98f17cbf0a4f37e0fc1f78cce0beab5f4b877f7f88",
+    "sample_flow.csv": "0afaaf627d0cd65568e534dab5cd6be4881cb80898365ffc7b4f1444919aa907",
+    "metrics.csv": "48f31fae042cf90f5c26fddf598c25dce5937696d5eaced70814f8b7ad37bdc6",
+    "paired_gaps.csv": "3befe0f2e1036e6a3a75c537184db864fa2d042de0e5da84db2aef33f67f9d14"
+  }
+}

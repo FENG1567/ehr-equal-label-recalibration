@@ -1,0 +1,24 @@
+{
+  "model": "main20k",
+  "stored_seed": 20261102,
+  "stored_member_n": 20000,
+  "current_split0_length_gt4_candidates": 66043,
+  "reconstructed_candidate_stays": 20000,
+  "reconstructed_candidate_patients": 17145,
+  "candidate_patient_overlap_source_split1": 0,
+  "candidate_patient_overlap_source_split2": 0,
+  "current_patient_roles_disjoint": true,
+  "current_input_hashes": {
+    "data/processed/seq_mimic.npz": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "data/processed/split_mimic.npy": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "data/interim/cohort_mimic.parquet": "dd1d06997e128a18475553b8e18cfd1c81b2cdd79f95e67ba1746afaea5cec2a",
+    "code/fm.py": "9d33963a7d176f855103ac88c60f9faffebb4cb734a9de3401ba0c06bdaa39bc",
+    "models/main20k.pt": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+    "revision_v4_20261122/admin/checkpoint_metadata_audit.json": "fc1c3dab84114f3e47ccae9661619d14289052bddee27548c556a07866f96677"
+  },
+  "private_candidate_members_sha256": "c70dd6199b0517ad7c0d0c17027b622d7dcd58c56934801542aec9fd3afccb29",
+  "historical_input_hash_chain_available": false,
+  "historical_membership_verified": false,
+  "interpretation": "The candidate roster reproduces the stored seed and sample count under the preserved current sampling implementation and current frozen sequence/split files. No training-time member roster or input hashes were stored. Therefore neither this roster nor its zero readout-holdout overlap authenticates actual historical encoder membership.",
+  "not_extended_to_multi_database_checkpoints": "Their multiple data sources and exposure remain separate historical comparisons."
+}

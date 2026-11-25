@@ -1,0 +1,13 @@
+db,endpoint,n_a,n_b,n_paired,n_excluded_a,n_excluded_b,n_patients_paired,paired_identity_labels_verified,cohort_slice,analysis_id_left,analysis_id_right,contrast,n_source_rows_left,n_source_rows_right,n_excluded_left,n_excluded_right,n_paired_stays,n_paired_patients
+mimic,hospital,14890,14890,14890,0,0,10848,True,mimic_test,main20k_real,big50m_real,big50m_real_minus_main20k_real,14890,14890,0,0,14890,10848
+mimic,hospital,14890,14890,14890,0,0,10848,True,mimic_test,big50m_real,big50m_full_real,big50m_full_real_minus_big50m_real,14890,14890,0,0,14890,10848
+mimic,hospital,14890,14890,14890,0,0,10848,True,mimic_test,big50m_full_real,big50m_full_common8_mask,big50m_full_common8_mask_minus_big50m_full_real,14890,14890,0,0,14890,10848
+mimic,hospital,14890,14890,14890,0,0,10848,True,mimic_test,main20k_common8_mask,big50m_full_common8_mask,big50m_full_common8_mask_minus_main20k_common8_mask,14890,14890,0,0,14890,10848
+eicu,hospital,130544,130544,130544,0,0,102957,True,eicu_all_eligible,main20k_real,big50m_real,big50m_real_minus_main20k_real,130544,130544,0,0,130544,102957
+eicu,hospital,130544,130544,130544,0,0,102957,True,eicu_all_eligible,big50m_real,big50m_full_real,big50m_full_real_minus_big50m_real,130544,130544,0,0,130544,102957
+eicu,hospital,130544,130508,130508,36,0,102932,True,eicu_all_eligible,big50m_full_real,big50m_full_common8_mask,big50m_full_common8_mask_minus_big50m_full_real,130544,130508,36,0,130508,102932
+eicu,hospital,130508,130508,130508,0,0,102932,True,eicu_all_eligible,main20k_common8_mask,big50m_full_common8_mask,big50m_full_common8_mask_minus_main20k_common8_mask,130508,130508,0,0,130508,102932
+eicu,hospital,25962,25962,25962,0,0,20544,True,eicu_native_split2_sensitivity,main20k_real,big50m_real,big50m_real_minus_main20k_real,25962,25962,0,0,25962,20544
+eicu,hospital,25962,25962,25962,0,0,20544,True,eicu_native_split2_sensitivity,big50m_real,big50m_full_real,big50m_full_real_minus_big50m_real,25962,25962,0,0,25962,20544
+eicu,hospital,25962,25959,25959,3,0,20541,True,eicu_native_split2_sensitivity,big50m_full_real,big50m_full_common8_mask,big50m_full_common8_mask_minus_big50m_full_real,25962,25959,3,0,25959,20541
+eicu,hospital,25959,25959,25959,0,0,20541,True,eicu_native_split2_sensitivity,main20k_common8_mask,big50m_full_common8_mask,big50m_full_common8_mask_minus_main20k_common8_mask,25959,25959,0,0,25959,20541

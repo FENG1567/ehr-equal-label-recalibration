@@ -1,0 +1,3 @@
+scope,n_sites,slope_min,slope_q25,slope_median,slope_q75,slope_max,source_sha256,interpretation
+all_finite_points,193,-0.6099240900161145,0.38667441206873426,0.5228703502568939,0.6310179450207989,2.2676306924529994,b055744e6674b27c287bae7b90a2926e11a07e519442b83bbac1b5d8d0a393f4,descriptive hospital point-estimate distribution; not an across-hospital confidence interval; original inputs
+stable_ge10_events_and_nonevents,147,-0.059565148311431296,0.443769011188583,0.5335715412950206,0.6448829132131301,1.2159836665001904,b055744e6674b27c287bae7b90a2926e11a07e519442b83bbac1b5d8d0a393f4,descriptive hospital point-estimate distribution; not an across-hospital confidence interval; original inputs

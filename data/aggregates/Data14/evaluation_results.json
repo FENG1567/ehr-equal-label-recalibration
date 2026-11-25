@@ -1,0 +1,1252 @@
+{
+  "arms": {
+    "constant_constant": "matched constant-trained encoder with constant-one bins",
+    "numeric_constant": "same numeric-pretrained encoder with constant-one bins",
+    "numeric_real": "numeric-pretrained encoder with observed bins",
+    "random_real": "same-seed random initial encoder with observed bins"
+  },
+  "created_utc": "2026-11-23T15:34:27Z",
+  "cross_seed_ranges": {
+    "eicu": {
+      "numeric_real_vs_constant_trained_constant": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.00047203016583807766,
+          "min": -0.011704737320542336
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.018406808376312256,
+          "min": -0.04893382266163826
+        }
+      },
+      "numeric_real_vs_numeric_constant_input": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.0017757366877049208,
+          "min": -0.0027918906416743994
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.0164566021412611,
+          "min": -0.02278764545917511
+        }
+      },
+      "numeric_real_vs_random_initial_real": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": 0.0011839213548228145,
+          "min": -0.007174883037805557
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.004982976708561182,
+          "min": -0.02197221666574478
+        }
+      }
+    },
+    "mimic": {
+      "numeric_real_vs_constant_trained_constant": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.010139357298612595,
+          "min": -0.011929495260119438
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.038758084177970886,
+          "min": -0.04731838032603264
+        }
+      },
+      "numeric_real_vs_numeric_constant_input": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.010091708041727543,
+          "min": -0.011148239485919476
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.03862518072128296,
+          "min": -0.04361489415168762
+        }
+      },
+      "numeric_real_vs_random_initial_real": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.000646524946205318,
+          "min": -0.0018426822498440742
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.003397562075406313,
+          "min": -0.007906073704361916
+        }
+      }
+    },
+    "nwicu": {
+      "numeric_real_vs_constant_trained_constant": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.013757596723735332,
+          "min": -0.018150130286812782
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.04563535749912262,
+          "min": -0.0541854165494442
+        }
+      },
+      "numeric_real_vs_numeric_constant_input": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.009902916848659515,
+          "min": -0.03928573429584503
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": -0.03926762193441391,
+          "min": -0.10940614342689514
+        }
+      },
+      "numeric_real_vs_random_initial_real": {
+        "brier": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": 0.0046480693854391575,
+          "min": -0.0005075149238109589
+        },
+        "logloss": {
+          "interpretation": "descriptive range across three seeds, not a confidence interval",
+          "max": 0.014051709324121475,
+          "min": -0.014586184173822403
+        }
+      }
+    }
+  },
+  "historical_scope": "New clean source-only sensitivity; no historical checkpoint membership or historical bins are certified.",
+  "label_isolation": "Labels were opened only after bins/tokens/training were frozen; target labels were opened only after source C/readouts were frozen.",
+  "metrics_by_dataset_seed_arm": {
+    "eicu": {
+      "20261123": {
+        "constant_constant": {
+          "auroc": 0.6089138555283631,
+          "average_precision": 0.14730011607776103,
+          "brier": 0.09538298051057026,
+          "calibration_intercept": -1.7185516331995647,
+          "calibration_slope": 0.2663556683195754,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.349328490280628,
+          "mean_predicted": 0.12790820202268177,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "numeric_constant": {
+          "auroc": 0.6155323337407901,
+          "average_precision": 0.15175295918200568,
+          "brier": 0.09090295894527144,
+          "calibration_intercept": -1.537215858001843,
+          "calibration_slope": 0.34354300093287904,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.32889511996829207,
+          "mean_predicted": 0.11800188649308005,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "numeric_real": {
+          "auroc": 0.6781444749155849,
+          "average_precision": 0.20539708197627554,
+          "brier": 0.08811106816149555,
+          "calibration_intercept": -1.245955356514137,
+          "calibration_slope": 0.5212414028376482,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.3124385174112381,
+          "mean_predicted": 0.1353180338349271,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "random_real": {
+          "auroc": 0.6737694024638579,
+          "average_precision": 0.19166501348966314,
+          "brier": 0.09528595133787292,
+          "calibration_intercept": -1.4389716780458468,
+          "calibration_slope": 0.40280641598853584,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.3344107327815712,
+          "mean_predicted": 0.13869783239977485,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        }
+      },
+      "20261124": {
+        "constant_constant": {
+          "auroc": 0.6214608481017627,
+          "average_precision": 0.1529946605685616,
+          "brier": 0.09298875778944146,
+          "calibration_intercept": -1.5926657169302953,
+          "calibration_slope": 0.29554624114375594,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.34032594872138555,
+          "mean_predicted": 0.1095284671276323,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "numeric_constant": {
+          "auroc": 0.6266040875633276,
+          "average_precision": 0.15984375082655822,
+          "brier": 0.09429246448000148,
+          "calibration_intercept": -1.576987792129619,
+          "calibration_slope": 0.3018254826129573,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.34470678559715245,
+          "mean_predicted": 0.11036168996963373,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "numeric_real": {
+          "auroc": 0.6938500773901762,
+          "average_precision": 0.2139236666544197,
+          "brier": 0.09251672770209197,
+          "calibration_intercept": -1.3374149170344134,
+          "calibration_slope": 0.48566246709409067,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.32191904057355913,
+          "mean_predicted": 0.14493732706946705,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "random_real": {
+          "auroc": 0.6700393625764348,
+          "average_precision": 0.19604128294687076,
+          "brier": 0.0913328063609587,
+          "calibration_intercept": -1.3809894619965861,
+          "calibration_slope": 0.4133812117397029,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.32690201737176194,
+          "mean_predicted": 0.12847348202078884,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        }
+      },
+      "20261125": {
+        "constant_constant": {
+          "auroc": 0.5863798997068974,
+          "average_precision": 0.13312346331061117,
+          "brier": 0.10261646521945579,
+          "calibration_intercept": -1.8782913336144855,
+          "calibration_slope": 0.20925595894868712,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.37192508111462114,
+          "mean_predicted": 0.15150379759453372,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "numeric_constant": {
+          "auroc": 0.6174584667795491,
+          "average_precision": 0.15319114015646573,
+          "brier": 0.093201216472344,
+          "calibration_intercept": -1.6021860391744218,
+          "calibration_slope": 0.2826220324680605,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.3439360307682015,
+          "mean_predicted": 0.10523308085915929,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "numeric_real": {
+          "auroc": 0.6647659273627651,
+          "average_precision": 0.18340809216466308,
+          "brier": 0.09091172823767846,
+          "calibration_intercept": -1.3614548889205131,
+          "calibration_slope": 0.42587273523283375,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.3229911583933938,
+          "mean_predicted": 0.12885961220301434,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        },
+        "random_real": {
+          "auroc": 0.6839629022222184,
+          "average_precision": 0.19717490596817006,
+          "brier": 0.09313680376598514,
+          "calibration_intercept": -1.3797296890852302,
+          "calibration_slope": 0.3933944822660861,
+          "calibration_status": "fit",
+          "events": 11943,
+          "logloss": 0.33153090904392124,
+          "mean_predicted": 0.12537291278218676,
+          "n_patients": 102957,
+          "n_stays": 130544,
+          "prevalence": 0.0914863953915921
+        }
+      }
+    },
+    "mimic": {
+      "20261123": {
+        "constant_constant": {
+          "auroc": 0.7032514160186581,
+          "average_precision": 0.23389787191911332,
+          "brier": 0.0943923177519495,
+          "calibration_intercept": -0.15354343082335284,
+          "calibration_slope": 0.9038515738804372,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.3260088531455372,
+          "mean_predicted": 0.10974614940858286,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "numeric_constant": {
+          "auroc": 0.7039269035074345,
+          "average_precision": 0.23213471017011905,
+          "brier": 0.09434466784924102,
+          "calibration_intercept": -0.05344656809513407,
+          "calibration_slope": 0.9591248532838496,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.32587595234261246,
+          "mean_predicted": 0.11020074631271995,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "numeric_real": {
+          "auroc": 0.8018596461506317,
+          "average_precision": 0.3772585907781013,
+          "brier": 0.08425295874422296,
+          "calibration_intercept": 0.023919537970139366,
+          "calibration_slope": 0.9960174457433097,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.2872507704864272,
+          "mean_predicted": 0.10995837183013406,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "random_real": {
+          "auroc": 0.7935823267318346,
+          "average_precision": 0.37178687330081833,
+          "brier": 0.08489948375365017,
+          "calibration_intercept": -0.029935014770281647,
+          "calibration_slope": 0.9626909266739578,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.29064833314867194,
+          "mean_predicted": 0.10965600176419608,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        }
+      },
+      "20261124": {
+        "constant_constant": {
+          "auroc": 0.6990084763469825,
+          "average_precision": 0.23253203339690803,
+          "brier": 0.09453807741582172,
+          "calibration_intercept": -0.16308391420619622,
+          "calibration_slope": 0.8999467506514035,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.326986053151929,
+          "mean_predicted": 0.10988664702431639,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "numeric_constant": {
+          "auroc": 0.7133230329623167,
+          "average_precision": 0.2447024736281998,
+          "brier": 0.09375682043033738,
+          "calibration_intercept": -0.16786499877838326,
+          "calibration_slope": 0.8975339818296629,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.32328256578642944,
+          "mean_predicted": 0.11014428714726839,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "numeric_real": {
+          "auroc": 0.8192070747285142,
+          "average_precision": 0.3975776660280548,
+          "brier": 0.08260858163130753,
+          "calibration_intercept": -0.049392113707158576,
+          "calibration_slope": 0.960621379210438,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.2796676718430186,
+          "mean_predicted": 0.11127219832648665,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "random_real": {
+          "auroc": 0.8027586697612957,
+          "average_precision": 0.37416391389942094,
+          "brier": 0.08445126383417334,
+          "calibration_intercept": -0.052727029889252396,
+          "calibration_slope": 0.9526893578527049,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.2875737453235866,
+          "mean_predicted": 0.11024230806075838,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        }
+      },
+      "20261125": {
+        "constant_constant": {
+          "auroc": 0.7119451098649772,
+          "average_precision": 0.2443312300056383,
+          "brier": 0.0937494721338071,
+          "calibration_intercept": -0.1535936219542809,
+          "calibration_slope": 0.9067425668332443,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.3232962712057746,
+          "mean_predicted": 0.11045580088042718,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "numeric_constant": {
+          "auroc": 0.7118082685324794,
+          "average_precision": 0.23863605204553923,
+          "brier": 0.09402173573304652,
+          "calibration_intercept": -0.10648854894527529,
+          "calibration_slope": 0.928456642216414,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.3240815205870617,
+          "mean_predicted": 0.10978220874647553,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "numeric_real": {
+          "auroc": 0.8123758280109102,
+          "average_precision": 0.39683794373960335,
+          "brier": 0.08288598158749566,
+          "calibration_intercept": -0.026510858753333352,
+          "calibration_slope": 0.9709621868712275,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.2818442023013028,
+          "mean_predicted": 0.11074127394026909,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        },
+        "random_real": {
+          "auroc": 0.8025920115653289,
+          "average_precision": 0.37689992361315544,
+          "brier": 0.0843252526515085,
+          "calibration_intercept": -0.033002830032646854,
+          "calibration_slope": 0.9642991884281332,
+          "calibration_status": "fit",
+          "events": 1675,
+          "logloss": 0.28736172958286993,
+          "mean_predicted": 0.1102283109212861,
+          "n_patients": 10848,
+          "n_stays": 14890,
+          "prevalence": 0.11249160510409671
+        }
+      }
+    },
+    "nwicu": {
+      "20261123": {
+        "constant_constant": {
+          "auroc": 0.5976769349538446,
+          "average_precision": 0.1496913741101396,
+          "brier": 0.11097907030344467,
+          "calibration_intercept": -1.5776567740679333,
+          "calibration_slope": 0.2255976762318079,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.3883548133033817,
+          "mean_predicted": 0.12791622785806744,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "numeric_constant": {
+          "auroc": 0.5652459651006227,
+          "average_precision": 0.1361669086739276,
+          "brier": 0.10712439196474792,
+          "calibration_intercept": -1.570099950890191,
+          "calibration_slope": 0.20539630264522452,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.38108381794043056,
+          "mean_predicted": 0.10269343965775232,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "numeric_real": {
+          "auroc": 0.6973885589696434,
+          "average_precision": 0.2244931776734962,
+          "brier": 0.09722147514963438,
+          "calibration_intercept": -0.8849181740074121,
+          "calibration_slope": 0.530385829667184,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.3418161990240006,
+          "mean_predicted": 0.11369302743182678,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "random_real": {
+          "auroc": 0.6835023576678353,
+          "average_precision": 0.22898410702710467,
+          "brier": 0.09772899009353708,
+          "calibration_intercept": -1.029897925456489,
+          "calibration_slope": 0.42331072736129943,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.35640238389759543,
+          "mean_predicted": 0.10729019608344566,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        }
+      },
+      "20261124": {
+        "constant_constant": {
+          "auroc": 0.5910401939153569,
+          "average_precision": 0.142760452176532,
+          "brier": 0.11846328750961634,
+          "calibration_intercept": -1.6503371572046248,
+          "calibration_slope": 0.17561039578801016,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.4169880970954465,
+          "mean_predicted": 0.11744091463754333,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "numeric_constant": {
+          "auroc": 0.5735995933026782,
+          "average_precision": 0.13899352864061087,
+          "brier": 0.14176970922841092,
+          "calibration_intercept": -1.8209834705291037,
+          "calibration_slope": 0.15408260214155428,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.472208831311036,
+          "mean_predicted": 0.195611366178688,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "numeric_real": {
+          "auroc": 0.6989755432782191,
+          "average_precision": 0.22217558217372851,
+          "brier": 0.1024839752411329,
+          "calibration_intercept": -1.1859039499871822,
+          "calibration_slope": 0.4095294972516645,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.36280268555131656,
+          "mean_predicted": 0.1333051706471722,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "random_real": {
+          "auroc": 0.7161831971751932,
+          "average_precision": 0.22823031871561414,
+          "brier": 0.1006314425936898,
+          "calibration_intercept": -0.9796172586297983,
+          "calibration_slope": 0.4757504998051052,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.34875097545686307,
+          "mean_predicted": 0.11607229759372824,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        }
+      },
+      "20261125": {
+        "constant_constant": {
+          "auroc": 0.6045496351682811,
+          "average_precision": 0.14969165824633504,
+          "brier": 0.11975164841682945,
+          "calibration_intercept": -1.6448567238051532,
+          "calibration_slope": 0.19542756315077395,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.4150272624674305,
+          "mean_predicted": 0.13461658121918915,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "numeric_constant": {
+          "auroc": 0.5862458001494383,
+          "average_precision": 0.14093810956155833,
+          "brier": 0.13761845834527456,
+          "calibration_intercept": -1.7781376071655672,
+          "calibration_slope": 0.16019384804727937,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.45825402939893983,
+          "mean_predicted": 0.17165951856112774,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "numeric_real": {
+          "auroc": 0.6886921684843195,
+          "average_precision": 0.21027856510807433,
+          "brier": 0.1016015192517555,
+          "calibration_intercept": -1.1694660308076004,
+          "calibration_slope": 0.3559084256411763,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.36939322524250834,
+          "mean_predicted": 0.10764931306148426,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        },
+        "random_real": {
+          "auroc": 0.6885270147815096,
+          "average_precision": 0.23022375289453578,
+          "brier": 0.09695344981236569,
+          "calibration_intercept": -1.0154727136486996,
+          "calibration_slope": 0.37691420613665133,
+          "calibration_status": "fit",
+          "events": 2226,
+          "logloss": 0.36644202797889086,
+          "mean_predicted": 0.0899754938048999,
+          "n_patients": 17385,
+          "n_stays": 19972,
+          "prevalence": 0.11145603845383537
+        }
+      }
+    }
+  },
+  "paired_patient_cluster_bootstrap": {
+    "conditional_on": "each frozen seed/model",
+    "contrasts": {
+      "numeric_real_vs_constant_trained_constant": [
+        "numeric_real",
+        "constant_constant"
+      ],
+      "numeric_real_vs_numeric_constant_input": [
+        "numeric_real",
+        "numeric_constant"
+      ],
+      "numeric_real_vs_random_initial_real": [
+        "numeric_real",
+        "random_real"
+      ]
+    },
+    "delta": "left minus right; negative Brier/logloss favors left",
+    "replicates": 1000,
+    "results": {
+      "eicu": {
+        "20261123": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.007271912414580584,
+              "patient_cluster_bootstrap_95ci": [
+                -0.007963036202154805,
+                -0.006569142680785406
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.036889877170324326,
+              "patient_cluster_bootstrap_95ci": [
+                -0.039255612694592726,
+                -0.03465807563684896
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0027918906416743994,
+              "patient_cluster_bootstrap_95ci": [
+                -0.003423912476373936,
+                -0.002136698073763667
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0164566021412611,
+              "patient_cluster_bootstrap_95ci": [
+                -0.018514304831089682,
+                -0.014445919645147538
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.007174883037805557,
+              "patient_cluster_bootstrap_95ci": [
+                -0.007618475157746152,
+                -0.006708811705628118
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.02197221666574478,
+              "patient_cluster_bootstrap_95ci": [
+                -0.023393091111306944,
+                -0.02059104607444366
+              ]
+            }
+          }
+        },
+        "20261124": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.00047203016583807766,
+              "patient_cluster_bootstrap_95ci": [
+                -0.001333923244033702,
+                0.0003765755270311078
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.018406808376312256,
+              "patient_cluster_bootstrap_95ci": [
+                -0.021263416811212035,
+                -0.015501611177159392
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0017757366877049208,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0026771796851294515,
+                -0.0008954826164358602
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.02278764545917511,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0258504874573033,
+                -0.01977645632719035
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": 0.0011839213548228145,
+              "patient_cluster_bootstrap_95ci": [
+                0.000658280540215967,
+                0.0017184538808156173
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.004982976708561182,
+              "patient_cluster_bootstrap_95ci": [
+                -0.006518357115105605,
+                -0.003181992895442224
+              ]
+            }
+          }
+        },
+        "20261125": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.011704737320542336,
+              "patient_cluster_bootstrap_95ci": [
+                -0.012617887097661677,
+                -0.010829746535409832
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.04893382266163826,
+              "patient_cluster_bootstrap_95ci": [
+                -0.051929114262679536,
+                -0.045856522294984804
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.002289488445967436,
+              "patient_cluster_bootstrap_95ci": [
+                -0.003196983793505612,
+                -0.0013666239721789714
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.02094477042555809,
+              "patient_cluster_bootstrap_95ci": [
+                -0.02412127813058501,
+                -0.0178480190678455
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0022250753827393055,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0028040710285708345,
+                -0.0016967423589838828
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.00853975024074316,
+              "patient_cluster_bootstrap_95ci": [
+                -0.010426974156314472,
+                -0.006861416762966911
+              ]
+            }
+          }
+        }
+      },
+      "mimic": {
+        "20261123": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.010139357298612595,
+              "patient_cluster_bootstrap_95ci": [
+                -0.01156612894739477,
+                -0.008559166111528651
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.038758084177970886,
+              "patient_cluster_bootstrap_95ci": [
+                -0.043699528672248626,
+                -0.03385740467388803
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.010091708041727543,
+              "patient_cluster_bootstrap_95ci": [
+                -0.011536551431243432,
+                -0.008592097965335966
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.03862518072128296,
+              "patient_cluster_bootstrap_95ci": [
+                -0.043494038985493325,
+                -0.034015088094160144
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.000646524946205318,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0015363350148953105,
+                0.0003019060321461461
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.003397562075406313,
+              "patient_cluster_bootstrap_95ci": [
+                -0.006242374973752893,
+                -0.00038887211877377273
+              ]
+            }
+          }
+        },
+        "20261124": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.011929495260119438,
+              "patient_cluster_bootstrap_95ci": [
+                -0.013518824291322173,
+                -0.010256511277604642
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.04731838032603264,
+              "patient_cluster_bootstrap_95ci": [
+                -0.052238612468408385,
+                -0.04186941638670339
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.011148239485919476,
+              "patient_cluster_bootstrap_95ci": [
+                -0.012690950627169646,
+                -0.009526211464229778
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.04361489415168762,
+              "patient_cluster_bootstrap_95ci": [
+                -0.04858217096378133,
+                -0.03800865630301422
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0018426822498440742,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0028116932973853547,
+                -0.0008935015076111438
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.007906073704361916,
+              "patient_cluster_bootstrap_95ci": [
+                -0.011064226365628581,
+                -0.004816688011484391
+              ]
+            }
+          }
+        },
+        "20261125": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.010863491334021091,
+              "patient_cluster_bootstrap_95ci": [
+                -0.012481547303497018,
+                -0.009318291092889692
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0414520688354969,
+              "patient_cluster_bootstrap_95ci": [
+                -0.04654197703379233,
+                -0.03640191574495353
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.011135753244161606,
+              "patient_cluster_bootstrap_95ci": [
+                -0.012820812734012048,
+                -0.009526009980887151
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.04223731532692909,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0472279282922601,
+                -0.03726145968165426
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0014392711455002427,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0023351747030828226,
+                -0.000503948035798082
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.005517526995390654,
+              "patient_cluster_bootstrap_95ci": [
+                -0.008477773619469558,
+                -0.002602773613988965
+              ]
+            }
+          }
+        }
+      },
+      "nwicu": {
+        "20261123": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.013757596723735332,
+              "patient_cluster_bootstrap_95ci": [
+                -0.015502097398655844,
+                -0.011992079752141175
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.046538613736629486,
+              "patient_cluster_bootstrap_95ci": [
+                -0.05314508749339699,
+                -0.03977593694993272
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.009902916848659515,
+              "patient_cluster_bootstrap_95ci": [
+                -0.01145326921979147,
+                -0.008399005777671205
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.03926762193441391,
+              "patient_cluster_bootstrap_95ci": [
+                -0.04507532742931006,
+                -0.03303312477568804
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0005075149238109589,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0018727310632282803,
+                0.0009132837891519377
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.014586184173822403,
+              "patient_cluster_bootstrap_95ci": [
+                -0.020501641489070854,
+                -0.00884166385869623
+              ]
+            }
+          }
+        },
+        "20261124": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.015979312360286713,
+              "patient_cluster_bootstrap_95ci": [
+                -0.018618439136405967,
+                -0.013348643650288773
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.0541854165494442,
+              "patient_cluster_bootstrap_95ci": [
+                -0.06373947141462077,
+                -0.044561079341365904
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.03928573429584503,
+              "patient_cluster_bootstrap_95ci": [
+                -0.04210463319428961,
+                -0.036537542304405604
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.10940614342689514,
+              "patient_cluster_bootstrap_95ci": [
+                -0.1187293333722618,
+                -0.09977825426997937
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": 0.0018525324994698167,
+              "patient_cluster_bootstrap_95ci": [
+                5.1782613831923015e-05,
+                0.0037377266923567525
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": 0.014051709324121475,
+              "patient_cluster_bootstrap_95ci": [
+                0.006815471743574718,
+                0.021251233158551496
+              ]
+            }
+          }
+        },
+        "20261125": {
+          "numeric_real_vs_constant_trained_constant": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.018150130286812782,
+              "patient_cluster_bootstrap_95ci": [
+                -0.020391714311473772,
+                -0.015691087762291913
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.04563535749912262,
+              "patient_cluster_bootstrap_95ci": [
+                -0.054690184734839324,
+                -0.036321446114783176
+              ]
+            }
+          },
+          "numeric_real_vs_numeric_constant_input": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.03601694107055664,
+              "patient_cluster_bootstrap_95ci": [
+                -0.0385696628941113,
+                -0.0332142609304268
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": -0.08886212110519409,
+              "patient_cluster_bootstrap_95ci": [
+                -0.09828595942610312,
+                -0.07832049224493155
+              ]
+            }
+          },
+          "numeric_real_vs_random_initial_real": {
+            "brier": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": 0.0046480693854391575,
+              "patient_cluster_bootstrap_95ci": [
+                0.003206519084442763,
+                0.006114471296173969
+              ]
+            },
+            "logloss": {
+              "bootstrap_replicates": 1000,
+              "left_minus_right": 0.0029498764779418707,
+              "patient_cluster_bootstrap_95ci": [
+                -0.004255911664616409,
+                0.009540366369562932
+              ]
+            }
+          }
+        }
+      }
+    },
+    "unit": "patient subject"
+  },
+  "preparation_manifest_sha256": "61dc8b2cfc09d08a26dcbbf506d302d2307ea8965dd641479e288fed42a8d59f",
+  "private_predictions": {
+    "directory": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/evaluation/predictions",
+    "files": {
+      "predictions/eicu_seed_20261123_constant_constant.npz": "82e10477d7950a19c4f0446c6794df99d59a46158ad220e2c0389d6c278212ac",
+      "predictions/eicu_seed_20261123_numeric_constant.npz": "6afb96627e8cb55036b322feaa8b6350f8baeaa5728eb199c004f2a2d90f3205",
+      "predictions/eicu_seed_20261123_numeric_real.npz": "f57e8796de6f342101f9ce2aab9eb2f15f749710784d9979ed2922f0d57a4d9f",
+      "predictions/eicu_seed_20261123_random_real.npz": "44e4f7b01ceb0171038942da8a8384e788ee1253fd0809c1a1853a594bb2204f",
+      "predictions/eicu_seed_20261124_constant_constant.npz": "fe0538861454536a487de463c0de7b0d22f21ded59218275fab45a5e69e1534e",
+      "predictions/eicu_seed_20261124_numeric_constant.npz": "1fed41a9f8472430b5fffc33b3e06bded355c0a02648b84fa174003482bd3d08",
+      "predictions/eicu_seed_20261124_numeric_real.npz": "79e3af611fb73aef76914151cfa683b4761c0b317255f814a49130da4d3b014c",
+      "predictions/eicu_seed_20261124_random_real.npz": "001358b928169a392c50b1922a189992bea17ba28e10517fa03545716e6d7497",
+      "predictions/eicu_seed_20261125_constant_constant.npz": "fdb4998c98d1d41e224fd512e0aac99e3aac1e3f4c965b302faca838f4b9b465",
+      "predictions/eicu_seed_20261125_numeric_constant.npz": "050d2ff5214ddf807cf667131007ade4f29433556139b323c1aaf5c59e44396c",
+      "predictions/eicu_seed_20261125_numeric_real.npz": "08f36b5ba4180f396636fa0d0893dde07baf35db9c9f832ed77c814ff9c25a77",
+      "predictions/eicu_seed_20261125_random_real.npz": "ac005fe57f3b09a213e92e0f8605e91f0c3959dc3aaebf8ac16285a2d34e8df9",
+      "predictions/mimic_split2_seed_20261123_constant_constant.npz": "5e73d67fe704f09b63e8301cc1da3b22d9bfbdb6b7736a91536bb73714d495a5",
+      "predictions/mimic_split2_seed_20261123_numeric_constant.npz": "ddd9e94617967e11b54cf77cd288a71dfc776686dfee266e5df75830fb45299f",
+      "predictions/mimic_split2_seed_20261123_numeric_real.npz": "726bd4feff5a18a2efa9e9707e16354f147fdfb746d41773d7d358b0e5bf3dc3",
+      "predictions/mimic_split2_seed_20261123_random_real.npz": "09dd28ced28ae38ea6d19534de00583cca13c55e1c65bf6da1e16c7c3687b367",
+      "predictions/mimic_split2_seed_20261124_constant_constant.npz": "e2f7770a42ef8a15e7e19f322871a87524f4665901fc5a9bf68cb78c5350b632",
+      "predictions/mimic_split2_seed_20261124_numeric_constant.npz": "7cd4991599ac9672d6813f56154b929b2fd4a5f4905b10a15a752b1392bcf9ef",
+      "predictions/mimic_split2_seed_20261124_numeric_real.npz": "2b045ba3ef551c7be3911e6018dc2e1884e11c8b4949b0bab5b837bd79fcc965",
+      "predictions/mimic_split2_seed_20261124_random_real.npz": "015fbd5f9c62eabf31f497635b83423377834fab730c7090337ac72b512da542",
+      "predictions/mimic_split2_seed_20261125_constant_constant.npz": "ba2a06ae2eb270f09311e840f53462763d4c6e4a5756ff64b23184b03d022f0e",
+      "predictions/mimic_split2_seed_20261125_numeric_constant.npz": "e4bdd6faaf27a5743d3395212b41eb40ed779964e2e25fb0ef49a2954ed28cca",
+      "predictions/mimic_split2_seed_20261125_numeric_real.npz": "3798b35a3dfef6a8d29c15b5e66ed0a2139f53b814989e34877a88071e3312d9",
+      "predictions/mimic_split2_seed_20261125_random_real.npz": "a7bb9927e27dc7a86e48d056afaead8ff50c6100c4561d96d06701e9ab4159b0",
+      "predictions/nwicu_seed_20261123_constant_constant.npz": "52dee937f8629f94f793b289f0b492c2bd42c6191cd44dd91ae6e458bafb2f83",
+      "predictions/nwicu_seed_20261123_numeric_constant.npz": "352043fdf6bc6d4a417e5fb0ad65a991e0f950d28423ce21dd2aa68b61103b2b",
+      "predictions/nwicu_seed_20261123_numeric_real.npz": "d0a4aafb0a2e8e1a0f72ff4b92cba4e1c7eb209760115ed0d48d4bb62167234a",
+      "predictions/nwicu_seed_20261123_random_real.npz": "d322f3ddbe6f9db3843460646a27ea1c726b8011ce05da744758f743b2f1ed63",
+      "predictions/nwicu_seed_20261124_constant_constant.npz": "2a903b4e7e23f8231bb034c7fc303cc6047dcdc361636c5357455603fe11be44",
+      "predictions/nwicu_seed_20261124_numeric_constant.npz": "5bef307f583ad37b147a4a7505b71c34d0853f18f4adfe1e0fa61071523ae730",
+      "predictions/nwicu_seed_20261124_numeric_real.npz": "b0e6b9b3f7f17c2f525fd76861dcf7e4d45938b464cf44f416fad6dbf322139d",
+      "predictions/nwicu_seed_20261124_random_real.npz": "4f263986066f02d9af8aa9ffb2abcd6dd02e3e27672b1491cfe930047c7eab2c",
+      "predictions/nwicu_seed_20261125_constant_constant.npz": "0b39ec0b0b100cb1b075ca6e2ba57f9af5b00ae5f52eae99b82e7fe382ddac3e",
+      "predictions/nwicu_seed_20261125_numeric_constant.npz": "1173e8e9adbfe46c3c97b50594e9b1e426a8396c1953d0b8fec7e1d338fbd808",
+      "predictions/nwicu_seed_20261125_numeric_real.npz": "5335c4388c82ab14a5637072ac129e7d35bf31b99256b50ec850582bf7c1e70e",
+      "predictions/nwicu_seed_20261125_random_real.npz": "4b6ba94d2a5bd458200652ae84918f3a679359e1810e70d952ce854e42247cfb"
+    },
+    "patient_keys_stay_server_private": true
+  },
+  "run_id": "20261123_192508_879635_unicode_20261123T132809Z",
+  "runtime": {
+    "cuda_version": "12.8",
+    "device_name": "NVIDIA RTX A5000",
+    "gpu_cap_bytes": 6442450944,
+    "host_cpu_quota_percent": 200,
+    "host_memory_declared_max_bytes": 12884901888,
+    "host_memory_max_bytes": 12884901888,
+    "peak_gpu_allocated_bytes": 247069184,
+    "threads": 2,
+    "torch_version": "2.11.0+cu128"
+  },
+  "schema": "v5_clean_pretraining_evaluation_v1",
+  "seed_averaged_predictions_used": false,
+  "source_C_rule": "fit scaler/logistic split0; select C by split1 Brier; ties smaller C; score split2 once; no split0+split1 refit",
+  "source_readout_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/evaluation/source_readouts.json",
+  "source_readout_manifest_sha256": "bde63c054e1ac98ce5334d47c868d0e82c9885f08fada2e116ab5d6548360ad8",
+  "status": "complete",
+  "training_manifest_sha256": "11c5bcc8629e374423073b3779f8a2e636ca6b466cf854fb90341778f30fa35e",
+  "zero_token_readout_policy": "Zero-token stays remain in the eligible roster with a zero mean-pooled vector; they contribute no pretraining loss positions."
+}

@@ -1,0 +1,187 @@
+scope,table,raw_discharge_location,n,hospital_expire_flag
+all_NWICU_admissions,discharge_location_values,HOME OR SELF CARE,27204,
+all_NWICU_admissions,discharge_location_values,HOME WITH HOME HEALTH CARE,12652,
+all_NWICU_admissions,discharge_location_values,SKILLED NURSING FACILITY OR SUBACUTE REHAB CARE,5879,
+all_NWICU_admissions,discharge_location_values,ACUTE INPATIENT REHABILITATION,3727,
+all_NWICU_admissions,discharge_location_values,EXPIRED,3130,
+all_NWICU_admissions,discharge_location_values,ACUTE CARE HOSPITAL,1709,
+all_NWICU_admissions,discharge_location_values,UNKNOWN,1633,
+all_NWICU_admissions,discharge_location_values,HOME WITH OUTPATIENT SERVICES,1318,
+all_NWICU_admissions,discharge_location_values,INPATIENT HOSPICE,890,
+all_NWICU_admissions,discharge_location_values,AGAINST MEDICAL ADVICE (AMA) OR ELOPEMENT,857,
+all_NWICU_admissions,discharge_location_values,HOME WITH HOSPICE,796,
+all_NWICU_admissions,discharge_location_values,LONG-TERM ACUTE CARE HOSPITAL (LTAC),581,
+all_NWICU_admissions,discharge_location_values,NURSING HOME (CUSTODIAL),530,
+all_NWICU_admissions,discharge_location_values,HOME WITH EQUIPMENT OR O2,341,
+all_NWICU_admissions,discharge_location_values,EXPIRED - HOSPICE,323,
+all_NWICU_admissions,discharge_location_values,SHELTER,80,
+all_NWICU_admissions,discharge_location_values,GROUP HOME,70,
+all_NWICU_admissions,discharge_location_values,SWING BED,22,
+all_NWICU_admissions,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO OTHER TYPE OF HEALTHCARE INSTITUTION,20,
+all_NWICU_admissions,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO SKILLED NURSING FACILITY,17,
+all_NWICU_admissions,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO NURSING HOME (CUSTODIAL),14,
+all_NWICU_admissions,discharge_location_values,CRITICAL ACCESS HOSPITAL,11,
+all_NWICU_admissions,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO ACUTE INPATIENT REHAB,10,
+all_NWICU_admissions,discharge_location_values,VA SYSTEM FACILITY,7,
+all_NWICU_admissions,discharge_location_values,LEFT AGAINST MEDICAL ADVICE,6,
+all_NWICU_admissions,discharge_location_values,GIFT OF HOPE / STILL A PATIENT,4,
+all_NWICU_admissions,discharge_location_values,PLANNED READMISSION - DISCHARGED TO HOME/SELF-CARE,3,
+all_NWICU_admissions,discharge_location_values,ED DISMISSED-NEVER ARRIVED,3,
+all_NWICU_admissions,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO LONG-TERM ACUTE CARE HOSPITAL (LTAC),2,
+all_NWICU_admissions,discharge_location_values,CANCER CENTER OR CHILDREN'S HOSPITAL,2,
+all_NWICU_admissions,discharge_location_values,ADMITTED TO L&D,1,
+all_NWICU_admissions,discharge_location_values,DESIGNATED DISASTER ALTERNATIVE CARE SITE,1,
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ACUTE CARE HOSPITAL,1709,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ACUTE INPATIENT REHABILITATION,3727,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ADMITTED TO L&D,1,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,AGAINST MEDICAL ADVICE (AMA) OR ELOPEMENT,857,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,CANCER CENTER OR CHILDREN'S HOSPITAL,2,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,CRITICAL ACCESS HOSPITAL,11,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,DESIGNATED DISASTER ALTERNATIVE CARE SITE,1,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ED DISMISSED-NEVER ARRIVED,3,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,EXPIRED,3025,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,EXPIRED - HOSPICE,323,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,GIFT OF HOPE / STILL A PATIENT,4,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,GROUP HOME,70,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME OR SELF CARE,27204,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH EQUIPMENT OR O2,341,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOME HEALTH CARE,12652,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOSPICE,796,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH OUTPATIENT SERVICES,1318,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,INPATIENT HOSPICE,890,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,LEFT AGAINST MEDICAL ADVICE,6,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,LONG-TERM ACUTE CARE HOSPITAL (LTAC),581,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,NURSING HOME (CUSTODIAL),530,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO ACUTE INPATIENT REHAB,10,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO LONG-TERM ACUTE CARE HOSPITAL (LTAC),2,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO NURSING HOME (CUSTODIAL),14,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO OTHER TYPE OF HEALTHCARE INSTITUTION,20,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO SKILLED NURSING FACILITY,17,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DISCHARGED TO HOME/SELF-CARE,3,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,SHELTER,80,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,SKILLED NURSING FACILITY OR SUBACUTE REHAB CARE,5879,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,SWING BED,22,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,UNKNOWN,1633,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,VA SYSTEM FACILITY,7,0
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ACUTE CARE HOSPITAL,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ACUTE INPATIENT REHABILITATION,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ADMITTED TO L&D,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,AGAINST MEDICAL ADVICE (AMA) OR ELOPEMENT,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,CANCER CENTER OR CHILDREN'S HOSPITAL,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,CRITICAL ACCESS HOSPITAL,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,DESIGNATED DISASTER ALTERNATIVE CARE SITE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,ED DISMISSED-NEVER ARRIVED,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,EXPIRED,105,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,EXPIRED - HOSPICE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,GIFT OF HOPE / STILL A PATIENT,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,GROUP HOME,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME OR SELF CARE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH EQUIPMENT OR O2,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOME HEALTH CARE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOSPICE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,HOME WITH OUTPATIENT SERVICES,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,INPATIENT HOSPICE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,LEFT AGAINST MEDICAL ADVICE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,LONG-TERM ACUTE CARE HOSPITAL (LTAC),0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,NURSING HOME (CUSTODIAL),0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO ACUTE INPATIENT REHAB,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO LONG-TERM ACUTE CARE HOSPITAL (LTAC),0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO NURSING HOME (CUSTODIAL),0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO OTHER TYPE OF HEALTHCARE INSTITUTION,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO SKILLED NURSING FACILITY,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DISCHARGED TO HOME/SELF-CARE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,SHELTER,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,SKILLED NURSING FACILITY OR SUBACUTE REHAB CARE,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,SWING BED,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,UNKNOWN,0,1
+all_NWICU_admissions,hospital_expire_flag_by_raw_discharge_location,VA SYSTEM FACILITY,0,1
+reviewed_sequence_stays,discharge_location_values,HOME OR SELF CARE,10142,
+reviewed_sequence_stays,discharge_location_values,HOME WITH HOME HEALTH CARE,5086,
+reviewed_sequence_stays,discharge_location_values,EXPIRED,2934,
+reviewed_sequence_stays,discharge_location_values,SKILLED NURSING FACILITY OR SUBACUTE REHAB CARE,2488,
+reviewed_sequence_stays,discharge_location_values,ACUTE INPATIENT REHABILITATION,2349,
+reviewed_sequence_stays,discharge_location_values,INPATIENT HOSPICE,688,
+reviewed_sequence_stays,discharge_location_values,ACUTE CARE HOSPITAL,645,
+reviewed_sequence_stays,discharge_location_values,UNKNOWN,546,
+reviewed_sequence_stays,discharge_location_values,HOME WITH HOSPICE,484,
+reviewed_sequence_stays,discharge_location_values,LONG-TERM ACUTE CARE HOSPITAL (LTAC),436,
+reviewed_sequence_stays,discharge_location_values,HOME WITH OUTPATIENT SERVICES,417,
+reviewed_sequence_stays,discharge_location_values,AGAINST MEDICAL ADVICE (AMA) OR ELOPEMENT,347,
+reviewed_sequence_stays,discharge_location_values,HOME WITH EQUIPMENT OR O2,190,
+reviewed_sequence_stays,discharge_location_values,NURSING HOME (CUSTODIAL),162,
+reviewed_sequence_stays,discharge_location_values,EXPIRED - HOSPICE,89,
+reviewed_sequence_stays,discharge_location_values,GROUP HOME,35,
+reviewed_sequence_stays,discharge_location_values,SHELTER,30,
+reviewed_sequence_stays,discharge_location_values,SWING BED,9,
+reviewed_sequence_stays,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO OTHER TYPE OF HEALTHCARE INSTITUTION,8,
+reviewed_sequence_stays,discharge_location_values,CRITICAL ACCESS HOSPITAL,6,
+reviewed_sequence_stays,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO SKILLED NURSING FACILITY,6,
+reviewed_sequence_stays,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO NURSING HOME (CUSTODIAL),4,
+reviewed_sequence_stays,discharge_location_values,VA SYSTEM FACILITY,4,
+reviewed_sequence_stays,discharge_location_values,GIFT OF HOPE / STILL A PATIENT,2,
+reviewed_sequence_stays,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO ACUTE INPATIENT REHAB,2,
+reviewed_sequence_stays,discharge_location_values,ED DISMISSED-NEVER ARRIVED,1,
+reviewed_sequence_stays,discharge_location_values,PLANNED READMISSION - DC/TRANSFERRED TO LONG-TERM ACUTE CARE HOSPITAL (LTAC),1,
+reviewed_sequence_stays,discharge_location_values,ADMITTED TO L&D,1,
+reviewed_sequence_stays,discharge_location_values,PLANNED READMISSION - DISCHARGED TO HOME/SELF-CARE,1,
+reviewed_sequence_stays,discharge_location_values,DESIGNATED DISASTER ALTERNATIVE CARE SITE,1,
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ACUTE CARE HOSPITAL,645,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ACUTE INPATIENT REHABILITATION,2349,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ADMITTED TO L&D,1,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,AGAINST MEDICAL ADVICE (AMA) OR ELOPEMENT,347,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,CRITICAL ACCESS HOSPITAL,6,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,DESIGNATED DISASTER ALTERNATIVE CARE SITE,1,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ED DISMISSED-NEVER ARRIVED,1,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,EXPIRED,2834,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,EXPIRED - HOSPICE,89,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,GIFT OF HOPE / STILL A PATIENT,2,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,GROUP HOME,35,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME OR SELF CARE,10142,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH EQUIPMENT OR O2,190,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOME HEALTH CARE,5086,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOSPICE,484,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH OUTPATIENT SERVICES,417,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,INPATIENT HOSPICE,688,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,LONG-TERM ACUTE CARE HOSPITAL (LTAC),436,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,NURSING HOME (CUSTODIAL),162,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO ACUTE INPATIENT REHAB,2,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO LONG-TERM ACUTE CARE HOSPITAL (LTAC),1,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO NURSING HOME (CUSTODIAL),4,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO OTHER TYPE OF HEALTHCARE INSTITUTION,8,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO SKILLED NURSING FACILITY,6,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DISCHARGED TO HOME/SELF-CARE,1,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,SHELTER,30,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,SKILLED NURSING FACILITY OR SUBACUTE REHAB CARE,2488,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,SWING BED,9,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,UNKNOWN,546,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,VA SYSTEM FACILITY,4,0
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ACUTE CARE HOSPITAL,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ACUTE INPATIENT REHABILITATION,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ADMITTED TO L&D,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,AGAINST MEDICAL ADVICE (AMA) OR ELOPEMENT,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,CRITICAL ACCESS HOSPITAL,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,DESIGNATED DISASTER ALTERNATIVE CARE SITE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,ED DISMISSED-NEVER ARRIVED,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,EXPIRED,100,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,EXPIRED - HOSPICE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,GIFT OF HOPE / STILL A PATIENT,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,GROUP HOME,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME OR SELF CARE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH EQUIPMENT OR O2,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOME HEALTH CARE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH HOSPICE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,HOME WITH OUTPATIENT SERVICES,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,INPATIENT HOSPICE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,LONG-TERM ACUTE CARE HOSPITAL (LTAC),0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,NURSING HOME (CUSTODIAL),0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO ACUTE INPATIENT REHAB,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO LONG-TERM ACUTE CARE HOSPITAL (LTAC),0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO NURSING HOME (CUSTODIAL),0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO OTHER TYPE OF HEALTHCARE INSTITUTION,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DC/TRANSFERRED TO SKILLED NURSING FACILITY,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,PLANNED READMISSION - DISCHARGED TO HOME/SELF-CARE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,SHELTER,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,SKILLED NURSING FACILITY OR SUBACUTE REHAB CARE,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,SWING BED,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,UNKNOWN,0,1
+reviewed_sequence_stays,hospital_expire_flag_by_raw_discharge_location,VA SYSTEM FACILITY,0,1

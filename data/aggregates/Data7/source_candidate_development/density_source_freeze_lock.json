@@ -1,0 +1,179 @@
+{
+  "base_seed": 20261122,
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "candidate_recipe": "real plus three deterministic outcome-independent 50% token-retention views; per-stay total training weight one",
+  "claim_limit": "This source-only experiment tests a fixed readout augmentation; it does not establish novelty, benefit, or clinical usefulness.",
+  "consumer_fit_runtime": {
+    "numpy": "1.26.4",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "scikit_learn": "1.8.0"
+  },
+  "data_scope": "MIMIC source only; split 0 train, split 1 tune, split 2 report",
+  "density_augmented_selected_C": 0.1,
+  "density_view_encoder_consumer_runtime": {
+    "device": "NVIDIA RTX A5000",
+    "device_capability": [
+      8,
+      6
+    ],
+    "elapsed_seconds": 52.757,
+    "encoding_dtype": "float32",
+    "input_rows": {
+      "report": 14890,
+      "train": 51714,
+      "validation": 7332
+    },
+    "max_memory_allocated_bytes": 129137152,
+    "max_memory_reserved_bytes": 199229440,
+    "python": "3.11.16",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "torch_num_threads": 8
+  },
+  "encoder_training_performed": false,
+  "external_outcomes_or_INSPIRE_scores_read": false,
+  "final_probe_fit_partition": "MIMIC split 0 only",
+  "frozen_embedding_producer_runtime": {
+    "cuda_compute_capability": [
+      8,
+      6
+    ],
+    "cuda_device": {
+      "index": 0,
+      "name": "NVIDIA RTX A5000"
+    },
+    "encoding_device": "cuda",
+    "encoding_dtype": "float32",
+    "model_parameter_dtypes": [
+      "torch.float32"
+    ],
+    "platform_machine": "x86_64",
+    "python_implementation": "CPython",
+    "python_version": "3.11.16",
+    "torch_cuda_version": "12.8",
+    "torch_num_threads": 8,
+    "torch_version": "2.11.0+cu128"
+  },
+  "lock_id": "mimic_main20k_density_augmented_readout_v1",
+  "locked_at_utc": "2026-11-22T18:52:30.781722+00:00",
+  "ordinary_tuned_selected_C": 0.1,
+  "provenance": {
+    "bins_sha256": "78ff4cb6b173d5de6bc54831a4b1b4b78fe9328a0c22eb7fb3390e55430a0017",
+    "checkpoint_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+    "checkpoint_sha256_expected": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+    "clinical_input_availability_verified": false,
+    "created_utc": "2026-11-22T18:51:08.572900+00:00",
+    "decoder_code_sha256": "143a031921f60ec933c9f7cfd3d7569034e537c4ca4fb6cf7affdb38ae1091ee",
+    "eligibility_manifest_sha256": "ea2b55bc3cf071d48b019d4ba97b4a3dc53d5d7fb3f6ac49a9e7c26007064cb5",
+    "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+    "embedding_cache_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/cache/emb_mimic_main20k_real_ckpt-0719db57b91b2618_id-009c81e89cf7b3ad_mask-3f453e2f4b91e5d9_src-9bd20bf1394a_enc-59c3f4059662_rt-edca09b26174.npz",
+    "embedding_cache_row_identity_sha256": "009c81e89cf7b3ad50f067da2e650546a39672eef3165c72e6676cd92f903f87",
+    "embedding_cache_runtime_identity": {
+      "cuda_compute_capability": [
+        8,
+        6
+      ],
+      "cuda_device": {
+        "index": 0,
+        "name": "NVIDIA RTX A5000"
+      },
+      "encoding_device": "cuda",
+      "encoding_dtype": "float32",
+      "model_parameter_dtypes": [
+        "torch.float32"
+      ],
+      "platform_machine": "x86_64",
+      "python_implementation": "CPython",
+      "python_version": "3.11.16",
+      "torch_cuda_version": "12.8",
+      "torch_num_threads": 8,
+      "torch_version": "2.11.0+cu128"
+    },
+    "embedding_cache_runtime_identity_sha256": "edca09b26174895bb81e5a42e19ed422ce290f467b93ddd1c76dd75d3b928322",
+    "embedding_cache_sha256": "664e673209fcf06e77deaf5de53704c5958be50d7a069a9eb09baf13bb0ad76e",
+    "external_outcomes_or_INSPIRE_scores_read": false,
+    "fm_code_sha256": "9d33963a7d176f855103ac88c60f9faffebb4cb734a9de3401ba0c06bdaa39bc",
+    "frozen_embedding_manifest_sha256": "a636f5f38ba7376dcb632cc62ba20592413376da366f105711ce412b32d1fdc9",
+    "input_availability_limitation": "Original sequence NPZ is retrospective: raw event storetime was dropped from the processed inputs and negative therapy start times were clipped during preprocessing. Real-time clinical input availability is unverified.",
+    "preparation_elapsed_seconds": 4.78,
+    "preparation_runtime": {
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "python": "3.12.3"
+    },
+    "retrospective_input_scope": "retrospective_measurement_time",
+    "selected_events": 8143,
+    "selected_rows_sha256": "7639e4605cd0f549b1bda33ec964ef3b4dd4c05c1321260fb011363ead1444f1",
+    "selected_stays": 73936,
+    "selection_npz_sha256": "108ca776e0a1637a59dbaf4c733f60801555499b1d1fe4c5687edf98beca10bc",
+    "source": "MIMIC only; split 0 train, split 1 tune, split 2 report",
+    "source_npz_sha256": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+    "split_counts": {
+      "0": 51714,
+      "1": 7332,
+      "2": 14890
+    },
+    "split_sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+    "variable_metadata_sha256": "97187dfb2b651bc15e16509732696ef2bbc709e596c64c364065c75657b51e73"
+  },
+  "provenance_hashes": {
+    "decoder_code_sha256": "143a031921f60ec933c9f7cfd3d7569034e537c4ca4fb6cf7affdb38ae1091ee",
+    "density_repair_helpers_sha256": "833f1e06521e5ee05c36c0bdcf1f66cfa38b71986f7958a718d5f20624f7eb34",
+    "encode_views_sha256": "2d213e157e551a3a298fbec24f235848b8800f3656790e045ce255f6fcd12d30",
+    "fit_readout_sha256": "24e239fa341805dc40916c1ea863502948a33293033d43c86c69cf8ee98a19b4",
+    "fm_code_sha256": "9d33963a7d176f855103ac88c60f9faffebb4cb734a9de3401ba0c06bdaa39bc",
+    "launcher_sha256": "298b916bb508ceffdfe71a2156422f5e13b905a79c11e23842fda52bdb7060e0"
+  },
+  "scalers_fit_on": {
+    "density_augmented": "pooled split-0 training views only, with per-view sample weights",
+    "ordinary": "split-0 real training rows only"
+  },
+  "seed_namespaces": [
+    "train_aug",
+    "validation_heldout",
+    "report_retention"
+  ],
+  "selection_objective": "minimum mean validation Brier across real and three held-out-seed 50% views; ties choose smaller C",
+  "training_weight_rule": "each stay contributes four views at 0.25 each; weights sum to one per stay",
+  "validation_summary": {
+    "density_augmented": {
+      "full_real_validation_brier": 0.07836180982130019,
+      "mean_validation_brier_real_and_three_heldout_50pct_views": 0.08030072055955591,
+      "selected_C": 0.1,
+      "validation_brier_by_view_real_then_three_heldout_50pct": [
+        0.07836180982130019,
+        0.08122894290089666,
+        0.08093988190310812,
+        0.08067224761291862
+      ]
+    },
+    "ordinary_tuned": {
+      "full_real_validation_brier": 0.07822709980999008,
+      "mean_validation_brier_real_and_three_heldout_50pct_views": 0.0809074527714325,
+      "selected_C": 0.1,
+      "validation_brier_by_view_real_then_three_heldout_50pct": [
+        0.07822709980999008,
+        0.08231662721609308,
+        0.08165743399778232,
+        0.08142865006186456
+      ]
+    },
+    "original_ordinary_C1": {
+      "full_real_validation_brier": 0.07825000019680156,
+      "mean_validation_brier_real_and_three_heldout_50pct_views": 0.08124206753293804,
+      "selected_C": 1.0,
+      "validation_brier_by_view_real_then_three_heldout_50pct": [
+        0.07825000019680156,
+        0.08284129920495015,
+        0.08213964179226078,
+        0.08173732893773966
+      ]
+    }
+  }
+}

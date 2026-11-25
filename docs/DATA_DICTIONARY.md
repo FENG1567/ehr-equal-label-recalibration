@@ -1,0 +1,9 @@
+# Aggregate data dictionary
+
+`provenance/result-code-map.csv` describes each Data1–22 group and producer-code candidates. `provenance/aggregate-source-manifest.json` gives every deposited source file's hash and byte count. Existing per-group READMEs preserve the original cohort/input/endpoint definitions.
+
+Common fields: `cohort`/`dataset` identifies a versioned analysis population; `model`/`model_id` identifies a scoring pipeline; `budget` counts unique adaptation patients; `repeat` indexes a realized adaptation draw; `seed` indexes a training initialization; `brier` is mean squared probability error and `logloss` is clipped binary cross-entropy. A lower proper score is better. A row is an aggregate experimental cell, not an individual patient prediction.
+
+For `global_50_500_summary.csv`, `attempts` counts all 200 planned adaptation draws, `fit_failures` counts failed fits, and `fallback_count` counts locked prevalence replacements; no-update references attempt no optimizer fit even though scores are repeated over 200 plans. `events_p05`/`events_p95` and loss P05/P95 are central 90% empirical adaptation ranges, not 95% confidence intervals. Paired confidence intervals condition on fixed encoders/readouts and realized adaptation fits unless explicitly stated otherwise. FM-minus-LR positive proper-score gaps favor LR; report the actual contrast label for every result. Seed extrema and MOTOR min–max are descriptive, not independent-replicate confidence intervals.
+
+Stay-weighted, patient-weighted, within-hospital, pooled-database and calendar-separated estimands differ; retain each file's scope. SICdb and ICU-death bridge rows must not be combined with primary hospital-death outcomes as independent replications. Store time is an operational proxy, not proof of bedside visibility. See the source README and manuscript for per-analysis qualifications.

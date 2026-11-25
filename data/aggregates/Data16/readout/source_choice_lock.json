@@ -1,0 +1,37 @@
+{
+  "c_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "created_utc": "2026-11-23T17:54:55Z",
+  "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+  "eligibility_table_sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+  "embedding_manifest_sha256": "b2eec1f7aca1857bda440ddb5ec48e477b2a20f753d5dea28b7715f7a1a243fe",
+  "grid_csv": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/readout/source_c_selection_v5rc_20261123T175424Z_4058026/source_c_validation_grid.csv",
+  "grid_csv_sha256": "dc93d0b57bc0b9873c6f8fe4c1019a771637a9cd8cd592e06a80c346a6db2662",
+  "numerical_readout_threading": {
+    "blas_workers_per_grid_fit": 8,
+    "cpu_quota_or_global_thread_policy_changed": false,
+    "dedicated_cgroup_cpu_quota_cores": 2,
+    "dedicated_cgroup_cpu_quota_percent": 200,
+    "reason": "reproduce the historical C=1 source-head numerical path",
+    "scope": "all six source-grid LogisticRegression.fit calls only"
+  },
+  "schema": "ehr_fm_v5_source_c_selection_1",
+  "selected_C": 0.1,
+  "selected_validation_brier": 0.07822709980999008,
+  "selection_rule": "minimum MIMIC split1 Brier; exact ties choose smaller C",
+  "source_db": "mimic",
+  "source_endpoint": "hospital",
+  "source_fit_partition": "split0 only; scaler and LogisticRegression fit on split0",
+  "source_sequence_sha256": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+  "source_split0_identity_sha256": "c6a12007040d7d3cee1ae0be209b54e2f7069ce0b904195c1aeae3614d461865",
+  "source_split_sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+  "source_validation_partition": "split1 selection only; not refit",
+  "status": "source_selection_frozen",
+  "target_outcomes_opened_before_lock": false
+}

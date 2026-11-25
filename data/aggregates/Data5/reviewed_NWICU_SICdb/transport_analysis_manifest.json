@@ -1,0 +1,156 @@
+{
+  "aggregate_tables": {
+    "calibration_draws": {
+      "path": "robustness/results/recovered_transport_v4_2_20261123/transport_calibration_draws.csv",
+      "rows": 55920,
+      "sha256": "89af532f423ce9620f7db4f35ae16f22a6aa8a4dfbdd6468a869bf151097f3b6"
+    },
+    "calibration_paired_patient_ci": {
+      "path": "robustness/results/recovered_transport_v4_2_20261123/transport_calibration_paired_patient_ci.csv",
+      "rows": 1480,
+      "sha256": "557f27e6a17d8813152f1e4ef021919151982bbd4bad26a993cac62c48944f56"
+    },
+    "calibration_summary": {
+      "path": "robustness/results/recovered_transport_v4_2_20261123/transport_calibration_summary.csv",
+      "rows": 290,
+      "sha256": "4a6e57fea81089001e6e8456c076c16b9962bad47c66fe9f5fad08623a022349"
+    },
+    "paired_deltas": {
+      "path": "robustness/results/recovered_transport_v4_2_20261123/transport_paired_deltas.csv",
+      "rows": 8,
+      "sha256": "81ff3d90c1ec4905a10b6c8d64d8c324d05fd3759304c364fe280dd1d474adfc"
+    },
+    "performance_metrics": {
+      "path": "robustness/results/recovered_transport_v4_2_20261123/transport_performance_metrics.csv",
+      "rows": 10,
+      "sha256": "7fbb3095534499e3fbd73b189c6ed68920c63bd1aa19e7a1bf18ad326e99a50f"
+    }
+  },
+  "clinical_input_availability_verified": false,
+  "clinical_promotion_allowed": false,
+  "cohort_model_checkpoints": {
+    "calibration/nwicu_discharge_v4_1/conventional_hgb_pattern_only": {
+      "manifest_sha256": "de18a0eee9263c81de80d68606a42bd70be8cc29fbb23b1f7d4df21b48d237a4"
+    },
+    "calibration/nwicu_discharge_v4_1/conventional_hgb_value_plus_pattern": {
+      "manifest_sha256": "38bb1d0018da8f26461780b985725571a9c9bddab173ac6b0ff4fe4cddb316eb"
+    },
+    "calibration/nwicu_discharge_v4_1/conventional_lr_pattern_only": {
+      "manifest_sha256": "e0fb63cc672cf0329f30a85c62177d3ba39c45ed123e5af50687f4f8658e744e"
+    },
+    "calibration/nwicu_discharge_v4_1/conventional_lr_value_plus_pattern": {
+      "manifest_sha256": "f2fcb5b8c086ce2a6c0f41555c9a955e9d7af6fe92f600f0f15cba2d1cffef16"
+    },
+    "calibration/nwicu_discharge_v4_1/main20k_real": {
+      "manifest_sha256": "62fac82731fd525678c187ed0754666f4f721e6f1ce234d4254ecb7b422dd38b"
+    },
+    "calibration/sicdb_zero_offset_v4_2/conventional_hgb_pattern_only": {
+      "manifest_sha256": "283654d53eb1a274b3a5f078a5bc6e289b01025e7c2afd4b74c55fb2a02215fe"
+    },
+    "calibration/sicdb_zero_offset_v4_2/conventional_hgb_value_plus_pattern": {
+      "manifest_sha256": "e28ffef2e8848e8480c746beb11988131fda31c8909afef4a3feac58cab9a76a"
+    },
+    "calibration/sicdb_zero_offset_v4_2/conventional_lr_pattern_only": {
+      "manifest_sha256": "6bef2bf42df05699d47f897a30c63b052f01e5f0f2e9ef6744c12e0093706414"
+    },
+    "calibration/sicdb_zero_offset_v4_2/conventional_lr_value_plus_pattern": {
+      "manifest_sha256": "aaf108280c764980966678679bef6618eb9dfd7e624e587aef764a71504db7af"
+    },
+    "calibration/sicdb_zero_offset_v4_2/main20k_real": {
+      "manifest_sha256": "97a737e9b6100485a57e0b7cd7f3e0c0ad7e77033633a0426cfc3b7c34852399"
+    },
+    "performance/nwicu_discharge_v4_1": {
+      "manifest_sha256": "5c9d16aba1a2ebf75fec49a390e497359a7e44ae73fe571d34893c9573f2a2e9"
+    },
+    "performance/sicdb_zero_offset_v4_2": {
+      "manifest_sha256": "820195c62680a752094fc3a91b2f01de81411bd5a9cf290d7672a253e66cbe05"
+    }
+  },
+  "cohorts": [
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2",
+    "eicu_semantic_v4_2"
+  ],
+  "cohorts_complete": [
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2"
+  ],
+  "cohorts_evaluated_this_run": [
+    "nwicu_discharge_v4_1",
+    "sicdb_zero_offset_v4_2"
+  ],
+  "endpoint_by_cohort": {
+    "eicu_semantic_v4_2": "hospital",
+    "nwicu_discharge_v4_1": "hospital",
+    "sicdb_zero_offset_v4_2": "icu"
+  },
+  "model_ids": [
+    "main20k_real",
+    "conventional_lr_pattern_only",
+    "conventional_hgb_pattern_only",
+    "conventional_lr_value_plus_pattern",
+    "conventional_hgb_value_plus_pattern"
+  ],
+  "paired_performance_ci": {
+    "auroc_average_precision_ci": false,
+    "cluster_unit": "patient",
+    "metrics_with_ci": [
+      "brier",
+      "logloss"
+    ],
+    "n_bootstrap": 1000
+  },
+  "patient_level_exported_to_local": false,
+  "provenance": {
+    "baseline_prediction_file_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/predictions/recovered_frozen_baseline_predictions.parquet",
+    "baseline_prediction_file_sha256": "d5539dca2804d8077bdb8677b02cd9aa48f1e191236d1904e36b3697fa5e0cd8",
+    "baseline_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/results/baseline_prediction_manifest.json",
+    "baseline_prediction_manifest_sha256": "dd2934504ce894a300d2199868fdd0ccdd49a393c7d3473e84cdc09efc42a492",
+    "clinical_input_availability_verified": false,
+    "clinical_promotion_allowed": false,
+    "eligibility_manifest_sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+    "fm_prediction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/engine/results/prediction_runs/recovered_external_primary_v4_2_resume3-04b21bfc05943b7f/prediction_manifest.json",
+    "fm_prediction_manifest_sha256": "4a52de662bf1e28c165c0387d8a95fa3208afc46e255c1a57e6526ee61d78340",
+    "identity_scope": "within-source patient clustering only; cross-source and cross-scope independence unverified",
+    "patient_level_exported_to_local": false,
+    "source_model_bundle_sha256": "e9a09363585f082a92e21628979830e47f35221584d3a9d60a267ae4b782b0b6",
+    "source_reproduction_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/baselines/transport_v4_2/source_reproduction_manifest.json",
+    "source_reproduction_manifest_sha256": "11ed2939f2e7477f6447b8fe1643faa9e5d6841518101da5087a3d23d7d5b262",
+    "subject_identity_attestation_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/admin/subject_identity_attestations_v4_2.json",
+    "subject_identity_attestation_sha256": "199cdf9dfeb277ef49c30f4a4648a6b06bbf1a65958cd1cf84b36f986bb9cd55"
+  },
+  "sampling_plan_manifest": "robustness/results/recovered_transport_v4_2_20261123/sampling_plan_manifest.json",
+  "sampling_plan_manifest_sha256": "f7cc3d798cadba70d40aed026d68ff53fec3a0a183662b708e40434253d09e20",
+  "schema": "ehr_fm_recovered_transport_analysis_v4_2",
+  "shared_calibration": {
+    "assessment_cluster_bootstrap_draws": 1000,
+    "budgets": [
+      50,
+      200,
+      500,
+      2000
+    ],
+    "methods": [
+      "Jeffreys-smoothed adaptation prevalence",
+      "offset",
+      "Platt"
+    ],
+    "models_use_same_plan_per_cohort": true,
+    "patient_disjoint_adaptation_assessment": true,
+    "plan_frozen_before_metric_evaluation": true,
+    "repeats": 200
+  },
+  "status": "partial",
+  "target_counts": {
+    "nwicu_discharge_v4_1": {
+      "events": 2226,
+      "n_patients": 17385,
+      "n_stays": 19972
+    },
+    "sicdb_zero_offset_v4_2": {
+      "events": 402,
+      "n_patients": 6152,
+      "n_stays": 6774
+    }
+  }
+}

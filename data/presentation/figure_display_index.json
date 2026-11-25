@@ -1,0 +1,278 @@
+{
+  "version": "2026.11.25-r7",
+  "status": "published_r7_reader_clarity",
+  "bundle_scope": "Six main and six supplementary figures with reader-facing labels; numerical data, uncertainty intervals, panel order and historical source specifications are retained.",
+  "source_spec_bundle": "data/presentation/figures.json",
+  "source_spec_bundle_sha256": "01f9a298cd05229a2196e1a6dbc90c3e901744edbf47553603c2c4c4fa4103c0",
+  "visual_qa": {
+    "status": "passed",
+    "scope": "All 12 actual PDFs rendered and inspected at publication width; Arial Bold text, uppercase 18 pt panel letters; short confidence intervals retained with visible end caps.",
+    "rendering_tool": "PyMuPDF",
+    "figure_set_sha256": "dfd1dbeead00f701985d94d9d27722b6645cc35dd119e9dc73106557e9930ea6"
+  },
+  "document_evidence_binding": {
+    "artifact": "reference/tables/table.docx",
+    "artifact_sha256": "4971fbaecffb03cf2092775d557435b3ecdeafbfdc75f457dc51947886b504a8",
+    "verified_pages": 2,
+    "verified_tables": 2
+  },
+  "figures": [
+    {
+      "figure": "Figure1",
+      "group": "main",
+      "reference_pdf": "reference/figures/Figure1.pdf",
+      "reference_pdf_sha256": "e1e2b627801fe01c1cbc90ed2c3f51b1c0c83c7682313611423931259ccdb832",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "6",
+      "claim": "Equal target-label budgets leave context-specific residual loss gaps.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data15/calibration/paired_loss_gap_bootstrap.csv",
+          "sha256": "c9ca9e88adb69bc6b381fa30c0c3ae00b32a1d08e81e3e0b8c30245777ea4037"
+        },
+        {
+          "path": "data/aggregates/Data15/calibration/jobmanifest.json",
+          "sha256": "1b50fce8df3d7664af9297a180be6ca5a22a9fffa364fd10a74ad60735d3867e"
+        }
+      ],
+      "previous_display_figure": "Figure3"
+    },
+    {
+      "figure": "Figure2",
+      "group": "main",
+      "reference_pdf": "reference/figures/Figure2.pdf",
+      "reference_pdf_sha256": "58f9ed02f6f38a9b7f5821a921e1674ce56fe0ba93b654fb6d73504e01904b96",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "1",
+      "claim": "Calibration curves vary by database and by the fixed 500-label probability update.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data15/calibration/calibration_curve_points.csv",
+          "sha256": "1bf903f9aca294c5616ad96a147bc370bf6e4d323e34450d76b0e8bc7ffdc090"
+        },
+        {
+          "path": "data/aggregates/Data15/calibration/calibration_risk_bins.csv",
+          "sha256": "170d12f3de7b2bf05199830d861a88d7102b20ff96d5cfb401eca9d528eed85a"
+        },
+        {
+          "path": "data/aggregates/Data15/calibration/calibration_risk_summary.csv",
+          "sha256": "9f87b9749af7620df9664db0ea3c50e4c4c620c7f5101f9bb54c1e922b47dd27"
+        },
+        {
+          "path": "data/aggregates/Data15/calibration/jobmanifest.json",
+          "sha256": "1b50fce8df3d7664af9297a180be6ca5a22a9fffa364fd10a74ad60735d3867e"
+        }
+      ],
+      "previous_display_figure": "Figure1"
+    },
+    {
+      "figure": "Figure3",
+      "group": "main",
+      "reference_pdf": "reference/figures/Figure3.pdf",
+      "reference_pdf_sha256": "262edcec39e75a23aeb445c9f74f440382ae44e5c2f383683fbd3264b30ef4f1",
+      "renderer": "src/presentation/rebuild_figures_v12_additions.py",
+      "historical_source_figure": null,
+      "claim": "Scores vary across the 24 preselected hospitals; equal-site macro estimates and their source intervals are also shown.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data15/sites/site_adaptation_summary.csv",
+          "sha256": "2d82cb05ab27ccbaac1d04a9f58e211af11707883092c6009cfd3a151079410c"
+        },
+        {
+          "path": "data/aggregates/Data15/sites/site_roster.csv",
+          "sha256": "51ae4143a4387b243cceef6459ee78dfda58e55eb1769cc18cc43ddcb30aa2cc"
+        },
+        {
+          "path": "data/aggregates/Data15/sites/across_site_adaptation_summary.csv",
+          "sha256": "ee5e964b491617777f0a0111fe21901e8255797c21eebfbd4bf794bc08b8087e"
+        },
+        {
+          "path": "data/aggregates/Data15/sites/site_adaptation_repeat_scores.csv",
+          "sha256": "49cc1efc932e65b87453ab9d0112c317c880625d3cead030e3cf0abd5fd8f22e"
+        }
+      ],
+      "previous_display_figure": "Figure4"
+    },
+    {
+      "figure": "Figure4",
+      "group": "main",
+      "reference_pdf": "reference/figures/Figure4.pdf",
+      "reference_pdf_sha256": "82d154dfc91f2576d3fcc3c1efd56cd4874fd163e1aef626c3decbcc9db63d2c",
+      "renderer": "src/presentation/rebuild_figures_v12_additions.py",
+      "historical_source_figure": null,
+      "claim": "Updated FM-minus-quantized-token-summary-LR loss gaps vary by dataset, budget, and seed.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data22/paired_gaps.csv",
+          "sha256": "3befe0f2e1036e6a3a75c537184db864fa2d042de0e5da84db2aef33f67f9d14"
+        }
+      ],
+      "previous_display_figure": "Figure5"
+    },
+    {
+      "figure": "Figure5",
+      "group": "main",
+      "reference_pdf": "reference/figures/Figure5.pdf",
+      "reference_pdf_sha256": "57cf7a1a3ded909c9cb5c0834925b2090920106389497b8bb30302f4ff14c31c",
+      "renderer": "src/presentation/rebuild_figures_v12_additions.py",
+      "historical_source_figure": null,
+      "claim": "Temporal input sensitivity is shown as retrospective score and decision-curve comparisons.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data20/paired_model_bootstrap_v7.csv",
+          "sha256": "26485e8bf0d854e98344f721b2b468970b21bb5707088e1da0e65f9e244d9ca8"
+        },
+        {
+          "path": "data/aggregates/Data20/decision_curve_v7.csv",
+          "sha256": "d407694b6495a267a899fb949314c15d330d7861321f92b09284c175e23be480"
+        }
+      ],
+      "previous_display_figure": "Figure6"
+    },
+    {
+      "figure": "Figure6",
+      "group": "main",
+      "reference_pdf": "reference/figures/Figure6.pdf",
+      "reference_pdf_sha256": "99f4a7c36ea2eb3781f01dd66d69dd00637214f9312b0bca1ae2ceee2d769f9a",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "2",
+      "claim": "Numerical perturbations change ranking and probability losses differently.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data16/controls/fixed_head_control_metrics.csv",
+          "sha256": "132d599379d250e15d6efc042488514ed55eb4954602dcbfece2fe9e84758f13"
+        },
+        {
+          "path": "data/aggregates/Data16/controls/fixed_head_control_paired_contrasts.csv",
+          "sha256": "b0b7a8cf5f0e22bf338f8d393a9163c75641c08512a9f1202e6e713c47aa89ae"
+        }
+      ],
+      "previous_display_figure": "Figure2"
+    },
+    {
+      "figure": "FigureS1",
+      "group": "supplementary",
+      "reference_pdf": "reference/figures/FigureS1.pdf",
+      "reference_pdf_sha256": "4c54179b6078a70a45686e913a1a090cd5a50b8934af8740317da7c1221581a4",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "4",
+      "claim": "Source-selected readout regularization changes probability-loss contrasts.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data16/readout/source_c_mimic_split2_loss_contrasts.csv",
+          "sha256": "27c60e7295f7fccb97a49cf9447f4463abcda8fe32ec95237023dba60b59c2d1"
+        },
+        {
+          "path": "data/aggregates/Data16/readout/source_c_paired_loss_contrasts.csv",
+          "sha256": "8fb9763619b5e5be9be599c7f3c6cef29ec3fbf36cd24fbc0ff3eba5191a6211"
+        }
+      ],
+      "previous_display_figure": "FigureS6"
+    },
+    {
+      "figure": "FigureS2",
+      "group": "supplementary",
+      "reference_pdf": "reference/figures/FigureS2.pdf",
+      "reference_pdf_sha256": "9170618bb64f3b0b7b6450438d24adb08de2325dd0d48f0e34e06c4a6dafba27",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "S4",
+      "claim": "Endpoint-specific source heads and updating yield distinct paired ICU-death score gaps.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data19/eicu_icu_paired_patient_bootstrap.csv",
+          "sha256": "0e3990ef522e1083081079cf08f470836bfb6b0ec389fae7f49f9d58c8db35aa"
+        }
+      ],
+      "previous_display_figure": "FigureS4"
+    },
+    {
+      "figure": "FigureS3",
+      "group": "supplementary",
+      "reference_pdf": "reference/figures/FigureS3.pdf",
+      "reference_pdf_sha256": "f7d8936cd7f74561cf8f9b8007d735f9fb93e876af03bf6588679a0163a8ffe4",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "S1",
+      "claim": "Numeric-input contrasts with constant controls and random initialization differ by seed and cohort.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data14/evaluation_results.json",
+          "sha256": "9016fafad0a16475a93ec27eab07ed65f907bd7c3e81275876234eeca4a8d031"
+        }
+      ],
+      "previous_display_figure": "FigureS1"
+    },
+    {
+      "figure": "FigureS4",
+      "group": "supplementary",
+      "reference_pdf": "reference/figures/FigureS4.pdf",
+      "reference_pdf_sha256": "45757811d283562cf91465310acb6b8a51c619db3606f2ce913f8d617718701c",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "S3",
+      "claim": "Alternative H24 eligibility rules change the assessment population and paired score gaps.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data13/temporal/h24_performance_metrics_paired_losses.csv",
+          "sha256": "717a47b876db13cbd8dd2d6dbffe69f28e095511c950a65af594d743987f196d"
+        }
+      ],
+      "previous_display_figure": "FigureS3"
+    },
+    {
+      "figure": "FigureS5",
+      "group": "supplementary",
+      "reference_pdf": "reference/figures/FigureS5.pdf",
+      "reference_pdf_sha256": "2e7cf96cdc73b01a8095cfbd4d04a54ff2b94a791e17a342254839fcd9a96d34",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "S2",
+      "claim": "The numerical controls change distinct fractions of retained numerical tokens.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data16/controls/fixed_head_control_metrics.csv",
+          "sha256": "132d599379d250e15d6efc042488514ed55eb4954602dcbfece2fe9e84758f13"
+        }
+      ],
+      "previous_display_figure": "FigureS2"
+    },
+    {
+      "figure": "FigureS6",
+      "group": "supplementary",
+      "reference_pdf": "reference/figures/FigureS6.pdf",
+      "reference_pdf_sha256": "2ba143f954ebb4f9ebdd2a56baaf06d0596af79efd3e601396ae9c946e658ff0",
+      "renderer": "src/presentation/rebuild_figures_v12.py",
+      "historical_source_figure": "3",
+      "claim": "Same-window target recovery differs between frozen embeddings and direct token summaries.",
+      "source_files": [
+        {
+          "path": "data/aggregates/Data17/numeric_token_decoder_metrics.csv",
+          "sha256": "89762ef180bd20617e23de79c7a77bc4b2cb2eff33159dac5d9a6224bd88e791"
+        },
+        {
+          "path": "data/aggregates/Data17/numeric_token_decoder_paired_contrasts.csv",
+          "sha256": "2f5e4f2c3a61795038d79d843ee5248e93b48382a3a9fc78d9d280ba4cb2171f"
+        }
+      ],
+      "previous_display_figure": "FigureS5"
+    }
+  ],
+  "display_renumbering": {
+    "prior_release": "2026.11.24-r3",
+    "release": "2026.11.25-r4",
+    "main": {
+      "Figure1": "Figure2",
+      "Figure2": "Figure6",
+      "Figure3": "Figure1",
+      "Figure4": "Figure3",
+      "Figure5": "Figure4",
+      "Figure6": "Figure5"
+    },
+    "supplementary": {
+      "FigureS1": "FigureS3",
+      "FigureS2": "FigureS5",
+      "FigureS3": "FigureS4",
+      "FigureS4": "FigureS2",
+      "FigureS5": "FigureS6",
+      "FigureS6": "FigureS1"
+    },
+    "historical_source_figure_identities": "Preserved"
+  }
+}

@@ -1,0 +1,2041 @@
+{
+  "schema": "v5_clean_pretraining_preparation_v1",
+  "run_id": "20261123_192508_879635_unicode_20261123T132809Z",
+  "status": "pretraining_inputs_built_not_yet_root_gate_approved",
+  "hash_checkpoint_reused_from": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json",
+  "write_scope": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z",
+  "source": {
+    "source_cohort_rows": 94343,
+    "source_split_all_stays": {
+      "0": 66044,
+      "1": 9375,
+      "2": 18924
+    },
+    "source_eligible_h24_by_split": {
+      "0": 51714,
+      "1": 7332,
+      "2": 14890
+    },
+    "source_split0_h24_candidate_n": 51714,
+    "pretraining_member_n": 20000,
+    "pretraining_member_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635/private/source_pretrain_members_seed20261123.csv",
+    "pretraining_member_sha256": "3934bbc6d3953a15e859a988b432b0f60c9393a3ae2e2dbf2401af86ac90a8c5",
+    "legacy_sequence_variable_id_max": 48,
+    "patient_split_unique": true,
+    "pretraining_member_checkpoint_source": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_153401_922938/private/source_pretrain_members_seed20261123.csv",
+    "source_eligible_roster_path": "private/source_eligible_roster_tokens_only.csv"
+  },
+  "source_roles_and_labels_used": "Only stay_id, subject_id, eligible_24h and frozen split were read for source membership; no label column entered membership, bin fitting, or token construction.",
+  "source_vocab": {
+    "variable_order": [
+      "age",
+      "sex",
+      "weight",
+      "height",
+      "bmi",
+      "hr",
+      "sbp",
+      "dbp",
+      "map",
+      "rr",
+      "temp",
+      "spo2",
+      "etco2",
+      "gcs_total",
+      "gcs_motor",
+      "gcs_eye",
+      "fio2",
+      "peep",
+      "tv",
+      "ppeak",
+      "pao2",
+      "paco2",
+      "ph",
+      "be",
+      "creatinine",
+      "bun",
+      "urine",
+      "lactate",
+      "wbc",
+      "hgb",
+      "platelet",
+      "inr",
+      "aptt",
+      "sodium",
+      "potassium",
+      "chloride",
+      "calcium",
+      "magnesium",
+      "phosphate",
+      "glucose",
+      "albumin",
+      "bili",
+      "ast",
+      "alt",
+      "crp",
+      "vaso",
+      "rrt",
+      "sedation"
+    ],
+    "variable_id_definition": "legacy frozen meta_mimic vars order, ID stored as index+1; padding=0",
+    "legacy_sequence_ids_checked": true
+  },
+  "binning": {
+    "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635/clean_source_bins.json",
+    "sha256": "f4ac46fda73dbd85b44a8f3b0f4a7ba6adc17fe46d27f29f3b14a9fdc337af55",
+    "summary": {
+      "fit_scope": "all_eligible_source_split0_h24",
+      "fit_stay_n": 51714,
+      "fit_rows_seen": 64772630,
+      "fit_rows_candidate": 13635346,
+      "fit_rows_retained": 13635346,
+      "per_variable_source_event_count": {
+        "age": 0,
+        "sex": 0,
+        "weight": 26044,
+        "height": 885,
+        "bmi": 0,
+        "hr": 1449436,
+        "sbp": 1428584,
+        "dbp": 1428182,
+        "map": 1487963,
+        "rr": 1529851,
+        "temp": 413433,
+        "spo2": 1420562,
+        "etco2": 22591,
+        "gcs_total": 390629,
+        "gcs_motor": 388190,
+        "gcs_eye": 390165,
+        "fio2": 165851,
+        "peep": 119108,
+        "tv": 109308,
+        "ppeak": 107980,
+        "pao2": 116086,
+        "paco2": 116151,
+        "ph": 123362,
+        "be": 116164,
+        "creatinine": 99016,
+        "bun": 98753,
+        "urine": 675963,
+        "lactate": 81315,
+        "wbc": 98871,
+        "hgb": 100591,
+        "platelet": 100848,
+        "inr": 73979,
+        "aptt": 76213,
+        "sodium": 100556,
+        "potassium": 102833,
+        "chloride": 102536,
+        "calcium": 84246,
+        "magnesium": 90096,
+        "phosphate": 84963,
+        "glucose": 91887,
+        "albumin": 16455,
+        "bili": 29993,
+        "ast": 30252,
+        "alt": 29997,
+        "crp": 1326,
+        "vaso": 51647,
+        "rrt": 1273,
+        "sedation": 61212
+      },
+      "per_variable_edge_mode": {
+        "age": "source_count_lt_200_range_fallback",
+        "sex": "binary_threshold_0.5",
+        "weight": "source_split0_h24_quantile_10bin",
+        "height": "source_split0_h24_quantile_10bin",
+        "bmi": "source_count_lt_200_range_fallback",
+        "hr": "source_split0_h24_quantile_10bin",
+        "sbp": "source_split0_h24_quantile_10bin",
+        "dbp": "source_split0_h24_quantile_10bin",
+        "map": "source_split0_h24_quantile_10bin",
+        "rr": "source_split0_h24_quantile_10bin",
+        "temp": "source_split0_h24_quantile_10bin",
+        "spo2": "source_split0_h24_quantile_10bin",
+        "etco2": "source_split0_h24_quantile_10bin",
+        "gcs_total": "source_split0_h24_quantile_10bin",
+        "gcs_motor": "source_split0_h24_quantile_10bin",
+        "gcs_eye": "source_split0_h24_quantile_10bin",
+        "fio2": "source_split0_h24_quantile_10bin",
+        "peep": "source_split0_h24_quantile_10bin",
+        "tv": "source_split0_h24_quantile_10bin",
+        "ppeak": "source_split0_h24_quantile_10bin",
+        "pao2": "source_split0_h24_quantile_10bin",
+        "paco2": "source_split0_h24_quantile_10bin",
+        "ph": "source_split0_h24_quantile_10bin",
+        "be": "source_split0_h24_quantile_10bin",
+        "creatinine": "source_split0_h24_quantile_10bin",
+        "bun": "source_split0_h24_quantile_10bin",
+        "urine": "source_split0_h24_quantile_10bin",
+        "lactate": "source_split0_h24_quantile_10bin",
+        "wbc": "source_split0_h24_quantile_10bin",
+        "hgb": "source_split0_h24_quantile_10bin",
+        "platelet": "source_split0_h24_quantile_10bin",
+        "inr": "source_split0_h24_quantile_10bin",
+        "aptt": "source_split0_h24_quantile_10bin",
+        "sodium": "source_split0_h24_quantile_10bin",
+        "potassium": "source_split0_h24_quantile_10bin",
+        "chloride": "source_split0_h24_quantile_10bin",
+        "calcium": "source_split0_h24_quantile_10bin",
+        "magnesium": "source_split0_h24_quantile_10bin",
+        "phosphate": "source_split0_h24_quantile_10bin",
+        "glucose": "source_split0_h24_quantile_10bin",
+        "albumin": "source_split0_h24_quantile_10bin",
+        "bili": "source_split0_h24_quantile_10bin",
+        "ast": "source_split0_h24_quantile_10bin",
+        "alt": "source_split0_h24_quantile_10bin",
+        "crp": "source_split0_h24_quantile_10bin",
+        "vaso": "binary_threshold_0.5",
+        "rrt": "binary_threshold_0.5",
+        "sedation": "binary_threshold_0.5"
+      },
+      "fit_stay_ids_sha256": "fbfba8aa64fe6826a87b6a5aa8dadd3045c01fa708330b298be8ab129bbce797"
+    }
+  },
+  "tokenization": {
+    "max_tokens": 128,
+    "window": "[0,24)",
+    "hour_bucket": "floor(measurement hour)",
+    "aggregation": "mean per stay_id × floor(hour) × variable",
+    "sampling": "uniform without replacement to 128; fixed seed 20261123; after aggregation",
+    "partitioning": "64 lossless stay_id modulo partitions; no sorted-input assumption",
+    "treatment": "vaso/rrt/sedation are retained as binary start indicators"
+  },
+  "datasets": {
+    "mimic": {
+      "input_rows": 64772630,
+      "h24_canonical_candidate_rows": 19485400,
+      "kept_after_range_check_rows": 19485400,
+      "nonfinite_values_dropped": 0,
+      "finite_out_of_range_values_dropped": 0,
+      "unsupported_vocabulary_rows": 558184,
+      "eligible_stays": 73936,
+      "stays_with_tokens": 73936,
+      "stays_with_zero_tokens": 0,
+      "token_count_min": 10,
+      "token_count_max": 128,
+      "token_count_mean": 127.70490694654836,
+      "tokenization_seed": 20261123,
+      "partition_count": 64,
+      "partition_summaries": [
+        {
+          "partition": 0,
+          "input_rows": 298768,
+          "aggregated_stay_hour_var_rows": 255316,
+          "bytes": 1248778
+        },
+        {
+          "partition": 1,
+          "input_rows": 295919,
+          "aggregated_stay_hour_var_rows": 249560,
+          "bytes": 1244603
+        },
+        {
+          "partition": 2,
+          "input_rows": 310911,
+          "aggregated_stay_hour_var_rows": 261951,
+          "bytes": 1284713
+        },
+        {
+          "partition": 3,
+          "input_rows": 317118,
+          "aggregated_stay_hour_var_rows": 268041,
+          "bytes": 1311915
+        },
+        {
+          "partition": 4,
+          "input_rows": 297120,
+          "aggregated_stay_hour_var_rows": 251230,
+          "bytes": 1243869
+        },
+        {
+          "partition": 5,
+          "input_rows": 300979,
+          "aggregated_stay_hour_var_rows": 254566,
+          "bytes": 1255619
+        },
+        {
+          "partition": 6,
+          "input_rows": 296627,
+          "aggregated_stay_hour_var_rows": 253615,
+          "bytes": 1240404
+        },
+        {
+          "partition": 7,
+          "input_rows": 302962,
+          "aggregated_stay_hour_var_rows": 258144,
+          "bytes": 1264904
+        },
+        {
+          "partition": 8,
+          "input_rows": 304686,
+          "aggregated_stay_hour_var_rows": 257962,
+          "bytes": 1267166
+        },
+        {
+          "partition": 9,
+          "input_rows": 295459,
+          "aggregated_stay_hour_var_rows": 251696,
+          "bytes": 1245928
+        },
+        {
+          "partition": 10,
+          "input_rows": 307104,
+          "aggregated_stay_hour_var_rows": 262172,
+          "bytes": 1274096
+        },
+        {
+          "partition": 11,
+          "input_rows": 307113,
+          "aggregated_stay_hour_var_rows": 259672,
+          "bytes": 1274669
+        },
+        {
+          "partition": 12,
+          "input_rows": 302101,
+          "aggregated_stay_hour_var_rows": 256748,
+          "bytes": 1266233
+        },
+        {
+          "partition": 13,
+          "input_rows": 292110,
+          "aggregated_stay_hour_var_rows": 250069,
+          "bytes": 1226990
+        },
+        {
+          "partition": 14,
+          "input_rows": 310781,
+          "aggregated_stay_hour_var_rows": 265370,
+          "bytes": 1293645
+        },
+        {
+          "partition": 15,
+          "input_rows": 321288,
+          "aggregated_stay_hour_var_rows": 274452,
+          "bytes": 1331098
+        },
+        {
+          "partition": 16,
+          "input_rows": 309784,
+          "aggregated_stay_hour_var_rows": 261381,
+          "bytes": 1295649
+        },
+        {
+          "partition": 17,
+          "input_rows": 292520,
+          "aggregated_stay_hour_var_rows": 249368,
+          "bytes": 1231707
+        },
+        {
+          "partition": 18,
+          "input_rows": 311457,
+          "aggregated_stay_hour_var_rows": 266034,
+          "bytes": 1287392
+        },
+        {
+          "partition": 19,
+          "input_rows": 313332,
+          "aggregated_stay_hour_var_rows": 262981,
+          "bytes": 1298823
+        },
+        {
+          "partition": 20,
+          "input_rows": 318546,
+          "aggregated_stay_hour_var_rows": 265801,
+          "bytes": 1301229
+        },
+        {
+          "partition": 21,
+          "input_rows": 321624,
+          "aggregated_stay_hour_var_rows": 274760,
+          "bytes": 1333932
+        },
+        {
+          "partition": 22,
+          "input_rows": 314060,
+          "aggregated_stay_hour_var_rows": 267464,
+          "bytes": 1301125
+        },
+        {
+          "partition": 23,
+          "input_rows": 289809,
+          "aggregated_stay_hour_var_rows": 245815,
+          "bytes": 1220226
+        },
+        {
+          "partition": 24,
+          "input_rows": 307975,
+          "aggregated_stay_hour_var_rows": 263237,
+          "bytes": 1287767
+        },
+        {
+          "partition": 25,
+          "input_rows": 301073,
+          "aggregated_stay_hour_var_rows": 253529,
+          "bytes": 1250275
+        },
+        {
+          "partition": 26,
+          "input_rows": 312213,
+          "aggregated_stay_hour_var_rows": 265985,
+          "bytes": 1294654
+        },
+        {
+          "partition": 27,
+          "input_rows": 311955,
+          "aggregated_stay_hour_var_rows": 265011,
+          "bytes": 1294349
+        },
+        {
+          "partition": 28,
+          "input_rows": 317356,
+          "aggregated_stay_hour_var_rows": 269779,
+          "bytes": 1310942
+        },
+        {
+          "partition": 29,
+          "input_rows": 300013,
+          "aggregated_stay_hour_var_rows": 256173,
+          "bytes": 1253771
+        },
+        {
+          "partition": 30,
+          "input_rows": 301628,
+          "aggregated_stay_hour_var_rows": 256344,
+          "bytes": 1260264
+        },
+        {
+          "partition": 31,
+          "input_rows": 307613,
+          "aggregated_stay_hour_var_rows": 262231,
+          "bytes": 1271792
+        },
+        {
+          "partition": 32,
+          "input_rows": 296229,
+          "aggregated_stay_hour_var_rows": 249768,
+          "bytes": 1247982
+        },
+        {
+          "partition": 33,
+          "input_rows": 306856,
+          "aggregated_stay_hour_var_rows": 259021,
+          "bytes": 1276419
+        },
+        {
+          "partition": 34,
+          "input_rows": 330208,
+          "aggregated_stay_hour_var_rows": 277695,
+          "bytes": 1349582
+        },
+        {
+          "partition": 35,
+          "input_rows": 302920,
+          "aggregated_stay_hour_var_rows": 256452,
+          "bytes": 1262565
+        },
+        {
+          "partition": 36,
+          "input_rows": 310406,
+          "aggregated_stay_hour_var_rows": 261813,
+          "bytes": 1287707
+        },
+        {
+          "partition": 37,
+          "input_rows": 297294,
+          "aggregated_stay_hour_var_rows": 251354,
+          "bytes": 1240740
+        },
+        {
+          "partition": 38,
+          "input_rows": 301859,
+          "aggregated_stay_hour_var_rows": 257692,
+          "bytes": 1261390
+        },
+        {
+          "partition": 39,
+          "input_rows": 292890,
+          "aggregated_stay_hour_var_rows": 249668,
+          "bytes": 1234719
+        },
+        {
+          "partition": 40,
+          "input_rows": 308918,
+          "aggregated_stay_hour_var_rows": 262974,
+          "bytes": 1284810
+        },
+        {
+          "partition": 41,
+          "input_rows": 295673,
+          "aggregated_stay_hour_var_rows": 250711,
+          "bytes": 1242787
+        },
+        {
+          "partition": 42,
+          "input_rows": 293000,
+          "aggregated_stay_hour_var_rows": 251827,
+          "bytes": 1225514
+        },
+        {
+          "partition": 43,
+          "input_rows": 298496,
+          "aggregated_stay_hour_var_rows": 255335,
+          "bytes": 1251848
+        },
+        {
+          "partition": 44,
+          "input_rows": 301736,
+          "aggregated_stay_hour_var_rows": 257195,
+          "bytes": 1262464
+        },
+        {
+          "partition": 45,
+          "input_rows": 309940,
+          "aggregated_stay_hour_var_rows": 263862,
+          "bytes": 1284201
+        },
+        {
+          "partition": 46,
+          "input_rows": 301085,
+          "aggregated_stay_hour_var_rows": 256922,
+          "bytes": 1259702
+        },
+        {
+          "partition": 47,
+          "input_rows": 312375,
+          "aggregated_stay_hour_var_rows": 266534,
+          "bytes": 1293853
+        },
+        {
+          "partition": 48,
+          "input_rows": 290726,
+          "aggregated_stay_hour_var_rows": 248600,
+          "bytes": 1223266
+        },
+        {
+          "partition": 49,
+          "input_rows": 307120,
+          "aggregated_stay_hour_var_rows": 261907,
+          "bytes": 1280328
+        },
+        {
+          "partition": 50,
+          "input_rows": 317421,
+          "aggregated_stay_hour_var_rows": 267820,
+          "bytes": 1304525
+        },
+        {
+          "partition": 51,
+          "input_rows": 277574,
+          "aggregated_stay_hour_var_rows": 236325,
+          "bytes": 1183634
+        },
+        {
+          "partition": 52,
+          "input_rows": 301652,
+          "aggregated_stay_hour_var_rows": 254177,
+          "bytes": 1261076
+        },
+        {
+          "partition": 53,
+          "input_rows": 307772,
+          "aggregated_stay_hour_var_rows": 261947,
+          "bytes": 1274867
+        },
+        {
+          "partition": 54,
+          "input_rows": 287530,
+          "aggregated_stay_hour_var_rows": 245599,
+          "bytes": 1210129
+        },
+        {
+          "partition": 55,
+          "input_rows": 307999,
+          "aggregated_stay_hour_var_rows": 260064,
+          "bytes": 1271436
+        },
+        {
+          "partition": 56,
+          "input_rows": 304726,
+          "aggregated_stay_hour_var_rows": 256485,
+          "bytes": 1269567
+        },
+        {
+          "partition": 57,
+          "input_rows": 292932,
+          "aggregated_stay_hour_var_rows": 249948,
+          "bytes": 1234157
+        },
+        {
+          "partition": 58,
+          "input_rows": 300222,
+          "aggregated_stay_hour_var_rows": 254726,
+          "bytes": 1252185
+        },
+        {
+          "partition": 59,
+          "input_rows": 305388,
+          "aggregated_stay_hour_var_rows": 260153,
+          "bytes": 1273660
+        },
+        {
+          "partition": 60,
+          "input_rows": 293318,
+          "aggregated_stay_hour_var_rows": 249469,
+          "bytes": 1240971
+        },
+        {
+          "partition": 61,
+          "input_rows": 317807,
+          "aggregated_stay_hour_var_rows": 271287,
+          "bytes": 1316625
+        },
+        {
+          "partition": 62,
+          "input_rows": 327202,
+          "aggregated_stay_hour_var_rows": 275172,
+          "bytes": 1337912
+        },
+        {
+          "partition": 63,
+          "input_rows": 294122,
+          "aggregated_stay_hour_var_rows": 249109,
+          "bytes": 1237311
+        }
+      ],
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/mimic_clean_tokens.npz",
+      "sequence_sha256": "88792a7c5a63d63a101a798dae928ca0aedc902e1d4c7c8b96c7d4294337c84f"
+    },
+    "eicu": {
+      "input_rows": 19166414,
+      "h24_canonical_candidate_rows": 15153242,
+      "kept_after_range_check_rows": 15153242,
+      "nonfinite_values_dropped": 0,
+      "finite_out_of_range_values_dropped": 0,
+      "unsupported_vocabulary_rows": 0,
+      "eligible_stays": 130544,
+      "stays_with_tokens": 130544,
+      "stays_with_zero_tokens": 0,
+      "token_count_min": 8,
+      "token_count_max": 128,
+      "token_count_mean": 100.42051722024758,
+      "tokenization_seed": 20261123,
+      "partition_count": 64,
+      "partition_summaries": [
+        {
+          "partition": 0,
+          "input_rows": 236274,
+          "aggregated_stay_hour_var_rows": 233977,
+          "bytes": 1014858
+        },
+        {
+          "partition": 1,
+          "input_rows": 230449,
+          "aggregated_stay_hour_var_rows": 228349,
+          "bytes": 991348
+        },
+        {
+          "partition": 2,
+          "input_rows": 236413,
+          "aggregated_stay_hour_var_rows": 233735,
+          "bytes": 1011962
+        },
+        {
+          "partition": 3,
+          "input_rows": 238541,
+          "aggregated_stay_hour_var_rows": 236153,
+          "bytes": 1021937
+        },
+        {
+          "partition": 4,
+          "input_rows": 238259,
+          "aggregated_stay_hour_var_rows": 235932,
+          "bytes": 1021797
+        },
+        {
+          "partition": 5,
+          "input_rows": 239732,
+          "aggregated_stay_hour_var_rows": 237525,
+          "bytes": 1023601
+        },
+        {
+          "partition": 6,
+          "input_rows": 241000,
+          "aggregated_stay_hour_var_rows": 238762,
+          "bytes": 1034476
+        },
+        {
+          "partition": 7,
+          "input_rows": 233051,
+          "aggregated_stay_hour_var_rows": 230830,
+          "bytes": 1002406
+        },
+        {
+          "partition": 8,
+          "input_rows": 239798,
+          "aggregated_stay_hour_var_rows": 237354,
+          "bytes": 1027109
+        },
+        {
+          "partition": 9,
+          "input_rows": 236718,
+          "aggregated_stay_hour_var_rows": 234378,
+          "bytes": 1018480
+        },
+        {
+          "partition": 10,
+          "input_rows": 238454,
+          "aggregated_stay_hour_var_rows": 236207,
+          "bytes": 1021011
+        },
+        {
+          "partition": 11,
+          "input_rows": 231065,
+          "aggregated_stay_hour_var_rows": 229036,
+          "bytes": 991094
+        },
+        {
+          "partition": 12,
+          "input_rows": 234219,
+          "aggregated_stay_hour_var_rows": 231786,
+          "bytes": 1006490
+        },
+        {
+          "partition": 13,
+          "input_rows": 238076,
+          "aggregated_stay_hour_var_rows": 235847,
+          "bytes": 1019185
+        },
+        {
+          "partition": 14,
+          "input_rows": 243712,
+          "aggregated_stay_hour_var_rows": 241350,
+          "bytes": 1040244
+        },
+        {
+          "partition": 15,
+          "input_rows": 229400,
+          "aggregated_stay_hour_var_rows": 227393,
+          "bytes": 985709
+        },
+        {
+          "partition": 16,
+          "input_rows": 222459,
+          "aggregated_stay_hour_var_rows": 220135,
+          "bytes": 961652
+        },
+        {
+          "partition": 17,
+          "input_rows": 228739,
+          "aggregated_stay_hour_var_rows": 226690,
+          "bytes": 983717
+        },
+        {
+          "partition": 18,
+          "input_rows": 238124,
+          "aggregated_stay_hour_var_rows": 235570,
+          "bytes": 1019851
+        },
+        {
+          "partition": 19,
+          "input_rows": 235802,
+          "aggregated_stay_hour_var_rows": 233772,
+          "bytes": 1011997
+        },
+        {
+          "partition": 20,
+          "input_rows": 238253,
+          "aggregated_stay_hour_var_rows": 235722,
+          "bytes": 1022860
+        },
+        {
+          "partition": 21,
+          "input_rows": 237289,
+          "aggregated_stay_hour_var_rows": 234872,
+          "bytes": 1020388
+        },
+        {
+          "partition": 22,
+          "input_rows": 233165,
+          "aggregated_stay_hour_var_rows": 230953,
+          "bytes": 1000584
+        },
+        {
+          "partition": 23,
+          "input_rows": 224803,
+          "aggregated_stay_hour_var_rows": 222828,
+          "bytes": 969639
+        },
+        {
+          "partition": 24,
+          "input_rows": 233191,
+          "aggregated_stay_hour_var_rows": 230969,
+          "bytes": 1000288
+        },
+        {
+          "partition": 25,
+          "input_rows": 235854,
+          "aggregated_stay_hour_var_rows": 233645,
+          "bytes": 1011683
+        },
+        {
+          "partition": 26,
+          "input_rows": 243205,
+          "aggregated_stay_hour_var_rows": 240813,
+          "bytes": 1039920
+        },
+        {
+          "partition": 27,
+          "input_rows": 244033,
+          "aggregated_stay_hour_var_rows": 241691,
+          "bytes": 1040465
+        },
+        {
+          "partition": 28,
+          "input_rows": 246687,
+          "aggregated_stay_hour_var_rows": 244376,
+          "bytes": 1053651
+        },
+        {
+          "partition": 29,
+          "input_rows": 235909,
+          "aggregated_stay_hour_var_rows": 233725,
+          "bytes": 1014124
+        },
+        {
+          "partition": 30,
+          "input_rows": 239120,
+          "aggregated_stay_hour_var_rows": 236876,
+          "bytes": 1023593
+        },
+        {
+          "partition": 31,
+          "input_rows": 226173,
+          "aggregated_stay_hour_var_rows": 223804,
+          "bytes": 976319
+        },
+        {
+          "partition": 32,
+          "input_rows": 244347,
+          "aggregated_stay_hour_var_rows": 242007,
+          "bytes": 1046316
+        },
+        {
+          "partition": 33,
+          "input_rows": 229016,
+          "aggregated_stay_hour_var_rows": 226804,
+          "bytes": 987609
+        },
+        {
+          "partition": 34,
+          "input_rows": 237307,
+          "aggregated_stay_hour_var_rows": 235274,
+          "bytes": 1016564
+        },
+        {
+          "partition": 35,
+          "input_rows": 243961,
+          "aggregated_stay_hour_var_rows": 241714,
+          "bytes": 1038033
+        },
+        {
+          "partition": 36,
+          "input_rows": 233731,
+          "aggregated_stay_hour_var_rows": 231385,
+          "bytes": 1001189
+        },
+        {
+          "partition": 37,
+          "input_rows": 241785,
+          "aggregated_stay_hour_var_rows": 239521,
+          "bytes": 1035260
+        },
+        {
+          "partition": 38,
+          "input_rows": 237839,
+          "aggregated_stay_hour_var_rows": 235480,
+          "bytes": 1022260
+        },
+        {
+          "partition": 39,
+          "input_rows": 239748,
+          "aggregated_stay_hour_var_rows": 237561,
+          "bytes": 1029391
+        },
+        {
+          "partition": 40,
+          "input_rows": 246020,
+          "aggregated_stay_hour_var_rows": 243874,
+          "bytes": 1046592
+        },
+        {
+          "partition": 41,
+          "input_rows": 242528,
+          "aggregated_stay_hour_var_rows": 240591,
+          "bytes": 1036682
+        },
+        {
+          "partition": 42,
+          "input_rows": 230370,
+          "aggregated_stay_hour_var_rows": 228032,
+          "bytes": 992850
+        },
+        {
+          "partition": 43,
+          "input_rows": 242895,
+          "aggregated_stay_hour_var_rows": 240578,
+          "bytes": 1038013
+        },
+        {
+          "partition": 44,
+          "input_rows": 225857,
+          "aggregated_stay_hour_var_rows": 223814,
+          "bytes": 973586
+        },
+        {
+          "partition": 45,
+          "input_rows": 231397,
+          "aggregated_stay_hour_var_rows": 228761,
+          "bytes": 994832
+        },
+        {
+          "partition": 46,
+          "input_rows": 230784,
+          "aggregated_stay_hour_var_rows": 228275,
+          "bytes": 991851
+        },
+        {
+          "partition": 47,
+          "input_rows": 233392,
+          "aggregated_stay_hour_var_rows": 230928,
+          "bytes": 1001015
+        },
+        {
+          "partition": 48,
+          "input_rows": 234519,
+          "aggregated_stay_hour_var_rows": 232202,
+          "bytes": 1008948
+        },
+        {
+          "partition": 49,
+          "input_rows": 233062,
+          "aggregated_stay_hour_var_rows": 231030,
+          "bytes": 998313
+        },
+        {
+          "partition": 50,
+          "input_rows": 241249,
+          "aggregated_stay_hour_var_rows": 238762,
+          "bytes": 1033586
+        },
+        {
+          "partition": 51,
+          "input_rows": 246533,
+          "aggregated_stay_hour_var_rows": 244123,
+          "bytes": 1051702
+        },
+        {
+          "partition": 52,
+          "input_rows": 233251,
+          "aggregated_stay_hour_var_rows": 231057,
+          "bytes": 1001060
+        },
+        {
+          "partition": 53,
+          "input_rows": 228185,
+          "aggregated_stay_hour_var_rows": 225925,
+          "bytes": 982800
+        },
+        {
+          "partition": 54,
+          "input_rows": 242635,
+          "aggregated_stay_hour_var_rows": 240529,
+          "bytes": 1039783
+        },
+        {
+          "partition": 55,
+          "input_rows": 242250,
+          "aggregated_stay_hour_var_rows": 239494,
+          "bytes": 1037170
+        },
+        {
+          "partition": 56,
+          "input_rows": 230782,
+          "aggregated_stay_hour_var_rows": 228600,
+          "bytes": 992730
+        },
+        {
+          "partition": 57,
+          "input_rows": 238403,
+          "aggregated_stay_hour_var_rows": 235984,
+          "bytes": 1020931
+        },
+        {
+          "partition": 58,
+          "input_rows": 241274,
+          "aggregated_stay_hour_var_rows": 238891,
+          "bytes": 1031954
+        },
+        {
+          "partition": 59,
+          "input_rows": 236827,
+          "aggregated_stay_hour_var_rows": 234390,
+          "bytes": 1014172
+        },
+        {
+          "partition": 60,
+          "input_rows": 246446,
+          "aggregated_stay_hour_var_rows": 244011,
+          "bytes": 1053830
+        },
+        {
+          "partition": 61,
+          "input_rows": 235413,
+          "aggregated_stay_hour_var_rows": 233001,
+          "bytes": 1010005
+        },
+        {
+          "partition": 62,
+          "input_rows": 240621,
+          "aggregated_stay_hour_var_rows": 238313,
+          "bytes": 1032037
+        },
+        {
+          "partition": 63,
+          "input_rows": 242848,
+          "aggregated_stay_hour_var_rows": 240245,
+          "bytes": 1034124
+        }
+      ],
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/eicu_clean_tokens.npz",
+      "sequence_sha256": "7a9fc79eb732b8e0c0b79fc53f27a627aabe878e2a054e00ede92ffa9f5e38d0"
+    },
+    "nwicu": {
+      "input_rows": 9893074,
+      "h24_canonical_candidate_rows": 3101198,
+      "kept_after_range_check_rows": 3101198,
+      "nonfinite_values_dropped": 0,
+      "finite_out_of_range_values_dropped": 0,
+      "unsupported_vocabulary_rows": 0,
+      "eligible_stays": 19972,
+      "stays_with_tokens": 19972,
+      "stays_with_zero_tokens": 0,
+      "token_count_min": 7,
+      "token_count_max": 128,
+      "token_count_mean": 94.8366212697777,
+      "tokenization_seed": 20261123,
+      "partition_count": 64,
+      "partition_summaries": [
+        {
+          "partition": 0,
+          "input_rows": 44282,
+          "aggregated_stay_hour_var_rows": 30939,
+          "bytes": 179095
+        },
+        {
+          "partition": 1,
+          "input_rows": 52000,
+          "aggregated_stay_hour_var_rows": 36025,
+          "bytes": 200026
+        },
+        {
+          "partition": 2,
+          "input_rows": 54281,
+          "aggregated_stay_hour_var_rows": 36694,
+          "bytes": 206684
+        },
+        {
+          "partition": 3,
+          "input_rows": 48073,
+          "aggregated_stay_hour_var_rows": 33848,
+          "bytes": 190762
+        },
+        {
+          "partition": 4,
+          "input_rows": 48008,
+          "aggregated_stay_hour_var_rows": 31678,
+          "bytes": 186506
+        },
+        {
+          "partition": 5,
+          "input_rows": 47699,
+          "aggregated_stay_hour_var_rows": 32936,
+          "bytes": 190758
+        },
+        {
+          "partition": 6,
+          "input_rows": 50357,
+          "aggregated_stay_hour_var_rows": 34475,
+          "bytes": 193805
+        },
+        {
+          "partition": 7,
+          "input_rows": 50962,
+          "aggregated_stay_hour_var_rows": 35287,
+          "bytes": 197246
+        },
+        {
+          "partition": 8,
+          "input_rows": 47996,
+          "aggregated_stay_hour_var_rows": 33098,
+          "bytes": 188216
+        },
+        {
+          "partition": 9,
+          "input_rows": 44895,
+          "aggregated_stay_hour_var_rows": 32471,
+          "bytes": 183015
+        },
+        {
+          "partition": 10,
+          "input_rows": 46805,
+          "aggregated_stay_hour_var_rows": 32672,
+          "bytes": 185714
+        },
+        {
+          "partition": 11,
+          "input_rows": 53530,
+          "aggregated_stay_hour_var_rows": 35313,
+          "bytes": 204617
+        },
+        {
+          "partition": 12,
+          "input_rows": 43167,
+          "aggregated_stay_hour_var_rows": 29735,
+          "bytes": 177712
+        },
+        {
+          "partition": 13,
+          "input_rows": 50347,
+          "aggregated_stay_hour_var_rows": 33655,
+          "bytes": 194953
+        },
+        {
+          "partition": 14,
+          "input_rows": 40616,
+          "aggregated_stay_hour_var_rows": 28317,
+          "bytes": 166819
+        },
+        {
+          "partition": 15,
+          "input_rows": 46834,
+          "aggregated_stay_hour_var_rows": 32704,
+          "bytes": 185863
+        },
+        {
+          "partition": 16,
+          "input_rows": 48525,
+          "aggregated_stay_hour_var_rows": 33862,
+          "bytes": 191797
+        },
+        {
+          "partition": 17,
+          "input_rows": 48308,
+          "aggregated_stay_hour_var_rows": 34224,
+          "bytes": 190324
+        },
+        {
+          "partition": 18,
+          "input_rows": 49314,
+          "aggregated_stay_hour_var_rows": 33853,
+          "bytes": 192152
+        },
+        {
+          "partition": 19,
+          "input_rows": 49292,
+          "aggregated_stay_hour_var_rows": 32821,
+          "bytes": 192094
+        },
+        {
+          "partition": 20,
+          "input_rows": 52304,
+          "aggregated_stay_hour_var_rows": 35416,
+          "bytes": 202007
+        },
+        {
+          "partition": 21,
+          "input_rows": 45978,
+          "aggregated_stay_hour_var_rows": 32276,
+          "bytes": 182544
+        },
+        {
+          "partition": 22,
+          "input_rows": 53181,
+          "aggregated_stay_hour_var_rows": 35497,
+          "bytes": 201426
+        },
+        {
+          "partition": 23,
+          "input_rows": 50104,
+          "aggregated_stay_hour_var_rows": 33728,
+          "bytes": 194865
+        },
+        {
+          "partition": 24,
+          "input_rows": 43690,
+          "aggregated_stay_hour_var_rows": 30722,
+          "bytes": 178058
+        },
+        {
+          "partition": 25,
+          "input_rows": 50761,
+          "aggregated_stay_hour_var_rows": 34920,
+          "bytes": 198916
+        },
+        {
+          "partition": 26,
+          "input_rows": 52227,
+          "aggregated_stay_hour_var_rows": 35769,
+          "bytes": 202833
+        },
+        {
+          "partition": 27,
+          "input_rows": 47342,
+          "aggregated_stay_hour_var_rows": 32791,
+          "bytes": 186542
+        },
+        {
+          "partition": 28,
+          "input_rows": 43363,
+          "aggregated_stay_hour_var_rows": 30577,
+          "bytes": 176187
+        },
+        {
+          "partition": 29,
+          "input_rows": 45579,
+          "aggregated_stay_hour_var_rows": 31175,
+          "bytes": 181646
+        },
+        {
+          "partition": 30,
+          "input_rows": 48156,
+          "aggregated_stay_hour_var_rows": 32509,
+          "bytes": 189742
+        },
+        {
+          "partition": 31,
+          "input_rows": 46567,
+          "aggregated_stay_hour_var_rows": 32693,
+          "bytes": 184750
+        },
+        {
+          "partition": 32,
+          "input_rows": 46214,
+          "aggregated_stay_hour_var_rows": 32651,
+          "bytes": 185170
+        },
+        {
+          "partition": 33,
+          "input_rows": 47260,
+          "aggregated_stay_hour_var_rows": 32103,
+          "bytes": 187847
+        },
+        {
+          "partition": 34,
+          "input_rows": 51853,
+          "aggregated_stay_hour_var_rows": 35188,
+          "bytes": 199887
+        },
+        {
+          "partition": 35,
+          "input_rows": 50501,
+          "aggregated_stay_hour_var_rows": 33915,
+          "bytes": 195143
+        },
+        {
+          "partition": 36,
+          "input_rows": 49316,
+          "aggregated_stay_hour_var_rows": 33456,
+          "bytes": 191974
+        },
+        {
+          "partition": 37,
+          "input_rows": 48042,
+          "aggregated_stay_hour_var_rows": 33996,
+          "bytes": 189551
+        },
+        {
+          "partition": 38,
+          "input_rows": 49925,
+          "aggregated_stay_hour_var_rows": 36090,
+          "bytes": 197044
+        },
+        {
+          "partition": 39,
+          "input_rows": 42672,
+          "aggregated_stay_hour_var_rows": 29883,
+          "bytes": 176013
+        },
+        {
+          "partition": 40,
+          "input_rows": 51845,
+          "aggregated_stay_hour_var_rows": 34656,
+          "bytes": 200537
+        },
+        {
+          "partition": 41,
+          "input_rows": 47214,
+          "aggregated_stay_hour_var_rows": 32723,
+          "bytes": 186152
+        },
+        {
+          "partition": 42,
+          "input_rows": 44243,
+          "aggregated_stay_hour_var_rows": 30740,
+          "bytes": 177786
+        },
+        {
+          "partition": 43,
+          "input_rows": 51369,
+          "aggregated_stay_hour_var_rows": 36092,
+          "bytes": 199979
+        },
+        {
+          "partition": 44,
+          "input_rows": 49443,
+          "aggregated_stay_hour_var_rows": 34031,
+          "bytes": 193048
+        },
+        {
+          "partition": 45,
+          "input_rows": 45566,
+          "aggregated_stay_hour_var_rows": 31837,
+          "bytes": 184139
+        },
+        {
+          "partition": 46,
+          "input_rows": 52194,
+          "aggregated_stay_hour_var_rows": 35447,
+          "bytes": 201968
+        },
+        {
+          "partition": 47,
+          "input_rows": 52025,
+          "aggregated_stay_hour_var_rows": 35044,
+          "bytes": 200127
+        },
+        {
+          "partition": 48,
+          "input_rows": 46970,
+          "aggregated_stay_hour_var_rows": 33301,
+          "bytes": 186817
+        },
+        {
+          "partition": 49,
+          "input_rows": 50718,
+          "aggregated_stay_hour_var_rows": 35118,
+          "bytes": 196292
+        },
+        {
+          "partition": 50,
+          "input_rows": 51474,
+          "aggregated_stay_hour_var_rows": 35909,
+          "bytes": 201234
+        },
+        {
+          "partition": 51,
+          "input_rows": 52685,
+          "aggregated_stay_hour_var_rows": 37093,
+          "bytes": 202343
+        },
+        {
+          "partition": 52,
+          "input_rows": 45446,
+          "aggregated_stay_hour_var_rows": 31469,
+          "bytes": 182835
+        },
+        {
+          "partition": 53,
+          "input_rows": 49384,
+          "aggregated_stay_hour_var_rows": 34179,
+          "bytes": 191431
+        },
+        {
+          "partition": 54,
+          "input_rows": 53133,
+          "aggregated_stay_hour_var_rows": 37701,
+          "bytes": 204752
+        },
+        {
+          "partition": 55,
+          "input_rows": 46563,
+          "aggregated_stay_hour_var_rows": 31472,
+          "bytes": 181578
+        },
+        {
+          "partition": 56,
+          "input_rows": 44426,
+          "aggregated_stay_hour_var_rows": 31898,
+          "bytes": 179737
+        },
+        {
+          "partition": 57,
+          "input_rows": 45300,
+          "aggregated_stay_hour_var_rows": 31499,
+          "bytes": 182500
+        },
+        {
+          "partition": 58,
+          "input_rows": 53460,
+          "aggregated_stay_hour_var_rows": 37101,
+          "bytes": 207797
+        },
+        {
+          "partition": 59,
+          "input_rows": 44133,
+          "aggregated_stay_hour_var_rows": 30902,
+          "bytes": 177613
+        },
+        {
+          "partition": 60,
+          "input_rows": 48308,
+          "aggregated_stay_hour_var_rows": 33386,
+          "bytes": 189332
+        },
+        {
+          "partition": 61,
+          "input_rows": 47819,
+          "aggregated_stay_hour_var_rows": 33308,
+          "bytes": 189032
+        },
+        {
+          "partition": 62,
+          "input_rows": 45984,
+          "aggregated_stay_hour_var_rows": 33011,
+          "bytes": 184529
+        },
+        {
+          "partition": 63,
+          "input_rows": 51170,
+          "aggregated_stay_hour_var_rows": 36023,
+          "bytes": 198158
+        }
+      ],
+      "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/nwicu_clean_tokens.npz",
+      "sequence_sha256": "1217719d8910f449fbe18e41c52b825885e0ea25c465d596cadb9c461cb45b9d"
+    }
+  },
+  "input_hashes": {
+    "source_events": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/interim/events_mimic.parquet",
+      "bytes": 243670624,
+      "mtime_ns": 1793593229925494972,
+      "sha256": "8f4ec20e642eb38020f76b82c3a57a9b9d285bf21f9ad639d05c7e03c0fdb6ec",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_log": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/logs/v5_clean_pretraining_prepare_20261123_145851.log",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "source_events_ram_snapshot": {
+      "path": "/dev/shm/ehr_fm_v5_inputs_20261123/events_mimic.parquet",
+      "bytes": 243670624,
+      "mtime_ns": 1795417775965174083,
+      "sha256": "8f4ec20e642eb38020f76b82c3a57a9b9d285bf21f9ad639d05c7e03c0fdb6ec",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_log": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/logs/stage_direct_input_probe.log",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "source_cohort": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/interim/cohort_mimic.parquet",
+      "bytes": 2059865,
+      "mtime_ns": 1793593230128490791,
+      "sha256": "dd1d06997e128a18475553b8e18cfd1c81b2cdd79f95e67ba1746afaea5cec2a",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_log": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/logs/v5_clean_pretraining_prepare_20261123_145851.log",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "source_split": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/split_mimic.npy",
+      "bytes": 94471,
+      "mtime_ns": 1793721428928468804,
+      "sha256": "ed5bd94933d22daaa4cd5fdff82ce48b36b72ea50d2db7e4642906036c043c1a",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "source_legacy_sequence_key": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/seq_mimic.npz",
+      "bytes": 14248851,
+      "mtime_ns": 1793594627774044843,
+      "sha256": "9bd20bf1394a34ba112a4de9a8d7e8971821bef90558a9987be4b9da5ae06824",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "source_meta": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/processed/meta_mimic.json",
+      "bytes": 720,
+      "mtime_ns": 1793594627851648184,
+      "sha256": "97187dfb2b651bc15e16509732696ef2bbc709e596c64c364065c75657b51e73",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "source_eligibility": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/mimic.parquet",
+      "bytes": 13682377,
+      "mtime_ns": 1795372298820003155,
+      "sha256": "c2774cd59e4df8706960e4fa58680ea6ec72b4af22adddf82b2389dc5b74749f",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "eicu_repaired_events": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/interim/events_eicu_semantic_v4_2.parquet",
+      "bytes": 57202617,
+      "mtime_ns": 1795371591436683586,
+      "sha256": "1aa732663c80b30a4f7eb2a72ee1f87b16820c459576c1b5c61e2b243414a59f",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "eicu_repaired_cohort": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/interim/cohort_eicu_semantic_v4_2.parquet",
+      "bytes": 2932654,
+      "mtime_ns": 1795371592717672830,
+      "sha256": "8ea0abf9bb161d298bd866ea047621f67444de569b7102e18e8dfddb16a498e4",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "eicu_meta": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/eicu_semantic_v4_2/meta_eicu_semantic_v4_2.json",
+      "bytes": 722,
+      "mtime_ns": 1795371693488037392,
+      "sha256": "3a4bc55f639d0969a154feed590f6cf65b2e5206db03f00b583dce49645ba1ce",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "eicu_eligibility": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eicu_semantic_v4_2.parquet",
+      "bytes": 3696861,
+      "mtime_ns": 1795372304617971391,
+      "sha256": "fb14b4a31c924b123923df0ed76d1c3c87c8495b230fa5c8584b67a974b180a8",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "nwicu_events": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/interim/events_nwicu.parquet",
+      "bytes": 33476626,
+      "mtime_ns": 1793593775031398568,
+      "sha256": "97842757ab81b3985187c6294ccedcf808566ffa4664d68f1e23a0f5213c8e35",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "nwicu_cohort": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/data/interim/cohort_nwicu.parquet",
+      "bytes": 497959,
+      "mtime_ns": 1793593775075397955,
+      "sha256": "679aebdfa357fbbfa8d597063e67fc7c1d4c18322f1e33fe0cafd81591608bca",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "nwicu_meta": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/datasets/nwicu_discharge_v4_1/meta_nwicu.json",
+      "bytes": 718,
+      "mtime_ns": 1795369119105438480,
+      "sha256": "bf0892400ab7fb24f4a3edf59dd37d11026589793b134b65c847c3f79062d176",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "nwicu_eligibility": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/nwicu_discharge_v4_1.parquet",
+      "bytes": 726788,
+      "mtime_ns": 1795372299909997178,
+      "sha256": "6d3176b44c203fba6f2d14595668e66bd2cedd44558b59590fa55277f8b74eaf",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "reviewed_eligibility_manifest": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/temporal/results/eligibility/recovered_reviewed_v4_2/eligibility_manifest.json",
+      "bytes": 20167,
+      "mtime_ns": 1795372304903565419,
+      "sha256": "d302ce0a493121f9336f40fd58c5dc63a75a663492293c0153b4ba05efbb8e8f",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    }
+  },
+  "code_hashes": {
+    "extract_py": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/code/extract.py",
+      "bytes": 25342,
+      "mtime_ns": 1793608987741483505,
+      "sha256": "85ef7a559093dcf230c3b07472b9631c5c84e3d6c858452760d650bc516b6c2b",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "build_data_py": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/code/build_data.py",
+      "bytes": 5680,
+      "mtime_ns": 1793705285104231336,
+      "sha256": "aff00c3e492d7512b0d4ac3135c20fa585ee66a07ba84f2c9f6ef50f46682ee5",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "fm_py": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/code/fm.py",
+      "bytes": 16135,
+      "mtime_ns": 1793713484295795168,
+      "sha256": "9d33963a7d176f855103ac88c60f9faffebb4cb734a9de3401ba0c06bdaa39bc",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "cpu_entry": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_cpu_entry_ram.py",
+      "bytes": 1806,
+      "mtime_ns": 1795415393616353164,
+      "sha256": "d47050b2f29c2f2dad78df20a3e71708cd5d7ebd33119a80be9fc9f8473c9c20",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "prepare_script": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_clean_pretraining_prepare.py",
+      "bytes": 45231,
+      "mtime_ns": 1795433055039901646,
+      "sha256": "73dde67c1d0b99e55889299b01cbc6fb2afef3b682a9f57c937b3491de4d9dc8",
+      "method": "stream_sha256"
+    },
+    "clean_pretraining_lock": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/admin/clean_pretraining_lock.md",
+      "bytes": 13203,
+      "mtime_ns": 1795420427809673780,
+      "sha256": "fd8f5b850f5d20d6b883cf42733f79fca5e7154a87eda35bdd28ab5b8c1aa1e5",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    },
+    "protocol_copy": {
+      "path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/admin/protocol_v5.md",
+      "bytes": 13598,
+      "mtime_ns": 1795416244107654570,
+      "sha256": "15180075a59c25c0b9fbdb472898dedec62825d0b115116f7d87dc6fc73671a6",
+      "method": "reused_from_progress_checkpoint",
+      "verified_against_progress": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_190659_097930/progress.json"
+    }
+  },
+  "label_isolation": "Token files contain no outcomes. Readout/evaluation will reread reviewed labels only after root accepts these frozen artifacts.",
+  "historical_scope": "New clean source-only sensitivity; it does not authenticate old checkpoint membership or old bins.",
+  "runtime": {
+    "cpu_entry": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_cpu_entry_ram.py",
+    "threads": 2,
+    "cpu_affinity": "0-3 maximum",
+    "rss_gib_peak": 0.6,
+    "max_allowed_rss_gib": 8
+  },
+  "created_utc": "2026-11-23T11:31:43+00:00",
+  "unicode_repair": {
+    "schema": "v5_npz_subject_unicode_repair_v1",
+    "parent_manifest_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635/preparation_manifest.json",
+    "parent_manifest_sha256": "3301d3e5f5e307f75aabc3953e842d5e90bcf09a839ce9f90894bf8e7a8a82e9",
+    "repair_code_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/scripts/v5_clean_pretraining_normalize_subject_unicode_20261123.py",
+    "repair_code_sha256": "8d8b28ed21b8ddbc9617991f038d404dbb4138017abe928aea4f967496b4bb05",
+    "created_utc": "2026-11-23T13:28:30+00:00",
+    "changes": [
+      "only the subject field encoding changed from object strings to fixed-width Unicode"
+    ],
+    "labels_read": false,
+    "reaggregation_or_resampling": false,
+    "host_resource_admission": {
+      "task_memory_cap_bytes": 3221225472,
+      "cpu_quota_percent": 200,
+      "shared_memory_current_at_admission_bytes": 177995132928,
+      "shared_hard_remaining_at_admission_bytes": 8710242304,
+      "physical_available_at_admission_bytes": 63902715904
+    },
+    "source_eligible_roster_copy": {
+      "relative_path": "private/source_eligible_roster_tokens_only.csv",
+      "parent_sha256": "114544181c2ec80b1e34c24ac642f3030cd6d9a1eecc706fe4b07c1de56db2ec",
+      "copy_sha256": "114544181c2ec80b1e34c24ac642f3030cd6d9a1eecc706fe4b07c1de56db2ec"
+    },
+    "archives": {
+      "mimic": {
+        "parent_sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635/private/mimic_clean_tokens.npz",
+        "parent_raw_sha256": "e670ed3eca3458ac5a1381e1ff44006f46f03f8387c891a161d95f73c39e21f0",
+        "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/mimic_clean_tokens.npz",
+        "new_raw_sha256": "88792a7c5a63d63a101a798dae928ca0aedc902e1d4c7c8b96c7d4294337c84f",
+        "canonical_semantic_digest_before": "4afeda11dfa89dd452b8cf22b5856f304deaea26598827f5ef484828e2db1a00",
+        "canonical_semantic_digest_after": "4afeda11dfa89dd452b8cf22b5856f304deaea26598827f5ef484828e2db1a00",
+        "field_metadata_before": {
+          "V": {
+            "dtype": "int16",
+            "shape": [
+              73936,
+              128
+            ]
+          },
+          "B": {
+            "dtype": "int16",
+            "shape": [
+              73936,
+              128
+            ]
+          },
+          "H": {
+            "dtype": "int16",
+            "shape": [
+              73936,
+              128
+            ]
+          },
+          "L": {
+            "dtype": "int16",
+            "shape": [
+              73936
+            ]
+          },
+          "stay_id": {
+            "dtype": "int64",
+            "shape": [
+              73936
+            ]
+          },
+          "subject": {
+            "dtype": "object",
+            "shape": [
+              73936
+            ]
+          },
+          "summary": {
+            "dtype": "float32",
+            "shape": [
+              73936,
+              48
+            ]
+          },
+          "split": {
+            "dtype": "int8",
+            "shape": [
+              73936
+            ]
+          },
+          "pretrain_member": {
+            "dtype": "int8",
+            "shape": [
+              73936
+            ]
+          }
+        },
+        "field_metadata_after": {
+          "V": {
+            "dtype": "int16",
+            "shape": [
+              73936,
+              128
+            ]
+          },
+          "B": {
+            "dtype": "int16",
+            "shape": [
+              73936,
+              128
+            ]
+          },
+          "H": {
+            "dtype": "int16",
+            "shape": [
+              73936,
+              128
+            ]
+          },
+          "L": {
+            "dtype": "int16",
+            "shape": [
+              73936
+            ]
+          },
+          "stay_id": {
+            "dtype": "int64",
+            "shape": [
+              73936
+            ]
+          },
+          "subject": {
+            "dtype": "<U8",
+            "shape": [
+              73936
+            ]
+          },
+          "summary": {
+            "dtype": "float32",
+            "shape": [
+              73936,
+              48
+            ]
+          },
+          "split": {
+            "dtype": "int8",
+            "shape": [
+              73936
+            ]
+          },
+          "pretrain_member": {
+            "dtype": "int8",
+            "shape": [
+              73936
+            ]
+          }
+        },
+        "subject_dtype_before": "object",
+        "subject_dtype_after": "<U8",
+        "rows": 73936,
+        "only_subject_encoding_changed": true
+      },
+      "eicu": {
+        "parent_sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635/private/eicu_clean_tokens.npz",
+        "parent_raw_sha256": "998d72c3694892b60d2436eb830549eb21d3f1f9114a62a1b4816091031769b6",
+        "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/eicu_clean_tokens.npz",
+        "new_raw_sha256": "7a9fc79eb732b8e0c0b79fc53f27a627aabe878e2a054e00ede92ffa9f5e38d0",
+        "canonical_semantic_digest_before": "91d1151d297477ae242b7aaf53afcaa7f80c418b13f0259e009ebf4e3f035d35",
+        "canonical_semantic_digest_after": "91d1151d297477ae242b7aaf53afcaa7f80c418b13f0259e009ebf4e3f035d35",
+        "field_metadata_before": {
+          "V": {
+            "dtype": "int16",
+            "shape": [
+              130544,
+              128
+            ]
+          },
+          "B": {
+            "dtype": "int16",
+            "shape": [
+              130544,
+              128
+            ]
+          },
+          "H": {
+            "dtype": "int16",
+            "shape": [
+              130544,
+              128
+            ]
+          },
+          "L": {
+            "dtype": "int16",
+            "shape": [
+              130544
+            ]
+          },
+          "stay_id": {
+            "dtype": "int64",
+            "shape": [
+              130544
+            ]
+          },
+          "subject": {
+            "dtype": "object",
+            "shape": [
+              130544
+            ]
+          },
+          "summary": {
+            "dtype": "float32",
+            "shape": [
+              130544,
+              48
+            ]
+          },
+          "split": {
+            "dtype": "int8",
+            "shape": [
+              130544
+            ]
+          },
+          "pretrain_member": {
+            "dtype": "int8",
+            "shape": [
+              130544
+            ]
+          }
+        },
+        "field_metadata_after": {
+          "V": {
+            "dtype": "int16",
+            "shape": [
+              130544,
+              128
+            ]
+          },
+          "B": {
+            "dtype": "int16",
+            "shape": [
+              130544,
+              128
+            ]
+          },
+          "H": {
+            "dtype": "int16",
+            "shape": [
+              130544,
+              128
+            ]
+          },
+          "L": {
+            "dtype": "int16",
+            "shape": [
+              130544
+            ]
+          },
+          "stay_id": {
+            "dtype": "int64",
+            "shape": [
+              130544
+            ]
+          },
+          "subject": {
+            "dtype": "<U10",
+            "shape": [
+              130544
+            ]
+          },
+          "summary": {
+            "dtype": "float32",
+            "shape": [
+              130544,
+              48
+            ]
+          },
+          "split": {
+            "dtype": "int8",
+            "shape": [
+              130544
+            ]
+          },
+          "pretrain_member": {
+            "dtype": "int8",
+            "shape": [
+              130544
+            ]
+          }
+        },
+        "subject_dtype_before": "object",
+        "subject_dtype_after": "<U10",
+        "rows": 130544,
+        "only_subject_encoding_changed": true
+      },
+      "nwicu": {
+        "parent_sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635/private/nwicu_clean_tokens.npz",
+        "parent_raw_sha256": "69f13afa02d32c1f4467e90e3dc27e1a3f3767c99a3ca1aa7abb79cb8ae5c9a6",
+        "sequence_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v5_20261123/results/clean_pretraining/run_20261123_192508_879635_unicode_20261123T132809Z/private/nwicu_clean_tokens.npz",
+        "new_raw_sha256": "1217719d8910f449fbe18e41c52b825885e0ea25c465d596cadb9c461cb45b9d",
+        "canonical_semantic_digest_before": "18766bf8f5aff3fad8819bc99a4d31c903f0c64f2b9a23fe18fe624c4b638e20",
+        "canonical_semantic_digest_after": "18766bf8f5aff3fad8819bc99a4d31c903f0c64f2b9a23fe18fe624c4b638e20",
+        "field_metadata_before": {
+          "V": {
+            "dtype": "int16",
+            "shape": [
+              19972,
+              128
+            ]
+          },
+          "B": {
+            "dtype": "int16",
+            "shape": [
+              19972,
+              128
+            ]
+          },
+          "H": {
+            "dtype": "int16",
+            "shape": [
+              19972,
+              128
+            ]
+          },
+          "L": {
+            "dtype": "int16",
+            "shape": [
+              19972
+            ]
+          },
+          "stay_id": {
+            "dtype": "int64",
+            "shape": [
+              19972
+            ]
+          },
+          "subject": {
+            "dtype": "object",
+            "shape": [
+              19972
+            ]
+          },
+          "summary": {
+            "dtype": "float32",
+            "shape": [
+              19972,
+              48
+            ]
+          },
+          "split": {
+            "dtype": "int8",
+            "shape": [
+              19972
+            ]
+          },
+          "pretrain_member": {
+            "dtype": "int8",
+            "shape": [
+              19972
+            ]
+          }
+        },
+        "field_metadata_after": {
+          "V": {
+            "dtype": "int16",
+            "shape": [
+              19972,
+              128
+            ]
+          },
+          "B": {
+            "dtype": "int16",
+            "shape": [
+              19972,
+              128
+            ]
+          },
+          "H": {
+            "dtype": "int16",
+            "shape": [
+              19972,
+              128
+            ]
+          },
+          "L": {
+            "dtype": "int16",
+            "shape": [
+              19972
+            ]
+          },
+          "stay_id": {
+            "dtype": "int64",
+            "shape": [
+              19972
+            ]
+          },
+          "subject": {
+            "dtype": "<U8",
+            "shape": [
+              19972
+            ]
+          },
+          "summary": {
+            "dtype": "float32",
+            "shape": [
+              19972,
+              48
+            ]
+          },
+          "split": {
+            "dtype": "int8",
+            "shape": [
+              19972
+            ]
+          },
+          "pretrain_member": {
+            "dtype": "int8",
+            "shape": [
+              19972
+            ]
+          }
+        },
+        "subject_dtype_before": "object",
+        "subject_dtype_after": "<U8",
+        "rows": 19972,
+        "only_subject_encoding_changed": true
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "all_exclusions": {
+    "c2012_a_v4_1": {
+      "n_excluded_no_non_mg_tokens": 0,
+      "reviewed_gate_exclusions": {
+        "n_excluded_gate_sequence_label_mismatch": 0,
+        "n_excluded_not_external_all2": 0,
+        "n_excluded_not_selected": 36,
+        "n_excluded_original_L_zero": 0,
+        "n_excluded_unknown_or_nonbinary_label": 0
+      }
+    },
+    "c2012_b_v4_1": {
+      "n_excluded_no_non_mg_tokens": 0,
+      "reviewed_gate_exclusions": {
+        "n_excluded_gate_sequence_label_mismatch": 0,
+        "n_excluded_not_external_all2": 0,
+        "n_excluded_not_selected": 35,
+        "n_excluded_original_L_zero": 0,
+        "n_excluded_unknown_or_nonbinary_label": 0
+      }
+    },
+    "c2012_c_v4_1": {
+      "n_excluded_no_non_mg_tokens": 0,
+      "reviewed_gate_exclusions": {
+        "n_excluded_gate_sequence_label_mismatch": 0,
+        "n_excluded_not_external_all2": 0,
+        "n_excluded_not_selected": 43,
+        "n_excluded_original_L_zero": 0,
+        "n_excluded_unknown_or_nonbinary_label": 0
+      }
+    },
+    "mimic": {
+      "evaluation_split2_no_non_mg_tokens": 0,
+      "n_excluded_no_non_mg_tokens": 0,
+      "source_split0_no_non_mg_tokens": 0
+    }
+  },
+  "cohorts": {
+    "c2012_a_v4_1": {
+      "full_input_reference_keys_and_labels_sha256": "960dfb3e0c73e2c208b4c967dfec569178b415991443b5a9006cdc88828ceb49",
+      "n_excluded_no_non_mg_tokens": 0,
+      "n_record_id_proxy": 3964,
+      "n_scored": 3964,
+      "no_mg_vs_b1": {
+        "alternative_condition": "symmetric Mg omitted; all remaining active bins set to B1",
+        "alternative_metrics": {
+          "auroc": 0.6179561549723075,
+          "average_precision": 0.19662134585353508,
+          "brier": 0.1181713633307606,
+          "logloss": 0.39895861969357754
+        },
+        "base_condition": "symmetric Mg omitted; remaining bins retain source/target values",
+        "base_metrics": {
+          "auroc": 0.7178967351042438,
+          "average_precision": 0.28819732925168134,
+          "brier": 0.10941667263442399,
+          "logloss": 0.37287787073244993
+        },
+        "bootstrap_replicates": 1000,
+        "change_B1_minus_nomg": {
+          "auroc": -0.0999405801319363,
+          "average_precision": -0.09157598339814627,
+          "brier": 0.008754690696336609,
+          "logloss": 0.02608074896112761
+        },
+        "draws_shared_between_conditions": true,
+        "invalid_single_class_draws_resampled": 0,
+        "n_resampling_clusters": 3964,
+        "n_rows": 3964,
+        "paired_cluster_bootstrap_95pct_ci": {
+          "auroc": [
+            -0.12330519805805244,
+            -0.07383231809383203
+          ],
+          "average_precision": [
+            -0.12380881444652417,
+            -0.06036343017314747
+          ],
+          "brier": [
+            0.005260484952455578,
+            0.01210381197405896
+          ],
+          "logloss": [
+            0.013420116712285948,
+            0.03766200174939221
+          ]
+        },
+        "resampling_unit": "record_id_proxy",
+        "seed": 20261124
+      },
+      "reviewed_gate_qualification_n": 3964
+    },
+    "c2012_b_v4_1": {
+      "full_input_reference_keys_and_labels_sha256": "c40c3cc9c75d0a30f7275afda269968e369195bce056f44d12d0e7d9ba47bbab",
+      "n_excluded_no_non_mg_tokens": 0,
+      "n_record_id_proxy": 3965,
+      "n_scored": 3965,
+      "no_mg_vs_b1": {
+        "alternative_condition": "symmetric Mg omitted; all remaining active bins set to B1",
+        "alternative_metrics": {
+          "auroc": 0.6335172263105268,
+          "average_precision": 0.20609168019031904,
+          "brier": 0.11940044642917927,
+          "logloss": 0.4041957130205376
+        },
+        "base_condition": "symmetric Mg omitted; remaining bins retain source/target values",
+        "base_metrics": {
+          "auroc": 0.7048708766695405,
+          "average_precision": 0.29427746467127125,
+          "brier": 0.1121331878348424,
+          "logloss": 0.38788836472831256
+        },
+        "bootstrap_replicates": 1000,
+        "change_B1_minus_nomg": {
+          "auroc": -0.07135365035901375,
+          "average_precision": -0.08818578448095221,
+          "brier": 0.00726725859433687,
+          "logloss": 0.01630734829222502
+        },
+        "draws_shared_between_conditions": true,
+        "invalid_single_class_draws_resampled": 0,
+        "n_resampling_clusters": 3965,
+        "n_rows": 3965,
+        "paired_cluster_bootstrap_95pct_ci": {
+          "auroc": [
+            -0.09554478700118525,
+            -0.04809369093714035
+          ],
+          "average_precision": [
+            -0.12148334433247229,
+            -0.058563727882400614
+          ],
+          "brier": [
+            0.0042109160946838045,
+            0.010716933946493246
+          ],
+          "logloss": [
+            0.0037569575395895436,
+            0.029986935581532002
+          ]
+        },
+        "resampling_unit": "record_id_proxy",
+        "seed": 20261125
+      },
+      "reviewed_gate_qualification_n": 3965
+    },
+    "c2012_c_v4_1": {
+      "full_input_reference_keys_and_labels_sha256": "cb499ac9e3ab2840358d75f3208d8505d1359ddb315860122c06faad65cd7c8e",
+      "n_excluded_no_non_mg_tokens": 0,
+      "n_record_id_proxy": 3957,
+      "n_scored": 3957,
+      "no_mg_vs_b1": {
+        "alternative_condition": "symmetric Mg omitted; all remaining active bins set to B1",
+        "alternative_metrics": {
+          "auroc": 0.6468915954744863,
+          "average_precision": 0.21858087774252982,
+          "brier": 0.11943509627260823,
+          "logloss": 0.40005641473842546
+        },
+        "base_condition": "symmetric Mg omitted; remaining bins retain source/target values",
+        "base_metrics": {
+          "auroc": 0.7101436029656994,
+          "average_precision": 0.30263883257573976,
+          "brier": 0.11283939865380992,
+          "logloss": 0.38737466819743366
+        },
+        "bootstrap_replicates": 1000,
+        "change_B1_minus_nomg": {
+          "auroc": -0.06325200749121318,
+          "average_precision": -0.08405795483320994,
+          "brier": 0.006595697618798316,
+          "logloss": 0.0126817465409918
+        },
+        "draws_shared_between_conditions": true,
+        "invalid_single_class_draws_resampled": 0,
+        "n_resampling_clusters": 3957,
+        "n_rows": 3957,
+        "paired_cluster_bootstrap_95pct_ci": {
+          "auroc": [
+            -0.08739829453205411,
+            -0.04010440481367101
+          ],
+          "average_precision": [
+            -0.11568465743502618,
+            -0.05037500290256095
+          ],
+          "brier": [
+            0.0030806826741155355,
+            0.010138474131548312
+          ],
+          "logloss": [
+            -0.0008113918081661771,
+            0.027095200439291537
+          ]
+        },
+        "resampling_unit": "record_id_proxy",
+        "seed": 20261126
+      },
+      "reviewed_gate_qualification_n": 3957
+    },
+    "mimic": {
+      "n_excluded_no_non_mg_tokens": 0,
+      "n_scored": 14890,
+      "no_mg_vs_b1": {
+        "alternative_condition": "symmetric Mg omitted; all remaining active bins set to B1",
+        "alternative_metrics": {
+          "auroc": 0.7135903682495581,
+          "average_precision": 0.23746058801608694,
+          "brier": 0.09411301136728596,
+          "logloss": 0.32427324530169094
+        },
+        "base_condition": "symmetric Mg omitted; remaining bins retain source/target values",
+        "base_metrics": {
+          "auroc": 0.8065230261857568,
+          "average_precision": 0.3845091713983371,
+          "brier": 0.08380531109323484,
+          "logloss": 0.28512605562615484
+        },
+        "bootstrap_replicates": 1000,
+        "change_B1_minus_nomg": {
+          "auroc": -0.09293265793619865,
+          "average_precision": -0.1470485833822502,
+          "brier": 0.010307700274051118,
+          "logloss": 0.0391471896755361
+        },
+        "draws_shared_between_conditions": true,
+        "invalid_single_class_draws_resampled": 0,
+        "n_resampling_clusters": 10848,
+        "n_rows": 14890,
+        "paired_cluster_bootstrap_95pct_ci": {
+          "auroc": [
+            -0.10459396759082305,
+            -0.08109474925997541
+          ],
+          "average_precision": [
+            -0.16803879916029874,
+            -0.12628387597232044
+          ],
+          "brier": [
+            0.00869362386453806,
+            0.011900612126542098
+          ],
+          "logloss": [
+            0.03391367948480889,
+            0.044059169914664666
+          ]
+        },
+        "resampling_unit": "patient_cluster",
+        "seed": 20261123
+      },
+      "source_train_rows_split0": 51714
+    }
+  },
+  "fitting": {
+    "classifier": "StandardScaler + LogisticRegression(C=1.0,max_iter=3000,random_state=20261122)",
+    "condition_heads_fit_separately": true,
+    "fit_cohort": "MIMIC",
+    "fit_eligibility": "reviewed status_consistent_v4_1 eligible rows",
+    "fit_split": 0,
+    "target_fitting_or_rescaling": false
+  },
+  "limitations": [
+    "retrospective measurement-time inputs; real-time clinical availability unverified",
+    "C2012 endpoint is operational proxy under review gate",
+    "C2012 RecordID is a stay/admission proxy, not verified patient identity",
+    "magnesium harmonization remains uncertain; this is a symmetric Mg-omitted sensitivity",
+    "no causal interpretation"
+  ],
+  "provenance": {
+    "analysis_script_sha256": "7bba23b9bafe5add1ea8b7b8c59b5a1af7a19b6c3a243363cbf798281107d636",
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 20261123,
+    "checkpoint_sha256": "0719db57b91b261869aed119cee95bf8980eb14411684c2040ba8588b45460bd",
+    "cpu_runtime": {
+      "executable": "/usr/bin/python3",
+      "numpy": "1.26.4",
+      "python": "3.12.3",
+      "scikit_learn": "1.8.0"
+    },
+    "encoder_definition_sha256": "9d33963a7d176f855103ac88c60f9faffebb4cb734a9de3401ba0c06bdaa39bc",
+    "gpu_embeddings_sha256": "3ad17dad4c8647fc036ba9e0767a1eaaea00d0d0fe06e128c16574a783a78b19",
+    "gpu_manifest_sha256": "d539cf7d6e034c00ac2329d44993fcb2fafc176af33dddb88513413c3a762187",
+    "input_arrays_sha256": "67aa3879910dca3893be43c5373a07d52005b09a784af04aeb7f7670903e9a8c",
+    "patient_predictions_server_only_path": "/data/admin/fengshuo/ehr_fm_20261102/revision_v4_20261122/controls/no_mg/patient_predictions.npz",
+    "patient_predictions_sha256": "20332c11eaf12e2bb00306f25024f93978b60de4a3dd99caea57b7fbfbea4a12",
+    "preflight_sha256": "3ff50540ef40720b948d563f4152b05e2bbaaf287eedd6934ad6c0b4438998ee",
+    "rank_recovery_input_invalid_aggregate_sha256": "d1146988eb4a6de29957f266a73fcef891ec0c30116cb99464821a7099b18637",
+    "rank_recovery_no_gpu_reencoding": true,
+    "rank_recovery_no_head_refit": true,
+    "rank_recovery_patient_predictions_sha256": "20332c11eaf12e2bb00306f25024f93978b60de4a3dd99caea57b7fbfbea4a12",
+    "source_train_scaler_and_head_hashes": {
+      "b1": {
+        "coef": "f40b46c395d5604e5ad1518ea46e9f480b533e1576e7d19e00e4902ae8b992e4",
+        "intercept": "2368f7f21a2569212fd6b897f21182e55a8659f5d318276030a47360c4d33df1",
+        "scaler_mean": "646d6d7b28225253d13973534cb6255cc909713ad2bcfe1604c6d92d79877573",
+        "scaler_scale": "ab69bba2e68c1cedf869e12bebae683b467746904938542320013e1af8bd7abc"
+      },
+      "nomg": {
+        "coef": "056781fcc2638accea3c3086a45cc1818ce420c96c16ee2dab643749af6590cb",
+        "intercept": "ee310844a1fbf0425eb4805c335e1c74b1c189a2d2f704d48e722e745e83e289",
+        "scaler_mean": "26a2293ded633dc18a5beaf67310817d1ec12f6467ad5d23b8f783c5496fdb2e",
+        "scaler_scale": "b128f7637d11aa20bd309d76e405f5cb77ab224f414b34ceb8f37a7b7b0118ff"
+      }
+    }
+  },
+  "rank_metrics_recovery": {
+    "invalid_previous_aggregate_sha256": "d1146988eb4a6de29957f266a73fcef891ec0c30116cb99464821a7099b18637",
+    "method": "metrics and paired bootstrap recomputed from saved patient-level predictions only",
+    "no_gpu_reencoding": true,
+    "no_head_refit": true,
+    "rank_accumulation_order": "descending predicted score; exact-score ties grouped",
+    "source_predictions_sha256": "20332c11eaf12e2bb00306f25024f93978b60de4a3dd99caea57b7fbfbea4a12",
+    "weighted_metric_crosscheck_vs_sklearn": {
+      "case_names": [
+        "perfect",
+        "inverse",
+        "ties_and_zero_weights",
+        "null_constant_score",
+        "cluster_bootstrap_weights"
+      ],
+      "max_absolute_difference_vs_sklearn": 2.7755575615628914e-17,
+      "n_cases": 5,
+      "status": "passed"
+    }
+  },
+  "status": "complete_corrected_rank_metrics"
+}
